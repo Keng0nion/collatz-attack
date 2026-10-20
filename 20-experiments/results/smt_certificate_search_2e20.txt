@@ -1,0 +1,9 @@
+z3 certificate search, truncation domain [1, N], N = 1048576
+map: T(x) = x/2 (x even), (3x+1)/2 (x odd)   [accelerated Collatz]
+==============================================================================
+[A1-linear-full]  V = (A*x + B*popcount(x))/D with D>=1  [= a*x + b*popcount(x)]
+    constraints=1048577  solve=23.56s  ->  unsat
+    unsat core (3): ['D>=1', 'x=1', 'x=2']
+[A2-linear-excl]  V = (A*x + B*popcount(x))/D with D>=1  [= a*x + b*popcount(x)]
+    constraints=1048575  solve=55.32s  ->  unsat
+    unsat core (3): ['D>=1', 'x=3', 'x=4']

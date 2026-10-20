@@ -1,0 +1,36 @@
+z3 certificate search, truncation domain [1, N], N = 262144
+map: T(x) = x/2 (x even), (3x+1)/2 (x odd)   [accelerated Collatz]
+==============================================================================
+[A1-linear-full]  V = (A*x + B*popcount(x))/D with D>=1  [= a*x + b*popcount(x)]
+    constraints=262145  solve=10.26s  ->  unsat
+    unsat core (3): ['D>=1', 'x=1', 'x=2']
+[A2-linear-excl]  V = (A*x + B*popcount(x))/D with D>=1  [= a*x + b*popcount(x)]
+    constraints=262143  solve=11.38s  ->  unsat
+    unsat core (3): ['D>=1', 'x=3', 'x=4']
+[B1-weights-full]  V = sum_i w_i * bit_i(x), i <= 18
+    constraints=262144  solve=41.38s  ->  unsat
+    unsat core (2): ['x=1', 'x=2']
+[B2-weights-excl]  V = sum_i w_i * bit_i(x), i <= 18
+    constraints=262142  solve=20.57s  ->  unsat
+    unsat core (2): ['x=3', 'x=4']
+[D-odd-strict-even-noninc]  V = sum_i w_i * bit_i(x), i <= 18
+    constraints=262142  solve=65.21s  ->  unsat
+    unsat core (2): ['x=3', 'x=4']
+[F-odd-strict-only]  V = sum_i w_i * bit_i(x), i <= 18
+    constraints=131071  solve=10.40s  ->  sat
+    model: [7, 4, 2, 1, 0, -1, -2, -3, -5, -8, -13, -21, -34, -55, -89, -144, -233, -377, -610]
+    pointwise verify (odd x only): checked=131071 violations=0 []
+    weights = [7, 4, 2, 1, 0, -1, -2, -3, -5, -8, -13, -21, -34, -55, -89, -144, -233, -377, -610]
+    indices i >= 3 where w_i == -Fibonacci(i-3): [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18] (of 3..18), count 14
+    beyond-truncation scan (odd x up to 524287, coverage limit 524288, 0.6s): reached 349523, first violation = None
+[C-free-V-excl]  V arbitrary, one Int per state in [1, 6143]
+    constraints=4094  solve=0.29s  ->  sat
+    model: None
+    pointwise verify over [3,4096]: checked=4094 unresolved=0 violations=0
+
+per-k pair probe: x = 2^k - 1 and x = 2^k, weight class only
+    k = 1..18 : 18 unsat, 0 other; sample cores: {1: ['x=1', 'x=2'], 2: ['x=3', 'x=4'], 18: ['x=262143', 'x=262144']}
+JSON written to results/certificates_2e18.json
+---JSON-BEGIN---
+{"N": 262144, "N_small": 4096, "timeout_ms": 600000, "results": [{"name": "A1-linear-full", "form": "V = (A*x + B*popcount(x))/D with D>=1  [= a*x + b*popcount(x)]", "n_constraints": 262145, "result": "unsat", "solve_secs": 10.262, "core": ["D>=1", "x=1", "x=2"]}, {"name": "A2-linear-excl", "form": "V = (A*x + B*popcount(x))/D with D>=1  [= a*x + b*popcount(x)]", "n_constraints": 262143, "result": "unsat", "solve_secs": 11.381, "core": ["D>=1", "x=3", "x=4"]}, {"name": "B1-weights-full", "form": "V = sum_i w_i * bit_i(x), i <= 18", "n_constraints": 262144, "result": "unsat", "solve_secs": 41.385, "core": ["x=1", "x=2"]}, {"name": "B2-weights-excl", "form": "V = sum_i w_i * bit_i(x), i <= 18", "n_constraints": 262142, "result": "unsat", "solve_secs": 20.567, "core": ["x=3", "x=4"]}, {"name": "D-odd-strict-even-noninc", "form": "V = sum_i w_i * bit_i(x), i <= 18", "n_constraints": 262142, "result": "unsat", "solve_secs": 65.207, "core": ["x=3", "x=4"]}, {"name": "F-odd-strict-only", "form": "V = sum_i w_i * bit_i(x), i <= 18", "n_constraints": 131071, "result": "sat", "solve_secs": 10.403, "model": [7, 4, 2, 1, 0, -1, -2, -3, -5, -8, -13, -21, -34, -55, -89, -144, -233, -377, -610], "verify": {"checked": 131071, "violations": 0}, "weights": [7, 4, 2, 1, 0, -1, -2, -3, -5, -8, -13, -21, -34, -55, -89, -144, -233, -377, -610], "neg_shifted_fibonacci_match": {"indices": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], "count": 14, "range": "3..18"}, "beyond": {"limit": 524287, "cover": 524288, "reached": 349523, "first_violation": null}}, {"name": "C-free-V-excl", "form": "V arbitrary, one Int per state in [1, 6143]", "n_constraints": 4094, "result": "sat", "solve_secs": 0.295, "model": null, "verify": {"checked": 4094, "unresolved": 0, "violations": 0}}, {"name": "P-per-k-pairs", "kmax": 18, "n_unsat": 18, "samples": {"1": ["x=1", "x=2"], "2": ["x=3", "x=4"], "18": ["x=262143", "x=262144"]}, "pairs": [{"k": 1, "result": "unsat", "core": ["x=1", "x=2"]}, {"k": 2, "result": "unsat", "core": ["x=3", "x=4"]}, {"k": 3, "result": "unsat", "core": ["x=7", "x=8"]}, {"k": 4, "result": "unsat", "core": ["x=15", "x=16"]}, {"k": 5, "result": "unsat", "core": ["x=31", "x=32"]}, {"k": 6, "result": "unsat", "core": ["x=63", "x=64"]}, {"k": 7, "result": "unsat", "core": ["x=127", "x=128"]}, {"k": 8, "result": "unsat", "core": ["x=255", "x=256"]}, {"k": 9, "result": "unsat", "core": ["x=511", "x=512"]}, {"k": 10, "result": "unsat", "core": ["x=1023", "x=1024"]}, {"k": 11, "result": "unsat", "core": ["x=2047", "x=2048"]}, {"k": 12, "result": "unsat", "core": ["x=4095", "x=4096"]}, {"k": 13, "result": "unsat", "core": ["x=8191", "x=8192"]}, {"k": 14, "result": "unsat", "core": ["x=16383", "x=16384"]}, {"k": 15, "result": "unsat", "core": ["x=32767", "x=32768"]}, {"k": 16, "result": "unsat", "core": ["x=65535", "x=65536"]}, {"k": 17, "result": "unsat", "core": ["x=131071", "x=131072"]}, {"k": 18, "result": "unsat", "core": ["x=262143", "x=262144"]}]}], "certificates": [{"name": "F-odd-strict-only", "weights": [7, 4, 2, 1, 0, -1, -2, -3, -5, -8, -13, -21, -34, -55, -89, -144, -233, -377, -610], "odd_only": true}]}
+---JSON-END---

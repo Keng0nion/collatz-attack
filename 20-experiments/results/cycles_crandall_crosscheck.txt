@@ -1,0 +1,15 @@
+delta = log2 3 的收敛项（供对照）：
+  n= 6 a=  1 p_n=            84 q_n=            53
+  n= 7 a=  5 p_n=           485 q_n=           306
+  n= 8 a=  2 p_n=          1054 q_n=           665
+  n= 9 a= 23 p_n=         24727 q_n=         15601
+  n=10 a=  2 p_n=         50508 q_n=         31867
+  n=11 a=  2 p_n=        125743 q_n=         79335
+  n=12 a=  1 p_n=        176251 q_n=        111202
+  n=13 a=  1 p_n=        301994 q_n=        190537
+  n=14 a= 55 p_n=      16785921 q_n=      10590737
+  n=15 a=  1 p_n=      17087915 q_n=      10781274
+
+X0 = 10000000000: 按 Crandall 引理形式得 K > 79335（在 n = 11 处取得）；本工作判据在同一 X0 下给 M+ 与 M−（见 cycles_criterion_exact_M.py）
+X0 = 100000000000: 按 Crandall 引理形式得 K > 111202（在 n = 12 处取得）；本工作判据在同一 X0 下给 M+ 与 M−（见 cycles_criterion_exact_M.py）
+X0 = 1000000000000: 按 Crandall 引理形式得 K > 185506.83（在 n = 13 处取得）；本工作判据在同一 X0 下给 M+ 与 M−（见 cycles_criterion_exact_M.py）

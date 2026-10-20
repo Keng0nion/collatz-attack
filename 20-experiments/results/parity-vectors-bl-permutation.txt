@@ -1,0 +1,32 @@
+# n=  counts[j] (j=0..n)  order  longcyc  reps
+n=1  1 0  order=1 want=n/a longcnt=n/a oddtot=1 (expect 1) reps=1,0,0 t=0.00s
+n=2  2 0 0  order=1 want=n/a longcnt=n/a oddtot=2 (expect 2) reps=1,3,0 t=0.00s
+n=3  2 1 0 0  order=2 want=n/a longcnt=n/a oddtot=4 (expect 4) reps=1,0,0 t=0.00s
+n=4  4 2 0 0 0  order=2 want=n/a longcnt=n/a oddtot=8 (expect 8) reps=1,9,0 t=0.00s
+n=5  6 3 1 0 0 0  order=4 want=n/a longcnt=n/a oddtot=16 (expect 16) reps=9,0,0 t=0.00s
+n=6  6 7 3 0 0 0 0  order=4 want=4 ok longcnt=3 ok oddtot=32 (expect 32) reps=5,9,41 t=0.00s
+n=7  8 10 3 3 0 0 0 0  order=8 want=8 ok longcnt=3 ok oddtot=64 (expect 64) reps=5,9,41 t=0.00s
+n=8  14 17 8 0 3 0 0 0 0  order=16 want=16 ok longcnt=3 ok oddtot=128 (expect 128) reps=5,9,41 t=0.00s
+n=9  14 21 18 4 0 3 0 0 0 0  order=32 want=32 ok longcnt=3 ok oddtot=256 (expect 256) reps=5,9,41 t=0.00s
+n=10 10 35 24 14 2 0 3 0 0 0 0  order=64 want=64 ok longcnt=3 ok oddtot=512 (expect 512) reps=5,9,41 t=0.00s
+n=11 12 40 37 18 12 2 0 3 0 0 0 0  order=128 want=128 ok longcnt=3 ok oddtot=1024 (expect 1024) reps=5,9,41 t=0.00s
+n=12 16 48 70 23 16 10 2 0 3 0 0 0 0  order=256 want=256 ok longcnt=3 ok oddtot=2048 (expect 2048) reps=5,9,41 t=0.00s
+n=13 26 53 79 60 24 11 10 2 0 3 0 0 0 0  order=512 want=512 ok longcnt=3 ok oddtot=4096 (expect 4096) reps=5,9,41 t=0.00s
+n=14 22 63 111 98 50 14 11 10 2 0 3 0 0 0 0  order=1024 want=1024 ok longcnt=3 ok oddtot=8192 (expect 8192) reps=5,9,41 t=0.00s
+n=15 18 81 129 153 84 40 11 11 10 2 0 3 0 0 0 0  order=2048 want=2048 ok longcnt=3 ok oddtot=16384 (expect 16384) reps=5,9,41 t=0.00s
+n=16 20 96 179 186 137 78 31 11 11 10 2 0 3 0 0 0 0  order=4096 want=4096 ok longcnt=3 ok oddtot=32768 (expect 32768) reps=5,9,41 t=0.00s
+n=17 18 91 242 236 207 131 61 29 11 11 10 2 0 3 0 0 0 0  order=8192 want=8192 ok longcnt=3 ok oddtot=65536 (expect 65536) reps=5,9,41 t=0.00s
+n=18 12 104 305 308 312 192 105 56 29 11 11 10 2 0 3 0 0 0 0  order=16384 want=16384 ok longcnt=3 ok oddtot=131072 (expect 131072) reps=5,9,41 t=0.00s
+n=19 16 86 375 401 432 307 152 99 54 29 11 11 10 2 0 3 0 0 0 0  order=32768 want=32768 ok longcnt=3 ok oddtot=262144 (expect 262144) reps=5,9,41 t=0.01s
+n=20 26 95 424 573 564 445 281 133 91 54 29 11 11 10 2 0 3 0 0 0 0  order=65536 want=65536 ok longcnt=3 ok oddtot=524288 (expect 524288) reps=5,9,41 t=0.02s
+n=21 32 108 466 812 756 659 399 232 127 91 54 29 11 11 10 2 0 3 0 0 0 0  order=131072 want=131072 ok longcnt=3 ok oddtot=1048576 (expect 1048576) reps=5,9,41 t=0.04s
+n=22 38 115 529 1044 1075 945 615 330 230 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=262144 want=262144 ok longcnt=3 ok oddtot=2097152 (expect 2097152) reps=5,9,41 t=0.08s
+n=23 36 138 580 1255 1464 1416 892 540 311 215 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=524288 want=524288 ok longcnt=3 ok oddtot=4194304 (expect 4194304) reps=5,9,41 t=0.17s
+n=24 38 165 666 1479 1965 1947 1487 772 484 293 213 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=1048576 want=1048576 ok longcnt=3 ok oddtot=8388608 (expect 8388608) reps=5,9,41 t=0.34s
+n=25 36 170 726 1810 2564 2709 2115 1328 689 459 284 213 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=2097152 want=2097152 ok longcnt=3 ok oddtot=16777216 (expect 16777216) reps=5,9,41 t=0.67s
+n=26 36 166 794 2173 3314 3669 3082 2014 1197 623 446 282 213 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=4194304 want=4194304 ok longcnt=3 ok oddtot=33554432 (expect 33554432) reps=5,9,41 t=1.34s
+n=27 50 185 825 2519 4180 5066 4355 3087 1798 1079 610 436 282 213 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=8388608 want=8388608 ok longcnt=3 ok oddtot=67108864 (expect 67108864) reps=5,9,41 t=2.77s
+n=28 60 184 955 2787 5319 6661 6301 4564 2770 1630 1051 584 436 282 213 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=16777216 want=16777216 ok longcnt=3 ok oddtot=134217728 (expect 134217728) reps=5,9,41 t=6.03s
+n=29 62 227 1043 3314 6550 8882 8866 6808 4140 2565 1537 1015 579 436 282 213 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=33554432 want=33554432 ok longcnt=3 ok oddtot=268435456 (expect 268435456) reps=5,9,41 t=15.31s
+n=30 50 275 1152 3745 8128 11455 12447 9982 6502 3801 2355 1491 998 579 436 282 213 118 91 54 29 11 11 10 2 0 3 0 0 0 0  order=67108864 want=67108864 ok longcnt=3 ok oddtot=536870912 (expect 536870912) reps=5,9,41 t=36.14s
+# bad_pow=0 bad_order=0 bad_long=0

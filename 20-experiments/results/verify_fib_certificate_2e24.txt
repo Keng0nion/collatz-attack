@@ -1,0 +1,9 @@
+extended odd-step certificate verification
+limit = 16777216, z3 domain N = 262144
+1. exact 2^18 certificate (w_0..w_18) on odd x in [3, 262144]: checked=131071 violations=0
+2. extended sequence (w_0..w_25 = Fibonacci tail) on odd x in [3, 16777216]: checked=8388607 violations=0 first_violation=None  (0.7s)
+3. even x in [2, 16777216]: violating strict decrease: 8388608 / 8388608; violating non-increase: 8388608
+4. cross-check on 4000 deterministic samples: V mismatches=0, python violations=0
+---JSON-BEGIN---
+{"limit": 16777216, "domain_N": 262144, "domain_check": {"checked": 131071, "violations": 0, "weights": [7, 4, 2, 1, 0, -1, -2, -3, -5, -8, -13, -21, -34, -55, -89, -144, -233, -377, -610]}, "extended_check": {"Lmax": 25, "checked": 8388607, "violations": 0, "first_violation": null, "secs": 0.68}, "even_steps": {"count": 8388608, "strict_violations": 8388608, "nonincrease_violations": 8388608}, "cross_check": {"samples": 4000, "V_mismatches": 0, "violations": 0}}
+---JSON-END---

@@ -1,0 +1,26 @@
+探索性试跑原始输出（补充证据，非主记录）。
+
+来源：临时脚本 /tmp/collatz_scratch/t4.py 的一次运行，用于先探明各变体在本机的规模上限。
+用途：这是按位加权形式在 N = 2^20 上唯一一次跑完的记录（正式脚本的 2^20 完整跑到 40 分钟被内存压力拖停，见 findings）。
+注意：本文件末尾的 traceback 是试跑脚本自身的缺陷（F 变体里把 Python 布尔值传进了 z3 的 assert_and_track），正式脚本已修复，与数学结论无关。
+
+原始输出如下：
+
+B weights full [1,N] N=2^20 Lmax=20            -> unsat    154.64s
+      core size=2  ['x=1', 'x=2']
+B weights excl-cycle [3,N] N=2^20              -> unsat    142.88s
+      core size=2  ['x=3', 'x=4']
+Traceback (most recent call last):
+  File "/private/tmp/collatz_scratch/t4.py", line 59, in <module>
+    r, s = run("F weights odd-only-decrease [3,N] N=%d" % N,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/collatz_scratch/t4.py", line 21, in run
+    build(s)
+  File "/private/tmp/collatz_scratch/t4.py", line 60, in <lambda>
+    lambda s, cons=cons: [s.assert_and_track(c, n) for c, n in cons])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/luna/Documents/math IA/collatz-attack/20-experiments/.venv/lib/python3.12/site-packages/z3/z3.py", line 7749, in assert_and_track
+    _z3_assert(isinstance(a, BoolRef), "Boolean expression expected")
+  File "/Users/luna/Documents/math IA/collatz-attack/20-experiments/.venv/lib/python3.12/site-packages/z3/z3.py", line 115, in _z3_assert
+    raise Z3Exception(msg)
+z3.z3types.Z3Exception: Boolean expression expected

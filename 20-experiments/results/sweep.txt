@@ -1,0 +1,209 @@
+== Collatz full sweep (total stopping time, OEIS A006577 convention) ==
+command: ./scripts/sweep 268435456 results/sweep_records.tsv results/sweep_lens.tsv
+limit N = 268435456
+map: n -> n/2 if even, 3n+1 if odd; every halving and tripling step counts
+table: 268435457 uint16 entries = 512.0 MiB
+
+(a) every n in [1, 268435456] reaches 1:
+    finite total stopping time: 268435456 of 268435456 entries
+    entries still unknown after fill: 0
+
+(c) record holders (strict records of total stopping time, from n = 1):
+    idx    n                    steps   
+    1      1                    0       
+    2      2                    1       
+    3      3                    7       
+    4      6                    8       
+    5      7                    16      
+    6      9                    19      
+    7      18                   20      
+    8      25                   23      
+    9      27                   111     
+    10     54                   112     
+    11     73                   115     
+    12     97                   118     
+    13     129                  121     
+    14     171                  124     
+    15     231                  127     
+    16     313                  130     
+    17     327                  143     
+    18     649                  144     
+    19     703                  170     
+    20     871                  178     
+    21     1161                 181     
+    22     2223                 182     
+    23     2463                 208     
+    24     2919                 216     
+    25     3711                 237     
+    26     6171                 261     
+    27     10971                267     
+    28     13255                275     
+    29     17647                278     
+    30     23529                281     
+    31     26623                307     
+    32     34239                310     
+    33     35655                323     
+    34     52527                339     
+    35     77031                350     
+    36     106239               353     
+    37     142587               374     
+    38     156159               382     
+    39     216367               385     
+    40     230631               442     
+    41     410011               448     
+    42     511935               469     
+    43     626331               508     
+    44     837799               524     
+    45     1117065              527     
+    46     1501353              530     
+    47     1723519              556     
+    48     2298025              559     
+    49     3064033              562     
+    50     3542887              583     
+    51     3732423              596     
+    52     5649499              612     
+    53     6649279              664     
+    54     8400511              685     
+    55     11200681             688     
+    56     14934241             691     
+    57     15733191             704     
+    58     31466382             705     
+    59     36791535             744     
+    60     63728127             949     
+    61     127456254            950     
+    62     169941673            953     
+    63     226588897            956     
+    record holders in [1, 268435456]: 63
+
+(b) max total stopping time in [1, 268435456]: 956, attained at n = 226588897
+
+[verify A] direct simulation for every n in [1, 1000000]: OK (checked 1000000, max steps 524, peak 56991483520)
+[verify B] direct simulation for all record holders: OK (checked 63)
+[verify C] direct simulation for 200000 xorshift64 samples in [1, 268435456]: OK (max steps 677, peak 306296925203752)
+[verify D] len[n] == len[n/2] + 1 for every even n <= N: OK (checked 134217728)
+[verify E] Terras stopping time chi over n in [3, 250000]: max 135 at n = 35655 (ties 1, exceptions 0)
+[dump] wrote (n, len[n]) for n in [1, 1000000] to results/sweep_lens.tsv
+[dump] wrote record table to results/sweep_records.tsv
+
+== timing ==
+alloc 0.00 s
+fill 2.54 s
+unknown scan 0.26 s
+record scan 0.10 s
+verify A 0.20 s
+verify B 0.09 s
+verify C 0.09 s
+verify D 0.07 s
+verify E 0.00 s
+total 3.45 s
+
+RESULT: ALL CHECKS PASSED
+
+
+# ==================================================================
+# OEIS cross-check report (appended by scripts/sweep_check.py)
+# ==================================================================
+== OEIS cross-check (scripts/sweep_check.py) ==
+sweep limit N = 268435456
+reproduction commands (run from collatz-attack/20-experiments):
+  curl -s -o results/oeis/b006577.txt https://oeis.org/A006577/b006577.txt
+  curl -s -o results/oeis/b006877.txt https://oeis.org/A006877/b006877.txt
+  curl -s -o results/oeis/b006878.txt https://oeis.org/A006878/b006878.txt
+  cc -O3 -Wall -Wextra -o scripts/sweep scripts/sweep.c
+  /usr/bin/time -p ./scripts/sweep 268435456 results/sweep_records.tsv results/sweep_lens.tsv > results/sweep.txt 2> results/sweep.stderr
+  ./.venv/bin/python scripts/sweep_check.py results/sweep.txt
+wall clock of the sweep run (read from results/sweep.stderr, produced by /usr/bin/time -p):
+  real 5.21
+  user 3.24
+  sys 0.11
+
+-- 1. A006577 (total stopping time) item by item --
+b-file terms: 10000 (n = 1..10000), sweep dump covers n = 1..1000000
+compared: 10000   mismatch: 0   missing: 0
+first 24 terms side by side (n: oeis / sweep):
+  1:0/0 2:1/1 3:7/7 4:2/2 5:5/5 6:8/8 7:16/16 8:3/3 9:19/19 10:6/6 11:14/14 12:9/9 13:9/9 14:17/17 15:17/17 16:4/4 17:12/12 18:20/20 19:20/20 20:7/7 21:7/7 22:15/15 23:15/15 24:10/10
+
+-- 2. A006877 (record holders) vs sweep record list --
+A006877 terms: 148, within N: 63, beyond N: 85
+sweep record list length: 63
+
+idx  A006877_n        sweep_n         A006878_steps  sweep_steps   match
+1    1               1               0              0             OK
+2    2               2               1              1             OK
+3    3               3               7              7             OK
+4    6               6               8              8             OK
+5    7               7               16             16            OK
+6    9               9               19             19            OK
+7    18              18              20             20            OK
+8    25              25              23             23            OK
+9    27              27              111            111           OK
+10   54              54              112            112           OK
+11   73              73              115            115           OK
+12   97              97              118            118           OK
+13   129             129             121            121           OK
+14   171             171             124            124           OK
+15   231             231             127            127           OK
+16   313             313             130            130           OK
+17   327             327             143            143           OK
+18   649             649             144            144           OK
+19   703             703             170            170           OK
+20   871             871             178            178           OK
+21   1161            1161            181            181           OK
+22   2223            2223            182            182           OK
+23   2463            2463            208            208           OK
+24   2919            2919            216            216           OK
+25   3711            3711            237            237           OK
+26   6171            6171            261            261           OK
+27   10971           10971           267            267           OK
+28   13255           13255           275            275           OK
+29   17647           17647           278            278           OK
+30   23529           23529           281            281           OK
+31   26623           26623           307            307           OK
+32   34239           34239           310            310           OK
+33   35655           35655           323            323           OK
+34   52527           52527           339            339           OK
+35   77031           77031           350            350           OK
+36   106239          106239          353            353           OK
+37   142587          142587          374            374           OK
+38   156159          156159          382            382           OK
+39   216367          216367          385            385           OK
+40   230631          230631          442            442           OK
+41   410011          410011          448            448           OK
+42   511935          511935          469            469           OK
+43   626331          626331          508            508           OK
+44   837799          837799          524            524           OK
+45   1117065         1117065         527            527           OK
+46   1501353         1501353         530            530           OK
+47   1723519         1723519         556            556           OK
+48   2298025         2298025         559            559           OK
+49   3064033         3064033         562            562           OK
+50   3542887         3542887         583            583           OK
+51   3732423         3732423         596            596           OK
+52   5649499         5649499         612            612           OK
+53   6649279         6649279         664            664           OK
+54   8400511         8400511         685            685           OK
+55   11200681        11200681        688            688           OK
+56   14934241        14934241        691            691           OK
+57   15733191        15733191        704            704           OK
+58   31466382        31466382        705            705           OK
+59   36791535        36791535        744            744           OK
+60   63728127        63728127        949            949           OK
+61   127456254       127456254       950            950           OK
+62   169941673       169941673       953            953           OK
+63   226588897       226588897       956            956           OK
+
+record rows compared: 63   mismatch: 0
+beyond N (not checked, sweep cannot reach them): first 10 = [268549803, 537099606, 670617279, 1341234558, 1412987847, 1674652263, 2610744987, 4578853915, 4890328815, 9780657630]
+
+-- 3. self-consistency of the sweep record list --
+n strictly increasing: True
+steps strictly increasing: True
+last record (max total stopping time in range): n = 226588897 steps = 956
+first record: n = 1 steps = 0
+
+-- 4. independent re-simulation in Python (arbitrary precision) --
+record holders re-simulated with Python big ints: 63   mismatch: 0
+random n in [1, 1000000] re-simulated in Python: 3000   mismatch: 0
+note: every Python step is done on arbitrary precision integers, no 64 bit truncation possible
+
+verdict: ALL CONSISTENT

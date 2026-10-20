@@ -1,0 +1,22 @@
+# 本机环境与工具内部状态（不发布）
+20-experiments/.venv/
+**/.mimosa/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 编译产物（对应的 .c 源码在同一目录，可重新编译）
+20-experiments/scripts/sweep
+20-experiments/scripts/stoptime_dist
+20-experiments/scripts/cycles_bs_enum
+20-experiments/scripts/cycles_verify_bound
+20-experiments/scripts/cycles_verify_free
+20-experiments/scripts/cycles_stopping_stats
+20-experiments/scripts/cycle_search
+20-experiments/scripts/bl_permutation
+20-experiments/scripts/stopping_conjecture
+20-experiments/scripts/theta_analysis
+20-experiments/scripts/terras_density
+20-experiments/scripts/reverse_tree_deep
+20-experiments/scripts/_maxrss_units
+20-experiments/scripts/_sizes

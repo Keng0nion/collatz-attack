@@ -1,0 +1,34 @@
+== 1. functional graph of T over [1, 1048576] ==
+   cycles found by colouring: 1
+     cycle: [1, 2] len=2
+   nontrivial cycles (not [1,2]): 0
+   #{x in [1,N]: T(x) > N} = 174763 (orbit leaves the truncation)
+   elapsed 0.38s
+== 2. total stopping time (first hit of 1, accelerated map) ==
+   computed for 1048576 values in [1, 1048576]; unresolved: 0
+   max total stopping time = 329, smallest x attaining it = 837799
+   top ten (x, stopping time): [(837799, 329), (626331, 319), (939497, 318), (704623, 316), (1003263, 307), (910107, 299), (927003, 299), (1023870, 296), (1023871, 296), (1042879, 296)]
+   elapsed 0.75s
+== 3. conflicting pairs (2^k - 1, 2^k) for the bit-additive class ==
+   each row: added bits of T(x) (+), removed bits (-), for the two x
+   k=1   x=1         T=2          +[1]    -[0]     |  x=2         T=1          +[0]    -[1]     ok=True
+   k=2   x=3         T=5          +[2]    -[1]     |  x=4         T=2          +[1]    -[2]     ok=True
+   k=3   x=7         T=11         +[3]    -[2]     |  x=8         T=4          +[2]    -[3]     ok=True
+   k=4   x=15        T=23         +[4]    -[3]     |  x=16        T=8          +[3]    -[4]     ok=True
+   k=5   x=31        T=47         +[5]    -[4]     |  x=32        T=16         +[4]    -[5]     ok=True
+   k=6   x=63        T=95         +[6]    -[5]     |  x=64        T=32         +[5]    -[6]     ok=True
+   k=18  x=262143    T=393215     +[18]   -[17]    |  x=262144    T=131072     +[17]   -[18]    ok=True
+   k=19  x=524287    T=786431     +[19]   -[18]    |  x=524288    T=262144     +[18]   -[19]    ok=True
+   k=20  x=1048575   T=1572863    +[20]   -[19]    |  x=1048576   T=524288     +[19]   -[20]    ok=True
+   k = 1..20 checked; closed form w_k - w_{k-1} <= -1 against w_{k-1} - w_k <= -1 holds for 20 of them
+== 4. popcount preservation ==
+   #{x in [1,N]: popcount(T(x)) == popcount(x)} = 609022 (of 1048576)
+   #{odd x in [1,N]: same} = 84734
+   first examples: [1, 2, 3, 4, 6, 7, 8, 10, 12, 14]
+   elapsed 0.58s
+
+done. total elapsed 0.58s
+JSON report on stdout between markers below.
+---JSON-BEGIN---
+{"N": 1048576, "sections": [{"name": "cycles", "N": 1048576, "cycles": [[1, 2]], "nontrivial": 0, "exits": 174763, "secs": 0.383}, {"name": "stopping_time", "N": 1048576, "counted": 1048576, "unresolved": 0, "max_stop": 329, "argmax_min": 837799, "top10": [[837799, 329], [626331, 319], [939497, 318], [704623, 316], [1003263, 307], [910107, 299], [927003, 299], [1023870, 296], [1023871, 296], [1042879, 296]], "secs": 0.755}, {"name": "conflict_pairs", "kmax": 20, "pattern_ok_count": 20, "pairs": [{"k": 1, "x_lo": 1, "x_hi": 2, "T_lo": 2, "T_hi": 1, "add_lo": [1], "del_lo": [0], "add_hi": [0], "del_hi": [1], "pattern_ok": true}, {"k": 2, "x_lo": 3, "x_hi": 4, "T_lo": 5, "T_hi": 2, "add_lo": [2], "del_lo": [1], "add_hi": [1], "del_hi": [2], "pattern_ok": true}, {"k": 3, "x_lo": 7, "x_hi": 8, "T_lo": 11, "T_hi": 4, "add_lo": [3], "del_lo": [2], "add_hi": [2], "del_hi": [3], "pattern_ok": true}, {"k": 4, "x_lo": 15, "x_hi": 16, "T_lo": 23, "T_hi": 8, "add_lo": [4], "del_lo": [3], "add_hi": [3], "del_hi": [4], "pattern_ok": true}, {"k": 5, "x_lo": 31, "x_hi": 32, "T_lo": 47, "T_hi": 16, "add_lo": [5], "del_lo": [4], "add_hi": [4], "del_hi": [5], "pattern_ok": true}, {"k": 6, "x_lo": 63, "x_hi": 64, "T_lo": 95, "T_hi": 32, "add_lo": [6], "del_lo": [5], "add_hi": [5], "del_hi": [6], "pattern_ok": true}, {"k": 7, "x_lo": 127, "x_hi": 128, "T_lo": 191, "T_hi": 64, "add_lo": [7], "del_lo": [6], "add_hi": [6], "del_hi": [7], "pattern_ok": true}, {"k": 8, "x_lo": 255, "x_hi": 256, "T_lo": 383, "T_hi": 128, "add_lo": [8], "del_lo": [7], "add_hi": [7], "del_hi": [8], "pattern_ok": true}, {"k": 9, "x_lo": 511, "x_hi": 512, "T_lo": 767, "T_hi": 256, "add_lo": [9], "del_lo": [8], "add_hi": [8], "del_hi": [9], "pattern_ok": true}, {"k": 10, "x_lo": 1023, "x_hi": 1024, "T_lo": 1535, "T_hi": 512, "add_lo": [10], "del_lo": [9], "add_hi": [9], "del_hi": [10], "pattern_ok": true}, {"k": 11, "x_lo": 2047, "x_hi": 2048, "T_lo": 3071, "T_hi": 1024, "add_lo": [11], "del_lo": [10], "add_hi": [10], "del_hi": [11], "pattern_ok": true}, {"k": 12, "x_lo": 4095, "x_hi": 4096, "T_lo": 6143, "T_hi": 2048, "add_lo": [12], "del_lo": [11], "add_hi": [11], "del_hi": [12], "pattern_ok": true}, {"k": 13, "x_lo": 8191, "x_hi": 8192, "T_lo": 12287, "T_hi": 4096, "add_lo": [13], "del_lo": [12], "add_hi": [12], "del_hi": [13], "pattern_ok": true}, {"k": 14, "x_lo": 16383, "x_hi": 16384, "T_lo": 24575, "T_hi": 8192, "add_lo": [14], "del_lo": [13], "add_hi": [13], "del_hi": [14], "pattern_ok": true}, {"k": 15, "x_lo": 32767, "x_hi": 32768, "T_lo": 49151, "T_hi": 16384, "add_lo": [15], "del_lo": [14], "add_hi": [14], "del_hi": [15], "pattern_ok": true}, {"k": 16, "x_lo": 65535, "x_hi": 65536, "T_lo": 98303, "T_hi": 32768, "add_lo": [16], "del_lo": [15], "add_hi": [15], "del_hi": [16], "pattern_ok": true}, {"k": 17, "x_lo": 131071, "x_hi": 131072, "T_lo": 196607, "T_hi": 65536, "add_lo": [17], "del_lo": [16], "add_hi": [16], "del_hi": [17], "pattern_ok": true}, {"k": 18, "x_lo": 262143, "x_hi": 262144, "T_lo": 393215, "T_hi": 131072, "add_lo": [18], "del_lo": [17], "add_hi": [17], "del_hi": [18], "pattern_ok": true}, {"k": 19, "x_lo": 524287, "x_hi": 524288, "T_lo": 786431, "T_hi": 262144, "add_lo": [19], "del_lo": [18], "add_hi": [18], "del_hi": [19], "pattern_ok": true}, {"k": 20, "x_lo": 1048575, "x_hi": 1048576, "T_lo": 1572863, "T_hi": 524288, "add_lo": [20], "del_lo": [19], "add_hi": [19], "del_hi": [20], "pattern_ok": true}]}, {"name": "popcount_preserved", "N": 1048576, "count": 609022, "odd_count": 84734, "examples": [1, 2, 3, 4, 6, 7, 8, 10, 12, 14], "secs": 0.582}]}
+---JSON-END---

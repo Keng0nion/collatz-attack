@@ -1,0 +1,104 @@
+{
+ "N": 1048576,
+ "max_stop": 329,
+ "argmax_min": 837799,
+ "queries": [
+  {
+   "N": 1048576,
+   "K": 40,
+   "result": "sat",
+   "solve_secs": 0.372,
+   "n_constraints": 43,
+   "witness": 883135,
+   "exact_exists": true,
+   "exact_min_witness": 27,
+   "true_stop": 161,
+   "peak": 217529954,
+   "peak_below_2_64": true,
+   "bv_sequence_matches_exact": true
+  },
+  {
+   "N": 1048576,
+   "K": 100,
+   "result": "sat",
+   "solve_secs": 1.202,
+   "n_constraints": 103,
+   "witness": 967276,
+   "exact_exists": true,
+   "exact_min_witness": 703,
+   "true_stop": 139,
+   "peak": 1377242,
+   "peak_below_2_64": true,
+   "bv_sequence_matches_exact": true
+  },
+  {
+   "N": 1048576,
+   "K": 120,
+   "result": "sat",
+   "solve_secs": 0.821,
+   "n_constraints": 123,
+   "witness": 531308,
+   "exact_exists": true,
+   "exact_min_witness": 2463,
+   "true_stop": 127,
+   "peak": 531308,
+   "peak_below_2_64": true,
+   "bv_sequence_matches_exact": true
+  },
+  {
+   "N": 1048576,
+   "K": 200,
+   "result": "sat",
+   "solve_secs": 83.637,
+   "n_constraints": 203,
+   "witness": 867203,
+   "exact_exists": true,
+   "exact_min_witness": 35655,
+   "true_stop": 218,
+   "peak": 296639576,
+   "peak_below_2_64": true,
+   "bv_sequence_matches_exact": true
+  },
+  {
+   "N": 1048576,
+   "K": 300,
+   "result": "unknown",
+   "solve_secs": 122.435,
+   "n_constraints": 303,
+   "exact_exists": true,
+   "exact_min_witness": 626331
+  },
+  {
+   "N": 1024,
+   "K": 200,
+   "result": "unsat",
+   "solve_secs": 14.238,
+   "n_constraints": 203,
+   "exact_exists": false,
+   "exact_min_witness": null
+  },
+  {
+   "N": 65536,
+   "K": 200,
+   "result": "sat",
+   "solve_secs": 88.828,
+   "n_constraints": 203,
+   "witness": 60975,
+   "exact_exists": true,
+   "exact_min_witness": 35655,
+   "true_stop": 211,
+   "peak": 296639576,
+   "peak_below_2_64": true,
+   "bv_sequence_matches_exact": true
+  },
+  {
+   "N": 1048576,
+   "K": 328,
+   "result": "unknown",
+   "solve_secs": 120.835,
+   "n_constraints": 331,
+   "exact_exists": true,
+   "exact_min_witness": 837799
+  }
+ ]
+}

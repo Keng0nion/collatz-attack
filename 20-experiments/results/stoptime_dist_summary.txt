@@ -1,0 +1,11 @@
+stoptime_dist summary
+N=16777216  (n = 1 至 16777216，含端点)
+全部 n 均到达 1：是（tot[n] 全部有限且已计入直方图）
+count_n_ge2=16777215
+tot  mean=160.6336360355  sd=62.8536039159  max=704  argmax=15733191
+cs   mean=5.2369859360  sd=10.6187864289  max=468  argmax=13421671
+ca   mean=3.4914267356  sd=6.4686348599  max=287  argmax=13421671
+chi_std/chi_acc 均值比 = 1.4999558440
+time_seconds_totpass=1.436555
+time_seconds_accpass=0.755234
+time_seconds_total=2.191789

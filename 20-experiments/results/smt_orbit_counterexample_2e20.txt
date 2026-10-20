@@ -1,0 +1,21 @@
+z3 BV orbit counterexample search, N = 1048576, 64-bit encoding
+==============================================================================
+direct reference on [1, 1048576]: max total stopping time = 329 at x = 837799
+
+z3: N=1048576  K=40   -> sat        0.37s | exact: exists=True min=27
+      witness x=883135  true_stop=161  peak=217529954 (<2^64: True)  bv-seq==exact: True  witness_is_minimal: False
+z3: N=1048576  K=100  -> sat        1.20s | exact: exists=True min=703
+      witness x=967276  true_stop=139  peak=1377242 (<2^64: True)  bv-seq==exact: True  witness_is_minimal: False
+z3: N=1048576  K=120  -> sat        0.82s | exact: exists=True min=2463
+      witness x=531308  true_stop=127  peak=531308 (<2^64: True)  bv-seq==exact: True  witness_is_minimal: False
+z3: N=1048576  K=200  -> sat       83.64s | exact: exists=True min=35655
+      witness x=867203  true_stop=218  peak=296639576 (<2^64: True)  bv-seq==exact: True  witness_is_minimal: False
+z3: N=1048576  K=300  -> unknown  122.44s | exact: exists=True min=626331
+z3: N=1024     K=200  -> unsat     14.24s | exact: exists=False min=None
+z3: N=65536    K=200  -> sat       88.83s | exact: exists=True min=35655
+      witness x=60975  true_stop=211  peak=296639576 (<2^64: True)  bv-seq==exact: True  witness_is_minimal: False
+z3: N=1048576  K=328  -> unknown  120.83s | exact: exists=True min=837799
+JSON written to results/smt_orbit_2e20.json
+---JSON-BEGIN---
+{"N": 1048576, "max_stop": 329, "argmax_min": 837799, "queries": [{"N": 1048576, "K": 40, "result": "sat", "solve_secs": 0.372, "n_constraints": 43, "witness": 883135, "exact_exists": true, "exact_min_witness": 27, "true_stop": 161, "peak": 217529954, "peak_below_2_64": true, "bv_sequence_matches_exact": true}, {"N": 1048576, "K": 100, "result": "sat", "solve_secs": 1.202, "n_constraints": 103, "witness": 967276, "exact_exists": true, "exact_min_witness": 703, "true_stop": 139, "peak": 1377242, "peak_below_2_64": true, "bv_sequence_matches_exact": true}, {"N": 1048576, "K": 120, "result": "sat", "solve_secs": 0.821, "n_constraints": 123, "witness": 531308, "exact_exists": true, "exact_min_witness": 2463, "true_stop": 127, "peak": 531308, "peak_below_2_64": true, "bv_sequence_matches_exact": true}, {"N": 1048576, "K": 200, "result": "sat", "solve_secs": 83.637, "n_constraints": 203, "witness": 867203, "exact_exists": true, "exact_min_witness": 35655, "true_stop": 218, "peak": 296639576, "peak_below_2_64": true, "bv_sequence_matches_exact": true}, {"N": 1048576, "K": 300, "result": "unknown", "solve_secs": 122.435, "n_constraints": 303, "exact_exists": true, "exact_min_witness": 626331}, {"N": 1024, "K": 200, "result": "unsat", "solve_secs": 14.238, "n_constraints": 203, "exact_exists": false, "exact_min_witness": null}, {"N": 65536, "K": 200, "result": "sat", "solve_secs": 88.828, "n_constraints": 203, "witness": 60975, "exact_exists": true, "exact_min_witness": 35655, "true_stop": 211, "peak": 296639576, "peak_below_2_64": true, "bv_sequence_matches_exact": true}, {"N": 1048576, "K": 328, "result": "unknown", "solve_secs": 120.835, "n_constraints": 331, "exact_exists": true, "exact_min_witness": 837799}]}
+---JSON-END---

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>科拉茨攻坚边界地图</title>
+<style>
+  :root{
+    --bg:#0b1016; --panel:#141c25; --panel2:#1a242f; --line:#27343f;
+    --fg:#d8e2ec; --muted:#93a4b6; --dim:#6f8296;
+    --accent:#5ec8b0; --gold:#e0b465; --bad:#e07a82; --good:#84c98d;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:system-ui,-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:15px; line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px; margin:0 auto; padding:0 20px 80px}
+  header.top{padding:52px 0 26px; border-bottom:1px solid var(--line); margin-bottom:30px}
+  h1{font-size:29px; line-height:1.35; margin:0 0 12px; letter-spacing:.3px}
+  .sub{color:var(--muted); max-width:820px; margin:0}
+  .kicker{
+    font-family:var(--mono); font-size:12px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--accent); margin:0 0 14px
+  }
+  nav.toc{display:flex; flex-wrap:wrap; gap:10px; margin:24px 0 0}
+  nav.toc a{
+    display:inline-block; padding:7px 14px; border:1px solid var(--line);
+    border-radius:999px; color:var(--muted); text-decoration:none; font-size:13.5px
+  }
+  nav.toc a:hover,nav.toc a:focus{color:var(--fg); border-color:var(--accent); outline:none}
+  section{margin:0 0 54px; scroll-margin-top:18px}
+  h2{
+    font-size:21px; margin:0 0 6px; padding-bottom:10px;
+    border-bottom:1px solid var(--line)
+  }
+  h2 .num{font-family:var(--mono); color:var(--accent); font-size:16px; margin-right:10px}
+  h3{font-size:16.5px; margin:0 0 8px}
+  h4{font-size:14.5px; margin:22px 0 8px; color:var(--gold)}
+  .lead{color:var(--muted); margin:12px 0 22px}
+  code, .mono{font-family:var(--mono); font-size:12.6px}
+  code{background:var(--panel2); border:1px solid var(--line); border-radius:4px; padding:1px 5px; color:#b9d4e6}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px}
+  .grid{display:grid; gap:14px}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+  table{width:100%; border-collapse:collapse; font-size:13.8px}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--gold); font-weight:600; font-size:12.6px; letter-spacing:.04em}
+  tbody tr:hover{background:#161f29}
+  td.n{font-family:var(--mono); white-space:nowrap; color:#b9d4e6}
+  .tag{
+    display:inline-block; font-size:11.6px; font-family:var(--mono);
+    padding:2px 8px; border-radius:999px; border:1px solid var(--line); color:var(--muted); white-space:nowrap
+  }
+  .tag.ok{color:var(--good); border-color:#2f5540}
+  .tag.gap{color:var(--bad); border-color:#5a3036}
+  .tag.warn{color:var(--gold); border-color:#5a4a28}
+  .tag.info{color:var(--accent); border-color:#2b5450}
+  ul{margin:8px 0 0; padding-left:20px}
+  li{margin:5px 0}
+  .route{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin:0 0 16px}
+  .route h3 code{margin-left:8px; font-size:11.6px; color:var(--dim); background:transparent; border:none; padding:0}
+  .route p{margin:8px 0}
+  .fatal{border-left:3px solid var(--bad); padding:2px 0 2px 14px; background:#1b1417}
+  .reb{border-left:3px solid var(--gold); padding:2px 0 2px 14px; background:#1b1a14}
+  .explorer{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px}
+  .controls{display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:6px 0 4px}
+  label{color:var(--muted); font-size:13.5px}
+  input[type=text]{
+    background:#0e151c; border:1px solid var(--line); color:var(--fg);
+    border-radius:8px; padding:10px 14px; font-family:var(--mono); font-size:16px; width:260px
+  }
+  input[type=text]:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(94,200,176,.14)}
+  button{
+    background:var(--accent); color:#06211c; border:none; border-radius:8px;
+    padding:10px 18px; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit
+  }
+  button.ghost{background:transparent; color:var(--muted); border:1px solid var(--line)}
+  button:hover{filter:brightness(1.08)}
+  button:focus-visible{outline:2px solid var(--gold); outline-offset:2px}
+  .hint{color:var(--dim); font-size:12.8px; margin:10px 0 0}
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:20px 0 6px}
+  .stat{background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:12px 14px}
+  .stat .k{color:var(--muted); font-size:12.4px}
+  .stat .v{font-family:var(--mono); font-size:19px; color:var(--accent); margin-top:4px; word-break:break-all}
+  .orbit{
+    font-family:var(--mono); font-size:12.4px; line-height:1.9; color:#b9d4e6;
+    background:#0e151c; border:1px solid var(--line); border-radius:10px;
+    padding:14px; max-height:260px; overflow:auto; word-break:break-all; margin-top:12px
+  }
+  .orbit .sep{color:var(--dim)}
+  .orbit .end{color:var(--good)}
+  .verdict{margin-top:14px; font-size:14.5px}
+  .verdict .yes{color:var(--good); font-weight:600}
+  .verdict .no{color:var(--bad); font-weight:600}
+  .verdict .unknown{color:var(--gold); font-weight:600}
+  .err{color:var(--bad); font-weight:600}
+  svg.chart{width:100%; height:170px; margin-top:16px; background:#0e151c; border:1px solid var(--line); border-radius:10px}
+  .cols{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .col{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 20px}
+  .col h3{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+  .col h3 .cnt{font-family:var(--mono); font-size:12px; color:var(--dim)}
+  .col ul{padding-left:18px}
+  .col li{margin:7px 0; font-size:13.6px}
+  .col.proved{border-top:3px solid var(--good)}
+  .col.dead{border-top:3px solid var(--bad)}
+  .col.alive{border-top:3px solid var(--accent)}
+  .note{background:#121a22; border:1px solid var(--line); border-left:3px solid var(--gold); border-radius:8px; padding:12px 16px; color:var(--muted); font-size:13.6px; margin:14px 0 0}
+  .honest{background:linear-gradient(180deg,#171213,#141c25); border:1px solid #4a3238; border-radius:12px; padding:24px}
+  .honest h3{color:var(--bad)}
+  .src{color:var(--dim); font-size:12.8px; line-height:1.9}
+  .src code{font-size:12px}
+  footer{border-top:1px solid var(--line); margin-top:40px; padding-top:22px; color:var(--dim); font-size:12.6px}
+  @media (max-width:640px){
+    h1{font-size:23px} .wrap{padding:0 14px 60px} input[type=text]{width:100%}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="kicker">collatz-attack / 50-report / frontier-map</p>
+  <h1>科拉茨攻坚：边界地图</h1>
+  <p class="sub">
+    这一页把本项目的八条文献线、六条证明路线、实验已确证的范围、以及已知死路与活口，压成一张可以点开、可以输入、可以核对的边界图。
+    全部内容来自仓库内的产物文件；本页本身不做任何新的数学断言，也不使用网络资源，离线可打开。
+  </p>
+  <nav class="toc">
+    <a href="#overview">一、总览</a>
+    <a href="#explorer">二、停时探索器</a>
+    <a href="#map">三、边界地图</a>
+    <a href="#honest">四、诚实声明</a>
+    <a href="#sources">数据来源</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ 1. 总览 ============ -->
+<section id="overview">
+  <h2><span class="num">一</span>总览</h2>
+  <p class="lead">
+    上半是八条文献线在 2026 年 10 月 18 日核对节点上的现状（来源 <code>10-literature/frontier.md</code> 与 <code>10-literature/notes/</code> 下八份笔记）；
+    下半是六条证明路线在第二轮与第三轮之后的最终状态，每条附上它在反驳中最致命的一击（来源 <code>30-proof-attempts/</code> 下六条路线的 <code>attempt.md</code> 与反驳文件）。
+    带「仅预印本」「未核实」「争议」字样的条目一律按原样保留标注。
+  </p>
+
+  <h4>八条文献线：现状</h4>
+  <div class="card" style="padding:6px 6px 2px">
+  <table>
+    <thead>
+      <tr><th style="width:20%">线</th><th style="width:34%">在问什么</th><th>现状（一句话）</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>verification</code><br><span class="tag info">计算验证</span></td>
+        <td>被计算机完整验证到哪个上限；树搜索与模类剪枝的覆盖性建立在什么之上；为什么推不远。</td>
+        <td>最高已发表纪录：所有小于 2^71 ≈ 2.361×10^21 的正整数到达 1（Barina 2025，同行评审论文，但纪录本身是有限计算，不是定理）。项目自报前线 2075×2^60 ≈ 2^71.02。三大瓶颈：成本对范围线性、范围对算力指数、以及「有限验证通向全称命题」没有桥梁。</td>
+      </tr>
+      <tr>
+        <td><code>stopping-times</code><br><span class="tag info">停时与密度</span></td>
+        <td>下探到自身以下、乃至下探到 n^θ 以下的集合有多大；计数下界 π_a(x) ≥ x^β 的 β 能到多大。</td>
+        <td>密度侧到 Korec 1994 的 θ &gt; log_4 3 ≈ 0.7925 与 Tao 2022 的「任意发散函数」；计数侧到 Krasikov 与 Lagarias 2003 的 x^0.84（λ = 1.7922310，实际指数 γ ≈ 0.84175）。差不等式框架内每级 k 的硬上限被 KL 定理 2.2 锁死，λ_k → 2 未证。</td>
+      </tr>
+      <tr>
+        <td><code>tao-almost-all</code><br><span class="tag info">几乎有界</span></td>
+        <td>Tao 2019 与 2022 的「几乎所有轨道取到几乎有界值」的确切量词、密度语义与定量引理。</td>
+        <td>定理：对任意 f(N) → ∞，Col_min(N) &lt; f(N) 对下对数密度 1 的 N 成立。自然密度升级仍不可及（Gonçalves 等明确写「不可及」，Tao 自己写「看来可以达到」）；固定常数 C_0 版被 Tao 自评为「很可能与整个猜想一样难」。</td>
+      </tr>
+      <tr>
+        <td><code>cycles</code><br><span class="tag info">环与 m 圈</span></td>
+        <td>非平凡环必须满足什么方程；由此能挤出的 m 下界、奇数项下界与周期下界各是多少。</td>
+        <td>环方程 x = c/(2^n − 3^m)（Böhm 与 Sontacchi 1978）。m 侧到 m ≤ 91（Hercher 2023 加 2026 勘误；此档有未裁决争议，第三方 Lean 只到 82）；K &gt; 1.375×10^11；周期下界标准口径至少 355,504,839,929、加速口径至少 217,976,794,617（后者缺一手出处）。界对 m 指数增长，对 K 次指数增长。</td>
+      </tr>
+      <tr>
+        <td><code>two-adic</code><br><span class="tag info">2 进与遍历</span></td>
+        <td>把 T 共轭到 2 进移位之后，共轭映射本身的算术性质、Syracuse 随机变量、以及测度论能给出什么。</td>
+        <td>Z_2 侧动力学完全解决：存在唯一同胚 Φ 把加速映射共轭到移位，Φ 是等距且保测度，T 因此是 Bernoulli，且 Φ 与其逆处处不可微。周期猜想（Φ 保持有理数）只证了一半。核心困难：动力学被完全理解的空间与猜想所谈的整数集几乎不相交。</td>
+      </tr>
+      <tr>
+        <td><code>undecidability</code><br><span class="tag info">不可判定性</span></td>
+        <td>推广成一族映射之后判定问题到哪一层；具体小图灵机的硬度边界停在哪里。</td>
+        <td>族层面：Conway 1972 判定不可判定；Kurtz 与 Simon 2007 的 {g : range(g) = ω} 是 Π⁰₂ 完备。具体机器：7910 状态机停机独立于 ZFC（假设 ZFC 一致），745 状态（学士论文），254 与 250 状态（社群加 Coq，未评审）；BB(5) = 47,176,870（仅预印本，带 Coq），BB(6) 被 Antihydra 阻塞。原猜想是单个实例，这些结果一条都不约束它。</td>
+      </tr>
+      <tr>
+        <td><code>claims-2024-2026</code><br><span class="tag info">宣称窗口</span></td>
+        <td>2024 年至 2026 年间有哪些新的「完整证明」类稿件，以及它们的状态。</td>
+        <td>截至 2026 年 10 月 18 日，窗口内找不到任何一条获得数学界承认的完整证明；所有「完整证明」稿都落在 arXiv 的 math.GM 或 arXiv 之外的自我出版渠道。唯一被媒体当作反证报道的形式化事件（2026 年 7 月）已公开否认，原因是一枚 Lean 内核漏洞。</td>
+      </tr>
+      <tr>
+        <td><code>barriers</code><br><span class="tag info">障碍与死路</span></td>
+        <td>哪些一般性证明框架已被证明无法奏效；哪些只是当前技术天花板。</td>
+        <td>硬障碍：不可判定性、零测集、无界下降深度、势函数与证书形式的不可能性。天花板：各种纪录停在哪里、为什么停在那里。两处以「缺口」形式存在（更一般的覆盖形式、自动机路线），不应宣称已被排除。最常见的错误是把族层面的结果当成对原猜想的约束。</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>六条证明路线：最终状态与最致命的一击</h4>
+
+  <article class="route">
+    <h3>算术路线 <code>arithmetic-cycles</code> <span class="tag gap">主目标未完成</span></h3>
+    <p><b>目标</b>：不存在非平凡正环（把「无环」与「必达 1」分开，只处理后一半里的无环）。工具是 Böhm 与 Sontacchi 环方程、2^k 与 3^m 的分离性、连分数。</p>
+    <p><b>立住的局部结论</b>：
+      1. 窗口判据的可达范围定理：该判据能排除的整数 K 必满足 K &lt; (3X0 − 1)ln 2，渐近约 2.0795 X0，无论连分数数据多好。
+      2. 幸存者族与阶梯上界：未被排除的不是散点，而是收敛项分母的倍数族。
+      3. 有理候选定理：任何「对每个奇偶字都成立」的必要条件都不可能排除任何参数对；能起排除作用的只能是整性或由整性派生的结构不等式。
+      4. 1 圈这一档被封闭：K ≤ 20000 用精确整数逐个检验（唯一通过的是 K = 1），K ≥ 108 一侧由 Rhin 型下界排除（转引）。
+      5. 最大元定向前缀引理与 c_max 公式。</p>
+    <p class="fatal"><b>最致命的一击</b>：全称收尾一定失效。U(m) 随 m 以 δ^m 量级增长，而 L(m) 由验证界与连分数台阶决定、随 m 只减不增，因此对每个固定 X0 都存在交叉点之后失效（本项目实测交叉点 68 与 77，文献记录 91）。更要紧的是，从 Λ 的上界推出「K 的上界」这一步本身未证：反驳方逐行核对 Simons 与 de Weger 第 806 至 813 行后确认该步未证，作者如实保留为缺口，没有再修补。</p>
+    <p class="reb"><b>反驳结果</b>：第二轮反驳推翻了两处——「印反版被已知负环直接证伪」不成立（那是把正环侧含 (1 + X0^(−1))^m 的常数套到了负环上，负侧只变弱、永远不可能被负环证伪）；负侧的族构造必须用偶数项下标，不能与正侧写成同一条。两处作者都已接受并改正。</p>
+  </article>
+
+  <article class="route">
+    <h3>丢番图与超越论路线 <code>diophantine-transcendence</code> <span class="tag gap">主目标不成立</span></h3>
+    <p><b>目标</b>：只用初等工具（Simons 与 de Weger 的链式增长与连分数事实、Hercher 的自举），把 m 圈前沿推到超过 91，且不使用 Rhin 的线性型对数下界。</p>
+    <p><b>立住的局部结论</b>：副目标被证明不可能。作者给出并核验一条天花板引理：在本机具结构内，分离界（无论初等还是超越论、无论多强）对终点门槛的全部贡献上界是 7.3%（m = 91 处理想与实际之比 1.073），而 m = 92 的缺口是 3.89 倍；另一处口径下所需提升是 1.19×10^18 倍，而 Dirichlet 定理把任何分离界的提升空间封在约 100 倍以内。数值上，本机具唯一可达的增量是把 X0 抬到约 1.723×10^22 才能让 M* = 92。</p>
+    <p class="fatal"><b>最致命的一击</b>：一致性。终点一步「圈蕴含 K &lt; K_up」要求分离界对一切 K 一致有效；初等连分数分离界是逐区间的，把它当一致界用，等价于额外假设「log_2 3 的部分商尾部不超过一个显式双重指数阈值」，而 log_2 3 的部分商上界没有任何已知定理。Rhin 1987 不可替代的原因不是精度，而是一致性——它把无穷合取变成有限合取。</p>
+    <p class="reb"><b>反驳结果</b>：第二轮反驳指出 Hercher 的 Theorem 21 尾部有公开争议（zbMATH 审稿人指出「靠近末尾有潜在缺陷」，一个第三方 Lean 项目断言 82 到 91 那一步错误、只承认 m ≤ 82），作者据此把 m ≤ 91 降格为条件结论。第三轮反驳进一步主张那个 82 站不住：最坏情形论证与 Hercher 自己的 Lemma 20 相矛盾，勘误的凸性替代推导经补全后被复核为有效。这一争议在本页记录为「未裁决」，两种口径并列。</p>
+  </article>
+
+  <article class="route">
+    <h3>形式化与自动机路线 <code>formal-automata</code> <span class="tag gap">两层都已封闭</span></h3>
+    <p><b>目标</b>：把受限版本的科拉茨映射编码成自动机与线性递推并尝试判定，再精确说明它在何处不能升级为对原猜想的结论。</p>
+    <p><b>立住的局部结论</b>：
+      1. 编码定理：T^k(n) 的仿射公式、下降集 D_k 是 2 自动集、以及「猜想 ⟺ 并集 D_k 覆盖除 1 外的全体正整数」这一等价改写（这是等价，不是推进）。
+      2. 2 进闭包版本被完全解决，而且答案与猜想相反：到达 1 的充要条件是奇偶词尾部为 1 与 0 交替，到达集可数、补集满测度，反例包括 −1 与正有理三圈 4/5 → 2/5 → 1/5 → 4/5。
+      3. 残类二分与坏类计数（a ≤ 24 的坏类个数表）、非下降集的精确结构、显式下降判据与 θ_w &lt; 3^len(w)。
+      4. 代价定理：任何「L 不是 2 自动集」型的不可能性定理（类的定义含余有限集）都蕴含猜想为假。</p>
+    <p class="fatal"><b>最致命的一击</b>：这条路线没有第三条出口，而且是方向性的失败而非技术困难。受限版本的真值与猜想不一致（2 进侧几乎一切点都不到达 1）；不可能性方向在逻辑上自毁（证明它等于证否猜想）；剩下的只有「等价改写」与「关于证书形式的分类」，对原猜想零进展。</p>
+    <p class="reb"><b>反驳结果</b>：反驳指出两处并都被接受——残类二分第 3 条的「已证」标签超出证明（只证出有限例外版本，完整等价需要额外输入 (∗)，而 (∗) 等价于 Terras 系数停时猜想）；显式下降判据末句漏写同余条件、按字面为假（反例 k = 3、m = 1、n = 7）。两处都已改正，后者还新增了 θ_w &lt; 3^len(w) 这条引理。</p>
+  </article>
+
+  <article class="route">
+    <h3>最小反例路线 <code>minimal-counterexample</code> <span class="tag gap">主定理未证</span></h3>
+    <p><b>目标</b>：不存在 n ≥ 2 使 χ(n) = ∞（即不存在永不下降到自身的正整数）。</p>
+    <p><b>立住的局部结论</b>：
+      1. 筛饱和引理：χ(x) = ∞ 当且仅当对一切 k 有 x mod 2^k 落在 E_k 内；附三条否决结论（同余约束饱和、有限层永不矛盾、2^k − 1 类恒存活）。
+      2. 二分定理：轨道无界当且仅当 3^(S_j) &gt; 2^j 对无穷多层成立；等价地轨道有界当且仅当存在 j₀ 使一切 j ≥ j₀ 有 3^(S_j) &lt; 2^j（此时入环）。
+      3. 归约定理：猜想可由 (β)（对一切 n ≥ 2 有 τ(n) &lt; ∞）与 Terras 系数停时猜想 (CST) 推出；而 (β) 与「无非平凡环」两者并不足以推出猜想。
+      4. 首失败几何、c 的双侧界（与 Rozier 与 Terracol 定理 2.2 逐字同式）。</p>
+    <p class="fatal"><b>最致命的一击</b>：情形 II 拦在中间。它指满足 χ(N) = ∞、τ(N) &lt; ∞、轨道无界的 N；这一情形同时通过 (β) 与 (α) 的自检，本框架的分类逻辑无法排除它。跨过它需要把已知抓手（悖论序列的显式族、首失败几何、大小约束与双侧界）联合起来找矛盾，迄今没人做过。</p>
+    <p class="reb"><b>反驳结果</b>：反驳推翻的正是初版对情形 II 的表述——初稿写「现有数论工具对发散轨道无可用抓手」，遗漏了 Rozier 与 Terracol 的定理 3.2、定理 2.2 下界与推论 3.3。作者逐条打开来源并本机复现后确认反驳成立，整段撤下改写。第一轮另有三条失实陈述与一条承重步骤被撤下（φ 迭代推演、χ ≤ τ 更弱、K 与 α 等价、一处界的错误形式）。</p>
+  </article>
+
+  <article class="route">
+    <h3>量化改进路线 <code>tao-quantitative</code> <span class="tag gap">目标未证</span></h3>
+    <p><b>目标</b>：把 Tao 型「几乎所有轨道取到几乎有界值」的论证拆到引理级，然后尝试证明其中某个更强的估计，目标是把「几乎有界」推到固定阈值。</p>
+    <p><b>立住的局部结论</b>：倾斜恒等式（把 F(m+1) 精确分解为衰减因子、边界因子与倾斜期望三部分）；轮换恒等式与块结构（好位置、连续块、Σe_t = K 精确）；劣质块不等式与条件性的 m^(−1/4)；以及一个数值猜想 F(k) ≈ 10.8·exp(−(k−1)D)·(k−1)^(−3/2)（常数在 m 从 1000 到 30000 内波动 ±4%）。这些全部不是对猜想的推进，而是本路线的边界刻画与失败点定位。</p>
+    <p class="fatal"><b>最致命的一击</b>：单层级界永远是正数。Tao 的 Theorem 3.1 对每个固定 N_0 = C 给出 Λ(A_C) ≤ K(log C)^(−c)，右端与 x 无关，框架内没有任何一步会把常数变成 0。另一半是结构性的：对数密度型估计看不见单条坏轨道——单条坏轨道加它的加倍链，对 [1, X] 的对数权重至少是 1/N_0，是常数，与框架的一切 o(log X) 型结论相容。</p>
+    <p class="reb"><b>反驳结果</b>：反驳推翻了作者的一条「矫正后的边界陈述」——「凡 B 族逐层信息不足的映射，必然违反 Tao 型逐层结论」为假，作者自己用来复核反驳意见的那张玩具映射就是反例（该映射上 Λ(B_2) = 1/2 &gt; 0 而 Λ(A_M) = 0 对一切 M 成立）。作者复核后撤回并改写：正确的逆否命题是析取形式，在 Tao 型成立的前提下 T2 等价于「某个固定 m 的 B 层对数密度为正」。</p>
+  </article>
+
+  <article class="route">
+    <h3>2 进与遍历控制路线 <code>two-adic-control</code> <span class="tag gap">主目标未证</span></h3>
+    <p><b>目标</b>：周期猜想 PC_3——每个分母为奇数的有理 2 进整数 x，其加速映射轨道最终周期。</p>
+    <p><b>立住的局部结论（都是否定性的）</b>：
+      1. 等距刚性定理：2 进等距且与移位交换的映射只有 id 与 σ(x) = −1 − x；推论是任意两个奇数 a、b 之间的等距共轭恰好两条，且保奇偶的那一条唯一。
+      2. 整数不保持定理：在相当广的 (a, b) 对上，任何双射共轭（不作连续、可测、等距任何假设）都不保持整数，并附显式见证。
+      3. 搬运命题：把「有理点都是最终周期点」沿共轭搬运，其真值条件正是猜想本身，搬运不提供独立信息。</p>
+    <p class="fatal"><b>最致命的一击</b>：三层封堵，合起来即「共轭在算术上不透明」。测度与拓扑层次——猜想所谈的集合与最终周期点集都是可数稠密零测贫集，任何保测同构型不变量无法区分二者；共轭刚度层次——自由度只剩 {id, σ}；算术搬运层次——唯一可能的共轭都不保持整数。而主目标本身等价于「3x + b 族无发散轨道」，其中 b = 1 那一档就是猜想的无发散半边，路线内部没有工具。</p>
+    <p class="reb"><b>反驳结果</b>：反驳推翻了初版的一处断言（涉及共轭的层结构），作者复核后接受、修改正文并补上正确的论证，并借此新增了「窗口 4 的连续双射分类」这条严格结论。反驳方附赠的一条更强主张（一般定理「连续且与移位交换的双射必为等距」）作者未能核实，记录为未核实、不采纳为定理。</p>
+  </article>
+
+  <div class="note">
+    六条路线的共同形状：每条都能把「能与不能」划清，都能立住若干自证的小定理，也都在同一个位置停下来——从密度型或逐档型的结论跨到全称命题的那一步，
+    以及从有限验证跨到无穷范围的那一步。没有任何一条给出猜想本身的部分结果。
+  </div>
+</section>
+
+<!-- ============ 2. 探索器 ============ -->
+<section id="explorer">
+  <h2><span class="num">二</span>停时探索器</h2>
+  <p class="lead">
+    输入任意正整数 n，页面用内联 JavaScript 逐步算出它的科拉茨轨道（标准映射：奇数走 3n + 1，偶数走 n/2），
+    并报告总停时（到达 1 所需的步数）、轨道峰值、以及「是否到达 1」。全部计算在本页内完成，不调用任何网络接口。
+  </p>
+
+  <div class="explorer">
+    <div class="controls">
+      <label for="ninput">正整数 n</label>
+      <input id="ninput" type="text" inputmode="numeric" autocomplete="off" spellcheck="false" value="27" aria-describedby="nhint">
+      <button id="runbtn" type="button">计算（Enter）</button>
+      <button id="selftest" class="ghost" type="button">跑内置例子自检</button>
+      <button id="randbtn" class="ghost" type="button">随机一个</button>
+    </div>
+    <p class="hint" id="nhint">
+      按 Enter 或点「计算」。内部用 BigInt 精确整数运算，故 3n + 1 不会溢出；可接受的输入上限为 10^18，步数上限为 1000000，
+      轨道显示上限为 400 项（超出时显示首尾两段，步数与峰值仍按完整轨道统计）。
+    </p>
+
+    <div class="stats" id="stats" hidden>
+      <div class="stat"><div class="k">起点 n</div><div class="v" id="s-n"></div></div>
+      <div class="stat"><div class="k">总停时（步数）</div><div class="v" id="s-steps"></div></div>
+      <div class="stat"><div class="k">轨道峰值</div><div class="v" id="s-peak"></div></div>
+      <div class="stat"><div class="k">轨道项数</div><div class="v" id="s-len"></div></div>
+    </div>
+
+    <p class="verdict" id="verdict" hidden></p>
+    <svg class="chart" id="chart" viewBox="0 0 800 170" preserveAspectRatio="none" aria-label="轨道对数值的变化曲线" hidden></svg>
+    <div class="orbit" id="orbit" hidden></div>
+
+    <div id="selftestout" class="hint"></div>
+  </div>
+
+  <div class="note">
+    关于「是否到达 1」：本探索器对每一个输入都真的把轨道走到 1 为止（或撞到步数上限为止）。它给出的是这一个 n 的一条显式下降轨迹，
+    这是有限事实，不是证明。已知的记录：在 n ≤ 2^28 的范围内，本项目全量扫描过每一个整数，最大总停时 956（唯一取到于 n = 226588897），
+    63 个严格纪录点与 OEIS 的 A006877 与 A006878 逐条一致（来源 <code>20-experiments/findings/sweep.md</code>）。
+    本页轨道计算的核心逻辑已抽成纯函数，并用 node 对若干已知例子做过核对，见第四块的说明。
+  </div>
+</section>
+
+<!-- ============ 3. 边界地图 ============ -->
+<section id="map">
+  <h2><span class="num">三</span>边界地图</h2>
+  <p class="lead">
+    三列：已经确证的东西（分文献侧与本项目自算两档）、已经确认为死路的东西（附死因）、以及仍然开着的活口。
+    每条注明它属于「同行评审」「仅预印本」「未核实」「本项目自算」的哪一档。
+  </p>
+
+  <div class="cols">
+    <div class="col proved">
+      <h3>已确证 <span class="cnt">文献侧</span></h3>
+      <ul>
+        <li><b>Tao 2022</b>（同行评审）：Col_min(N) &lt; f(N) 对下对数密度 1 的 N 成立，f 为任意发散函数。</li>
+        <li><b>Gonçalves、Greenfeld 与 Madrid 2025</b>（同行评审）：把 Tao 型几乎有界推广到一整类广义 Collatz 映射；自然密度版明确写作仍不可及。</li>
+        <li><b>Korec 1994</b>（同行评审）：对每个 c &gt; log_4 3 ≈ 0.7925，{y : 存在 n 使 T^n(y) &lt; y^c} 的自然密度为 1。</li>
+        <li><b>Allouche 1979</b>（讲义，经两处互证）：θ &gt; 3/2 − log_3 2 ≈ 0.8691 的同一结论；注意 Tao 论文该式的印刷笔误。</li>
+        <li><b>Terras 1976 与 Everett 1977</b>（同行评审）：有限停时的正整数集合自然密度为 1，且 δ[χ ≥ k] = P[τ ≥ k]。</li>
+        <li><b>Krasikov 与 Lagarias 2003</b>（同行评审）：π_a(x) ≥ x^0.84 对 a 不整除于 3、充分大 x 成立（γ ≈ 0.84175）。这是已发表的计数下界记录。</li>
+        <li><b>Hercher 2023 加 2026 勘误</b>（同行评审，含争议）：不存在 m ≤ 91 的非平凡 m 圈；K &gt; 1.375×10^11。m ≤ 91 一侧未被裁决。</li>
+        <li><b>周期下界记录</b>：标准映射至少 355,504,839,929；加速映射至少 217,976,794,617（后者只有二手来源，可复算）。</li>
+        <li><b>Eliahou 1993 与 Halbeisen 与 Hungerbühler 1997</b>（同行评审）：周期形式与改进判别法（验证到约 2^47.6 时环长下界跳到 102,225,496）。</li>
+        <li><b>Böhm 与 Sontacchi 1978</b>（同行评审）：环方程 x = c/(2^n − 3^m)，以及「若 u^n(x) = x 则 |x| &lt; 3^n」。</li>
+        <li><b>Barina 2025</b>（同行评审论文，但记录是有限计算）：所有小于 2^71 ≈ 2.361×10^21 的正整数到达 1。</li>
+        <li><b>Bernstein 1994 与 Bernstein 与 Lagarias 1996</b>（同行评审）：存在唯一同胚 Φ 把加速映射共轭到 2 进移位，Φ 等距、保测度、处处不可微；另一已知定理：T 在 Z_2 上的每个周期轨道都由有理数组成。</li>
+        <li><b>Conway 1972 与 Kurtz 与 Simon 2007</b>（同行评审）：广义 Collatz 的判定问题不可判定，且 {g : range(g) = ω} 是 Π⁰₂ 完备。只约束族与统一方法。</li>
+        <li><b>具体图灵机与 ZFC</b>：7910 状态机（同行评审，假设 ZFC 一致）、745 状态（学士论文）、254 与 250 状态（社群加 Coq，未评审）。</li>
+        <li><b>BB(5) = 47,176,870</b>（仅预印本，带 Coq 形式化）；BB(6) 被 Antihydra 阻塞（社群记录）。</li>
+      </ul>
+      <h4>已确证（本项目自算，范围受限）</h4>
+      <ul>
+        <li><b>全量扫描</b>：n ≤ 2^28 的每一个整数都到达 1；最大总停时 956（n = 226588897）；与 OEIS 逐条核对零不一致。</li>
+        <li><b>环的全枚举</b>：周期不超过 34 的非平凡整数环一个也没有（无条件，覆盖 k ≤ 34 的全部 2^k 个奇偶向量）。</li>
+        <li><b>自算验证界</b>：X0 = Y0 = 10^12；在该前提下，已知五个环之外、元素绝对值至少 10^12 的正环周期至少 17,087,915。</li>
+        <li><b>逆向树</b>：从 1 出发显式建树到 65 层、累计 354,832,309 个节点；增长比值 1.333347 对 4/3 相差 +0.0010%；但显式建树只完整覆盖到 n = 25，第一个漏掉的奇数是 27。</li>
+        <li><b>停时分布</b>：n ≤ 2^24 全精确；最大总停时 704（n = 15,733,191）；两尾都比同矩正态重，t = 500 处的超越计数约为正态预测的 1900 倍。</li>
+        <li><b>证书搜索</b>：按位加权势函数在 2^18 与 2^20 截断上 UNSAT（核为 {x = 3, x = 4}）；并给出初等证明：任何取整数值的函数 V 都不可能使 V(T(x)) ≤ V(x) − 1 在 [1, N] 上成立。</li>
+        <li><b>奇偶向量</b>：停时层集不是完整剩余类之并（最小反例 j = 2、x = 5 与 x = 1）；精确版判据在 x ≤ 2^18、j ≤ 12 上逐点零不符。</li>
+      </ul>
+    </div>
+
+    <div class="col dead">
+      <h3>已知死路 <span class="cnt">含死因</span></h3>
+      <h4>已被文献排除或撤回</h4>
+      <ul>
+        <li><b>解析泛函方程路线</b>（Opfer 2011）：作者本人撤回，承认推理不完整。</li>
+        <li><b>「Lean 反证」事件</b>（2026）：不是数学结果，是 Lean 内核漏洞的产物（已由事故报告与修复确认）。</li>
+        <li><b>Metzger 1995「唯一循环」</b>：作者在补记中承认证明有缺口。</li>
+        <li><b>撤回与载体消失</b>：一篇 arXiv 稿被作者撤回（与既有枚举重复）；一条 Zenodo 记录已被删除（API 返回 410）。</li>
+      </ul>
+      <h4>被结构性障碍排除</h4>
+      <ul>
+        <li><b>纯测度论或遍历论的证明</b>：整数集在 Z_2 中可数、测度零；且 3x+1 与 5x+1 在 Z_2 上完全同构而在整数上行为不同——任何对全部奇 a 同时有效的纯测度论证必然失败。</li>
+        <li><b>统一覆盖广义 Collatz 的算法或统一定理</b>：被 Conway 1972 与 Kurtz 与 Simon 2007 排除。注意这只杀统一判定，不杀具体实例的证明。</li>
+        <li><b>固定下降深度的势函数与有限覆盖同余</b>：取 k 大于步数上限，类 n ≡ −1 (mod 2^k) 中每个数前 k 步全为奇步、严格上升，故「有限个剩余类加固定步数下降」的证书不存在。</li>
+        <li><b>对符号不敏感的论证</b>：负整数上存在三个非平凡环（−1、−5 与 −7 与 −10、从 −17 起的 11 元环）。</li>
+        <li><b>对常数不敏感的论证</b>：5x+1 有环 13 → 33 → 83 → 13。证明必须用到只对 a = 3 成立的事实。</li>
+        <li><b>靠增大 k 推进差不等式的指数</b>：每级 k 的最佳指数就是线性规划的 λ_k，被 Krasikov 与 Lagarias 定理 2.2 锁死，算力无效。</li>
+        <li><b>有限验证通向全称命题</b>：无已知桥梁；任何有限计算都是单称命题的合取，每翻倍算力约换一位。</li>
+        <li><b>势函数路线</b>：位权形式的严格下降势函数不存在（一对点上的和恒为零）；多项式加有界位权形式同样不存在。</li>
+      </ul>
+      <h4>六条路线各自的死因</h4>
+      <ul>
+        <li><b>算术路线</b>：全称收尾一定失效（U(m) 指数增长、L(m) 递减），且 U 侧判据本身未证。</li>
+        <li><b>丢番图与超越论路线</b>：初等分离界是逐区间的，缺一致性；分离界的收益上限只有 7.3%。</li>
+        <li><b>形式化与自动机路线</b>：受限版本真值与猜想相反；不可能性方向蕴含猜想为假。</li>
+        <li><b>最小反例路线</b>：情形 II（χ = ∞、τ 有限、轨道无界）无法排除。</li>
+        <li><b>量化改进路线</b>：单层级界永远是正数；密度型估计看不见单条坏轨道。</li>
+        <li><b>2 进与遍历控制路线</b>：共轭在算术上不透明（零测、刚度、整数不保持三层封堵）。</li>
+      </ul>
+      <h4>需要固定排除的误读</h4>
+      <ul>
+        <li>「BB(6) 独立于 ZFC」不是定理，而是障碍陈述。</li>
+        <li>「科拉茨猜想本身独立于 PA 或 ZFC」无任何一方结果。</li>
+        <li>「广义不可判定性蕴含原猜想不可判定」是过度解读。</li>
+        <li>「2 进侧已完全解决，所以猜想在 2 进侧已被证明」恰相反：2 进侧的答案是几乎一切点都不到达 1。</li>
+        <li>「至多有限个例外」不等于「有界」：例外集有限，但它的成员可能永不下降。</li>
+      </ul>
+    </div>
+
+    <div class="col alive">
+      <h3>活口清单 <span class="cnt">按距真证明可能最近排序</span></h3>
+      <p class="hint">排序是本项目作者的工具判断，不是文献结论。没有任何一条能在现有基础上直接给出证明。</p>
+      <ol>
+        <li><b>排除任意长非平凡循环</b>（猜想的一半，机械最完整）。需要：关于 log 2 与 log 3 分离性的一致显式下界，并去掉对验证界的依赖。</li>
+        <li><b>排除发散轨道</b>（另一半，含 Tao 的固定 C_0 中间目标）。需要：轨道显式伪随机性质定理或刚性不变量。</li>
+        <li><b>把 Tao 定理全有效化并与 2^71 验证合并</b>（最可操作）。Tao 自己在脚注把这一点列为「原则上可能」，无人完成。</li>
+        <li><b>自然密度升级</b>。需要随机仿射映射的联合细尺度混合，或把乘性误差压到自然密度可容忍的范围。</li>
+        <li><b>差不等式路线推到 x^(1 − ε)</b>。需要线性规划族最优解结构的解析理论；每级 k 的框架内上限已锁死。</li>
+        <li><b>周期记录的机械推进到下一档</b>。门槛 q_23 + q_24 = 890,638,885,193；「若验证到 2^75 则环长至少 2,302,268,119,908」是仅预印本的条件估计，未完成。</li>
+        <li><b>m ≤ 91 记录的裁决与端到端形式化</b>。三方分歧（第三方 Lean 主张 82、论文加勘误主张 91、另一个 Lean 项目条件性主张 101），勘误的替换推导无第三方复核。</li>
+        <li><b>2 进侧的周期猜想</b>（这条线上唯一对猜想有直接逻辑贡献的条目）。只证了一半；若全证则蕴含「整数上无发散轨道」。</li>
+      </ol>
+      <h4>邻榜（登记用，不参与排序）</h4>
+      <ul>
+        <li><b>受限类 Collatz、Antihydra 与 BB(6)</b>：数学上真实可推进，但不给 3x+1 任何结论。</li>
+        <li><b>遍历域 0.96 升到 1</b>：纯 2 进测度论量，受零测集与参数不敏感屏障限制，原理上不能推进猜想。</li>
+        <li><b>复核与工程层</b>：第二套独立实现复现 2^68 以上区间、可抽查的校验和数据集、次线性筛。非数学，但阻塞一切引用。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    任何完整证明至少必须跨过的门槛（来源 <code>10-literature/frontier.md</code> 第五节，共 13 条）：处理零密度例外集的机制、排除无界轨道、
+    关于 2^k 与 3^m 分离性的更强且一致的下界、去掉对数值验证界的外部依赖、用到只对 a = 3 成立的事实、用到正性、允许无界的证书形式、
+    自然密度门槛、正密度到达 1 门槛、λ_k → 2、跨零测集的桥梁、形式化与信任层、以及反例证书的边界。
+  </div>
+</section>
+
+<!-- ============ 4. 诚实声明 ============ -->
+<section id="honest">
+  <h2><span class="num">四</span>诚实声明</h2>
+  <div class="honest">
+    <h3>本页面没有证明科拉茨猜想</h3>
+    <ul>
+      <li><b>它展示的是边界与失败点</b>，不是通往证明的路径。八条文献线给出的是已知结果的现有边界；六条路线全部以「主目标未完成」或「主目标不成立」收尾，没有一条给出猜想本身的部分结果。</li>
+      <li><b>文献侧的每条都带可信度标注</b>：只有注明「同行评审」的条目才配得上「定理」与「已证明」字样；「仅预印本」「作者更新版」「社群自发布」「未核实」一律按原样保留。凡本项目笔记标注「原文未打开」之处，本页不替它升级。</li>
+      <li><b>本项目自算的部分是有范围的有限事实</b>：全量扫描到 2^28、环全枚举到周期 34、自算验证界 10^12、逆向树到 65 层、停时分布到 2^24、证书搜索到 2^20 截断。有限计算不能确证任何全称命题，也不构成对猜想的概率论证据。</li>
+      <li><b>六条路线的「已证」标签经过反驳</b>：每条路线都出过被独立反驳推翻或降格的断言（常数套错侧、等价条件只证一半、末句漏写同余条件、边界陈述把逆否命题的析取项当必要条件、遗漏已知文献抓手）。这些更正在各路线卡片里如实保留，没有一处被静默抹掉。</li>
+      <li><b>有两处争议在本页保持未裁决</b>：m ≤ 91 这一档的第三方 Lean 分歧（82 与 91 与条件性 101），以及一份自称把 Tao 结果升级到自然密度的稿件（未核对）。本页把两种口径并列，不替它们选边。</li>
+      <li><b>探索器给的是有限事实</b>：对逐个 n 真的把轨道走到 1，这是显式下降轨迹的核验，不是证明；若某个输入撞到步数上限，本页会如实显示「未在步数上限内到达 1」，而不把它说成反例，也不会拿它反推任何结论。</li>
+      <li><b>本页不产生新的数学结论</b>：它是既有产物文件的一次汇总与可视化，全部数据来自 <code>10-literature/</code>、<code>20-experiments/findings/</code>、<code>30-proof-attempts/</code> 三处，没有引入任何新的文献引用或新的计算。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 来源 ============ -->
+<section id="sources">
+  <h2><span class="num">五</span>数据来源</h2>
+  <div class="card src">
+    <p>本页内容逐块来自以下文件，未使用网络资源，未引入外部文献：</p>
+    <ul>
+      <li><code>10-literature/frontier.md</code>：八条线的压缩判断、已确证的核心结果、已被排除的路线、结构性障碍、活口清单与十三道门槛。</li>
+      <li><code>10-literature/notes/</code> 下八份笔记：<code>verification.md</code>、<code>stopping-times.md</code>、<code>tao-almost-all.md</code>、<code>cycles.md</code>、<code>two-adic.md</code>、<code>undecidability.md</code>、<code>claims-2024-2026.md</code>、<code>barriers.md</code>。</li>
+      <li><code>20-experiments/findings/</code> 下六份结论：<code>sweep.md</code>、<code>cycles.md</code>、<code>reverse-tree.md</code>、<code>stoptime-stats.md</code>、<code>smt-certificate.md</code>、<code>parity-vectors.md</code>。</li>
+      <li><code>30-proof-attempts/</code> 下六条路线：<code>arithmetic-cycles</code>、<code>diophantine-transcendence</code>、<code>formal-automata</code>、<code>minimal-counterexample</code>、<code>tao-quantitative</code>、<code>two-adic-control</code>，各含 <code>attempt.md</code> 与反驳文件（<code>rebuttal-2.md</code>、<code>rebuttal-round1.md</code>，以及部分路线写在 <code>attempt.md</code> 末尾的「对反驳的回应」）。</li>
+    </ul>
+    <p>核对节点为 2026 年 10 月 18 日（文献侧）与 2026 年 10 月 20 日（路线侧）。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  离线单文件页面，无外部依赖，无 CDN，无网络字体。轨道计算使用 BigInt 精确整数运算，全部在本页内完成。
+</footer>
+</div>
+
+<script>
+/* ==================== ORBIT-CORE-BEGIN ====================
+   轨道计算的核心逻辑。纯函数，不接触 DOM，不访问网络。
+   这一对标记之间的代码被自测脚本原样抽出，用 node 运行核对。
+   ==================== */
+
+/**
+ * 对正整数 n 走标准科拉茨映射（奇数 3n+1，偶数 n/2），直到到达 1 或撞到步数上限。
+ * @param {number|bigint|string} n 起始值，须为正整数
+ * @param {{keep?:number, maxSteps?:number}} [opts]
+ *   keep     轨道数组最多保存多少项（默认 400），超出后只统计不再保存
+ *   maxSteps 步数上限（默认 1000000）
+ * @returns {{ok:boolean, reason?:string, start?:bigint, steps?:number, peak?:bigint,
+ *            reachedOne?:boolean, orbit?:bigint[], truncated?:boolean, aborted?:boolean}}
+ */
+function collatzTrace(n, opts) {
+  var keep = (opts && opts.keep) || 400;
+  var maxSteps = (opts && opts.maxSteps) || 1000000;
+  var start;
+  try {
+    start = BigInt(String(n).trim());
+  } catch (e) {
+    return { ok: false, reason: 'notInteger' };
+  }
+  if (start <= 0n) return { ok: false, reason: 'notPositive' };
+
+  var x = start;
+  var steps = 0;
+  var peak = start;
+  var orbit = [start];
+
+  while (x !== 1n && steps < maxSteps) {
+    x = (x % 2n === 0n) ? (x / 2n) : (3n * x + 1n);
+    steps += 1;
+    if (x > peak) peak = x;
+    if (orbit.length < keep) orbit.push(x);
+  }
+
+  return {
+    ok: true,
+    start: start,
+    steps: steps,
+    peak: peak,
+    reachedOne: x === 1n,
+    orbit: orbit,
+    truncated: (steps + 1) > orbit.length,
+    aborted: x !== 1n
+  };
+}
+
+/**
+ * 单步。用于把轨道计算拆成可复用的最小单元。
+ * @param {bigint} x
+ * @returns {bigint}
+ */
+function collatzStep(x) {
+  return (x % 2n === 0n) ? (x / 2n) : (3n * x + 1n);
+}
+
+/**
+ * 纯函数版的「步数与峰值」，不保存轨道（供批量核对使用）。
+ * @param {number|bigint|string} n
+ * @param {number} [maxSteps]
+ * @returns {{ok:boolean, steps:number, peak:bigint, reachedOne:boolean}}
+ */
+function collatzStats(n, maxSteps) {
+  var t = collatzTrace(n, { keep: 1, maxSteps: maxSteps || 1000000 });
+  return { ok: t.ok, steps: t.steps, peak: t.peak, reachedOne: t.reachedOne };
+}
+
+/* ==================== ORBIT-CORE-END ==================== */
+
+
+/* ==================== 页面装配（以下不参与自测抽取） ==================== */
+
+(function () {
+  var MAX_INPUT = 10n ** 18n;
+  var input = document.getElementById('ninput');
+  var runBtn = document.getElementById('runbtn');
+  var selfBtn = document.getElementById('selftest');
+  var randBtn = document.getElementById('randbtn');
+  var statsBox = document.getElementById('stats');
+  var verdict = document.getElementById('verdict');
+  var orbitBox = document.getElementById('orbit');
+  var chart = document.getElementById('chart');
+  var selfOut = document.getElementById('selftestout');
+
+  function fmt(b) {
+    return b.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '\u2009');
+  }
+
+  function drawChart(values) {
+    var w = 800, h = 170, pad = 8;
+    var n = values.length;
+    if (n < 2) { chart.hidden = true; return; }
+    var logs = values.map(function (v) { return Math.log(Number(v)); });
+    var lo = Math.min.apply(null, logs), hi = Math.max.apply(null, logs);
+    var span = (hi - lo) || 1;
+    var pts = logs.map(function (y, i) {
+      var px = pad + (w - 2 * pad) * (n === 1 ? 0 : i / (n - 1));
+      var py = h - pad - (h - 2 * pad) * ((y - lo) / span);
+      return px.toFixed(2) + ',' + py.toFixed(2);
+    });
+    chart.innerHTML = '<polyline fill="none" stroke="#5ec8b0" stroke-width="1.6" points="' +
+      pts.join(' ') + '"></polyline>';
+    chart.hidden = false;
+  }
+
+  function showTrace(raw) {
+    var t = collatzTrace(raw, { keep: 400 });
+
+    if (!t.ok) {
+      statsBox.hidden = true; orbitBox.hidden = true; chart.hidden = true;
+      verdict.hidden = false;
+      verdict.innerHTML = '<span class="err">输入无效</span>：请输入一个大于 0 的十进制整数（上限 10^18，约 18 位数字）。';
+      return;
+    }
+    if (t.start > MAX_INPUT) {
+      statsBox.hidden = true; orbitBox.hidden = true; chart.hidden = true;
+      verdict.hidden = false;
+      verdict.innerHTML = '<span class="err">超出本页处理上限</span>：为了保持离线页面的响应，本页只处理不超过 10^18 的输入。';
+      return;
+    }
+
+    document.getElementById('s-n').textContent = fmt(t.start);
+    document.getElementById('s-steps').textContent = fmt(BigInt(t.steps));
+    document.getElementById('s-peak').textContent = fmt(t.peak);
+    document.getElementById('s-len').textContent = fmt(BigInt(t.steps + 1));
+    statsBox.hidden = false;
+
+    if (t.reachedOne) {
+      verdict.innerHTML = '是否到达 1：<span class="yes">已到达 1</span>。总停时 ' +
+        fmt(BigInt(t.steps)) + ' 步，轨道峰值 ' + fmt(t.peak) +
+        '，峰值相对起点放大了 ' + (Number(t.peak) / Number(t.start)).toFixed(2) + ' 倍。';
+    } else {
+      verdict.innerHTML = '是否到达 1：<span class="unknown">未在步数上限内到达 1</span>（走到 ' +
+        fmt(BigInt(t.steps)) + ' 步时仍未出现 1）。这只说明本页的步数上限不够，' +
+        '<b>不构成反例，也不构成任何结论</b>。';
+    }
+    verdict.hidden = false;
+
+    var nums = t.orbit.map(function (v) { return v.toString(); });
+    var html;
+    if (t.truncated) {
+      var head = nums.slice(0, 60);
+      var tail = nums.slice(-20);
+      html = head.map(function (s, i) { return '<span class="idx">' + (i + 1) + '.</span> ' + s; }).join('<span class="sep"> → </span>') +
+        '<div class="hint" style="margin:6px 0">… 中间省略 ' + (t.steps + 1 - 80) + ' 项（全部计入步数与峰值统计）…</div>' +
+        tail.map(function (s, i) { return '<span class="idx">' + (t.steps - 19 + i) + '.</span> ' + s; }).join('<span class="sep"> → </span>') +
+        ' <span class="end">（到达 1）</span>';
+    } else {
+      html = nums.map(function (s, i) { return '<span class="idx">' + (i + 1) + '.</span> ' + s; }).join('<span class="sep"> → </span>');
+      if (t.reachedOne) html += ' <span class="end">（到达 1，轨道结束）</span>';
+    }
+    orbitBox.innerHTML = html;
+    orbitBox.hidden = false;
+
+    drawChart(t.orbit);
+  }
+
+  var EXAMPLES = [
+    { n: 1, steps: 0, peak: '1' },
+    { n: 2, steps: 1, peak: '2' },
+    { n: 3, steps: 7, peak: '16' },
+    { n: 6, steps: 8, peak: '16' },
+    { n: 7, steps: 16, peak: '52' },
+    { n: 9, steps: 19, peak: '52' },
+    { n: 27, steps: 111, peak: '9232' },
+    { n: 97, steps: 118, peak: '9232' },
+    { n: 871, steps: 178, peak: '190996' },
+    { n: 6171, steps: 261, peak: '975400' },
+    { n: 77031, steps: 350, peak: '21933016' },
+    { n: 77671, steps: 231, peak: '1570824736' },
+    { n: 837799, steps: 524, peak: '2974984576' }
+  ];
+
+  function runSelfTest() {
+    var pass = 0, fail = 0, lines = [];
+    EXAMPLES.forEach(function (ex) {
+      var t = collatzTrace(ex.n, { keep: 1 });
+      var ok = t.ok && t.reachedOne && t.steps === ex.steps && t.peak === BigInt(ex.peak);
+      if (ok) { pass++; } else {
+        fail++;
+        lines.push('n = ' + ex.n + '：期望 ' + ex.steps + ' 步、峰值 ' + ex.peak +
+          '，实际 ' + t.steps + ' 步、峰值 ' + t.peak);
+      }
+    });
+    selfOut.innerHTML = '内置例子自检：<b class="mono">' + pass + ' 通过 / ' + fail + ' 失败</b>' +
+      (fail === 0 ? '（' + EXAMPLES.length + ' 个已知例子的步数与峰值全部吻合）' : '：<br>' + lines.join('<br>'));
+  }
+
+  function run() { showTrace(input.value); }
+
+  runBtn.addEventListener('click', run);
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); run(); }
+  });
+  selfBtn.addEventListener('click', runSelfTest);
+  randBtn.addEventListener('click', function () {
+    var v = BigInt(Math.floor(Math.random() * 1000000) + 2);
+    input.value = v.toString();
+    run();
+  });
+
+  // 初始展示：n = 27（已知总停时 111 步、峰值 9232）
+  showTrace('27');
+})();
+</script>
+</body>
+</html>
