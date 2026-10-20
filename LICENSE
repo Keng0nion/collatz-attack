@@ -19,11 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-关于数学内容的额外声明（不属于 MIT 条款，但请一并阅读）：
-
-1. 本仓库不包含科拉茨猜想的证明。该猜想是开放问题。
-2. 本仓库的全部文档与代码由 AI 代理生成，未经同行评审；其中的数学主张不提供任何形式的担保。
-3. 有一条数值结论（Hercher 主定理的 m ≤ 91 档）依赖一篇有公开争议的论文证明步骤，详见 README 的「诚实边界」一节。引用前请回原始来源自行判断。
