@@ -101,7 +101,7 @@ artifact.board("cycles", {
   title: "本轮各路攻击的状态",
   key: "route",
   status: "status",
-  columns: ["已证", "已否证", "未决", "未完成"],
+  columns: ["论证中", "已证", "已否证", "未决", "未完成"],
   cardTitle: "route",
   detail: [{ field: "claim", label: "最强结论" }],
 });
@@ -183,10 +183,22 @@ const attackOutcomes = await Promise.all(
           "你的价值在于把失败点定到具体的不等式或具体的步骤，而不是宣布成功。" +
           STYLE,
       });
+      // 一开局就上报，让看板立刻显示全部路线（否则要等某条结算才有第一张卡，
+      // 长阶段里界面上什么都看不到；2026 年 10 月 25 日按用户反馈补上）。
+      report(
+        {
+          route: r.name,
+          status: "论证中",
+          claim: `攻击进行中，脚本与报告写在 70-research/cycle-${plan.cycleNumber}/`,
+          evidence: r.mission.slice(0, 160),
+        },
+        "cycles",
+      );
       const result = await attacker.ask<AttemptResult>(
         `本轮目标：${plan.target}\n本轮要避开的已失败方向：${plan.avoidList.join("、")}\n\n` +
           `你负责的路线是「${r.name}」：${r.mission}\n\n` +
           `先读这些材料：\n${materials[0]}\n${materials[1]}\n${ROOT}/10-literature/frontier.md\n\n` +
+          `上下文与输出纪律（供方会对过大请求直接返回 400，务必遵守）：优先用检索（grep 或 rg）抽取你真正需要的段落，不要整文读入；报告分节写入，每写完一节就落盘一次，不要憋到最后一次性输出长文；单节控制在 200 行以内。\n\n` +
           `要求：\n` +
           `1. 真的动手：写代码跑、算数字、查原文。脚本放到 ${ROOT}/70-research/cycle-${plan.cycleNumber}/scripts/ 下，用 ${ROOT}/20-experiments/.venv/bin/python 运行。\n` +
           `2. 报告写到 ${ROOT}/70-research/cycle-${plan.cycleNumber}/route-${i + 1}.md，含：要证明或要检验的精确陈述、编号论证（每步标注 已证/缺口/错误/等价于原命题）、失败点清单、局部新结论及其独立验证方式、完整命令行与原始输出摘要。\n` +

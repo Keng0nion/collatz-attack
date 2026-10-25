@@ -1,0 +1,96 @@
+
+==============================================================================
+B 段：线性目标最优解（z3 LRA），m2 = 20、47、91
+==============================================================================
+
+[B1 m2=20 δ_lo W 使 v=70]
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#0：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#1：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#2：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#3：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#4：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#5：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#6：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#7：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#8：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#9：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#10：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#11：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#12：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#13：模型值不是有理数，未转成 Fraction
+    权重数 = 14；unsat（即 P 上该线性目标的最优值与诸旋转一致）= 14；出现 sat = 0；模型核对异常 = 14
+    取到最优模型并逐项精确核对的权重数 = 0；由这些模型**发现**的顶点数 = 0/20
+    用时 10.9 s
+    局限：这是 14 个 w 的有限取点，不能排除「某个未抽到的 w 才暴露其他顶点」；它不构成顶点集的穷举。
+
+[B2 m2=47 δ_lo W=(47/91)·7e11]
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#0：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#1：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#2：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#3：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#4：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#5：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#6：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#7：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#8：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#9：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#10：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#11：模型值不是有理数，未转成 Fraction
+    权重数 = 12；unsat（即 P 上该线性目标的最优值与诸旋转一致）= 12；出现 sat = 0；模型核对异常 = 12
+    取到最优模型并逐项精确核对的权重数 = 0；由这些模型**发现**的顶点数 = 0/47
+    用时 111.5 s
+    局限：这是 12 个 w 的有限取点，不能排除「某个未抽到的 w 才暴露其他顶点」；它不构成顶点集的穷举。
+
+[B3 m2=91 δ_lo W=205632218873398596256]
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#0：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#1：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#2：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#3：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#4：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#5：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#6：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#7：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#8：模型值不是有理数，未转成 Fraction
+    （读模型异常：TypeError int() argument must be a string, a bytes-like object or a real number, not 'IntNumRef'）
+    !! w#9：模型值不是有理数，未转成 Fraction
+    权重数 = 10；unsat（即 P 上该线性目标的最优值与诸旋转一致）= 10；出现 sat = 0；模型核对异常 = 10
+    取到最优模型并逐项精确核对的权重数 = 0；由这些模型**发现**的顶点数 = 0/91
+    用时 510.9 s
+    局限：这是 10 个 w 的有限取点，不能排除「某个未抽到的 w 才暴露其他顶点」；它不构成顶点集的穷举。
+
+口径：本脚本是独立核对，不是证明；A 段是穷举（在给定 m2 下完备），B 段是有限取点（不完备）。

@@ -122,10 +122,11 @@ def S_bounds(y, k=10, s=20, Tmax=1000):
     return lo, hi
 
 
-# 三档精度（k, s, Tmax）：带宽约为 0.7·(2^{-k} + 2^{-s}) 的相对量
-LEVEL_COARSE = (0, 0, 10 ** 6)      # 指数按整数取整，含 2 倍级带宽，最便宜
-LEVEL_MID = (10, 20, 1000)
-LEVEL_FINE = (14, 24, 300)
+# 精度档（k, s, Tmax）：带宽约为 0.7·(2^{-k} + 2^{-s}) 的相对量（实测值见运行日志）
+LEVEL_COARSE = (0, 0, 10 ** 6)      # 指数按整数取整，带宽约 0.7 个相对量级，最便宜
+LEVEL_MID = (10, 20, 1000)          # 实测带宽 6.8e-04
+LEVEL_FINE = (14, 24, 300)          # 实测带宽 4.2e-05
+LEVEL_ULTRA = (18, 28, 120)         # 实测约 2.6e-06（单项 iroot 约 0.12 s）
 
 
 # ------------------------------------------------------------------ 多面体层
@@ -219,3 +220,25 @@ def solve_exact(A, b):
 def clean(y):
     """把近整数坐标压成整数（只用于构造，不改动数学内容；Fraction 精确）。"""
     return tuple(Fraction(t) for t in y)
+
+
+def repair_normalize(y, m2, d, W):
+    """把任意正坐标压成可行点：从最大坐标向后逐条压链，再放大到 Σ>=W 且 min>=1。
+
+    压链用更新后的前驱坐标，故一趟扫描后全部 m2 条链约束成立；放大不改变比值，
+    故链约束保持；放大系数取 max(1, W/Σy, 1/min y)，同时保证 Σ>=W 与 min>=1。
+    """
+    y = [Fraction(t) for t in y]
+    if min(y) <= 0:
+        return None
+    a = max(range(m2), key=lambda i: y[i])
+    for _sweep in range(2):
+        # 两趟：第一趟可能把锚点 y_a 压小，从而破坏出口约束 y_{a+1} <= δ y_a；
+        # 第二趟从 a+1 起重扫并修好它，且此时 y_a 已满足 y_a <= δ y_{a−1}，故不再变动。
+        for k in range(1, m2 + 1):
+            i = (a + k) % m2
+            lim = d * y[(i - 1) % m2]
+            if y[i] > lim:
+                y[i] = lim
+    lam = max(Fraction(1), W / sum(y), Fraction(1) / min(y))
+    return [t * lam for t in y]

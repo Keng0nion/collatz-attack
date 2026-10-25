@@ -89,11 +89,17 @@ def enumerate_vertices(m2, d, W, say_fn=print):
             found[key] = j
         else:
             notes.append(f"    子集 j={j}：解不可行 {bad[:2]}")
-    # 「不要和约束」那一支：全部 m2 条链约束取等
+    # 「全链取等」那一支（勘误 :63 若逐字读成等式时的方程组）
     rows = [c[0] for c in chain]
     b = [c[1] for c in chain]
     sol, rank = solve_exact(rows, b)
-    notes.append(f"    子集「全链、无和约束」：{'无解（秩 ' + str(rank) + '，与 δ^m2 = 1 矛盾一致）' if sol is None else '有解 ' + str(sol[:2])}")
+    zero = sol is not None and all(t == 0 for t in sol)
+    notes.append(f"    「{m2} 条链约束全取等」（无和约束）：唯一解 = {'零向量' if zero else sol}（秩 {rank}）")
+    rows_all = [c[0] for c in chain] + [sumc[0]]
+    b_all = [c[1] for c in chain] + [sumc[1]]
+    sol2, rank2 = solve_exact(rows_all, b_all)
+    notes.append(f"    「{m2} 条链约束全取等 + 和约束」（勘误 :63 的逐字等式读法）："
+                 f"{'不相容（无解）' if sol2 is None else '有解 ' + str(sol2[:2])}（增广秩 {rank2}）")
     return found, notes
 
 

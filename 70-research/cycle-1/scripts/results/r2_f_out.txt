@@ -1,0 +1,23 @@
+==============================================================================
+route-2 第 6 步：判决机制独立审计
+==============================================================================
+
+[A] 界机制的无探针精确审计（整数比较；200 组随机 (t, k, s)）
+    指数向外舍入违规次数 = 0；整数根定义式违规次数 = 0
+    这两条成立 ⟹ A_lo <= 2^{Pa/2^k} <= A_hi 与 B_lo <= 2^{Pb/2^k} <= B_hi，
+    再由 f 递减得 3/(B_hi−1) <= f(t) <= 3/(A_lo−1)，即 lo <= f(t) <= hi。
+
+[A'] 含容性检查（探针相对精度约 1e-80；带宽 < 1e-60 时只比一致位数）
+    m2=3  δ_lo  W=210: 60 点中已判定 30，证书未决 14
+    m2=5  δ_lo  W=200: 60 点中已判定 27，证书未决 1
+    m2=10 δ_lo  W=2000: 60 点中已判定 22，证书未决 1
+    m2=20 δ_lo  v=70: 60 点中已判定 27，证书未决 0
+Traceback (most recent call last):
+  File "/Users/luna/Documents/math IA/collatz-attack/70-research/cycle-1/scripts/r2_f_audit.py", line 120, in <module>
+    m = min(float((p - lof) / p), float((hif - p) / p))
+                  ~~~~~~~~~~^~~
+  File "<string>", line 7, in __div__
+  File "/Users/luna/Documents/math IA/collatz-attack/20-experiments/.venv/lib/python3.12/site-packages/mpmath/libmp/libmpf.py", line 956, in mpf_div
+    if t == fzero: raise ZeroDivisionError
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+ZeroDivisionError

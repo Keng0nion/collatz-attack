@@ -1,0 +1,79 @@
+==============================================================================
+route-2 第 4 步：z3 精确 LRA 独立核验
+z3 版本 = 5.3.1
+==============================================================================
+
+[E1  m2=2  δ_lo  W=70]  v = 见下  顶点可行（精确有理） = True  用时 0.0 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 2 个 j）
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E2  m2=3  δ_lo  W=210]  v = 见下  顶点可行（精确有理） = True  用时 0.0 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 3 个 j）
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E3  m2=5  δ_lo  W=200]  v = 见下  顶点可行（精确有理） = True  用时 0.0 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 5 个 j）
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E4  m2=10 δ_lo  W=2000]  v = 见下  顶点可行（精确有理） = True  用时 0.1 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 10 个 j）
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E5  m2=20 δ_lo  W 使 v=70]  v = 见下  顶点可行（精确有理） = True  用时 0.5 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 20 个 j）
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E6  m2=47 δ_lo  W=(47/91)·7e11（只查前 3 个 j）]  v = 见下  顶点可行（精确有理） = True  用时 0.3 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 3 个 j（抽样））
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E7  m2=91 δ_lo  W=…（只查前 2 个 j）]  v = 见下  顶点可行（精确有理） = True  用时 2.3 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 2 个 j（抽样））
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E8  m2=5  δ=317/200 W=200]  v = 见下  顶点可行（精确有理） = True  用时 0.0 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 5 个 j）
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E9  m2=5  δ=3/2  W=200]  v = 见下  顶点可行（精确有理） = True  用时 0.0 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 5 个 j）
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['unsat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+[E10 m2=5  δ_lo  v=1（阈值边界，预期 Z2 有 sat）]  v = 见下  顶点可行（精确有理） = True  用时 0.0 s
+    Z1  P ∧ y_j < v 的全部判定集合 = ['unsat']（期望 {'unsat'}，查了 5 个 j）
+    Z2  P ∧ y_j <= 1 的全部判定集合 = ['sat']（期望 {'unsat'}，边界情形 E10 预期含 sat）
+    Z3  链约束 ∧ d_1 < 0 = unsat（期望 unsat）
+    Z4  严格回绕下 y = V 可满足 = sat（期望 sat）
+
+==============================================================================
+汇总
+    E1  m2=2  δ_lo  W=70 | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E2  m2=3  δ_lo  W=210 | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E3  m2=5  δ_lo  W=200 | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E4  m2=10 δ_lo  W=2000 | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E5  m2=20 δ_lo  W 使 v=70 | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E6  m2=47 δ_lo  W=(47/91)·7e11（只查前 3 个 j） | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E7  m2=91 δ_lo  W=…（只查前 2 个 j） | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E8  m2=5  δ=317/200 W=200 | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E9  m2=5  δ=3/2  W=200 | Z1 unsat | Z2 unsat | Z3 unsat | Z4 sat
+    E10 m2=5  δ_lo  v=1（阈值边界，预期 Z2 有 sat） | Z1 unsat | Z2 sat | Z3 unsat | Z4 sat
+
+（z3 结果记为独立计算核验；第 2 步的精确有理穷举与它互为独立复算。）
