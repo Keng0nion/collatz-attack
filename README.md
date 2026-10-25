@@ -75,6 +75,7 @@ C 程序用 `cc -O3` 编译（源码在同目录，编译产物未入库）。�
 5. `40-formal/`：精确算术闸门、Lean 源码与安装脚本、五轮独立验算记录。
 6. `50-report/`：总报告（493 行）与可交互边界图。
 7. `workflow.ts`：驱动全部产物的八步动态工作流脚本（Typescript，ZCode dynamic-workflows）。
+8. `60-audits/`：Hercher 定理 21「窗口尾部」步的独立核查（争点简报、一手与第三方材料、三份独立重推、逐 m 余量表与裁决定稿 `hercher-t21/audit-report.md`）。
 
 ## 七、AI 署名与产出说明
 

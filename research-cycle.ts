@@ -140,6 +140,25 @@ const methodScout = agent("方法侦察员", {
     "你负责弄清这个目标上「已经有人怎么做、做到哪、卡在哪」：文献里的机具、可复用的常数、以及已知的不可能性结果。" +
     STYLE,
 });
+// 方法侦察拆成两问：原一问要一次读多份大文件并产出四节报告，是全脚本最长的请求，
+// 2026 年 10 月 24 日那轮在供方侧反复流空闲超时、挂了四小时无产出，故拆短。
+const scoutPartOne = methodScout.ask<string>(
+  `目标：${plan.target}\n子问题：\n${plan.subQuestions.join("\n")}\n\n` +
+    `本轮只写第 1 与第 2 节，篇幅控制在 150 行以内（宁可精炼，不要长文）：\n` +
+    `1. 文献里针对这类问题用过什么机具（逐条给出处），各自到达的范围与已知极限。\n` +
+    `2. 已知的不可能性结果：哪些做法被证明必然失败（逐条给出处）。\n` +
+    `写到 ${ROOT}/70-research/cycle-${plan.cycleNumber}/methods.md（目录若不存在就创建），两节标题分别为「## 一、文献机具与可达范围」与「## 二、已知的不可能性结果」。\n` +
+    `硬要求：每条都要能追溯到可打开的来源或项目内文件；不确定的标注。返回你写入的文件绝对路径。`,
+);
+const scoutPartTwo = scoutPartOne.then(() =>
+  methodScout.ask<string>(
+    `接上一条：往同一个文件 ${ROOT}/70-research/cycle-${plan.cycleNumber}/methods.md 追加第 3 与第 4 节（不要改动前两节），篇幅控制在 80 行以内：\n` +
+      `3. 本机可用的工具（Python venv 里的 mpmath、gmpy2、sympy、z3、numpy，以及 cc 编译器）在这类问题上能做什么、不能做什么。\n` +
+      `4. 你认为本轮最可能产生增量的两个切入点，各一句理由。\n` +
+      `返回同一个文件路径。`,
+  ),
+);
+
 const materials = await Promise.all([
   materialCollector.ask<string>(
     `目标：${plan.target}\n子问题：\n${plan.subQuestions.join("\n")}\n\n` +
@@ -149,15 +168,7 @@ const materials = await Promise.all([
       `3. 打不开的单列，并写明尝试过什么。\n` +
       `目录若不存在就创建。返回你写入的文件绝对路径。`,
   ),
-  methodScout.ask<string>(
-    `目标：${plan.target}\n子问题：\n${plan.subQuestions.join("\n")}\n\n` +
-      `写 ${ROOT}/70-research/cycle-${plan.cycleNumber}/methods.md，内容包括：\n` +
-      `1. 文献里针对这类问题用过什么机具（逐条给出处），各自到达的范围与已知极限。\n` +
-      `2. 已知的不可能性结果：哪些做法被证明必然失败（逐条给出处）。\n` +
-      `3. 本机可用的工具（Python venv 里的 mpmath、gmpy2、sympy、z3、numpy，以及 cc 编译器）在这类问题上能做什么、不能做什么。\n` +
-      `4. 你认为本轮最可能产生增量的两个切入点，各一句理由。\n` +
-      `目录若不存在就创建。返回你写入的文件绝对路径。`,
-  ),
+  scoutPartTwo,
 ]);
 log(`材料与方法就绪：${materials[0]}、${materials[1]}`);
 
@@ -325,13 +336,12 @@ const ledgerWriter = agent("账本维护员", {
 });
 const ledger = await ledgerWriter.ask<LedgerUpdate>(
   `第 ${plan.cycleNumber} 轮结束。闸门退出码 ${gateCode}。\n裁决总评：${verdict.overall}\n增量：${JSON.stringify(verdict.newResults, null, 2)}\n否证：${JSON.stringify(verdict.falsified, null, 2)}\n未决：${JSON.stringify(verdict.unresolved, null, 2)}\n下一轮目标：${JSON.stringify(verdict.nextTargets, null, 2)}\n\n` +
-    `请做五件事：\n` +
+    `请做三件事，并且遵守一条纪律：\n` +
     `1. 更新 ${ROOT}/70-research/ledger.md：追加本轮条目（日期、目标、增量、否证、未决、闸门退出码），并在文件开头维护一个「当前状态」摘要（进展到哪、下一轮该做什么）。\n` +
     `2. 更新 ${ROOT}/70-research/learnings.md：把本轮「试过且失败或无效的方法」逐条写进去（每条一句说明为什么失败），供下一轮避开。\n` +
     `3. 新建 ${ROOT}/70-research/cycle-${plan.cycleNumber}/summary.md：本轮的自足摘要（目标、方法、结论、复现命令、未决）。\n` +
-    `4. 更新 ${ROOT}/CHANGELOG.md：本轮若有实质增量，记一条（日期、结论、涉及文件）；若没有实质增量，明写「本轮无实质增量」与原因。\n` +
-    `5. 在 ${ROOT}/README.md 的目录结构一节里补一行 70-research（只加一行，不改其它内容）。\n\n` +
-    `commitMessage 字段：有增量就写成「突破点＋一句结论」，没有增量就写「无增量」。按 schema 返回。`,
+    `纪律：**不要改动仓库根目录的 README.md 与 CHANGELOG.md**——这两个文件由主代理在提交时统一维护，避免与其它在飞的运行互相覆盖。本轮要往仓库层交代的话，全部写进 70-research/cycle-${plan.cycleNumber}/summary.md 与账本。\n\n` +
+    `commitMessage 字段：有增量就写成「突破点＋一句结论」，没有增量就写「无增量」；主代理按它决定是否推送。按 schema 返回。`,
 );
 
 return {

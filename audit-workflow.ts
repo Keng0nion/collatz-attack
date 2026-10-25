@@ -318,7 +318,19 @@ const judge = agent("争议裁决员", {
     "并把判定写成能被别人复核的形式。" +
     STYLE,
 });
-const verdict = await judge.ask<AuditVerdict>(
+let verdict: AuditVerdict = {
+  answers: [
+    "本轮裁决步骤未完成（模型侧故障），采信版本沿用上一段运行已给出的裁决；该裁决基于同一批文件与同一批反驳。",
+  ],
+  adopted: "勘误版（附条件；沿用上一段运行的裁决，本轮未重新裁决）",
+  margin: 37.09935525747164,
+  unresolved: [
+    "本轮裁决步骤因模型侧故障未完成，采信版本与余量沿用上一段运行。",
+    "勘误版仍有四处待收口：三处表述缺口，以及交叉反驳新提出的 m = 92 支撑句问题。",
+  ],
+};
+try {
+  verdict = await judge.ask<AuditVerdict>(
   `材料与全部报告：\n` +
     `争点简报：${brief.path}\n一手材料：${materials[0].path}\n第三方材料：${materials[1].path}\n` +
     `三个版本的重推报告：${rederivations.map((r) => r.path).join("、")}\n\n` +
@@ -330,7 +342,10 @@ const verdict = await judge.ask<AuditVerdict>(
     `4. 在此判定下，那条「用纯初等输入把 m 圈排除推到 91」的路线是否成立？m = 91 处的余量是多少？\n\n` +
     `adopted 写你最终采信的版本（印出版 / 勘误版 / 健全版 / 无，并附一句理由）；unresolved 里如实列出你没能解决的争议。\n` +
     `按 schema 返回。`,
-);
+  );
+} catch (e) {
+  log(`裁决步骤未能完成：${String(e).slice(0, 120)}`);
+}
 report({
   topic: "verdict",
   claims: verdict.answers.length,

@@ -5,6 +5,17 @@ __pycache__/
 *.pyc
 .DS_Store
 
+# 定量闸门的路径垫片（2026 年 10 月 24 日，可随时删除）
+# 原因：`collatz-attack/60-audits/hercher-t21` 这条工作流的 run 的 cwd 是仓库根目录，
+# 而闸门命令 world.run("collatz-attack/20-experiments/.venv/bin/python", [...]) 用的是
+# 工作区相对路径，于是 spawn 报 ENOENT（journal 里的原话：
+# world.run ... did not run to completion (spawn_error): spawn collatz-attack/... ENOENT）。
+# 垫片只有两条符号链接（都在本仓库内）：collatz-attack/20-experiments/.venv/bin/python 与
+# collatz-attack/60-audits/hercher-t21/scripts/margin_table.py，
+# 分别指向仓库里真实的解释器与真实脚本；删掉这个目录与本行即可恢复原状。
+# 忽略范围以仓库根为锚，只此一条路径，不影响别处同名的目录。
+/collatz-attack/
+
 # 编译产物（对应的 .c 源码在同一目录，可重新编译）
 20-experiments/scripts/sweep
 20-experiments/scripts/stoptime_dist

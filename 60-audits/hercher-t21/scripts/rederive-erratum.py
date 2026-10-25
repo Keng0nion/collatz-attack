@@ -22,8 +22,12 @@ import json
 import sys
 from fractions import Fraction
 
-from mpmath import (mp, mpf, log, log2, log10, log1p, expm1, floor, power, iv,
-                    nstr)
+from mpmath import (mp, mpf, log, log10, log1p, expm1, floor, power, iv, nstr)
+
+
+def log2(x):
+    """mpmath 没有 log2，本地补一个（对 mpf 与 Python 数值都适用）。"""
+    return log(x) / log(2)
 
 # ----------------------------------------------------------------------------
 # 0. 常数
@@ -73,8 +77,30 @@ def f_tail(x):
 
 
 def S_of(xs):
-    """S(x_1, ..., x_k) := sum_i 3/(2^{x_i} − 1)。"""
+    """S(x_1, ..., x_k) := sum_i 3/(2^{x_i} − 1)。坐标过大时会越出 mpmath 指数上限。"""
     return sum(f_tail(x) for x in xs)
+
+
+def log2_S_of(xs):
+    """
+    log2(S(xs)) 的稳定求值，适用于任意大的坐标（可到 1e18）。
+        log2(3/(2^x − 1)) = log2 3 − x + log2(1 − 2^{-x})，
+    其中修正项在 x >= 1000 时小于 2^{-1000}，直接记 0（相对误差可忽略）。
+    求和在对数尺度做：取最大项 M，累加 2^{log2 t_i − M}（各项 <= 1，不会溢出）。
+    """
+    lts = []
+    l3 = log2(mpf(3))
+    for x in xs:
+        corr = log2(1 - power(2, -x)) if x < 1000 else mpf(0)
+        lts.append(l3 - x + corr)
+    M = max(lts)
+    acc = mpf(0)
+    for lt in lts:
+        d = lt - M
+        if d < -10 ** 7:
+            continue
+        acc += power(2, d)
+    return M + log2(acc)
 
 
 # ----------------------------------------------------------------------------
@@ -582,9 +608,9 @@ def main():
     # 2c. 顶点界：S(x) <= S(v, delta v, ..., delta^{m2-1} v)
     print("\n[2c] 顶点界数值检验：对可行 x（x_i >= 1、循环约束 x_{i+1} <= delta x_i、")
     print("     sum x_i >= W）检验 S(x) <= sum_j f(delta^j v)，v = W(delta−1)/(delta^{m2}−1)")
-    print("     比较用相对超出量 (S(x) − 顶点值)/顶点值，阈值 1e-35。")
-    print("     判据：只在满足 (A7) 的 v >= c 参数上才有检验力，故禁列 v >= c 一栏；")
-    print("     大 m2 的坐标过大时会越出 mpmath 指数上限，故前沿案例取到 m2 = 30。")
+    print("     比较一律在对数尺度：超出量 = log2 S(x) − log2(顶点值)，阈值 1e-40。")
+    print("     判据：只在满足 (A7) 的 v >= c 参数上才有检验力，故列出 v >= c 一栏；")
+    print("     大 m2 的真实参数见 [2c-bis]（那里坐标达 1e18，必须走对数尺度）。")
     import random
     random.seed(20261021)
     mp.dps = 60
@@ -592,7 +618,7 @@ def main():
     X0t, _d, ct = setup(60)
     c = ct
     rand_tests = []
-    TOL = mpf(10) ** (-35)
+    TOL_LOG = mpf(10) ** (-40)
 
     def repair(x, m2, W):
         """投影到可行域：先压链约束，再整体放大到 sum >= W。"""
@@ -618,7 +644,7 @@ def main():
     cases = []
     for (m2c, Wc) in [(2, mpf(70)), (3, mpf(210)), (5, mpf(200)), (10, mpf(2000))]:
         cases.append((m2c, mpf(Wc), "一般 W（v < c，仅作不等式本身的一般检验）"))
-    for (m2c, vc) in [(5, c), (10, c), (20, c), (30, mpf(84))]:
+    for (m2c, vc) in [(5, c), (10, c), (20, c)]:
         Wc = vc * (power(delta, m2c) - 1) / (delta - 1)
         cases.append((m2c, Wc, f"(A7) 前沿 v = {nstr(vc, 7)}"))
     for (m2, W, case_note) in cases:
@@ -627,10 +653,9 @@ def main():
         print(f"    —— 案例：m2 = {m2}, W = {nstr(W, 8)}, v = {nstr(v_case, 8)}, "
               f"v >= c ? {a7_ok}  【{case_note}】")
         v = W * (delta - 1) / (power(delta, m2) - 1)
-        vertex_val = sum(f_tail(power(delta, j) * v) for j in range(m2))
-        worst_rel = mpf(-1)
-        worst_mid = mpf(-1)
-        worst_mid2 = mpf(-1)
+        lg_vertex = log2_S_of([power(delta, j) * v for j in range(m2)])
+        worst_log = mpf(-10) ** 9
+        worst_mid = mpf(-10) ** 9
         worst_desc = ""
         n_ok = 0
         n_eval = 0
@@ -651,21 +676,21 @@ def main():
             x = repair(x, m2, W)
             if x is None:
                 continue
-            val = S_of(x)
+            lg_val = log2_S_of(x)
             # 有效中间量：令 M := max x_i，x 逐点支配以 M 为峰的循环几何序列 g，
             # 故 S(x) <= S(g) = sum_k f(M/delta^k) =: mid。mid 并不保证 <= 顶点值
             # （它只用到 M 与链约束），故只核对 S(x) <= mid 这一方向。
             M = max(x)
-            mid = sum(f_tail(M / power(delta, k)) for k in range(m2))
-            rel = (val - vertex_val) / vertex_val
-            rel_mid = (val - mid) / mid
+            lg_mid = log2_S_of([M / power(delta, k) for k in range(m2)])
+            dlog = lg_val - lg_vertex
+            dmid = lg_val - lg_mid
             n_eval += 1
-            if rel <= TOL:
+            if dlog <= TOL_LOG:
                 n_ok += 1
-            if rel_mid > worst_mid:
-                worst_mid = rel_mid
-            if rel > worst_rel:
-                worst_rel = rel
+            if dmid > worst_mid:
+                worst_mid = dmid
+            if dlog > worst_log:
+                worst_log = dlog
                 worst_desc = f"kind={kind}"
         # 局部爬山：从顶点附近出发，逐坐标试探能否提高 S
         n_hill = 30 if m2 <= 10 else 10
@@ -676,7 +701,7 @@ def main():
             x = repair(x, m2, W)
             if x is None:
                 continue
-            cur = S_of(x)
+            cur = log2_S_of(x)
             for _ in range(n_move):
                 i = random.randrange(m2)
                 cand = list(x)
@@ -684,36 +709,36 @@ def main():
                 cand = repair(cand, m2, W)
                 if cand is None:
                     continue
-                cv = S_of(cand)
+                cv = log2_S_of(cand)
                 if cv > cur:
                     x, cur = cand, cv
-            rel = (cur - vertex_val) / vertex_val
+            dlog = cur - lg_vertex
             M = max(x)
-            mid = sum(f_tail(M / power(delta, k)) for k in range(m2))
-            worst_mid = max(worst_mid, (cur - mid) / mid)
+            lg_mid = log2_S_of([M / power(delta, k) for k in range(m2)])
+            worst_mid = max(worst_mid, cur - lg_mid)
             n_eval += 1
-            if rel <= TOL:
+            if dlog <= TOL_LOG:
                 n_ok += 1
-            if rel > worst_rel:
-                worst_rel = rel
+            if dlog > worst_log:
+                worst_log = dlog
                 worst_desc = "hill_climb"
-        # 对照：均匀（「平坦」）配置的相对值，用来看顶点相对平坦点的收益
-        xflat = [W / m2] * m2
-        flat_rel = (S_of(xflat) - vertex_val) / vertex_val
-        rand_tests.append((m2, nstr(W, 8), nstr(vertex_val, 10),
-                           nstr(worst_rel, 8), bool(worst_rel <= TOL),
+        # 对照：均匀（「平坦」）配置与顶点的 log2 差，用来看顶点相对平坦点的收益
+        lg_flat = log2_S_of([W / m2] * m2)
+        flat_gap = lg_flat - lg_vertex
+        rand_tests.append((m2, nstr(W, 8), nstr(lg_vertex, 12),
+                           nstr(worst_log, 8), bool(worst_log <= TOL_LOG),
                            f"{n_ok}/{n_eval}", worst_desc,
-                           nstr(worst_mid, 8), a7_ok, nstr(flat_rel, 8),
+                           nstr(worst_mid, 8), a7_ok, nstr(flat_gap, 8),
                            nstr(v_case, 8)))
-    print(f"  {'m2':>4} {'v':>10} {'v>=c':>5} {'顶点值':>20} {'顶点相对超出':>13} "
-          f"{'OK?':>6} {'样本':>10} {'平坦配置相对值':>15}")
+    print(f"  {'m2':>4} {'v':>10} {'v>=c':>5} {'log2 顶点值':>20} {'最大 log2 超出':>15} "
+          f"{'OK?':>6} {'样本':>10} {'平坦配置 log2 差':>16}")
     for (m2, Ws, vv, wr, okv, cnt, wd, wm, a7, fl, vstr) in rand_tests:
-        print(f"  {m2:>4} {vstr:>10} {str(a7):>5} {vv:>20} {wr:>13} {str(okv):>6} "
-              f"{cnt:>10} {fl:>15}")
+        print(f"  {m2:>4} {vstr:>10} {str(a7):>5} {vv:>20} {wr:>15} {str(okv):>6} "
+              f"{cnt:>10} {fl:>16}")
     report["vertex_bound_sampling"] = [
-        {"m2": t[0], "v": t[10], "a7_ok": t[8], "max_rel_excess_vertex": t[3],
-         "ok": t[4], "passed": t[5], "max_rel_excess_mid": t[7],
-         "flat_rel": t[9]}
+        {"m2": t[0], "v": t[10], "a7_ok": t[8], "max_log2_excess_vertex": t[3],
+         "ok": t[4], "passed": t[5], "max_log2_excess_mid": t[7],
+         "flat_log2_gap": t[9]}
         for t in rand_tests]
     report["vertex_bound_sampling_ok"] = all(t[4] for t in rand_tests)
 
@@ -726,19 +751,7 @@ def main():
     real_cases = [(47, (mpf(47) / 91) * K_START),
                   (67, (mpf(67) / 91) * mpf(5267319278509397)),
                   (82, (mpf(82) / 91) * mpf(4640282259296926456)),
-                  (91, (mpf(91) / 91) * mpf(205632218873398256))]
-
-    def log2_S_of(xs):
-        """log2(sum_i 3/(2^{x_i}−1)) 的稳定求值；x_i >= 30 时 2^{x_i}−1 与 2^{x_i}
-        相对差 < 2^{-29}，可忽略。mn − x_i < −1e7 的项直接记 0（远低于任何精度）。"""
-        mn = min(xs)
-        acc = mpf(0)
-        for x in xs:
-            d = mn - x
-            if d < -1e7:
-                continue
-            acc += power(2, d)
-        return log2(mpf(3)) - mn + log2(acc)
+                  (91, (mpf(91) / 91) * mpf(205632218873398596256))]
 
     real_rows = []
     for (m2r, Wr) in real_cases:
