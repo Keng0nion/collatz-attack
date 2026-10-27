@@ -1,0 +1,11 @@
+==============================================================================
+r5_vm12_enum.py  m2=12  impl=fraction  tag=m2_12_impl_fraction
+δ = 126797/80000（δ 的严格下界（delta_rigorous_bounds(10**7)））  W = 2000（命令行给定）
+组合数 C(25,12) = 5200300
+v = W(δ−1)/(δ^12−1) = 1717986918400000000000000000000000000000000000000000000000/367585379715027714724468362329970166286740140554559688053
+脚本 md5 = a0511d9861e56764a7eeaa796385e359
+r2_common.py md5 = cfee819667c0883e73732f03d2dc8bef（期望 cfee819667c0883e73732f03d2dc8bef；一致 = True）
+r2_j_independent_vertices.py md5 = 4b8ce2a500d8ca9021fd0178deca637e（期望 4b8ce2a500d8ca9021fd0178deca637e；一致 = True）
+python 3.12.7 / macOS-27.0.1-arm64-arm-64bit
+note: 
+dump-sample 1500 条已写入 ../results/r5_smoke/sample_m2_12_fraction.txt

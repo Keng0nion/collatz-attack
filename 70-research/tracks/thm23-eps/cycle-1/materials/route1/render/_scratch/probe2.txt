@@ -1,0 +1,4 @@
+NDY_LINES 32
+LINE_BYTES b"    '11'      dy=-1.349  h=7.97"
+LINE_BYTES b"    '20'      dy=-1.349  h=7.97"
+LINE_BYTES b"    '\xe2\x88\x9232'     dy=-0.461  h=5.01"

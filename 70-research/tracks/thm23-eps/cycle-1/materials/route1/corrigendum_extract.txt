@@ -1,0 +1,137 @@
+Corrigendum to Article 23.3.5
+There are no Collatz-m-Cycles with m ≤ 91
+Christian Hercher
+Abteilung für Mathematik und ihre Didaktik
+Europa-Universität Flensburg
+Auf dem Campius 1b
+24943 Flensburg
+Germany
+christian.hercher@uni-flensburg.de
+3
+The derivation of the inequalities T (nm−m2 +1+ℓ ) < (2v −1)
+δ in the proof
+of Theorem 21 at the bottom of page 14 contains an error. To show the
+statement
+m
+X
+
+T (nm−m2 +1 ) +
+
+T (ni ) <
+
+i=m−m2 +2
+
+3 · (m2 − 1)
+3
++
+,
+2v − 1
+(2v − 1)δ
+
+which is used later in the proof, we can proceed as follows.
+For a local minimum ni in the hypothetically existing Collatz cycle, define
+xi :=
+
+log(ni + 1)
+.
+log 2
+
+Then, by Lemma 8, we know that 1 ≤ ki ≤ xi , and by Lemma 20 that
+ni+1 < nδi , which implies xi+1 < δxi . Using the same argument as on page 13
+in the original proof of Theorem 21, we know that there are m2 consecutive
+local minima nm−m2 +1 , . . . , nm such that xm−m2 +1 + · · · + xm ≥ km−m2 +1 +
+· · · + km ≥ mm2 · K. Without loss of generality, let the cycle be entered in such
+a way that this sum is maximal. Then xm−m2 ≤ xm ; otherwise, we would
+have chosen the shifted interval of local minima. Since xm−m2 +1 < δxm−m2 ,
+this implies xm−m2 +1 < δxm .
+By Remark 7, we have T (ni ) < n3i . Thus,
+m
+X
+i=m−m2 +1
+
+T (ni ) <
+
+m
+X
+i=m−m2 +1
+
+3
+2xi − 1
+1
+
+=: S(xm−m2 +1 , . . . , xm ).
+
+Since all xi are positive, the function S is convex and attains its maximum
+value at a vertex of the polytope determined by the constraints xi ≥ 1,
+xi+1 ≤ δxi , xm−m2 +1 < δxm , and xm−m2 +1 + · · · + xm ≥ mm2 · K. Thus, at
+least m2 of these constraints must be active, i.e., must hold with equality.
+Suppose there is a value xi such that xi = 1. Then xi+1 ≤ δ, . . . ,
+xi−1 ≤ δ m2 −1 . Hence,
+m2
+δ m2 − 1
+<
+· K,
+δ−1
+m
+contradicting the sum constraint. The last inequality follows from the definition of m2 in the statement of Theorem 21.
+Thus, m2 of the remaining m2 + 1 constraints must be active. If all
+constraints xi+1 ≤ δxi , xm−m2 +1 < δxm were active simultaneously, this
+would lead to the contradiction xm = δ m2 xm , and hence δ = 1, contradicting
+3
+. Therefore, the sum condition must be active, and we have
+δ = log
+log 2
+xm−m2 +1 + · · · + xm ≤
+
+m2
+· K,
+m
+together with all but one of the equations xi+1 = δxi , and xm−m2 +1 = δxm .
+Consequently, S attains its maximum at a point whose coordinates are a
+cyclic permutation of xm−m2 +1 , δxm−m2 +1 , . . . , δ m2 −1 xm−m2 +1 , and
+xm−m2 +1 + · · · + xm =
+
+δ m2 − 1
+m2
+m2 −1
+· K = xm−m2 +1 + δxm−m2 +1 + · · · + δ
+xm−m2 +1 = xm−m2 +1 ·
+.
+m
+δ−1
+Hence,
+δ−1
+m2
+· K · m2
+= v,
+xm−m2 +1 =
+m
+δ −1
+and we obtain
+m
+X
+T (nm−m2 +1 ) +
+T (ni ) < S(xm−m2 +1 , . . . , xm )
+i=m−m2 +2
+
+≤ S(v, δv, . . . , δ m2 −1 v) ≤ S(v, δv, . . . , δv)
+3
+3 · (m2 − 1)
+3
+3 · (m2 − 1)
+= v
++
+< v
++
+,
+δv
+2 −1
+2 −1
+2 −1
+(2v − 1)δ
+which is exactly what we wanted to prove.
+The author is highly grateful to Xinjun Wang, ORCID 0009-0007-58955984, for pointing out this mistake and for helpful discussions regarding its
+correction.
+2
+
+

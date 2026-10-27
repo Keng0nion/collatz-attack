@@ -1,0 +1,3 @@
+N 32
+DASH43 []
+SAMPLE ['EXP 11 DY -1.349 H ?', 'EXP 20 DY -1.349 H ?', 'EXP −32 DY -0.461 H ?', 'EXP 15 DY -1.943 H ?', 'EXP −36 DY +0.133 H ?', 'EXP 17 DY -1.349 H ?']

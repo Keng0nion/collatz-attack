@@ -1,0 +1,8 @@
+N_TOKENS 14
+TOK 15 dy_list [-1.943, -1.931] sign raised
+TOK 17 dy_list [-1.349, -1.331] sign raised
+TOK 18 dy_list [-1.349, -1.331] sign raised
+TOK 19 dy_list [-1.358, -1.349, -1.331, -1.331] sign raised
+TOK 20 dy_list [-1.349, -1.349, -1.331, -1.331] sign raised
+TOK 21 dy_list [-1.349, -1.331] sign raised
+TOK 11 dy_list [-1.349, -1.331] sign raised

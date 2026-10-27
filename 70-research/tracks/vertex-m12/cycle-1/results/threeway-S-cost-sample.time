@@ -1,0 +1,1 @@
+"$PY" scripts/three_way_baseline.py S > results/threeway-S-cost-sample.txt  6.43s user 0.19s system 51% cpu 12.902 total

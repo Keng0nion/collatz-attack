@@ -1,0 +1,62 @@
+  0 y=   67.8 We now give a well known lemma for diophantine approximation:
+  1 y=   90.9 Lemma 22. Let 0 &lt; α &lt; β be two real numbers with continued fraction expansions α =
+  2 y=  105.3 [a ; a , . . . , a , a , . . .] and β = [a ; a , . . . , a , b , . . .]. Then every fraction in the open in-
+  3 y=  110.1 0 1 k−1 k 0 1 k−1 k
+  4 y=  119.7 terval (α, β) has a denominator which is not smaller than the one of γ = [a ; a , . . . , a , c ]
+  5 y=  124.5 0 1 k−1 k
+  6 y=  134.2 with c = min(a , b ) + 1.
+  7 y=  139.3 k k k
+  8 y=  157.2 Proof. First, let γ be some real number with α &lt; γ &lt; β. Since ⌊α⌋ = a = ⌊β⌋, we also have
+  9 y=  162.0 0
+ 10 y=  170.0 ⌊γ⌋ = a . Thus, 0 &lt; α − a &lt; γ − a &lt; β − a &lt; 1 and, therefore, 1 &lt; 1 &lt; 1 &lt; 1 .
+ 11 y=  176.5 0 0 0 0 β−a 0 γ−a 0 α−a 0
+ 12 y=  187.3 j k j k j k
+ 13 y=  190.4 Since 1 = a = 1 , we also get 1 = a , and so on.
+ 14 y=  196.9 β−a 0 1 α−a 0 γ−a 0 1
+ 15 y=  209.9 Thus, for every real number γ within the interval (α, β), we get the same beginning in
+ 16 y=  224.3 the continued fraction expansion of γ: γ = [a ; a , . . . , a , . . .].
+ 17 y=  229.1 0 1 k−1
+ 18 y=  238.7 If k is even, increasing the partial denominator increases the fraction. Thus, we have
+ 19 y=  253.2 a &lt; b and
+ 20 y=  258.3 k k
+ 21 y=  267.6 [a ; a , . . . , a , a ] &lt; α &lt; [a ; a , . . . , a , a + 1] &lt; β.
+ 22 y=  272.4 0 1 k−1 k 0 1 k−1 k
+ 23 y=  287.9 If we choose c := a + 1 = min(a + b ) + 1, we get the fraction with smallest denominator
+ 24 y=  292.9 k k k k
+ 25 y=  302.3 in this interval.
+ 26 y=  316.8 If k is odd, decreasing the partial denominator increases the fraction. Thus, we have
+ 27 y=  331.2 a &gt; b and
+ 28 y=  336.3 k k
+ 29 y=  345.7 α &lt; [a ; a , . . . , a , b + 1] &lt; β &lt; [a ; a , . . . , a , b ].
+ 30 y=  350.4 0 1 k−1 k 0 1 k−1 k
+ 31 y=  365.9 If we choose c := b + 1 = min(a + b ) + 1, we get the fraction with smallest denominator
+ 32 y=  371.0 k k k k
+ 33 y=  380.4 in this interval.
+ 34 y=  403.4 Theorem 23 (Main Theorem). There is no m-cycle with m ≤ 91.
+ 35 y=  425.1 Proof. Let m ≤ 91. From Theorem 3 in [12] we know that K &gt; 7 · 10 11 .
+ 36 y=  439.6 With X = 695 · 2 60 ≈ 8 · 10 20 , as given in Definition 4, we get m ≥ 47. Now, from
+ 37 y=  445.7 0 2
+ 38 y=  455.4 Theorem 21 we have
+ 39 y=  464.5 K + L
+ 40 y=  472.2 δ&lt; &lt; δ + 6.9 · 10 −32 .
+ 41 y=  481.3 K
+ 42 y=  495.9 By using continued fractions as in Lemma 22, we can now get a better lower bound for K
+ 43 y=  510.4 with
+ 44 y=  522.9 K &gt; 5.2 · 10 15 .
+ 45 y=  545.1 And now we can reiterate this process!
+ 46 y=  558.1 In the next run, we get m ≥ 67, δ &lt; K+L &lt; δ + 5.1 · 10 −36 and, therefore, K &gt; 3.97 · 10 17 .
+ 47 y=  564.3 2 K
+ 48 y=  574.0 Applying this newer bound on K once more, we get m ≥ 77,
+ 49 y=  578.7 2
+ 50 y=  587.0 δ &lt; K+L &lt; δ + 4.1 · 10 −38 and, hence, K &gt; 4.64 · 10 18 .
+ 51 y=  595.8 K
+ 52 y=  601.4 In the forth run we get m ≥ 82, δ &lt; K+L &lt; δ + 2.3 · 10 −39 and with this K &gt; 2.74 · 10 19 .
+ 53 y=  607.6 2 K
+ 54 y=  615.9 From there we get m ≥ 86, δ &lt; K+L &lt; δ + 2.3 · 10 −40 and K &gt; 7.76 · 10 19 . And from this
+ 55 y=  622.1 2 K
+ 56 y=  630.3 we get m ≥ 88, δ &lt; K+L &lt; δ + 5.3 · 10 −41 and K &gt; 2.05 · 10 20 .
+ 57 y=  636.5 2 K
+ 58 y=  644.8 Applying this lower bounnd a last time we get m ≥ 91, δ &lt; K+L &lt; δ + 1.11 · 10 −43 and
+ 59 y=  651.0 2 K
+ 60 y=  659.3 K &gt; 7.94 · 10 21 .
+ 61 y=  690.5 15

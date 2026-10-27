@@ -1,0 +1,1 @@
+"$PY" scripts/three_way_baseline.py P > results/threeway-P-partition.txt  89.89s user 0.80s system 596% cpu 15.214 total

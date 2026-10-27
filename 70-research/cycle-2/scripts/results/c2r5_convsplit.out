@@ -1,0 +1,36 @@
+======================================================================
+m2 = 88 的门槛 K_thresh ∈ [50126425533371674020.0, 50126425533371674020.0]
+  K = K_thresh*1       ：m2_max = 87，eps(m2_max) = 1.23720721019823426e-40；argmin = 87，eps(argmin) = 1.23720721019823426e-40；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 77692117359936589403
+  K = K_thresh*10001/10000 ：m2_max = 88，eps(m2_max) = 1.23603992493280043e-40；argmin = 88，eps(argmin) = 1.23603992493280043e-40；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 77692117359936589403
+  K = K_thresh*2001/2000 ：m2_max = 88，eps(m2_max) = 1.23142349411509607e-40；argmin = 88，eps(argmin) = 1.23142349411509607e-40；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 77692117359936589403
+  K = K_thresh*101/100 ：m2_max = 88，eps(m2_max) = 1.14293315023424486e-40；argmin = 88，eps(argmin) = 1.14293315023424486e-40；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 77692117359936589403
+  K = K_thresh*21/20   ：m2_max = 88，eps(m2_max) = 9.91455314648474956e-41；argmin = 88，eps(argmin) = 9.91455314648474956e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 77692117359936589403
+======================================================================
+m2 = 89 的门槛 K_thresh ∈ [78555824936758779275.0, 78555824936758779275.0]
+  K = K_thresh*1       ：m2_max = 88，eps(m2_max) = 6.52225105582103824e-41；argmin = 88，eps(argmin) = 6.52225105582103824e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 77692117359936589403
+  K = K_thresh*10001/10000 ：m2_max = 89，eps(m2_max) = 6.51493983779439556e-41；argmin = 89，eps(argmin) = 6.51493983779439556e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 77692117359936589403
+  K = K_thresh*2001/2000 ：m2_max = 89，eps(m2_max) = 6.48603103513388886e-41；argmin = 89，eps(argmin) = 6.48603103513388886e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 77692117359936589403
+  K = K_thresh*101/100 ：m2_max = 89，eps(m2_max) = 5.93427656673836645e-41；argmin = 89，eps(argmin) = 5.93427656673836645e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 205632218873398596256
+  K = K_thresh*21/20   ：m2_max = 89，eps(m2_max) = 5.01946017731824505e-41；argmin = 89，eps(argmin) = 5.01946017731824505e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 205632218873398596256
+======================================================================
+m2 = 90 的门槛 K_thresh ∈ [1.2312461410755657156e+20, 1.2312461410755657156e+20]
+  K = K_thresh*1       ：m2_max = 89，eps(m2_max) = 3.285727035882611e-41；argmin = 89，eps(argmin) = 3.285727035882611e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 205632218873398596256
+  K = K_thresh*10001/10000 ：m2_max = 90，eps(m2_max) = 3.28114989140588711e-41；argmin = 90，eps(argmin) = 3.28114989140588711e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 205632218873398596256
+  K = K_thresh*2001/2000 ：m2_max = 90，eps(m2_max) = 3.2630555571261648e-41；argmin = 90，eps(argmin) = 3.2630555571261648e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 205632218873398596256
+  K = K_thresh*101/100 ：m2_max = 90，eps(m2_max) = 2.91925745605703997e-41；argmin = 90，eps(argmin) = 2.91925745605703997e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 205632218873398596256
+  K = K_thresh*21/20   ：m2_max = 90，eps(m2_max) = 2.36861298654877378e-41；argmin = 90，eps(argmin) = 2.36861298654877378e-41；分离？ False
+       Psi^F(K)（Stern-Brocot 下界）= 205632218873398596256

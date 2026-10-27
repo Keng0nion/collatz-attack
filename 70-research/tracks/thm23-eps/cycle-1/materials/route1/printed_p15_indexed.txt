@@ -1,0 +1,62 @@
+000 | We now give a well known lemma for diophantine approximation:
+001 | Lemma 22. Let 0 &lt; α &lt; β be two real numbers with continued fraction expansions α =
+002 | [a ; a , . . . , a , a , . . .] and β = [a ; a , . . . , a , b , . . .]. Then every fraction in the open in-
+003 | 0 1 k−1 k 0 1 k−1 k
+004 | terval (α, β) has a denominator which is not smaller than the one of γ = [a ; a , . . . , a , c ]
+005 | 0 1 k−1 k
+006 | with c = min(a , b ) + 1.
+007 | k k k
+008 | Proof. First, let γ be some real number with α &lt; γ &lt; β. Since ⌊α⌋ = a = ⌊β⌋, we also have
+009 | 0
+010 | ⌊γ⌋ = a . Thus, 0 &lt; α − a &lt; γ − a &lt; β − a &lt; 1 and, therefore, 1 &lt; 1 &lt; 1 &lt; 1 .
+011 | 0 0 0 0 β−a 0 γ−a 0 α−a 0
+012 | j k j k j k
+013 | Since 1 = a = 1 , we also get 1 = a , and so on.
+014 | β−a 0 1 α−a 0 γ−a 0 1
+015 | Thus, for every real number γ within the interval (α, β), we get the same beginning in
+016 | the continued fraction expansion of γ: γ = [a ; a , . . . , a , . . .].
+017 | 0 1 k−1
+018 | If k is even, increasing the partial denominator increases the fraction. Thus, we have
+019 | a &lt; b and
+020 | k k
+021 | [a ; a , . . . , a , a ] &lt; α &lt; [a ; a , . . . , a , a + 1] &lt; β.
+022 | 0 1 k−1 k 0 1 k−1 k
+023 | If we choose c := a + 1 = min(a + b ) + 1, we get the fraction with smallest denominator
+024 | k k k k
+025 | in this interval.
+026 | If k is odd, decreasing the partial denominator increases the fraction. Thus, we have
+027 | a &gt; b and
+028 | k k
+029 | α &lt; [a ; a , . . . , a , b + 1] &lt; β &lt; [a ; a , . . . , a , b ].
+030 | 0 1 k−1 k 0 1 k−1 k
+031 | If we choose c := b + 1 = min(a + b ) + 1, we get the fraction with smallest denominator
+032 | k k k k
+033 | in this interval.
+034 | Theorem 23 (Main Theorem). There is no m-cycle with m ≤ 91.
+035 | Proof. Let m ≤ 91. From Theorem 3 in [12] we know that K &gt; 7 · 10 11 .
+036 | With X = 695 · 2 60 ≈ 8 · 10 20 , as given in Definition 4, we get m ≥ 47. Now, from
+037 | 0 2
+038 | Theorem 21 we have
+039 | K + L
+040 | δ&lt; &lt; δ + 6.9 · 10 −32 .
+041 | K
+042 | By using continued fractions as in Lemma 22, we can now get a better lower bound for K
+043 | with
+044 | K &gt; 5.2 · 10 15 .
+045 | And now we can reiterate this process!
+046 | In the next run, we get m ≥ 67, δ &lt; K+L &lt; δ + 5.1 · 10 −36 and, therefore, K &gt; 3.97 · 10 17 .
+047 | 2 K
+048 | Applying this newer bound on K once more, we get m ≥ 77,
+049 | 2
+050 | δ &lt; K+L &lt; δ + 4.1 · 10 −38 and, hence, K &gt; 4.64 · 10 18 .
+051 | K
+052 | In the forth run we get m ≥ 82, δ &lt; K+L &lt; δ + 2.3 · 10 −39 and with this K &gt; 2.74 · 10 19 .
+053 | 2 K
+054 | From there we get m ≥ 86, δ &lt; K+L &lt; δ + 2.3 · 10 −40 and K &gt; 7.76 · 10 19 . And from this
+055 | 2 K
+056 | we get m ≥ 88, δ &lt; K+L &lt; δ + 5.3 · 10 −41 and K &gt; 2.05 · 10 20 .
+057 | 2 K
+058 | Applying this lower bounnd a last time we get m ≥ 91, δ &lt; K+L &lt; δ + 1.11 · 10 −43 and
+059 | 2 K
+060 | K &gt; 7.94 · 10 21 .
+061 | 15

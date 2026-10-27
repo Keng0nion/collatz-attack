@@ -1,0 +1,1 @@
+"$PY" scripts/three_way_baseline.py A > results/threeway-A-positive.txt  65.60s user 0.76s system 92% cpu 1:11.49 total

@@ -1,0 +1,1 @@
+-43 :: None ; -41 :: None ; -40 :: None ; -39 :: None ; -38 :: None ; -36 :: None ; -32 :: None ; 15 :: None ; 17 :: None ; 18 :: None ; 19 :: None ; 20 :: None ; 21 :: None

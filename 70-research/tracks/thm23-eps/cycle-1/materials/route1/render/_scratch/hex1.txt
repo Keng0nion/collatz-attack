@@ -1,0 +1,3 @@
+NLINES 32
+FIRST_LEN 25
+FIRST_HEX b" '11'   dy=-1.349  h=7.97"

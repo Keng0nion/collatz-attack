@@ -1,0 +1,43 @@
+[m5-E10] route2_vm_enum — 全活跃子集顶点精确穷举
+PARAMS M=5 N=11 delta=126797/80000 W=630347359154513105681/40960000000000000000 threads=8 cross=full
+TOTAL_SUBSETS mult=462 pascal=462 equal=True
+EXPECT_TOTAL PASS (462)
+ENUM_CONTINUITY_CHECK PASS
+DECISIONS_COMPLETE PASS (undecided=0)
+DECISION_COUNTS S=170 I=262 F=30 total=462
+CROSSCHECK compared=462 sol_cmp=292 mismatches=0 mode=2
+THREAD 0 chunks=1 sets=462 first_chunk=0 first_range=[0,462) last_chunk=0 last_range=[0,462)
+THREAD 1 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
+THREAD 2 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
+THREAD 3 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
+THREAD 4 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
+THREAD 5 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
+THREAD 6 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
+THREAD 7 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
+THREAD_SETS_SUM 462 (== total : True)
+TIME_SAMPLE pathA n=2 avg_ns=4500.0
+TIME_SAMPLE pathB n=2 avg_ns=3000.0
+ENUM_WALL_SEC 0.002
+FEASIBLE_SUBSETS 30
+VERTEX_COUNT 5
+EXPECT_VERTICES PASS (5)
+VERTEX 0 coords=1/1;126797/80000;16077479209/6400000000;2038576131263573/512000000000000;258485337715827265681/40960000000000000000
+VERTEX 0 certs=6 cert_subset_idxs=195[0,5,6,7,8],197[0,5,6,7,10],199[0,5,6,8,10],202[0,5,7,8,10],206[0,6,7,8,10],457[5,6,7,8,10]
+VERTEX 0 active_count=6 active_rank=5
+VERTEX 1 coords=126797/80000;16077479209/6400000000;2038576131263573/512000000000000;258485337715827265681/40960000000000000000;1/1
+VERTEX 1 certs=6 cert_subset_idxs=442[4,5,6,7,9],443[4,5,6,7,10],446[4,5,6,9,10],449[4,5,7,9,10],453[4,6,7,9,10],458[5,6,7,9,10]
+VERTEX 1 active_count=6 active_rank=5
+VERTEX 2 coords=16077479209/6400000000;2038576131263573/512000000000000;258485337715827265681/40960000000000000000;1/1;126797/80000
+VERTEX 2 certs=6 cert_subset_idxs=429[3,5,6,8,9],430[3,5,6,8,10],431[3,5,6,9,10],435[3,5,8,9,10],439[3,6,8,9,10],459[5,6,8,9,10]
+VERTEX 2 active_count=6 active_rank=5
+VERTEX 3 coords=2038576131263573/512000000000000;258485337715827265681/40960000000000000000;1/1;126797/80000;16077479209/6400000000
+VERTEX 3 certs=6 cert_subset_idxs=397[2,5,7,8,9],398[2,5,7,8,10],399[2,5,7,9,10],400[2,5,8,9,10],405[2,7,8,9,10],460[5,7,8,9,10]
+VERTEX 3 active_count=6 active_rank=5
+VERTEX 4 coords=258485337715827265681/40960000000000000000;1/1;126797/80000;16077479209/6400000000;2038576131263573/512000000000000
+VERTEX 4 certs=6 cert_subset_idxs=331[1,6,7,8,9],332[1,6,7,8,10],333[1,6,7,9,10],334[1,6,8,9,10],335[1,7,8,9,10],461[6,7,8,9,10]
+VERTEX 4 active_count=6 active_rank=5
+ANALYTIC v=1/1
+ANALYTIC_COUNT 5 VERTEX_COUNT 5 MATCH 5 SETS_EQUAL True
+DECISIONS_FILE results/route2/m5_e10_decisions.txt bytes=462
+MISMATCHES_TOTAL 0
+EXIT_OK

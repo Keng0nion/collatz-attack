@@ -1,0 +1,3000 @@
+IDX 0 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] infeasible
+IDX 1 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 10] rankdef rank=9
+IDX 2 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 11] rankdef rank=9
+IDX 3 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 12] rankdef rank=9
+IDX 4 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 13] rankdef rank=9
+IDX 5 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 14] rankdef rank=9
+IDX 6 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 15] rankdef rank=9
+IDX 7 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 16] rankdef rank=9
+IDX 8 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 17] rankdef rank=9
+IDX 9 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 18] infeasible
+IDX 10 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 19] infeasible
+IDX 11 S=[0, 1, 2, 3, 4, 5, 6, 7, 8, 20] infeasible
+IDX 12 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 10] rankdef rank=9
+IDX 13 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 11] rankdef rank=9
+IDX 14 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 12] rankdef rank=9
+IDX 15 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 13] rankdef rank=9
+IDX 16 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 14] rankdef rank=9
+IDX 17 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 15] rankdef rank=9
+IDX 18 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 16] rankdef rank=9
+IDX 19 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 17] infeasible
+IDX 20 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 18] infeasible
+IDX 21 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 19] rankdef rank=9
+IDX 22 S=[0, 1, 2, 3, 4, 5, 6, 7, 9, 20] infeasible
+IDX 23 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 11] rankdef rank=8
+IDX 24 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 12] rankdef rank=8
+IDX 25 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 13] rankdef rank=8
+IDX 26 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 14] rankdef rank=8
+IDX 27 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 15] rankdef rank=8
+IDX 28 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 16] rankdef rank=8
+IDX 29 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 17] rankdef rank=9
+IDX 30 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 18] rankdef rank=9
+IDX 31 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 19] rankdef rank=9
+IDX 32 S=[0, 1, 2, 3, 4, 5, 6, 7, 10, 20] rankdef rank=9
+IDX 33 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 12] rankdef rank=8
+IDX 34 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 13] rankdef rank=8
+IDX 35 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 14] rankdef rank=8
+IDX 36 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 15] rankdef rank=8
+IDX 37 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 16] rankdef rank=8
+IDX 38 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 17] rankdef rank=9
+IDX 39 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 18] rankdef rank=9
+IDX 40 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 19] rankdef rank=9
+IDX 41 S=[0, 1, 2, 3, 4, 5, 6, 7, 11, 20] rankdef rank=9
+IDX 42 S=[0, 1, 2, 3, 4, 5, 6, 7, 12, 13] rankdef rank=8
+IDX 43 S=[0, 1, 2, 3, 4, 5, 6, 7, 12, 14] rankdef rank=8
+IDX 44 S=[0, 1, 2, 3, 4, 5, 6, 7, 12, 15] rankdef rank=8
+IDX 45 S=[0, 1, 2, 3, 4, 5, 6, 7, 12, 16] rankdef rank=8
+IDX 46 S=[0, 1, 2, 3, 4, 5, 6, 7, 12, 17] rankdef rank=9
+IDX 47 S=[0, 1, 2, 3, 4, 5, 6, 7, 12, 18] rankdef rank=9
+IDX 48 S=[0, 1, 2, 3, 4, 5, 6, 7, 12, 19] rankdef rank=9
+IDX 49 S=[0, 1, 2, 3, 4, 5, 6, 7, 12, 20] rankdef rank=9
+IDX 50 S=[0, 1, 2, 3, 4, 5, 6, 7, 13, 14] rankdef rank=8
+IDX 51 S=[0, 1, 2, 3, 4, 5, 6, 7, 13, 15] rankdef rank=8
+IDX 52 S=[0, 1, 2, 3, 4, 5, 6, 7, 13, 16] rankdef rank=8
+IDX 53 S=[0, 1, 2, 3, 4, 5, 6, 7, 13, 17] rankdef rank=9
+IDX 54 S=[0, 1, 2, 3, 4, 5, 6, 7, 13, 18] rankdef rank=9
+IDX 55 S=[0, 1, 2, 3, 4, 5, 6, 7, 13, 19] rankdef rank=9
+IDX 56 S=[0, 1, 2, 3, 4, 5, 6, 7, 13, 20] rankdef rank=9
+IDX 57 S=[0, 1, 2, 3, 4, 5, 6, 7, 14, 15] rankdef rank=8
+IDX 58 S=[0, 1, 2, 3, 4, 5, 6, 7, 14, 16] rankdef rank=8
+IDX 59 S=[0, 1, 2, 3, 4, 5, 6, 7, 14, 17] rankdef rank=9
+IDX 60 S=[0, 1, 2, 3, 4, 5, 6, 7, 14, 18] rankdef rank=9
+IDX 61 S=[0, 1, 2, 3, 4, 5, 6, 7, 14, 19] rankdef rank=9
+IDX 62 S=[0, 1, 2, 3, 4, 5, 6, 7, 14, 20] rankdef rank=9
+IDX 63 S=[0, 1, 2, 3, 4, 5, 6, 7, 15, 16] rankdef rank=8
+IDX 64 S=[0, 1, 2, 3, 4, 5, 6, 7, 15, 17] rankdef rank=9
+IDX 65 S=[0, 1, 2, 3, 4, 5, 6, 7, 15, 18] rankdef rank=9
+IDX 66 S=[0, 1, 2, 3, 4, 5, 6, 7, 15, 19] rankdef rank=9
+IDX 67 S=[0, 1, 2, 3, 4, 5, 6, 7, 15, 20] rankdef rank=9
+IDX 68 S=[0, 1, 2, 3, 4, 5, 6, 7, 16, 17] rankdef rank=9
+IDX 69 S=[0, 1, 2, 3, 4, 5, 6, 7, 16, 18] rankdef rank=9
+IDX 70 S=[0, 1, 2, 3, 4, 5, 6, 7, 16, 19] rankdef rank=9
+IDX 71 S=[0, 1, 2, 3, 4, 5, 6, 7, 16, 20] rankdef rank=9
+IDX 72 S=[0, 1, 2, 3, 4, 5, 6, 7, 17, 18] infeasible
+IDX 73 S=[0, 1, 2, 3, 4, 5, 6, 7, 17, 19] infeasible
+IDX 74 S=[0, 1, 2, 3, 4, 5, 6, 7, 17, 20] infeasible
+IDX 75 S=[0, 1, 2, 3, 4, 5, 6, 7, 18, 19] infeasible
+IDX 76 S=[0, 1, 2, 3, 4, 5, 6, 7, 18, 20] infeasible
+IDX 77 S=[0, 1, 2, 3, 4, 5, 6, 7, 19, 20] infeasible
+IDX 78 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 10] rankdef rank=9
+IDX 79 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 11] rankdef rank=9
+IDX 80 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 12] rankdef rank=9
+IDX 81 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 13] rankdef rank=9
+IDX 82 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 14] rankdef rank=9
+IDX 83 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 15] rankdef rank=9
+IDX 84 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 16] infeasible
+IDX 85 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 17] infeasible
+IDX 86 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 18] rankdef rank=9
+IDX 87 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 19] rankdef rank=9
+IDX 88 S=[0, 1, 2, 3, 4, 5, 6, 8, 9, 20] infeasible
+IDX 89 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 11] rankdef rank=8
+IDX 90 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 12] rankdef rank=8
+IDX 91 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 13] rankdef rank=8
+IDX 92 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 14] rankdef rank=8
+IDX 93 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 15] rankdef rank=8
+IDX 94 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 16] rankdef rank=9
+IDX 95 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 17] rankdef rank=9
+IDX 96 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 18] rankdef rank=9
+IDX 97 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 19] rankdef rank=9
+IDX 98 S=[0, 1, 2, 3, 4, 5, 6, 8, 10, 20] rankdef rank=9
+IDX 99 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 12] rankdef rank=8
+IDX 100 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 13] rankdef rank=8
+IDX 101 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 14] rankdef rank=8
+IDX 102 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 15] rankdef rank=8
+IDX 103 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 16] rankdef rank=9
+IDX 104 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 17] rankdef rank=9
+IDX 105 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 18] rankdef rank=9
+IDX 106 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 19] rankdef rank=9
+IDX 107 S=[0, 1, 2, 3, 4, 5, 6, 8, 11, 20] rankdef rank=9
+IDX 108 S=[0, 1, 2, 3, 4, 5, 6, 8, 12, 13] rankdef rank=8
+IDX 109 S=[0, 1, 2, 3, 4, 5, 6, 8, 12, 14] rankdef rank=8
+IDX 110 S=[0, 1, 2, 3, 4, 5, 6, 8, 12, 15] rankdef rank=8
+IDX 111 S=[0, 1, 2, 3, 4, 5, 6, 8, 12, 16] rankdef rank=9
+IDX 112 S=[0, 1, 2, 3, 4, 5, 6, 8, 12, 17] rankdef rank=9
+IDX 113 S=[0, 1, 2, 3, 4, 5, 6, 8, 12, 18] rankdef rank=9
+IDX 114 S=[0, 1, 2, 3, 4, 5, 6, 8, 12, 19] rankdef rank=9
+IDX 115 S=[0, 1, 2, 3, 4, 5, 6, 8, 12, 20] rankdef rank=9
+IDX 116 S=[0, 1, 2, 3, 4, 5, 6, 8, 13, 14] rankdef rank=8
+IDX 117 S=[0, 1, 2, 3, 4, 5, 6, 8, 13, 15] rankdef rank=8
+IDX 118 S=[0, 1, 2, 3, 4, 5, 6, 8, 13, 16] rankdef rank=9
+IDX 119 S=[0, 1, 2, 3, 4, 5, 6, 8, 13, 17] rankdef rank=9
+IDX 120 S=[0, 1, 2, 3, 4, 5, 6, 8, 13, 18] rankdef rank=9
+IDX 121 S=[0, 1, 2, 3, 4, 5, 6, 8, 13, 19] rankdef rank=9
+IDX 122 S=[0, 1, 2, 3, 4, 5, 6, 8, 13, 20] rankdef rank=9
+IDX 123 S=[0, 1, 2, 3, 4, 5, 6, 8, 14, 15] rankdef rank=8
+IDX 124 S=[0, 1, 2, 3, 4, 5, 6, 8, 14, 16] rankdef rank=9
+IDX 125 S=[0, 1, 2, 3, 4, 5, 6, 8, 14, 17] rankdef rank=9
+IDX 126 S=[0, 1, 2, 3, 4, 5, 6, 8, 14, 18] rankdef rank=9
+IDX 127 S=[0, 1, 2, 3, 4, 5, 6, 8, 14, 19] rankdef rank=9
+IDX 128 S=[0, 1, 2, 3, 4, 5, 6, 8, 14, 20] rankdef rank=9
+IDX 129 S=[0, 1, 2, 3, 4, 5, 6, 8, 15, 16] rankdef rank=9
+IDX 130 S=[0, 1, 2, 3, 4, 5, 6, 8, 15, 17] rankdef rank=9
+IDX 131 S=[0, 1, 2, 3, 4, 5, 6, 8, 15, 18] rankdef rank=9
+IDX 132 S=[0, 1, 2, 3, 4, 5, 6, 8, 15, 19] rankdef rank=9
+IDX 133 S=[0, 1, 2, 3, 4, 5, 6, 8, 15, 20] rankdef rank=9
+IDX 134 S=[0, 1, 2, 3, 4, 5, 6, 8, 16, 17] rankdef rank=9
+IDX 135 S=[0, 1, 2, 3, 4, 5, 6, 8, 16, 18] infeasible
+IDX 136 S=[0, 1, 2, 3, 4, 5, 6, 8, 16, 19] infeasible
+IDX 137 S=[0, 1, 2, 3, 4, 5, 6, 8, 16, 20] infeasible
+IDX 138 S=[0, 1, 2, 3, 4, 5, 6, 8, 17, 18] infeasible
+IDX 139 S=[0, 1, 2, 3, 4, 5, 6, 8, 17, 19] infeasible
+IDX 140 S=[0, 1, 2, 3, 4, 5, 6, 8, 17, 20] infeasible
+IDX 141 S=[0, 1, 2, 3, 4, 5, 6, 8, 18, 19] rankdef rank=9
+IDX 142 S=[0, 1, 2, 3, 4, 5, 6, 8, 18, 20] infeasible
+IDX 143 S=[0, 1, 2, 3, 4, 5, 6, 8, 19, 20] infeasible
+IDX 144 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 11] rankdef rank=8
+IDX 145 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 12] rankdef rank=8
+IDX 146 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 13] rankdef rank=8
+IDX 147 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 14] rankdef rank=8
+IDX 148 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 15] rankdef rank=8
+IDX 149 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 16] rankdef rank=9
+IDX 150 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 17] rankdef rank=9
+IDX 151 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 18] rankdef rank=9
+IDX 152 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 19] rankdef rank=8
+IDX 153 S=[0, 1, 2, 3, 4, 5, 6, 9, 10, 20] rankdef rank=9
+IDX 154 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 12] rankdef rank=8
+IDX 155 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 13] rankdef rank=8
+IDX 156 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 14] rankdef rank=8
+IDX 157 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 15] rankdef rank=8
+IDX 158 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 16] rankdef rank=9
+IDX 159 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 17] rankdef rank=9
+IDX 160 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 18] rankdef rank=9
+IDX 161 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 19] rankdef rank=8
+IDX 162 S=[0, 1, 2, 3, 4, 5, 6, 9, 11, 20] rankdef rank=9
+IDX 163 S=[0, 1, 2, 3, 4, 5, 6, 9, 12, 13] rankdef rank=8
+IDX 164 S=[0, 1, 2, 3, 4, 5, 6, 9, 12, 14] rankdef rank=8
+IDX 165 S=[0, 1, 2, 3, 4, 5, 6, 9, 12, 15] rankdef rank=8
+IDX 166 S=[0, 1, 2, 3, 4, 5, 6, 9, 12, 16] rankdef rank=9
+IDX 167 S=[0, 1, 2, 3, 4, 5, 6, 9, 12, 17] rankdef rank=9
+IDX 168 S=[0, 1, 2, 3, 4, 5, 6, 9, 12, 18] rankdef rank=9
+IDX 169 S=[0, 1, 2, 3, 4, 5, 6, 9, 12, 19] rankdef rank=8
+IDX 170 S=[0, 1, 2, 3, 4, 5, 6, 9, 12, 20] rankdef rank=9
+IDX 171 S=[0, 1, 2, 3, 4, 5, 6, 9, 13, 14] rankdef rank=8
+IDX 172 S=[0, 1, 2, 3, 4, 5, 6, 9, 13, 15] rankdef rank=8
+IDX 173 S=[0, 1, 2, 3, 4, 5, 6, 9, 13, 16] rankdef rank=9
+IDX 174 S=[0, 1, 2, 3, 4, 5, 6, 9, 13, 17] rankdef rank=9
+IDX 175 S=[0, 1, 2, 3, 4, 5, 6, 9, 13, 18] rankdef rank=9
+IDX 176 S=[0, 1, 2, 3, 4, 5, 6, 9, 13, 19] rankdef rank=8
+IDX 177 S=[0, 1, 2, 3, 4, 5, 6, 9, 13, 20] rankdef rank=9
+IDX 178 S=[0, 1, 2, 3, 4, 5, 6, 9, 14, 15] rankdef rank=8
+IDX 179 S=[0, 1, 2, 3, 4, 5, 6, 9, 14, 16] rankdef rank=9
+IDX 180 S=[0, 1, 2, 3, 4, 5, 6, 9, 14, 17] rankdef rank=9
+IDX 181 S=[0, 1, 2, 3, 4, 5, 6, 9, 14, 18] rankdef rank=9
+IDX 182 S=[0, 1, 2, 3, 4, 5, 6, 9, 14, 19] rankdef rank=8
+IDX 183 S=[0, 1, 2, 3, 4, 5, 6, 9, 14, 20] rankdef rank=9
+IDX 184 S=[0, 1, 2, 3, 4, 5, 6, 9, 15, 16] rankdef rank=9
+IDX 185 S=[0, 1, 2, 3, 4, 5, 6, 9, 15, 17] rankdef rank=9
+IDX 186 S=[0, 1, 2, 3, 4, 5, 6, 9, 15, 18] rankdef rank=9
+IDX 187 S=[0, 1, 2, 3, 4, 5, 6, 9, 15, 19] rankdef rank=8
+IDX 188 S=[0, 1, 2, 3, 4, 5, 6, 9, 15, 20] rankdef rank=9
+IDX 189 S=[0, 1, 2, 3, 4, 5, 6, 9, 16, 17] infeasible
+IDX 190 S=[0, 1, 2, 3, 4, 5, 6, 9, 16, 18] infeasible
+IDX 191 S=[0, 1, 2, 3, 4, 5, 6, 9, 16, 19] rankdef rank=9
+IDX 192 S=[0, 1, 2, 3, 4, 5, 6, 9, 16, 20] infeasible
+IDX 193 S=[0, 1, 2, 3, 4, 5, 6, 9, 17, 18] infeasible
+IDX 194 S=[0, 1, 2, 3, 4, 5, 6, 9, 17, 19] rankdef rank=9
+IDX 195 S=[0, 1, 2, 3, 4, 5, 6, 9, 17, 20] infeasible
+IDX 196 S=[0, 1, 2, 3, 4, 5, 6, 9, 18, 19] rankdef rank=9
+IDX 197 S=[0, 1, 2, 3, 4, 5, 6, 9, 18, 20] infeasible
+IDX 198 S=[0, 1, 2, 3, 4, 5, 6, 9, 19, 20] rankdef rank=9
+IDX 199 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 12] rankdef rank=7
+IDX 200 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 13] rankdef rank=7
+IDX 201 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 14] rankdef rank=7
+IDX 202 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 15] rankdef rank=7
+IDX 203 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 16] rankdef rank=8
+IDX 204 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 17] rankdef rank=8
+IDX 205 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 18] rankdef rank=8
+IDX 206 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 19] rankdef rank=8
+IDX 207 S=[0, 1, 2, 3, 4, 5, 6, 10, 11, 20] rankdef rank=8
+IDX 208 S=[0, 1, 2, 3, 4, 5, 6, 10, 12, 13] rankdef rank=7
+IDX 209 S=[0, 1, 2, 3, 4, 5, 6, 10, 12, 14] rankdef rank=7
+IDX 210 S=[0, 1, 2, 3, 4, 5, 6, 10, 12, 15] rankdef rank=7
+IDX 211 S=[0, 1, 2, 3, 4, 5, 6, 10, 12, 16] rankdef rank=8
+IDX 212 S=[0, 1, 2, 3, 4, 5, 6, 10, 12, 17] rankdef rank=8
+IDX 213 S=[0, 1, 2, 3, 4, 5, 6, 10, 12, 18] rankdef rank=8
+IDX 214 S=[0, 1, 2, 3, 4, 5, 6, 10, 12, 19] rankdef rank=8
+IDX 215 S=[0, 1, 2, 3, 4, 5, 6, 10, 12, 20] rankdef rank=8
+IDX 216 S=[0, 1, 2, 3, 4, 5, 6, 10, 13, 14] rankdef rank=7
+IDX 217 S=[0, 1, 2, 3, 4, 5, 6, 10, 13, 15] rankdef rank=7
+IDX 218 S=[0, 1, 2, 3, 4, 5, 6, 10, 13, 16] rankdef rank=8
+IDX 219 S=[0, 1, 2, 3, 4, 5, 6, 10, 13, 17] rankdef rank=8
+IDX 220 S=[0, 1, 2, 3, 4, 5, 6, 10, 13, 18] rankdef rank=8
+IDX 221 S=[0, 1, 2, 3, 4, 5, 6, 10, 13, 19] rankdef rank=8
+IDX 222 S=[0, 1, 2, 3, 4, 5, 6, 10, 13, 20] rankdef rank=8
+IDX 223 S=[0, 1, 2, 3, 4, 5, 6, 10, 14, 15] rankdef rank=7
+IDX 224 S=[0, 1, 2, 3, 4, 5, 6, 10, 14, 16] rankdef rank=8
+IDX 225 S=[0, 1, 2, 3, 4, 5, 6, 10, 14, 17] rankdef rank=8
+IDX 226 S=[0, 1, 2, 3, 4, 5, 6, 10, 14, 18] rankdef rank=8
+IDX 227 S=[0, 1, 2, 3, 4, 5, 6, 10, 14, 19] rankdef rank=8
+IDX 228 S=[0, 1, 2, 3, 4, 5, 6, 10, 14, 20] rankdef rank=8
+IDX 229 S=[0, 1, 2, 3, 4, 5, 6, 10, 15, 16] rankdef rank=8
+IDX 230 S=[0, 1, 2, 3, 4, 5, 6, 10, 15, 17] rankdef rank=8
+IDX 231 S=[0, 1, 2, 3, 4, 5, 6, 10, 15, 18] rankdef rank=8
+IDX 232 S=[0, 1, 2, 3, 4, 5, 6, 10, 15, 19] rankdef rank=8
+IDX 233 S=[0, 1, 2, 3, 4, 5, 6, 10, 15, 20] rankdef rank=8
+IDX 234 S=[0, 1, 2, 3, 4, 5, 6, 10, 16, 17] rankdef rank=9
+IDX 235 S=[0, 1, 2, 3, 4, 5, 6, 10, 16, 18] rankdef rank=9
+IDX 236 S=[0, 1, 2, 3, 4, 5, 6, 10, 16, 19] rankdef rank=9
+IDX 237 S=[0, 1, 2, 3, 4, 5, 6, 10, 16, 20] rankdef rank=9
+IDX 238 S=[0, 1, 2, 3, 4, 5, 6, 10, 17, 18] rankdef rank=9
+IDX 239 S=[0, 1, 2, 3, 4, 5, 6, 10, 17, 19] rankdef rank=9
+IDX 240 S=[0, 1, 2, 3, 4, 5, 6, 10, 17, 20] rankdef rank=9
+IDX 241 S=[0, 1, 2, 3, 4, 5, 6, 10, 18, 19] rankdef rank=9
+IDX 242 S=[0, 1, 2, 3, 4, 5, 6, 10, 18, 20] rankdef rank=9
+IDX 243 S=[0, 1, 2, 3, 4, 5, 6, 10, 19, 20] rankdef rank=9
+IDX 244 S=[0, 1, 2, 3, 4, 5, 6, 11, 12, 13] rankdef rank=7
+IDX 245 S=[0, 1, 2, 3, 4, 5, 6, 11, 12, 14] rankdef rank=7
+IDX 246 S=[0, 1, 2, 3, 4, 5, 6, 11, 12, 15] rankdef rank=7
+IDX 247 S=[0, 1, 2, 3, 4, 5, 6, 11, 12, 16] rankdef rank=8
+IDX 248 S=[0, 1, 2, 3, 4, 5, 6, 11, 12, 17] rankdef rank=8
+IDX 249 S=[0, 1, 2, 3, 4, 5, 6, 11, 12, 18] rankdef rank=8
+IDX 250 S=[0, 1, 2, 3, 4, 5, 6, 11, 12, 19] rankdef rank=8
+IDX 251 S=[0, 1, 2, 3, 4, 5, 6, 11, 12, 20] rankdef rank=8
+IDX 252 S=[0, 1, 2, 3, 4, 5, 6, 11, 13, 14] rankdef rank=7
+IDX 253 S=[0, 1, 2, 3, 4, 5, 6, 11, 13, 15] rankdef rank=7
+IDX 254 S=[0, 1, 2, 3, 4, 5, 6, 11, 13, 16] rankdef rank=8
+IDX 255 S=[0, 1, 2, 3, 4, 5, 6, 11, 13, 17] rankdef rank=8
+IDX 256 S=[0, 1, 2, 3, 4, 5, 6, 11, 13, 18] rankdef rank=8
+IDX 257 S=[0, 1, 2, 3, 4, 5, 6, 11, 13, 19] rankdef rank=8
+IDX 258 S=[0, 1, 2, 3, 4, 5, 6, 11, 13, 20] rankdef rank=8
+IDX 259 S=[0, 1, 2, 3, 4, 5, 6, 11, 14, 15] rankdef rank=7
+IDX 260 S=[0, 1, 2, 3, 4, 5, 6, 11, 14, 16] rankdef rank=8
+IDX 261 S=[0, 1, 2, 3, 4, 5, 6, 11, 14, 17] rankdef rank=8
+IDX 262 S=[0, 1, 2, 3, 4, 5, 6, 11, 14, 18] rankdef rank=8
+IDX 263 S=[0, 1, 2, 3, 4, 5, 6, 11, 14, 19] rankdef rank=8
+IDX 264 S=[0, 1, 2, 3, 4, 5, 6, 11, 14, 20] rankdef rank=8
+IDX 265 S=[0, 1, 2, 3, 4, 5, 6, 11, 15, 16] rankdef rank=8
+IDX 266 S=[0, 1, 2, 3, 4, 5, 6, 11, 15, 17] rankdef rank=8
+IDX 267 S=[0, 1, 2, 3, 4, 5, 6, 11, 15, 18] rankdef rank=8
+IDX 268 S=[0, 1, 2, 3, 4, 5, 6, 11, 15, 19] rankdef rank=8
+IDX 269 S=[0, 1, 2, 3, 4, 5, 6, 11, 15, 20] rankdef rank=8
+IDX 270 S=[0, 1, 2, 3, 4, 5, 6, 11, 16, 17] rankdef rank=9
+IDX 271 S=[0, 1, 2, 3, 4, 5, 6, 11, 16, 18] rankdef rank=9
+IDX 272 S=[0, 1, 2, 3, 4, 5, 6, 11, 16, 19] rankdef rank=9
+IDX 273 S=[0, 1, 2, 3, 4, 5, 6, 11, 16, 20] rankdef rank=9
+IDX 274 S=[0, 1, 2, 3, 4, 5, 6, 11, 17, 18] rankdef rank=9
+IDX 275 S=[0, 1, 2, 3, 4, 5, 6, 11, 17, 19] rankdef rank=9
+IDX 276 S=[0, 1, 2, 3, 4, 5, 6, 11, 17, 20] rankdef rank=9
+IDX 277 S=[0, 1, 2, 3, 4, 5, 6, 11, 18, 19] rankdef rank=9
+IDX 278 S=[0, 1, 2, 3, 4, 5, 6, 11, 18, 20] rankdef rank=9
+IDX 279 S=[0, 1, 2, 3, 4, 5, 6, 11, 19, 20] rankdef rank=9
+IDX 280 S=[0, 1, 2, 3, 4, 5, 6, 12, 13, 14] rankdef rank=7
+IDX 281 S=[0, 1, 2, 3, 4, 5, 6, 12, 13, 15] rankdef rank=7
+IDX 282 S=[0, 1, 2, 3, 4, 5, 6, 12, 13, 16] rankdef rank=8
+IDX 283 S=[0, 1, 2, 3, 4, 5, 6, 12, 13, 17] rankdef rank=8
+IDX 284 S=[0, 1, 2, 3, 4, 5, 6, 12, 13, 18] rankdef rank=8
+IDX 285 S=[0, 1, 2, 3, 4, 5, 6, 12, 13, 19] rankdef rank=8
+IDX 286 S=[0, 1, 2, 3, 4, 5, 6, 12, 13, 20] rankdef rank=8
+IDX 287 S=[0, 1, 2, 3, 4, 5, 6, 12, 14, 15] rankdef rank=7
+IDX 288 S=[0, 1, 2, 3, 4, 5, 6, 12, 14, 16] rankdef rank=8
+IDX 289 S=[0, 1, 2, 3, 4, 5, 6, 12, 14, 17] rankdef rank=8
+IDX 290 S=[0, 1, 2, 3, 4, 5, 6, 12, 14, 18] rankdef rank=8
+IDX 291 S=[0, 1, 2, 3, 4, 5, 6, 12, 14, 19] rankdef rank=8
+IDX 292 S=[0, 1, 2, 3, 4, 5, 6, 12, 14, 20] rankdef rank=8
+IDX 293 S=[0, 1, 2, 3, 4, 5, 6, 12, 15, 16] rankdef rank=8
+IDX 294 S=[0, 1, 2, 3, 4, 5, 6, 12, 15, 17] rankdef rank=8
+IDX 295 S=[0, 1, 2, 3, 4, 5, 6, 12, 15, 18] rankdef rank=8
+IDX 296 S=[0, 1, 2, 3, 4, 5, 6, 12, 15, 19] rankdef rank=8
+IDX 297 S=[0, 1, 2, 3, 4, 5, 6, 12, 15, 20] rankdef rank=8
+IDX 298 S=[0, 1, 2, 3, 4, 5, 6, 12, 16, 17] rankdef rank=9
+IDX 299 S=[0, 1, 2, 3, 4, 5, 6, 12, 16, 18] rankdef rank=9
+IDX 300 S=[0, 1, 2, 3, 4, 5, 6, 12, 16, 19] rankdef rank=9
+IDX 301 S=[0, 1, 2, 3, 4, 5, 6, 12, 16, 20] rankdef rank=9
+IDX 302 S=[0, 1, 2, 3, 4, 5, 6, 12, 17, 18] rankdef rank=9
+IDX 303 S=[0, 1, 2, 3, 4, 5, 6, 12, 17, 19] rankdef rank=9
+IDX 304 S=[0, 1, 2, 3, 4, 5, 6, 12, 17, 20] rankdef rank=9
+IDX 305 S=[0, 1, 2, 3, 4, 5, 6, 12, 18, 19] rankdef rank=9
+IDX 306 S=[0, 1, 2, 3, 4, 5, 6, 12, 18, 20] rankdef rank=9
+IDX 307 S=[0, 1, 2, 3, 4, 5, 6, 12, 19, 20] rankdef rank=9
+IDX 308 S=[0, 1, 2, 3, 4, 5, 6, 13, 14, 15] rankdef rank=7
+IDX 309 S=[0, 1, 2, 3, 4, 5, 6, 13, 14, 16] rankdef rank=8
+IDX 310 S=[0, 1, 2, 3, 4, 5, 6, 13, 14, 17] rankdef rank=8
+IDX 311 S=[0, 1, 2, 3, 4, 5, 6, 13, 14, 18] rankdef rank=8
+IDX 312 S=[0, 1, 2, 3, 4, 5, 6, 13, 14, 19] rankdef rank=8
+IDX 313 S=[0, 1, 2, 3, 4, 5, 6, 13, 14, 20] rankdef rank=8
+IDX 314 S=[0, 1, 2, 3, 4, 5, 6, 13, 15, 16] rankdef rank=8
+IDX 315 S=[0, 1, 2, 3, 4, 5, 6, 13, 15, 17] rankdef rank=8
+IDX 316 S=[0, 1, 2, 3, 4, 5, 6, 13, 15, 18] rankdef rank=8
+IDX 317 S=[0, 1, 2, 3, 4, 5, 6, 13, 15, 19] rankdef rank=8
+IDX 318 S=[0, 1, 2, 3, 4, 5, 6, 13, 15, 20] rankdef rank=8
+IDX 319 S=[0, 1, 2, 3, 4, 5, 6, 13, 16, 17] rankdef rank=9
+IDX 320 S=[0, 1, 2, 3, 4, 5, 6, 13, 16, 18] rankdef rank=9
+IDX 321 S=[0, 1, 2, 3, 4, 5, 6, 13, 16, 19] rankdef rank=9
+IDX 322 S=[0, 1, 2, 3, 4, 5, 6, 13, 16, 20] rankdef rank=9
+IDX 323 S=[0, 1, 2, 3, 4, 5, 6, 13, 17, 18] rankdef rank=9
+IDX 324 S=[0, 1, 2, 3, 4, 5, 6, 13, 17, 19] rankdef rank=9
+IDX 325 S=[0, 1, 2, 3, 4, 5, 6, 13, 17, 20] rankdef rank=9
+IDX 326 S=[0, 1, 2, 3, 4, 5, 6, 13, 18, 19] rankdef rank=9
+IDX 327 S=[0, 1, 2, 3, 4, 5, 6, 13, 18, 20] rankdef rank=9
+IDX 328 S=[0, 1, 2, 3, 4, 5, 6, 13, 19, 20] rankdef rank=9
+IDX 329 S=[0, 1, 2, 3, 4, 5, 6, 14, 15, 16] rankdef rank=8
+IDX 330 S=[0, 1, 2, 3, 4, 5, 6, 14, 15, 17] rankdef rank=8
+IDX 331 S=[0, 1, 2, 3, 4, 5, 6, 14, 15, 18] rankdef rank=8
+IDX 332 S=[0, 1, 2, 3, 4, 5, 6, 14, 15, 19] rankdef rank=8
+IDX 333 S=[0, 1, 2, 3, 4, 5, 6, 14, 15, 20] rankdef rank=8
+IDX 334 S=[0, 1, 2, 3, 4, 5, 6, 14, 16, 17] rankdef rank=9
+IDX 335 S=[0, 1, 2, 3, 4, 5, 6, 14, 16, 18] rankdef rank=9
+IDX 336 S=[0, 1, 2, 3, 4, 5, 6, 14, 16, 19] rankdef rank=9
+IDX 337 S=[0, 1, 2, 3, 4, 5, 6, 14, 16, 20] rankdef rank=9
+IDX 338 S=[0, 1, 2, 3, 4, 5, 6, 14, 17, 18] rankdef rank=9
+IDX 339 S=[0, 1, 2, 3, 4, 5, 6, 14, 17, 19] rankdef rank=9
+IDX 340 S=[0, 1, 2, 3, 4, 5, 6, 14, 17, 20] rankdef rank=9
+IDX 341 S=[0, 1, 2, 3, 4, 5, 6, 14, 18, 19] rankdef rank=9
+IDX 342 S=[0, 1, 2, 3, 4, 5, 6, 14, 18, 20] rankdef rank=9
+IDX 343 S=[0, 1, 2, 3, 4, 5, 6, 14, 19, 20] rankdef rank=9
+IDX 344 S=[0, 1, 2, 3, 4, 5, 6, 15, 16, 17] rankdef rank=9
+IDX 345 S=[0, 1, 2, 3, 4, 5, 6, 15, 16, 18] rankdef rank=9
+IDX 346 S=[0, 1, 2, 3, 4, 5, 6, 15, 16, 19] rankdef rank=9
+IDX 347 S=[0, 1, 2, 3, 4, 5, 6, 15, 16, 20] rankdef rank=9
+IDX 348 S=[0, 1, 2, 3, 4, 5, 6, 15, 17, 18] rankdef rank=9
+IDX 349 S=[0, 1, 2, 3, 4, 5, 6, 15, 17, 19] rankdef rank=9
+IDX 350 S=[0, 1, 2, 3, 4, 5, 6, 15, 17, 20] rankdef rank=9
+IDX 351 S=[0, 1, 2, 3, 4, 5, 6, 15, 18, 19] rankdef rank=9
+IDX 352 S=[0, 1, 2, 3, 4, 5, 6, 15, 18, 20] rankdef rank=9
+IDX 353 S=[0, 1, 2, 3, 4, 5, 6, 15, 19, 20] rankdef rank=9
+IDX 354 S=[0, 1, 2, 3, 4, 5, 6, 16, 17, 18] infeasible
+IDX 355 S=[0, 1, 2, 3, 4, 5, 6, 16, 17, 19] infeasible
+IDX 356 S=[0, 1, 2, 3, 4, 5, 6, 16, 17, 20] infeasible
+IDX 357 S=[0, 1, 2, 3, 4, 5, 6, 16, 18, 19] infeasible
+IDX 358 S=[0, 1, 2, 3, 4, 5, 6, 16, 18, 20] infeasible
+IDX 359 S=[0, 1, 2, 3, 4, 5, 6, 16, 19, 20] infeasible
+IDX 360 S=[0, 1, 2, 3, 4, 5, 6, 17, 18, 19] infeasible
+IDX 361 S=[0, 1, 2, 3, 4, 5, 6, 17, 18, 20] infeasible
+IDX 362 S=[0, 1, 2, 3, 4, 5, 6, 17, 19, 20] infeasible
+IDX 363 S=[0, 1, 2, 3, 4, 5, 6, 18, 19, 20] infeasible
+IDX 364 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 10] rankdef rank=9
+IDX 365 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 11] rankdef rank=9
+IDX 366 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 12] rankdef rank=9
+IDX 367 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 13] rankdef rank=9
+IDX 368 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 14] rankdef rank=9
+IDX 369 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 15] infeasible
+IDX 370 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 16] infeasible
+IDX 371 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 17] rankdef rank=9
+IDX 372 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 18] rankdef rank=9
+IDX 373 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 19] rankdef rank=9
+IDX 374 S=[0, 1, 2, 3, 4, 5, 7, 8, 9, 20] infeasible
+IDX 375 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 11] rankdef rank=8
+IDX 376 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 12] rankdef rank=8
+IDX 377 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 13] rankdef rank=8
+IDX 378 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 14] rankdef rank=8
+IDX 379 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 15] rankdef rank=9
+IDX 380 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 16] rankdef rank=9
+IDX 381 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 17] rankdef rank=8
+IDX 382 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 18] rankdef rank=9
+IDX 383 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 19] rankdef rank=9
+IDX 384 S=[0, 1, 2, 3, 4, 5, 7, 8, 10, 20] rankdef rank=9
+IDX 385 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 12] rankdef rank=8
+IDX 386 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 13] rankdef rank=8
+IDX 387 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 14] rankdef rank=8
+IDX 388 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 15] rankdef rank=9
+IDX 389 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 16] rankdef rank=9
+IDX 390 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 17] rankdef rank=8
+IDX 391 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 18] rankdef rank=9
+IDX 392 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 19] rankdef rank=9
+IDX 393 S=[0, 1, 2, 3, 4, 5, 7, 8, 11, 20] rankdef rank=9
+IDX 394 S=[0, 1, 2, 3, 4, 5, 7, 8, 12, 13] rankdef rank=8
+IDX 395 S=[0, 1, 2, 3, 4, 5, 7, 8, 12, 14] rankdef rank=8
+IDX 396 S=[0, 1, 2, 3, 4, 5, 7, 8, 12, 15] rankdef rank=9
+IDX 397 S=[0, 1, 2, 3, 4, 5, 7, 8, 12, 16] rankdef rank=9
+IDX 398 S=[0, 1, 2, 3, 4, 5, 7, 8, 12, 17] rankdef rank=8
+IDX 399 S=[0, 1, 2, 3, 4, 5, 7, 8, 12, 18] rankdef rank=9
+IDX 400 S=[0, 1, 2, 3, 4, 5, 7, 8, 12, 19] rankdef rank=9
+IDX 401 S=[0, 1, 2, 3, 4, 5, 7, 8, 12, 20] rankdef rank=9
+IDX 402 S=[0, 1, 2, 3, 4, 5, 7, 8, 13, 14] rankdef rank=8
+IDX 403 S=[0, 1, 2, 3, 4, 5, 7, 8, 13, 15] rankdef rank=9
+IDX 404 S=[0, 1, 2, 3, 4, 5, 7, 8, 13, 16] rankdef rank=9
+IDX 405 S=[0, 1, 2, 3, 4, 5, 7, 8, 13, 17] rankdef rank=8
+IDX 406 S=[0, 1, 2, 3, 4, 5, 7, 8, 13, 18] rankdef rank=9
+IDX 407 S=[0, 1, 2, 3, 4, 5, 7, 8, 13, 19] rankdef rank=9
+IDX 408 S=[0, 1, 2, 3, 4, 5, 7, 8, 13, 20] rankdef rank=9
+IDX 409 S=[0, 1, 2, 3, 4, 5, 7, 8, 14, 15] rankdef rank=9
+IDX 410 S=[0, 1, 2, 3, 4, 5, 7, 8, 14, 16] rankdef rank=9
+IDX 411 S=[0, 1, 2, 3, 4, 5, 7, 8, 14, 17] rankdef rank=8
+IDX 412 S=[0, 1, 2, 3, 4, 5, 7, 8, 14, 18] rankdef rank=9
+IDX 413 S=[0, 1, 2, 3, 4, 5, 7, 8, 14, 19] rankdef rank=9
+IDX 414 S=[0, 1, 2, 3, 4, 5, 7, 8, 14, 20] rankdef rank=9
+IDX 415 S=[0, 1, 2, 3, 4, 5, 7, 8, 15, 16] rankdef rank=9
+IDX 416 S=[0, 1, 2, 3, 4, 5, 7, 8, 15, 17] rankdef rank=9
+IDX 417 S=[0, 1, 2, 3, 4, 5, 7, 8, 15, 18] infeasible
+IDX 418 S=[0, 1, 2, 3, 4, 5, 7, 8, 15, 19] infeasible
+IDX 419 S=[0, 1, 2, 3, 4, 5, 7, 8, 15, 20] infeasible
+IDX 420 S=[0, 1, 2, 3, 4, 5, 7, 8, 16, 17] rankdef rank=9
+IDX 421 S=[0, 1, 2, 3, 4, 5, 7, 8, 16, 18] infeasible
+IDX 422 S=[0, 1, 2, 3, 4, 5, 7, 8, 16, 19] infeasible
+IDX 423 S=[0, 1, 2, 3, 4, 5, 7, 8, 16, 20] infeasible
+IDX 424 S=[0, 1, 2, 3, 4, 5, 7, 8, 17, 18] rankdef rank=9
+IDX 425 S=[0, 1, 2, 3, 4, 5, 7, 8, 17, 19] rankdef rank=9
+IDX 426 S=[0, 1, 2, 3, 4, 5, 7, 8, 17, 20] rankdef rank=9
+IDX 427 S=[0, 1, 2, 3, 4, 5, 7, 8, 18, 19] rankdef rank=9
+IDX 428 S=[0, 1, 2, 3, 4, 5, 7, 8, 18, 20] infeasible
+IDX 429 S=[0, 1, 2, 3, 4, 5, 7, 8, 19, 20] infeasible
+IDX 430 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 11] rankdef rank=8
+IDX 431 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 12] rankdef rank=8
+IDX 432 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 13] rankdef rank=8
+IDX 433 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 14] rankdef rank=8
+IDX 434 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 15] rankdef rank=9
+IDX 435 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 16] rankdef rank=9
+IDX 436 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 17] rankdef rank=9
+IDX 437 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 18] rankdef rank=9
+IDX 438 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 19] rankdef rank=8
+IDX 439 S=[0, 1, 2, 3, 4, 5, 7, 9, 10, 20] rankdef rank=9
+IDX 440 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 12] rankdef rank=8
+IDX 441 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 13] rankdef rank=8
+IDX 442 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 14] rankdef rank=8
+IDX 443 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 15] rankdef rank=9
+IDX 444 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 16] rankdef rank=9
+IDX 445 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 17] rankdef rank=9
+IDX 446 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 18] rankdef rank=9
+IDX 447 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 19] rankdef rank=8
+IDX 448 S=[0, 1, 2, 3, 4, 5, 7, 9, 11, 20] rankdef rank=9
+IDX 449 S=[0, 1, 2, 3, 4, 5, 7, 9, 12, 13] rankdef rank=8
+IDX 450 S=[0, 1, 2, 3, 4, 5, 7, 9, 12, 14] rankdef rank=8
+IDX 451 S=[0, 1, 2, 3, 4, 5, 7, 9, 12, 15] rankdef rank=9
+IDX 452 S=[0, 1, 2, 3, 4, 5, 7, 9, 12, 16] rankdef rank=9
+IDX 453 S=[0, 1, 2, 3, 4, 5, 7, 9, 12, 17] rankdef rank=9
+IDX 454 S=[0, 1, 2, 3, 4, 5, 7, 9, 12, 18] rankdef rank=9
+IDX 455 S=[0, 1, 2, 3, 4, 5, 7, 9, 12, 19] rankdef rank=8
+IDX 456 S=[0, 1, 2, 3, 4, 5, 7, 9, 12, 20] rankdef rank=9
+IDX 457 S=[0, 1, 2, 3, 4, 5, 7, 9, 13, 14] rankdef rank=8
+IDX 458 S=[0, 1, 2, 3, 4, 5, 7, 9, 13, 15] rankdef rank=9
+IDX 459 S=[0, 1, 2, 3, 4, 5, 7, 9, 13, 16] rankdef rank=9
+IDX 460 S=[0, 1, 2, 3, 4, 5, 7, 9, 13, 17] rankdef rank=9
+IDX 461 S=[0, 1, 2, 3, 4, 5, 7, 9, 13, 18] rankdef rank=9
+IDX 462 S=[0, 1, 2, 3, 4, 5, 7, 9, 13, 19] rankdef rank=8
+IDX 463 S=[0, 1, 2, 3, 4, 5, 7, 9, 13, 20] rankdef rank=9
+IDX 464 S=[0, 1, 2, 3, 4, 5, 7, 9, 14, 15] rankdef rank=9
+IDX 465 S=[0, 1, 2, 3, 4, 5, 7, 9, 14, 16] rankdef rank=9
+IDX 466 S=[0, 1, 2, 3, 4, 5, 7, 9, 14, 17] rankdef rank=9
+IDX 467 S=[0, 1, 2, 3, 4, 5, 7, 9, 14, 18] rankdef rank=9
+IDX 468 S=[0, 1, 2, 3, 4, 5, 7, 9, 14, 19] rankdef rank=8
+IDX 469 S=[0, 1, 2, 3, 4, 5, 7, 9, 14, 20] rankdef rank=9
+IDX 470 S=[0, 1, 2, 3, 4, 5, 7, 9, 15, 16] rankdef rank=9
+IDX 471 S=[0, 1, 2, 3, 4, 5, 7, 9, 15, 17] infeasible
+IDX 472 S=[0, 1, 2, 3, 4, 5, 7, 9, 15, 18] infeasible
+IDX 473 S=[0, 1, 2, 3, 4, 5, 7, 9, 15, 19] rankdef rank=9
+IDX 474 S=[0, 1, 2, 3, 4, 5, 7, 9, 15, 20] infeasible
+IDX 475 S=[0, 1, 2, 3, 4, 5, 7, 9, 16, 17] infeasible
+IDX 476 S=[0, 1, 2, 3, 4, 5, 7, 9, 16, 18] infeasible
+IDX 477 S=[0, 1, 2, 3, 4, 5, 7, 9, 16, 19] rankdef rank=9
+IDX 478 S=[0, 1, 2, 3, 4, 5, 7, 9, 16, 20] infeasible
+IDX 479 S=[0, 1, 2, 3, 4, 5, 7, 9, 17, 18] rankdef rank=9
+IDX 480 S=[0, 1, 2, 3, 4, 5, 7, 9, 17, 19] rankdef rank=9
+IDX 481 S=[0, 1, 2, 3, 4, 5, 7, 9, 17, 20] infeasible
+IDX 482 S=[0, 1, 2, 3, 4, 5, 7, 9, 18, 19] rankdef rank=9
+IDX 483 S=[0, 1, 2, 3, 4, 5, 7, 9, 18, 20] infeasible
+IDX 484 S=[0, 1, 2, 3, 4, 5, 7, 9, 19, 20] rankdef rank=9
+IDX 485 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 12] rankdef rank=7
+IDX 486 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 13] rankdef rank=7
+IDX 487 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 14] rankdef rank=7
+IDX 488 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 15] rankdef rank=8
+IDX 489 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 16] rankdef rank=8
+IDX 490 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 17] rankdef rank=8
+IDX 491 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 18] rankdef rank=8
+IDX 492 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 19] rankdef rank=8
+IDX 493 S=[0, 1, 2, 3, 4, 5, 7, 10, 11, 20] rankdef rank=8
+IDX 494 S=[0, 1, 2, 3, 4, 5, 7, 10, 12, 13] rankdef rank=7
+IDX 495 S=[0, 1, 2, 3, 4, 5, 7, 10, 12, 14] rankdef rank=7
+IDX 496 S=[0, 1, 2, 3, 4, 5, 7, 10, 12, 15] rankdef rank=8
+IDX 497 S=[0, 1, 2, 3, 4, 5, 7, 10, 12, 16] rankdef rank=8
+IDX 498 S=[0, 1, 2, 3, 4, 5, 7, 10, 12, 17] rankdef rank=8
+IDX 499 S=[0, 1, 2, 3, 4, 5, 7, 10, 12, 18] rankdef rank=8
+IDX 500 S=[0, 1, 2, 3, 4, 5, 7, 10, 12, 19] rankdef rank=8
+IDX 501 S=[0, 1, 2, 3, 4, 5, 7, 10, 12, 20] rankdef rank=8
+IDX 502 S=[0, 1, 2, 3, 4, 5, 7, 10, 13, 14] rankdef rank=7
+IDX 503 S=[0, 1, 2, 3, 4, 5, 7, 10, 13, 15] rankdef rank=8
+IDX 504 S=[0, 1, 2, 3, 4, 5, 7, 10, 13, 16] rankdef rank=8
+IDX 505 S=[0, 1, 2, 3, 4, 5, 7, 10, 13, 17] rankdef rank=8
+IDX 506 S=[0, 1, 2, 3, 4, 5, 7, 10, 13, 18] rankdef rank=8
+IDX 507 S=[0, 1, 2, 3, 4, 5, 7, 10, 13, 19] rankdef rank=8
+IDX 508 S=[0, 1, 2, 3, 4, 5, 7, 10, 13, 20] rankdef rank=8
+IDX 509 S=[0, 1, 2, 3, 4, 5, 7, 10, 14, 15] rankdef rank=8
+IDX 510 S=[0, 1, 2, 3, 4, 5, 7, 10, 14, 16] rankdef rank=8
+IDX 511 S=[0, 1, 2, 3, 4, 5, 7, 10, 14, 17] rankdef rank=8
+IDX 512 S=[0, 1, 2, 3, 4, 5, 7, 10, 14, 18] rankdef rank=8
+IDX 513 S=[0, 1, 2, 3, 4, 5, 7, 10, 14, 19] rankdef rank=8
+IDX 514 S=[0, 1, 2, 3, 4, 5, 7, 10, 14, 20] rankdef rank=8
+IDX 515 S=[0, 1, 2, 3, 4, 5, 7, 10, 15, 16] rankdef rank=8
+IDX 516 S=[0, 1, 2, 3, 4, 5, 7, 10, 15, 17] rankdef rank=9
+IDX 517 S=[0, 1, 2, 3, 4, 5, 7, 10, 15, 18] rankdef rank=9
+IDX 518 S=[0, 1, 2, 3, 4, 5, 7, 10, 15, 19] rankdef rank=9
+IDX 519 S=[0, 1, 2, 3, 4, 5, 7, 10, 15, 20] rankdef rank=9
+IDX 520 S=[0, 1, 2, 3, 4, 5, 7, 10, 16, 17] rankdef rank=9
+IDX 521 S=[0, 1, 2, 3, 4, 5, 7, 10, 16, 18] rankdef rank=9
+IDX 522 S=[0, 1, 2, 3, 4, 5, 7, 10, 16, 19] rankdef rank=9
+IDX 523 S=[0, 1, 2, 3, 4, 5, 7, 10, 16, 20] rankdef rank=9
+IDX 524 S=[0, 1, 2, 3, 4, 5, 7, 10, 17, 18] rankdef rank=9
+IDX 525 S=[0, 1, 2, 3, 4, 5, 7, 10, 17, 19] rankdef rank=9
+IDX 526 S=[0, 1, 2, 3, 4, 5, 7, 10, 17, 20] rankdef rank=9
+IDX 527 S=[0, 1, 2, 3, 4, 5, 7, 10, 18, 19] rankdef rank=9
+IDX 528 S=[0, 1, 2, 3, 4, 5, 7, 10, 18, 20] rankdef rank=9
+IDX 529 S=[0, 1, 2, 3, 4, 5, 7, 10, 19, 20] rankdef rank=9
+IDX 530 S=[0, 1, 2, 3, 4, 5, 7, 11, 12, 13] rankdef rank=7
+IDX 531 S=[0, 1, 2, 3, 4, 5, 7, 11, 12, 14] rankdef rank=7
+IDX 532 S=[0, 1, 2, 3, 4, 5, 7, 11, 12, 15] rankdef rank=8
+IDX 533 S=[0, 1, 2, 3, 4, 5, 7, 11, 12, 16] rankdef rank=8
+IDX 534 S=[0, 1, 2, 3, 4, 5, 7, 11, 12, 17] rankdef rank=8
+IDX 535 S=[0, 1, 2, 3, 4, 5, 7, 11, 12, 18] rankdef rank=8
+IDX 536 S=[0, 1, 2, 3, 4, 5, 7, 11, 12, 19] rankdef rank=8
+IDX 537 S=[0, 1, 2, 3, 4, 5, 7, 11, 12, 20] rankdef rank=8
+IDX 538 S=[0, 1, 2, 3, 4, 5, 7, 11, 13, 14] rankdef rank=7
+IDX 539 S=[0, 1, 2, 3, 4, 5, 7, 11, 13, 15] rankdef rank=8
+IDX 540 S=[0, 1, 2, 3, 4, 5, 7, 11, 13, 16] rankdef rank=8
+IDX 541 S=[0, 1, 2, 3, 4, 5, 7, 11, 13, 17] rankdef rank=8
+IDX 542 S=[0, 1, 2, 3, 4, 5, 7, 11, 13, 18] rankdef rank=8
+IDX 543 S=[0, 1, 2, 3, 4, 5, 7, 11, 13, 19] rankdef rank=8
+IDX 544 S=[0, 1, 2, 3, 4, 5, 7, 11, 13, 20] rankdef rank=8
+IDX 545 S=[0, 1, 2, 3, 4, 5, 7, 11, 14, 15] rankdef rank=8
+IDX 546 S=[0, 1, 2, 3, 4, 5, 7, 11, 14, 16] rankdef rank=8
+IDX 547 S=[0, 1, 2, 3, 4, 5, 7, 11, 14, 17] rankdef rank=8
+IDX 548 S=[0, 1, 2, 3, 4, 5, 7, 11, 14, 18] rankdef rank=8
+IDX 549 S=[0, 1, 2, 3, 4, 5, 7, 11, 14, 19] rankdef rank=8
+IDX 550 S=[0, 1, 2, 3, 4, 5, 7, 11, 14, 20] rankdef rank=8
+IDX 551 S=[0, 1, 2, 3, 4, 5, 7, 11, 15, 16] rankdef rank=8
+IDX 552 S=[0, 1, 2, 3, 4, 5, 7, 11, 15, 17] rankdef rank=9
+IDX 553 S=[0, 1, 2, 3, 4, 5, 7, 11, 15, 18] rankdef rank=9
+IDX 554 S=[0, 1, 2, 3, 4, 5, 7, 11, 15, 19] rankdef rank=9
+IDX 555 S=[0, 1, 2, 3, 4, 5, 7, 11, 15, 20] rankdef rank=9
+IDX 556 S=[0, 1, 2, 3, 4, 5, 7, 11, 16, 17] rankdef rank=9
+IDX 557 S=[0, 1, 2, 3, 4, 5, 7, 11, 16, 18] rankdef rank=9
+IDX 558 S=[0, 1, 2, 3, 4, 5, 7, 11, 16, 19] rankdef rank=9
+IDX 559 S=[0, 1, 2, 3, 4, 5, 7, 11, 16, 20] rankdef rank=9
+IDX 560 S=[0, 1, 2, 3, 4, 5, 7, 11, 17, 18] rankdef rank=9
+IDX 561 S=[0, 1, 2, 3, 4, 5, 7, 11, 17, 19] rankdef rank=9
+IDX 562 S=[0, 1, 2, 3, 4, 5, 7, 11, 17, 20] rankdef rank=9
+IDX 563 S=[0, 1, 2, 3, 4, 5, 7, 11, 18, 19] rankdef rank=9
+IDX 564 S=[0, 1, 2, 3, 4, 5, 7, 11, 18, 20] rankdef rank=9
+IDX 565 S=[0, 1, 2, 3, 4, 5, 7, 11, 19, 20] rankdef rank=9
+IDX 566 S=[0, 1, 2, 3, 4, 5, 7, 12, 13, 14] rankdef rank=7
+IDX 567 S=[0, 1, 2, 3, 4, 5, 7, 12, 13, 15] rankdef rank=8
+IDX 568 S=[0, 1, 2, 3, 4, 5, 7, 12, 13, 16] rankdef rank=8
+IDX 569 S=[0, 1, 2, 3, 4, 5, 7, 12, 13, 17] rankdef rank=8
+IDX 570 S=[0, 1, 2, 3, 4, 5, 7, 12, 13, 18] rankdef rank=8
+IDX 571 S=[0, 1, 2, 3, 4, 5, 7, 12, 13, 19] rankdef rank=8
+IDX 572 S=[0, 1, 2, 3, 4, 5, 7, 12, 13, 20] rankdef rank=8
+IDX 573 S=[0, 1, 2, 3, 4, 5, 7, 12, 14, 15] rankdef rank=8
+IDX 574 S=[0, 1, 2, 3, 4, 5, 7, 12, 14, 16] rankdef rank=8
+IDX 575 S=[0, 1, 2, 3, 4, 5, 7, 12, 14, 17] rankdef rank=8
+IDX 576 S=[0, 1, 2, 3, 4, 5, 7, 12, 14, 18] rankdef rank=8
+IDX 577 S=[0, 1, 2, 3, 4, 5, 7, 12, 14, 19] rankdef rank=8
+IDX 578 S=[0, 1, 2, 3, 4, 5, 7, 12, 14, 20] rankdef rank=8
+IDX 579 S=[0, 1, 2, 3, 4, 5, 7, 12, 15, 16] rankdef rank=8
+IDX 580 S=[0, 1, 2, 3, 4, 5, 7, 12, 15, 17] rankdef rank=9
+IDX 581 S=[0, 1, 2, 3, 4, 5, 7, 12, 15, 18] rankdef rank=9
+IDX 582 S=[0, 1, 2, 3, 4, 5, 7, 12, 15, 19] rankdef rank=9
+IDX 583 S=[0, 1, 2, 3, 4, 5, 7, 12, 15, 20] rankdef rank=9
+IDX 584 S=[0, 1, 2, 3, 4, 5, 7, 12, 16, 17] rankdef rank=9
+IDX 585 S=[0, 1, 2, 3, 4, 5, 7, 12, 16, 18] rankdef rank=9
+IDX 586 S=[0, 1, 2, 3, 4, 5, 7, 12, 16, 19] rankdef rank=9
+IDX 587 S=[0, 1, 2, 3, 4, 5, 7, 12, 16, 20] rankdef rank=9
+IDX 588 S=[0, 1, 2, 3, 4, 5, 7, 12, 17, 18] rankdef rank=9
+IDX 589 S=[0, 1, 2, 3, 4, 5, 7, 12, 17, 19] rankdef rank=9
+IDX 590 S=[0, 1, 2, 3, 4, 5, 7, 12, 17, 20] rankdef rank=9
+IDX 591 S=[0, 1, 2, 3, 4, 5, 7, 12, 18, 19] rankdef rank=9
+IDX 592 S=[0, 1, 2, 3, 4, 5, 7, 12, 18, 20] rankdef rank=9
+IDX 593 S=[0, 1, 2, 3, 4, 5, 7, 12, 19, 20] rankdef rank=9
+IDX 594 S=[0, 1, 2, 3, 4, 5, 7, 13, 14, 15] rankdef rank=8
+IDX 595 S=[0, 1, 2, 3, 4, 5, 7, 13, 14, 16] rankdef rank=8
+IDX 596 S=[0, 1, 2, 3, 4, 5, 7, 13, 14, 17] rankdef rank=8
+IDX 597 S=[0, 1, 2, 3, 4, 5, 7, 13, 14, 18] rankdef rank=8
+IDX 598 S=[0, 1, 2, 3, 4, 5, 7, 13, 14, 19] rankdef rank=8
+IDX 599 S=[0, 1, 2, 3, 4, 5, 7, 13, 14, 20] rankdef rank=8
+IDX 600 S=[0, 1, 2, 3, 4, 5, 7, 13, 15, 16] rankdef rank=8
+IDX 601 S=[0, 1, 2, 3, 4, 5, 7, 13, 15, 17] rankdef rank=9
+IDX 602 S=[0, 1, 2, 3, 4, 5, 7, 13, 15, 18] rankdef rank=9
+IDX 603 S=[0, 1, 2, 3, 4, 5, 7, 13, 15, 19] rankdef rank=9
+IDX 604 S=[0, 1, 2, 3, 4, 5, 7, 13, 15, 20] rankdef rank=9
+IDX 605 S=[0, 1, 2, 3, 4, 5, 7, 13, 16, 17] rankdef rank=9
+IDX 606 S=[0, 1, 2, 3, 4, 5, 7, 13, 16, 18] rankdef rank=9
+IDX 607 S=[0, 1, 2, 3, 4, 5, 7, 13, 16, 19] rankdef rank=9
+IDX 608 S=[0, 1, 2, 3, 4, 5, 7, 13, 16, 20] rankdef rank=9
+IDX 609 S=[0, 1, 2, 3, 4, 5, 7, 13, 17, 18] rankdef rank=9
+IDX 610 S=[0, 1, 2, 3, 4, 5, 7, 13, 17, 19] rankdef rank=9
+IDX 611 S=[0, 1, 2, 3, 4, 5, 7, 13, 17, 20] rankdef rank=9
+IDX 612 S=[0, 1, 2, 3, 4, 5, 7, 13, 18, 19] rankdef rank=9
+IDX 613 S=[0, 1, 2, 3, 4, 5, 7, 13, 18, 20] rankdef rank=9
+IDX 614 S=[0, 1, 2, 3, 4, 5, 7, 13, 19, 20] rankdef rank=9
+IDX 615 S=[0, 1, 2, 3, 4, 5, 7, 14, 15, 16] rankdef rank=8
+IDX 616 S=[0, 1, 2, 3, 4, 5, 7, 14, 15, 17] rankdef rank=9
+IDX 617 S=[0, 1, 2, 3, 4, 5, 7, 14, 15, 18] rankdef rank=9
+IDX 618 S=[0, 1, 2, 3, 4, 5, 7, 14, 15, 19] rankdef rank=9
+IDX 619 S=[0, 1, 2, 3, 4, 5, 7, 14, 15, 20] rankdef rank=9
+IDX 620 S=[0, 1, 2, 3, 4, 5, 7, 14, 16, 17] rankdef rank=9
+IDX 621 S=[0, 1, 2, 3, 4, 5, 7, 14, 16, 18] rankdef rank=9
+IDX 622 S=[0, 1, 2, 3, 4, 5, 7, 14, 16, 19] rankdef rank=9
+IDX 623 S=[0, 1, 2, 3, 4, 5, 7, 14, 16, 20] rankdef rank=9
+IDX 624 S=[0, 1, 2, 3, 4, 5, 7, 14, 17, 18] rankdef rank=9
+IDX 625 S=[0, 1, 2, 3, 4, 5, 7, 14, 17, 19] rankdef rank=9
+IDX 626 S=[0, 1, 2, 3, 4, 5, 7, 14, 17, 20] rankdef rank=9
+IDX 627 S=[0, 1, 2, 3, 4, 5, 7, 14, 18, 19] rankdef rank=9
+IDX 628 S=[0, 1, 2, 3, 4, 5, 7, 14, 18, 20] rankdef rank=9
+IDX 629 S=[0, 1, 2, 3, 4, 5, 7, 14, 19, 20] rankdef rank=9
+IDX 630 S=[0, 1, 2, 3, 4, 5, 7, 15, 16, 17] rankdef rank=9
+IDX 631 S=[0, 1, 2, 3, 4, 5, 7, 15, 16, 18] rankdef rank=9
+IDX 632 S=[0, 1, 2, 3, 4, 5, 7, 15, 16, 19] rankdef rank=9
+IDX 633 S=[0, 1, 2, 3, 4, 5, 7, 15, 16, 20] rankdef rank=9
+IDX 634 S=[0, 1, 2, 3, 4, 5, 7, 15, 17, 18] infeasible
+IDX 635 S=[0, 1, 2, 3, 4, 5, 7, 15, 17, 19] infeasible
+IDX 636 S=[0, 1, 2, 3, 4, 5, 7, 15, 17, 20] infeasible
+IDX 637 S=[0, 1, 2, 3, 4, 5, 7, 15, 18, 19] infeasible
+IDX 638 S=[0, 1, 2, 3, 4, 5, 7, 15, 18, 20] infeasible
+IDX 639 S=[0, 1, 2, 3, 4, 5, 7, 15, 19, 20] infeasible
+IDX 640 S=[0, 1, 2, 3, 4, 5, 7, 16, 17, 18] infeasible
+IDX 641 S=[0, 1, 2, 3, 4, 5, 7, 16, 17, 19] infeasible
+IDX 642 S=[0, 1, 2, 3, 4, 5, 7, 16, 17, 20] infeasible
+IDX 643 S=[0, 1, 2, 3, 4, 5, 7, 16, 18, 19] infeasible
+IDX 644 S=[0, 1, 2, 3, 4, 5, 7, 16, 18, 20] infeasible
+IDX 645 S=[0, 1, 2, 3, 4, 5, 7, 16, 19, 20] infeasible
+IDX 646 S=[0, 1, 2, 3, 4, 5, 7, 17, 18, 19] rankdef rank=9
+IDX 647 S=[0, 1, 2, 3, 4, 5, 7, 17, 18, 20] infeasible
+IDX 648 S=[0, 1, 2, 3, 4, 5, 7, 17, 19, 20] infeasible
+IDX 649 S=[0, 1, 2, 3, 4, 5, 7, 18, 19, 20] infeasible
+IDX 650 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 11] rankdef rank=8
+IDX 651 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 12] rankdef rank=8
+IDX 652 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 13] rankdef rank=8
+IDX 653 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 14] rankdef rank=8
+IDX 654 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 15] rankdef rank=9
+IDX 655 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 16] rankdef rank=9
+IDX 656 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 17] rankdef rank=9
+IDX 657 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 18] rankdef rank=8
+IDX 658 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 19] rankdef rank=8
+IDX 659 S=[0, 1, 2, 3, 4, 5, 8, 9, 10, 20] rankdef rank=9
+IDX 660 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 12] rankdef rank=8
+IDX 661 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 13] rankdef rank=8
+IDX 662 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 14] rankdef rank=8
+IDX 663 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 15] rankdef rank=9
+IDX 664 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 16] rankdef rank=9
+IDX 665 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 17] rankdef rank=9
+IDX 666 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 18] rankdef rank=8
+IDX 667 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 19] rankdef rank=8
+IDX 668 S=[0, 1, 2, 3, 4, 5, 8, 9, 11, 20] rankdef rank=9
+IDX 669 S=[0, 1, 2, 3, 4, 5, 8, 9, 12, 13] rankdef rank=8
+IDX 670 S=[0, 1, 2, 3, 4, 5, 8, 9, 12, 14] rankdef rank=8
+IDX 671 S=[0, 1, 2, 3, 4, 5, 8, 9, 12, 15] rankdef rank=9
+IDX 672 S=[0, 1, 2, 3, 4, 5, 8, 9, 12, 16] rankdef rank=9
+IDX 673 S=[0, 1, 2, 3, 4, 5, 8, 9, 12, 17] rankdef rank=9
+IDX 674 S=[0, 1, 2, 3, 4, 5, 8, 9, 12, 18] rankdef rank=8
+IDX 675 S=[0, 1, 2, 3, 4, 5, 8, 9, 12, 19] rankdef rank=8
+IDX 676 S=[0, 1, 2, 3, 4, 5, 8, 9, 12, 20] rankdef rank=9
+IDX 677 S=[0, 1, 2, 3, 4, 5, 8, 9, 13, 14] rankdef rank=8
+IDX 678 S=[0, 1, 2, 3, 4, 5, 8, 9, 13, 15] rankdef rank=9
+IDX 679 S=[0, 1, 2, 3, 4, 5, 8, 9, 13, 16] rankdef rank=9
+IDX 680 S=[0, 1, 2, 3, 4, 5, 8, 9, 13, 17] rankdef rank=9
+IDX 681 S=[0, 1, 2, 3, 4, 5, 8, 9, 13, 18] rankdef rank=8
+IDX 682 S=[0, 1, 2, 3, 4, 5, 8, 9, 13, 19] rankdef rank=8
+IDX 683 S=[0, 1, 2, 3, 4, 5, 8, 9, 13, 20] rankdef rank=9
+IDX 684 S=[0, 1, 2, 3, 4, 5, 8, 9, 14, 15] rankdef rank=9
+IDX 685 S=[0, 1, 2, 3, 4, 5, 8, 9, 14, 16] rankdef rank=9
+IDX 686 S=[0, 1, 2, 3, 4, 5, 8, 9, 14, 17] rankdef rank=9
+IDX 687 S=[0, 1, 2, 3, 4, 5, 8, 9, 14, 18] rankdef rank=8
+IDX 688 S=[0, 1, 2, 3, 4, 5, 8, 9, 14, 19] rankdef rank=8
+IDX 689 S=[0, 1, 2, 3, 4, 5, 8, 9, 14, 20] rankdef rank=9
+IDX 690 S=[0, 1, 2, 3, 4, 5, 8, 9, 15, 16] infeasible
+IDX 691 S=[0, 1, 2, 3, 4, 5, 8, 9, 15, 17] infeasible
+IDX 692 S=[0, 1, 2, 3, 4, 5, 8, 9, 15, 18] rankdef rank=9
+IDX 693 S=[0, 1, 2, 3, 4, 5, 8, 9, 15, 19] rankdef rank=9
+IDX 694 S=[0, 1, 2, 3, 4, 5, 8, 9, 15, 20] infeasible
+IDX 695 S=[0, 1, 2, 3, 4, 5, 8, 9, 16, 17] infeasible
+IDX 696 S=[0, 1, 2, 3, 4, 5, 8, 9, 16, 18] rankdef rank=9
+IDX 697 S=[0, 1, 2, 3, 4, 5, 8, 9, 16, 19] rankdef rank=9
+IDX 698 S=[0, 1, 2, 3, 4, 5, 8, 9, 16, 20] infeasible
+IDX 699 S=[0, 1, 2, 3, 4, 5, 8, 9, 17, 18] rankdef rank=9
+IDX 700 S=[0, 1, 2, 3, 4, 5, 8, 9, 17, 19] rankdef rank=9
+IDX 701 S=[0, 1, 2, 3, 4, 5, 8, 9, 17, 20] infeasible
+IDX 702 S=[0, 1, 2, 3, 4, 5, 8, 9, 18, 19] rankdef rank=8
+IDX 703 S=[0, 1, 2, 3, 4, 5, 8, 9, 18, 20] rankdef rank=9
+IDX 704 S=[0, 1, 2, 3, 4, 5, 8, 9, 19, 20] rankdef rank=9
+IDX 705 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 12] rankdef rank=7
+IDX 706 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 13] rankdef rank=7
+IDX 707 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 14] rankdef rank=7
+IDX 708 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 15] rankdef rank=8
+IDX 709 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 16] rankdef rank=8
+IDX 710 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 17] rankdef rank=8
+IDX 711 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 18] rankdef rank=8
+IDX 712 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 19] rankdef rank=8
+IDX 713 S=[0, 1, 2, 3, 4, 5, 8, 10, 11, 20] rankdef rank=8
+IDX 714 S=[0, 1, 2, 3, 4, 5, 8, 10, 12, 13] rankdef rank=7
+IDX 715 S=[0, 1, 2, 3, 4, 5, 8, 10, 12, 14] rankdef rank=7
+IDX 716 S=[0, 1, 2, 3, 4, 5, 8, 10, 12, 15] rankdef rank=8
+IDX 717 S=[0, 1, 2, 3, 4, 5, 8, 10, 12, 16] rankdef rank=8
+IDX 718 S=[0, 1, 2, 3, 4, 5, 8, 10, 12, 17] rankdef rank=8
+IDX 719 S=[0, 1, 2, 3, 4, 5, 8, 10, 12, 18] rankdef rank=8
+IDX 720 S=[0, 1, 2, 3, 4, 5, 8, 10, 12, 19] rankdef rank=8
+IDX 721 S=[0, 1, 2, 3, 4, 5, 8, 10, 12, 20] rankdef rank=8
+IDX 722 S=[0, 1, 2, 3, 4, 5, 8, 10, 13, 14] rankdef rank=7
+IDX 723 S=[0, 1, 2, 3, 4, 5, 8, 10, 13, 15] rankdef rank=8
+IDX 724 S=[0, 1, 2, 3, 4, 5, 8, 10, 13, 16] rankdef rank=8
+IDX 725 S=[0, 1, 2, 3, 4, 5, 8, 10, 13, 17] rankdef rank=8
+IDX 726 S=[0, 1, 2, 3, 4, 5, 8, 10, 13, 18] rankdef rank=8
+IDX 727 S=[0, 1, 2, 3, 4, 5, 8, 10, 13, 19] rankdef rank=8
+IDX 728 S=[0, 1, 2, 3, 4, 5, 8, 10, 13, 20] rankdef rank=8
+IDX 729 S=[0, 1, 2, 3, 4, 5, 8, 10, 14, 15] rankdef rank=8
+IDX 730 S=[0, 1, 2, 3, 4, 5, 8, 10, 14, 16] rankdef rank=8
+IDX 731 S=[0, 1, 2, 3, 4, 5, 8, 10, 14, 17] rankdef rank=8
+IDX 732 S=[0, 1, 2, 3, 4, 5, 8, 10, 14, 18] rankdef rank=8
+IDX 733 S=[0, 1, 2, 3, 4, 5, 8, 10, 14, 19] rankdef rank=8
+IDX 734 S=[0, 1, 2, 3, 4, 5, 8, 10, 14, 20] rankdef rank=8
+IDX 735 S=[0, 1, 2, 3, 4, 5, 8, 10, 15, 16] rankdef rank=9
+IDX 736 S=[0, 1, 2, 3, 4, 5, 8, 10, 15, 17] rankdef rank=9
+IDX 737 S=[0, 1, 2, 3, 4, 5, 8, 10, 15, 18] rankdef rank=9
+IDX 738 S=[0, 1, 2, 3, 4, 5, 8, 10, 15, 19] rankdef rank=9
+IDX 739 S=[0, 1, 2, 3, 4, 5, 8, 10, 15, 20] rankdef rank=9
+IDX 740 S=[0, 1, 2, 3, 4, 5, 8, 10, 16, 17] rankdef rank=9
+IDX 741 S=[0, 1, 2, 3, 4, 5, 8, 10, 16, 18] rankdef rank=9
+IDX 742 S=[0, 1, 2, 3, 4, 5, 8, 10, 16, 19] rankdef rank=9
+IDX 743 S=[0, 1, 2, 3, 4, 5, 8, 10, 16, 20] rankdef rank=9
+IDX 744 S=[0, 1, 2, 3, 4, 5, 8, 10, 17, 18] rankdef rank=9
+IDX 745 S=[0, 1, 2, 3, 4, 5, 8, 10, 17, 19] rankdef rank=9
+IDX 746 S=[0, 1, 2, 3, 4, 5, 8, 10, 17, 20] rankdef rank=9
+IDX 747 S=[0, 1, 2, 3, 4, 5, 8, 10, 18, 19] rankdef rank=8
+IDX 748 S=[0, 1, 2, 3, 4, 5, 8, 10, 18, 20] rankdef rank=9
+IDX 749 S=[0, 1, 2, 3, 4, 5, 8, 10, 19, 20] rankdef rank=9
+IDX 750 S=[0, 1, 2, 3, 4, 5, 8, 11, 12, 13] rankdef rank=7
+IDX 751 S=[0, 1, 2, 3, 4, 5, 8, 11, 12, 14] rankdef rank=7
+IDX 752 S=[0, 1, 2, 3, 4, 5, 8, 11, 12, 15] rankdef rank=8
+IDX 753 S=[0, 1, 2, 3, 4, 5, 8, 11, 12, 16] rankdef rank=8
+IDX 754 S=[0, 1, 2, 3, 4, 5, 8, 11, 12, 17] rankdef rank=8
+IDX 755 S=[0, 1, 2, 3, 4, 5, 8, 11, 12, 18] rankdef rank=8
+IDX 756 S=[0, 1, 2, 3, 4, 5, 8, 11, 12, 19] rankdef rank=8
+IDX 757 S=[0, 1, 2, 3, 4, 5, 8, 11, 12, 20] rankdef rank=8
+IDX 758 S=[0, 1, 2, 3, 4, 5, 8, 11, 13, 14] rankdef rank=7
+IDX 759 S=[0, 1, 2, 3, 4, 5, 8, 11, 13, 15] rankdef rank=8
+IDX 760 S=[0, 1, 2, 3, 4, 5, 8, 11, 13, 16] rankdef rank=8
+IDX 761 S=[0, 1, 2, 3, 4, 5, 8, 11, 13, 17] rankdef rank=8
+IDX 762 S=[0, 1, 2, 3, 4, 5, 8, 11, 13, 18] rankdef rank=8
+IDX 763 S=[0, 1, 2, 3, 4, 5, 8, 11, 13, 19] rankdef rank=8
+IDX 764 S=[0, 1, 2, 3, 4, 5, 8, 11, 13, 20] rankdef rank=8
+IDX 765 S=[0, 1, 2, 3, 4, 5, 8, 11, 14, 15] rankdef rank=8
+IDX 766 S=[0, 1, 2, 3, 4, 5, 8, 11, 14, 16] rankdef rank=8
+IDX 767 S=[0, 1, 2, 3, 4, 5, 8, 11, 14, 17] rankdef rank=8
+IDX 768 S=[0, 1, 2, 3, 4, 5, 8, 11, 14, 18] rankdef rank=8
+IDX 769 S=[0, 1, 2, 3, 4, 5, 8, 11, 14, 19] rankdef rank=8
+IDX 770 S=[0, 1, 2, 3, 4, 5, 8, 11, 14, 20] rankdef rank=8
+IDX 771 S=[0, 1, 2, 3, 4, 5, 8, 11, 15, 16] rankdef rank=9
+IDX 772 S=[0, 1, 2, 3, 4, 5, 8, 11, 15, 17] rankdef rank=9
+IDX 773 S=[0, 1, 2, 3, 4, 5, 8, 11, 15, 18] rankdef rank=9
+IDX 774 S=[0, 1, 2, 3, 4, 5, 8, 11, 15, 19] rankdef rank=9
+IDX 775 S=[0, 1, 2, 3, 4, 5, 8, 11, 15, 20] rankdef rank=9
+IDX 776 S=[0, 1, 2, 3, 4, 5, 8, 11, 16, 17] rankdef rank=9
+IDX 777 S=[0, 1, 2, 3, 4, 5, 8, 11, 16, 18] rankdef rank=9
+IDX 778 S=[0, 1, 2, 3, 4, 5, 8, 11, 16, 19] rankdef rank=9
+IDX 779 S=[0, 1, 2, 3, 4, 5, 8, 11, 16, 20] rankdef rank=9
+IDX 780 S=[0, 1, 2, 3, 4, 5, 8, 11, 17, 18] rankdef rank=9
+IDX 781 S=[0, 1, 2, 3, 4, 5, 8, 11, 17, 19] rankdef rank=9
+IDX 782 S=[0, 1, 2, 3, 4, 5, 8, 11, 17, 20] rankdef rank=9
+IDX 783 S=[0, 1, 2, 3, 4, 5, 8, 11, 18, 19] rankdef rank=8
+IDX 784 S=[0, 1, 2, 3, 4, 5, 8, 11, 18, 20] rankdef rank=9
+IDX 785 S=[0, 1, 2, 3, 4, 5, 8, 11, 19, 20] rankdef rank=9
+IDX 786 S=[0, 1, 2, 3, 4, 5, 8, 12, 13, 14] rankdef rank=7
+IDX 787 S=[0, 1, 2, 3, 4, 5, 8, 12, 13, 15] rankdef rank=8
+IDX 788 S=[0, 1, 2, 3, 4, 5, 8, 12, 13, 16] rankdef rank=8
+IDX 789 S=[0, 1, 2, 3, 4, 5, 8, 12, 13, 17] rankdef rank=8
+IDX 790 S=[0, 1, 2, 3, 4, 5, 8, 12, 13, 18] rankdef rank=8
+IDX 791 S=[0, 1, 2, 3, 4, 5, 8, 12, 13, 19] rankdef rank=8
+IDX 792 S=[0, 1, 2, 3, 4, 5, 8, 12, 13, 20] rankdef rank=8
+IDX 793 S=[0, 1, 2, 3, 4, 5, 8, 12, 14, 15] rankdef rank=8
+IDX 794 S=[0, 1, 2, 3, 4, 5, 8, 12, 14, 16] rankdef rank=8
+IDX 795 S=[0, 1, 2, 3, 4, 5, 8, 12, 14, 17] rankdef rank=8
+IDX 796 S=[0, 1, 2, 3, 4, 5, 8, 12, 14, 18] rankdef rank=8
+IDX 797 S=[0, 1, 2, 3, 4, 5, 8, 12, 14, 19] rankdef rank=8
+IDX 798 S=[0, 1, 2, 3, 4, 5, 8, 12, 14, 20] rankdef rank=8
+IDX 799 S=[0, 1, 2, 3, 4, 5, 8, 12, 15, 16] rankdef rank=9
+IDX 800 S=[0, 1, 2, 3, 4, 5, 8, 12, 15, 17] rankdef rank=9
+IDX 801 S=[0, 1, 2, 3, 4, 5, 8, 12, 15, 18] rankdef rank=9
+IDX 802 S=[0, 1, 2, 3, 4, 5, 8, 12, 15, 19] rankdef rank=9
+IDX 803 S=[0, 1, 2, 3, 4, 5, 8, 12, 15, 20] rankdef rank=9
+IDX 804 S=[0, 1, 2, 3, 4, 5, 8, 12, 16, 17] rankdef rank=9
+IDX 805 S=[0, 1, 2, 3, 4, 5, 8, 12, 16, 18] rankdef rank=9
+IDX 806 S=[0, 1, 2, 3, 4, 5, 8, 12, 16, 19] rankdef rank=9
+IDX 807 S=[0, 1, 2, 3, 4, 5, 8, 12, 16, 20] rankdef rank=9
+IDX 808 S=[0, 1, 2, 3, 4, 5, 8, 12, 17, 18] rankdef rank=9
+IDX 809 S=[0, 1, 2, 3, 4, 5, 8, 12, 17, 19] rankdef rank=9
+IDX 810 S=[0, 1, 2, 3, 4, 5, 8, 12, 17, 20] rankdef rank=9
+IDX 811 S=[0, 1, 2, 3, 4, 5, 8, 12, 18, 19] rankdef rank=8
+IDX 812 S=[0, 1, 2, 3, 4, 5, 8, 12, 18, 20] rankdef rank=9
+IDX 813 S=[0, 1, 2, 3, 4, 5, 8, 12, 19, 20] rankdef rank=9
+IDX 814 S=[0, 1, 2, 3, 4, 5, 8, 13, 14, 15] rankdef rank=8
+IDX 815 S=[0, 1, 2, 3, 4, 5, 8, 13, 14, 16] rankdef rank=8
+IDX 816 S=[0, 1, 2, 3, 4, 5, 8, 13, 14, 17] rankdef rank=8
+IDX 817 S=[0, 1, 2, 3, 4, 5, 8, 13, 14, 18] rankdef rank=8
+IDX 818 S=[0, 1, 2, 3, 4, 5, 8, 13, 14, 19] rankdef rank=8
+IDX 819 S=[0, 1, 2, 3, 4, 5, 8, 13, 14, 20] rankdef rank=8
+IDX 820 S=[0, 1, 2, 3, 4, 5, 8, 13, 15, 16] rankdef rank=9
+IDX 821 S=[0, 1, 2, 3, 4, 5, 8, 13, 15, 17] rankdef rank=9
+IDX 822 S=[0, 1, 2, 3, 4, 5, 8, 13, 15, 18] rankdef rank=9
+IDX 823 S=[0, 1, 2, 3, 4, 5, 8, 13, 15, 19] rankdef rank=9
+IDX 824 S=[0, 1, 2, 3, 4, 5, 8, 13, 15, 20] rankdef rank=9
+IDX 825 S=[0, 1, 2, 3, 4, 5, 8, 13, 16, 17] rankdef rank=9
+IDX 826 S=[0, 1, 2, 3, 4, 5, 8, 13, 16, 18] rankdef rank=9
+IDX 827 S=[0, 1, 2, 3, 4, 5, 8, 13, 16, 19] rankdef rank=9
+IDX 828 S=[0, 1, 2, 3, 4, 5, 8, 13, 16, 20] rankdef rank=9
+IDX 829 S=[0, 1, 2, 3, 4, 5, 8, 13, 17, 18] rankdef rank=9
+IDX 830 S=[0, 1, 2, 3, 4, 5, 8, 13, 17, 19] rankdef rank=9
+IDX 831 S=[0, 1, 2, 3, 4, 5, 8, 13, 17, 20] rankdef rank=9
+IDX 832 S=[0, 1, 2, 3, 4, 5, 8, 13, 18, 19] rankdef rank=8
+IDX 833 S=[0, 1, 2, 3, 4, 5, 8, 13, 18, 20] rankdef rank=9
+IDX 834 S=[0, 1, 2, 3, 4, 5, 8, 13, 19, 20] rankdef rank=9
+IDX 835 S=[0, 1, 2, 3, 4, 5, 8, 14, 15, 16] rankdef rank=9
+IDX 836 S=[0, 1, 2, 3, 4, 5, 8, 14, 15, 17] rankdef rank=9
+IDX 837 S=[0, 1, 2, 3, 4, 5, 8, 14, 15, 18] rankdef rank=9
+IDX 838 S=[0, 1, 2, 3, 4, 5, 8, 14, 15, 19] rankdef rank=9
+IDX 839 S=[0, 1, 2, 3, 4, 5, 8, 14, 15, 20] rankdef rank=9
+IDX 840 S=[0, 1, 2, 3, 4, 5, 8, 14, 16, 17] rankdef rank=9
+IDX 841 S=[0, 1, 2, 3, 4, 5, 8, 14, 16, 18] rankdef rank=9
+IDX 842 S=[0, 1, 2, 3, 4, 5, 8, 14, 16, 19] rankdef rank=9
+IDX 843 S=[0, 1, 2, 3, 4, 5, 8, 14, 16, 20] rankdef rank=9
+IDX 844 S=[0, 1, 2, 3, 4, 5, 8, 14, 17, 18] rankdef rank=9
+IDX 845 S=[0, 1, 2, 3, 4, 5, 8, 14, 17, 19] rankdef rank=9
+IDX 846 S=[0, 1, 2, 3, 4, 5, 8, 14, 17, 20] rankdef rank=9
+IDX 847 S=[0, 1, 2, 3, 4, 5, 8, 14, 18, 19] rankdef rank=8
+IDX 848 S=[0, 1, 2, 3, 4, 5, 8, 14, 18, 20] rankdef rank=9
+IDX 849 S=[0, 1, 2, 3, 4, 5, 8, 14, 19, 20] rankdef rank=9
+IDX 850 S=[0, 1, 2, 3, 4, 5, 8, 15, 16, 17] rankdef rank=9
+IDX 851 S=[0, 1, 2, 3, 4, 5, 8, 15, 16, 18] infeasible
+IDX 852 S=[0, 1, 2, 3, 4, 5, 8, 15, 16, 19] infeasible
+IDX 853 S=[0, 1, 2, 3, 4, 5, 8, 15, 16, 20] infeasible
+IDX 854 S=[0, 1, 2, 3, 4, 5, 8, 15, 17, 18] infeasible
+IDX 855 S=[0, 1, 2, 3, 4, 5, 8, 15, 17, 19] infeasible
+IDX 856 S=[0, 1, 2, 3, 4, 5, 8, 15, 17, 20] infeasible
+IDX 857 S=[0, 1, 2, 3, 4, 5, 8, 15, 18, 19] rankdef rank=9
+IDX 858 S=[0, 1, 2, 3, 4, 5, 8, 15, 18, 20] infeasible
+IDX 859 S=[0, 1, 2, 3, 4, 5, 8, 15, 19, 20] infeasible
+IDX 860 S=[0, 1, 2, 3, 4, 5, 8, 16, 17, 18] infeasible
+IDX 861 S=[0, 1, 2, 3, 4, 5, 8, 16, 17, 19] infeasible
+IDX 862 S=[0, 1, 2, 3, 4, 5, 8, 16, 17, 20] infeasible
+IDX 863 S=[0, 1, 2, 3, 4, 5, 8, 16, 18, 19] rankdef rank=9
+IDX 864 S=[0, 1, 2, 3, 4, 5, 8, 16, 18, 20] infeasible
+IDX 865 S=[0, 1, 2, 3, 4, 5, 8, 16, 19, 20] infeasible
+IDX 866 S=[0, 1, 2, 3, 4, 5, 8, 17, 18, 19] rankdef rank=9
+IDX 867 S=[0, 1, 2, 3, 4, 5, 8, 17, 18, 20] infeasible
+IDX 868 S=[0, 1, 2, 3, 4, 5, 8, 17, 19, 20] infeasible
+IDX 869 S=[0, 1, 2, 3, 4, 5, 8, 18, 19, 20] rankdef rank=9
+IDX 870 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 12] rankdef rank=7
+IDX 871 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 13] rankdef rank=7
+IDX 872 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 14] rankdef rank=7
+IDX 873 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 15] rankdef rank=8
+IDX 874 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 16] rankdef rank=8
+IDX 875 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 17] rankdef rank=8
+IDX 876 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 18] rankdef rank=8
+IDX 877 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 19] rankdef rank=7
+IDX 878 S=[0, 1, 2, 3, 4, 5, 9, 10, 11, 20] rankdef rank=8
+IDX 879 S=[0, 1, 2, 3, 4, 5, 9, 10, 12, 13] rankdef rank=7
+IDX 880 S=[0, 1, 2, 3, 4, 5, 9, 10, 12, 14] rankdef rank=7
+IDX 881 S=[0, 1, 2, 3, 4, 5, 9, 10, 12, 15] rankdef rank=8
+IDX 882 S=[0, 1, 2, 3, 4, 5, 9, 10, 12, 16] rankdef rank=8
+IDX 883 S=[0, 1, 2, 3, 4, 5, 9, 10, 12, 17] rankdef rank=8
+IDX 884 S=[0, 1, 2, 3, 4, 5, 9, 10, 12, 18] rankdef rank=8
+IDX 885 S=[0, 1, 2, 3, 4, 5, 9, 10, 12, 19] rankdef rank=7
+IDX 886 S=[0, 1, 2, 3, 4, 5, 9, 10, 12, 20] rankdef rank=8
+IDX 887 S=[0, 1, 2, 3, 4, 5, 9, 10, 13, 14] rankdef rank=7
+IDX 888 S=[0, 1, 2, 3, 4, 5, 9, 10, 13, 15] rankdef rank=8
+IDX 889 S=[0, 1, 2, 3, 4, 5, 9, 10, 13, 16] rankdef rank=8
+IDX 890 S=[0, 1, 2, 3, 4, 5, 9, 10, 13, 17] rankdef rank=8
+IDX 891 S=[0, 1, 2, 3, 4, 5, 9, 10, 13, 18] rankdef rank=8
+IDX 892 S=[0, 1, 2, 3, 4, 5, 9, 10, 13, 19] rankdef rank=7
+IDX 893 S=[0, 1, 2, 3, 4, 5, 9, 10, 13, 20] rankdef rank=8
+IDX 894 S=[0, 1, 2, 3, 4, 5, 9, 10, 14, 15] rankdef rank=8
+IDX 895 S=[0, 1, 2, 3, 4, 5, 9, 10, 14, 16] rankdef rank=8
+IDX 896 S=[0, 1, 2, 3, 4, 5, 9, 10, 14, 17] rankdef rank=8
+IDX 897 S=[0, 1, 2, 3, 4, 5, 9, 10, 14, 18] rankdef rank=8
+IDX 898 S=[0, 1, 2, 3, 4, 5, 9, 10, 14, 19] rankdef rank=7
+IDX 899 S=[0, 1, 2, 3, 4, 5, 9, 10, 14, 20] rankdef rank=8
+IDX 900 S=[0, 1, 2, 3, 4, 5, 9, 10, 15, 16] rankdef rank=9
+IDX 901 S=[0, 1, 2, 3, 4, 5, 9, 10, 15, 17] rankdef rank=9
+IDX 902 S=[0, 1, 2, 3, 4, 5, 9, 10, 15, 18] rankdef rank=9
+IDX 903 S=[0, 1, 2, 3, 4, 5, 9, 10, 15, 19] rankdef rank=8
+IDX 904 S=[0, 1, 2, 3, 4, 5, 9, 10, 15, 20] rankdef rank=9
+IDX 905 S=[0, 1, 2, 3, 4, 5, 9, 10, 16, 17] rankdef rank=9
+IDX 906 S=[0, 1, 2, 3, 4, 5, 9, 10, 16, 18] rankdef rank=9
+IDX 907 S=[0, 1, 2, 3, 4, 5, 9, 10, 16, 19] rankdef rank=8
+IDX 908 S=[0, 1, 2, 3, 4, 5, 9, 10, 16, 20] rankdef rank=9
+IDX 909 S=[0, 1, 2, 3, 4, 5, 9, 10, 17, 18] rankdef rank=9
+IDX 910 S=[0, 1, 2, 3, 4, 5, 9, 10, 17, 19] rankdef rank=8
+IDX 911 S=[0, 1, 2, 3, 4, 5, 9, 10, 17, 20] rankdef rank=9
+IDX 912 S=[0, 1, 2, 3, 4, 5, 9, 10, 18, 19] rankdef rank=8
+IDX 913 S=[0, 1, 2, 3, 4, 5, 9, 10, 18, 20] rankdef rank=9
+IDX 914 S=[0, 1, 2, 3, 4, 5, 9, 10, 19, 20] rankdef rank=8
+IDX 915 S=[0, 1, 2, 3, 4, 5, 9, 11, 12, 13] rankdef rank=7
+IDX 916 S=[0, 1, 2, 3, 4, 5, 9, 11, 12, 14] rankdef rank=7
+IDX 917 S=[0, 1, 2, 3, 4, 5, 9, 11, 12, 15] rankdef rank=8
+IDX 918 S=[0, 1, 2, 3, 4, 5, 9, 11, 12, 16] rankdef rank=8
+IDX 919 S=[0, 1, 2, 3, 4, 5, 9, 11, 12, 17] rankdef rank=8
+IDX 920 S=[0, 1, 2, 3, 4, 5, 9, 11, 12, 18] rankdef rank=8
+IDX 921 S=[0, 1, 2, 3, 4, 5, 9, 11, 12, 19] rankdef rank=7
+IDX 922 S=[0, 1, 2, 3, 4, 5, 9, 11, 12, 20] rankdef rank=8
+IDX 923 S=[0, 1, 2, 3, 4, 5, 9, 11, 13, 14] rankdef rank=7
+IDX 924 S=[0, 1, 2, 3, 4, 5, 9, 11, 13, 15] rankdef rank=8
+IDX 925 S=[0, 1, 2, 3, 4, 5, 9, 11, 13, 16] rankdef rank=8
+IDX 926 S=[0, 1, 2, 3, 4, 5, 9, 11, 13, 17] rankdef rank=8
+IDX 927 S=[0, 1, 2, 3, 4, 5, 9, 11, 13, 18] rankdef rank=8
+IDX 928 S=[0, 1, 2, 3, 4, 5, 9, 11, 13, 19] rankdef rank=7
+IDX 929 S=[0, 1, 2, 3, 4, 5, 9, 11, 13, 20] rankdef rank=8
+IDX 930 S=[0, 1, 2, 3, 4, 5, 9, 11, 14, 15] rankdef rank=8
+IDX 931 S=[0, 1, 2, 3, 4, 5, 9, 11, 14, 16] rankdef rank=8
+IDX 932 S=[0, 1, 2, 3, 4, 5, 9, 11, 14, 17] rankdef rank=8
+IDX 933 S=[0, 1, 2, 3, 4, 5, 9, 11, 14, 18] rankdef rank=8
+IDX 934 S=[0, 1, 2, 3, 4, 5, 9, 11, 14, 19] rankdef rank=7
+IDX 935 S=[0, 1, 2, 3, 4, 5, 9, 11, 14, 20] rankdef rank=8
+IDX 936 S=[0, 1, 2, 3, 4, 5, 9, 11, 15, 16] rankdef rank=9
+IDX 937 S=[0, 1, 2, 3, 4, 5, 9, 11, 15, 17] rankdef rank=9
+IDX 938 S=[0, 1, 2, 3, 4, 5, 9, 11, 15, 18] rankdef rank=9
+IDX 939 S=[0, 1, 2, 3, 4, 5, 9, 11, 15, 19] rankdef rank=8
+IDX 940 S=[0, 1, 2, 3, 4, 5, 9, 11, 15, 20] rankdef rank=9
+IDX 941 S=[0, 1, 2, 3, 4, 5, 9, 11, 16, 17] rankdef rank=9
+IDX 942 S=[0, 1, 2, 3, 4, 5, 9, 11, 16, 18] rankdef rank=9
+IDX 943 S=[0, 1, 2, 3, 4, 5, 9, 11, 16, 19] rankdef rank=8
+IDX 944 S=[0, 1, 2, 3, 4, 5, 9, 11, 16, 20] rankdef rank=9
+IDX 945 S=[0, 1, 2, 3, 4, 5, 9, 11, 17, 18] rankdef rank=9
+IDX 946 S=[0, 1, 2, 3, 4, 5, 9, 11, 17, 19] rankdef rank=8
+IDX 947 S=[0, 1, 2, 3, 4, 5, 9, 11, 17, 20] rankdef rank=9
+IDX 948 S=[0, 1, 2, 3, 4, 5, 9, 11, 18, 19] rankdef rank=8
+IDX 949 S=[0, 1, 2, 3, 4, 5, 9, 11, 18, 20] rankdef rank=9
+IDX 950 S=[0, 1, 2, 3, 4, 5, 9, 11, 19, 20] rankdef rank=8
+IDX 951 S=[0, 1, 2, 3, 4, 5, 9, 12, 13, 14] rankdef rank=7
+IDX 952 S=[0, 1, 2, 3, 4, 5, 9, 12, 13, 15] rankdef rank=8
+IDX 953 S=[0, 1, 2, 3, 4, 5, 9, 12, 13, 16] rankdef rank=8
+IDX 954 S=[0, 1, 2, 3, 4, 5, 9, 12, 13, 17] rankdef rank=8
+IDX 955 S=[0, 1, 2, 3, 4, 5, 9, 12, 13, 18] rankdef rank=8
+IDX 956 S=[0, 1, 2, 3, 4, 5, 9, 12, 13, 19] rankdef rank=7
+IDX 957 S=[0, 1, 2, 3, 4, 5, 9, 12, 13, 20] rankdef rank=8
+IDX 958 S=[0, 1, 2, 3, 4, 5, 9, 12, 14, 15] rankdef rank=8
+IDX 959 S=[0, 1, 2, 3, 4, 5, 9, 12, 14, 16] rankdef rank=8
+IDX 960 S=[0, 1, 2, 3, 4, 5, 9, 12, 14, 17] rankdef rank=8
+IDX 961 S=[0, 1, 2, 3, 4, 5, 9, 12, 14, 18] rankdef rank=8
+IDX 962 S=[0, 1, 2, 3, 4, 5, 9, 12, 14, 19] rankdef rank=7
+IDX 963 S=[0, 1, 2, 3, 4, 5, 9, 12, 14, 20] rankdef rank=8
+IDX 964 S=[0, 1, 2, 3, 4, 5, 9, 12, 15, 16] rankdef rank=9
+IDX 965 S=[0, 1, 2, 3, 4, 5, 9, 12, 15, 17] rankdef rank=9
+IDX 966 S=[0, 1, 2, 3, 4, 5, 9, 12, 15, 18] rankdef rank=9
+IDX 967 S=[0, 1, 2, 3, 4, 5, 9, 12, 15, 19] rankdef rank=8
+IDX 968 S=[0, 1, 2, 3, 4, 5, 9, 12, 15, 20] rankdef rank=9
+IDX 969 S=[0, 1, 2, 3, 4, 5, 9, 12, 16, 17] rankdef rank=9
+IDX 970 S=[0, 1, 2, 3, 4, 5, 9, 12, 16, 18] rankdef rank=9
+IDX 971 S=[0, 1, 2, 3, 4, 5, 9, 12, 16, 19] rankdef rank=8
+IDX 972 S=[0, 1, 2, 3, 4, 5, 9, 12, 16, 20] rankdef rank=9
+IDX 973 S=[0, 1, 2, 3, 4, 5, 9, 12, 17, 18] rankdef rank=9
+IDX 974 S=[0, 1, 2, 3, 4, 5, 9, 12, 17, 19] rankdef rank=8
+IDX 975 S=[0, 1, 2, 3, 4, 5, 9, 12, 17, 20] rankdef rank=9
+IDX 976 S=[0, 1, 2, 3, 4, 5, 9, 12, 18, 19] rankdef rank=8
+IDX 977 S=[0, 1, 2, 3, 4, 5, 9, 12, 18, 20] rankdef rank=9
+IDX 978 S=[0, 1, 2, 3, 4, 5, 9, 12, 19, 20] rankdef rank=8
+IDX 979 S=[0, 1, 2, 3, 4, 5, 9, 13, 14, 15] rankdef rank=8
+IDX 980 S=[0, 1, 2, 3, 4, 5, 9, 13, 14, 16] rankdef rank=8
+IDX 981 S=[0, 1, 2, 3, 4, 5, 9, 13, 14, 17] rankdef rank=8
+IDX 982 S=[0, 1, 2, 3, 4, 5, 9, 13, 14, 18] rankdef rank=8
+IDX 983 S=[0, 1, 2, 3, 4, 5, 9, 13, 14, 19] rankdef rank=7
+IDX 984 S=[0, 1, 2, 3, 4, 5, 9, 13, 14, 20] rankdef rank=8
+IDX 985 S=[0, 1, 2, 3, 4, 5, 9, 13, 15, 16] rankdef rank=9
+IDX 986 S=[0, 1, 2, 3, 4, 5, 9, 13, 15, 17] rankdef rank=9
+IDX 987 S=[0, 1, 2, 3, 4, 5, 9, 13, 15, 18] rankdef rank=9
+IDX 988 S=[0, 1, 2, 3, 4, 5, 9, 13, 15, 19] rankdef rank=8
+IDX 989 S=[0, 1, 2, 3, 4, 5, 9, 13, 15, 20] rankdef rank=9
+IDX 990 S=[0, 1, 2, 3, 4, 5, 9, 13, 16, 17] rankdef rank=9
+IDX 991 S=[0, 1, 2, 3, 4, 5, 9, 13, 16, 18] rankdef rank=9
+IDX 992 S=[0, 1, 2, 3, 4, 5, 9, 13, 16, 19] rankdef rank=8
+IDX 993 S=[0, 1, 2, 3, 4, 5, 9, 13, 16, 20] rankdef rank=9
+IDX 994 S=[0, 1, 2, 3, 4, 5, 9, 13, 17, 18] rankdef rank=9
+IDX 995 S=[0, 1, 2, 3, 4, 5, 9, 13, 17, 19] rankdef rank=8
+IDX 996 S=[0, 1, 2, 3, 4, 5, 9, 13, 17, 20] rankdef rank=9
+IDX 997 S=[0, 1, 2, 3, 4, 5, 9, 13, 18, 19] rankdef rank=8
+IDX 998 S=[0, 1, 2, 3, 4, 5, 9, 13, 18, 20] rankdef rank=9
+IDX 999 S=[0, 1, 2, 3, 4, 5, 9, 13, 19, 20] rankdef rank=8
+IDX 175858 S=[1, 2, 3, 4, 11, 13, 16, 17, 18, 19] rankdef rank=8
+IDX 175859 S=[1, 2, 3, 4, 11, 13, 16, 17, 18, 20] rankdef rank=8
+IDX 175860 S=[1, 2, 3, 4, 11, 13, 16, 17, 19, 20] rankdef rank=8
+IDX 175861 S=[1, 2, 3, 4, 11, 13, 16, 18, 19, 20] rankdef rank=8
+IDX 175862 S=[1, 2, 3, 4, 11, 13, 17, 18, 19, 20] rankdef rank=8
+IDX 175863 S=[1, 2, 3, 4, 11, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 175864 S=[1, 2, 3, 4, 11, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 175865 S=[1, 2, 3, 4, 11, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 175866 S=[1, 2, 3, 4, 11, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 175867 S=[1, 2, 3, 4, 11, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 175868 S=[1, 2, 3, 4, 11, 14, 15, 16, 19, 20] rankdef rank=9
+IDX 175869 S=[1, 2, 3, 4, 11, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 175870 S=[1, 2, 3, 4, 11, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 175871 S=[1, 2, 3, 4, 11, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 175872 S=[1, 2, 3, 4, 11, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 175873 S=[1, 2, 3, 4, 11, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 175874 S=[1, 2, 3, 4, 11, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 175875 S=[1, 2, 3, 4, 11, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 175876 S=[1, 2, 3, 4, 11, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 175877 S=[1, 2, 3, 4, 11, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 175878 S=[1, 2, 3, 4, 11, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 175879 S=[1, 2, 3, 4, 11, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 175880 S=[1, 2, 3, 4, 11, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 175881 S=[1, 2, 3, 4, 11, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 175882 S=[1, 2, 3, 4, 11, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 175883 S=[1, 2, 3, 4, 11, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 175884 S=[1, 2, 3, 4, 12, 13, 14, 15, 16, 17] rankdef rank=8
+IDX 175885 S=[1, 2, 3, 4, 12, 13, 14, 15, 16, 18] rankdef rank=8
+IDX 175886 S=[1, 2, 3, 4, 12, 13, 14, 15, 16, 19] rankdef rank=8
+IDX 175887 S=[1, 2, 3, 4, 12, 13, 14, 15, 16, 20] rankdef rank=8
+IDX 175888 S=[1, 2, 3, 4, 12, 13, 14, 15, 17, 18] rankdef rank=8
+IDX 175889 S=[1, 2, 3, 4, 12, 13, 14, 15, 17, 19] rankdef rank=8
+IDX 175890 S=[1, 2, 3, 4, 12, 13, 14, 15, 17, 20] rankdef rank=8
+IDX 175891 S=[1, 2, 3, 4, 12, 13, 14, 15, 18, 19] rankdef rank=8
+IDX 175892 S=[1, 2, 3, 4, 12, 13, 14, 15, 18, 20] rankdef rank=8
+IDX 175893 S=[1, 2, 3, 4, 12, 13, 14, 15, 19, 20] rankdef rank=8
+IDX 175894 S=[1, 2, 3, 4, 12, 13, 14, 16, 17, 18] rankdef rank=8
+IDX 175895 S=[1, 2, 3, 4, 12, 13, 14, 16, 17, 19] rankdef rank=8
+IDX 175896 S=[1, 2, 3, 4, 12, 13, 14, 16, 17, 20] rankdef rank=8
+IDX 175897 S=[1, 2, 3, 4, 12, 13, 14, 16, 18, 19] rankdef rank=8
+IDX 175898 S=[1, 2, 3, 4, 12, 13, 14, 16, 18, 20] rankdef rank=8
+IDX 175899 S=[1, 2, 3, 4, 12, 13, 14, 16, 19, 20] rankdef rank=8
+IDX 175900 S=[1, 2, 3, 4, 12, 13, 14, 17, 18, 19] rankdef rank=8
+IDX 175901 S=[1, 2, 3, 4, 12, 13, 14, 17, 18, 20] rankdef rank=8
+IDX 175902 S=[1, 2, 3, 4, 12, 13, 14, 17, 19, 20] rankdef rank=8
+IDX 175903 S=[1, 2, 3, 4, 12, 13, 14, 18, 19, 20] rankdef rank=8
+IDX 175904 S=[1, 2, 3, 4, 12, 13, 15, 16, 17, 18] rankdef rank=8
+IDX 175905 S=[1, 2, 3, 4, 12, 13, 15, 16, 17, 19] rankdef rank=8
+IDX 175906 S=[1, 2, 3, 4, 12, 13, 15, 16, 17, 20] rankdef rank=8
+IDX 175907 S=[1, 2, 3, 4, 12, 13, 15, 16, 18, 19] rankdef rank=8
+IDX 175908 S=[1, 2, 3, 4, 12, 13, 15, 16, 18, 20] rankdef rank=8
+IDX 175909 S=[1, 2, 3, 4, 12, 13, 15, 16, 19, 20] rankdef rank=8
+IDX 175910 S=[1, 2, 3, 4, 12, 13, 15, 17, 18, 19] rankdef rank=8
+IDX 175911 S=[1, 2, 3, 4, 12, 13, 15, 17, 18, 20] rankdef rank=8
+IDX 175912 S=[1, 2, 3, 4, 12, 13, 15, 17, 19, 20] rankdef rank=8
+IDX 175913 S=[1, 2, 3, 4, 12, 13, 15, 18, 19, 20] rankdef rank=8
+IDX 175914 S=[1, 2, 3, 4, 12, 13, 16, 17, 18, 19] rankdef rank=8
+IDX 175915 S=[1, 2, 3, 4, 12, 13, 16, 17, 18, 20] rankdef rank=8
+IDX 175916 S=[1, 2, 3, 4, 12, 13, 16, 17, 19, 20] rankdef rank=8
+IDX 175917 S=[1, 2, 3, 4, 12, 13, 16, 18, 19, 20] rankdef rank=8
+IDX 175918 S=[1, 2, 3, 4, 12, 13, 17, 18, 19, 20] rankdef rank=8
+IDX 175919 S=[1, 2, 3, 4, 12, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 175920 S=[1, 2, 3, 4, 12, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 175921 S=[1, 2, 3, 4, 12, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 175922 S=[1, 2, 3, 4, 12, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 175923 S=[1, 2, 3, 4, 12, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 175924 S=[1, 2, 3, 4, 12, 14, 15, 16, 19, 20] rankdef rank=9
+IDX 175925 S=[1, 2, 3, 4, 12, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 175926 S=[1, 2, 3, 4, 12, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 175927 S=[1, 2, 3, 4, 12, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 175928 S=[1, 2, 3, 4, 12, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 175929 S=[1, 2, 3, 4, 12, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 175930 S=[1, 2, 3, 4, 12, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 175931 S=[1, 2, 3, 4, 12, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 175932 S=[1, 2, 3, 4, 12, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 175933 S=[1, 2, 3, 4, 12, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 175934 S=[1, 2, 3, 4, 12, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 175935 S=[1, 2, 3, 4, 12, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 175936 S=[1, 2, 3, 4, 12, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 175937 S=[1, 2, 3, 4, 12, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 175938 S=[1, 2, 3, 4, 12, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 175939 S=[1, 2, 3, 4, 12, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 175940 S=[1, 2, 3, 4, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 175941 S=[1, 2, 3, 4, 13, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 175942 S=[1, 2, 3, 4, 13, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 175943 S=[1, 2, 3, 4, 13, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 175944 S=[1, 2, 3, 4, 13, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 175945 S=[1, 2, 3, 4, 13, 14, 15, 16, 19, 20] rankdef rank=9
+IDX 175946 S=[1, 2, 3, 4, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 175947 S=[1, 2, 3, 4, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 175948 S=[1, 2, 3, 4, 13, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 175949 S=[1, 2, 3, 4, 13, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 175950 S=[1, 2, 3, 4, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 175951 S=[1, 2, 3, 4, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 175952 S=[1, 2, 3, 4, 13, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 175953 S=[1, 2, 3, 4, 13, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 175954 S=[1, 2, 3, 4, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 175955 S=[1, 2, 3, 4, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 175956 S=[1, 2, 3, 4, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 175957 S=[1, 2, 3, 4, 13, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 175958 S=[1, 2, 3, 4, 13, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 175959 S=[1, 2, 3, 4, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 175960 S=[1, 2, 3, 4, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 175961 S=[1, 2, 3, 4, 14, 15, 16, 17, 18, 19] infeasible
+IDX 175962 S=[1, 2, 3, 4, 14, 15, 16, 17, 18, 20] infeasible
+IDX 175963 S=[1, 2, 3, 4, 14, 15, 16, 17, 19, 20] infeasible
+IDX 175964 S=[1, 2, 3, 4, 14, 15, 16, 18, 19, 20] infeasible
+IDX 175965 S=[1, 2, 3, 4, 14, 15, 17, 18, 19, 20] infeasible
+IDX 175966 S=[1, 2, 3, 4, 14, 16, 17, 18, 19, 20] infeasible
+IDX 175967 S=[1, 2, 3, 4, 15, 16, 17, 18, 19, 20] infeasible
+IDX 175968 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 11] rankdef rank=9
+IDX 175969 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 12] rankdef rank=9
+IDX 175970 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 13] infeasible
+IDX 175971 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 14] infeasible
+IDX 175972 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 15] rankdef rank=9
+IDX 175973 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 16] rankdef rank=9
+IDX 175974 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 17] rankdef rank=9
+IDX 175975 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 18] rankdef rank=9
+IDX 175976 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 19] rankdef rank=9
+IDX 175977 S=[1, 2, 3, 5, 6, 7, 8, 9, 10, 20] infeasible
+IDX 175978 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 12] rankdef rank=8
+IDX 175979 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 13] rankdef rank=9
+IDX 175980 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 14] rankdef rank=9
+IDX 175981 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 15] rankdef rank=8
+IDX 175982 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 16] rankdef rank=8
+IDX 175983 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 17] rankdef rank=8
+IDX 175984 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 18] rankdef rank=8
+IDX 175985 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 19] rankdef rank=9
+IDX 175986 S=[1, 2, 3, 5, 6, 7, 8, 9, 11, 20] rankdef rank=9
+IDX 175987 S=[1, 2, 3, 5, 6, 7, 8, 9, 12, 13] rankdef rank=9
+IDX 175988 S=[1, 2, 3, 5, 6, 7, 8, 9, 12, 14] rankdef rank=9
+IDX 175989 S=[1, 2, 3, 5, 6, 7, 8, 9, 12, 15] rankdef rank=8
+IDX 175990 S=[1, 2, 3, 5, 6, 7, 8, 9, 12, 16] rankdef rank=8
+IDX 175991 S=[1, 2, 3, 5, 6, 7, 8, 9, 12, 17] rankdef rank=8
+IDX 175992 S=[1, 2, 3, 5, 6, 7, 8, 9, 12, 18] rankdef rank=8
+IDX 175993 S=[1, 2, 3, 5, 6, 7, 8, 9, 12, 19] rankdef rank=9
+IDX 175994 S=[1, 2, 3, 5, 6, 7, 8, 9, 12, 20] rankdef rank=9
+IDX 175995 S=[1, 2, 3, 5, 6, 7, 8, 9, 13, 14] rankdef rank=9
+IDX 175996 S=[1, 2, 3, 5, 6, 7, 8, 9, 13, 15] rankdef rank=9
+IDX 175997 S=[1, 2, 3, 5, 6, 7, 8, 9, 13, 16] rankdef rank=9
+IDX 175998 S=[1, 2, 3, 5, 6, 7, 8, 9, 13, 17] rankdef rank=9
+IDX 175999 S=[1, 2, 3, 5, 6, 7, 8, 9, 13, 18] rankdef rank=9
+IDX 176000 S=[1, 2, 3, 5, 6, 7, 8, 9, 13, 19] infeasible
+IDX 176001 S=[1, 2, 3, 5, 6, 7, 8, 9, 13, 20] infeasible
+IDX 176002 S=[1, 2, 3, 5, 6, 7, 8, 9, 14, 15] rankdef rank=9
+IDX 176003 S=[1, 2, 3, 5, 6, 7, 8, 9, 14, 16] rankdef rank=9
+IDX 176004 S=[1, 2, 3, 5, 6, 7, 8, 9, 14, 17] rankdef rank=9
+IDX 176005 S=[1, 2, 3, 5, 6, 7, 8, 9, 14, 18] rankdef rank=9
+IDX 176006 S=[1, 2, 3, 5, 6, 7, 8, 9, 14, 19] infeasible
+IDX 176007 S=[1, 2, 3, 5, 6, 7, 8, 9, 14, 20] infeasible
+IDX 176008 S=[1, 2, 3, 5, 6, 7, 8, 9, 15, 16] rankdef rank=8
+IDX 176009 S=[1, 2, 3, 5, 6, 7, 8, 9, 15, 17] rankdef rank=8
+IDX 176010 S=[1, 2, 3, 5, 6, 7, 8, 9, 15, 18] rankdef rank=8
+IDX 176011 S=[1, 2, 3, 5, 6, 7, 8, 9, 15, 19] rankdef rank=9
+IDX 176012 S=[1, 2, 3, 5, 6, 7, 8, 9, 15, 20] rankdef rank=9
+IDX 176013 S=[1, 2, 3, 5, 6, 7, 8, 9, 16, 17] rankdef rank=8
+IDX 176014 S=[1, 2, 3, 5, 6, 7, 8, 9, 16, 18] rankdef rank=8
+IDX 176015 S=[1, 2, 3, 5, 6, 7, 8, 9, 16, 19] rankdef rank=9
+IDX 176016 S=[1, 2, 3, 5, 6, 7, 8, 9, 16, 20] rankdef rank=9
+IDX 176017 S=[1, 2, 3, 5, 6, 7, 8, 9, 17, 18] rankdef rank=8
+IDX 176018 S=[1, 2, 3, 5, 6, 7, 8, 9, 17, 19] rankdef rank=9
+IDX 176019 S=[1, 2, 3, 5, 6, 7, 8, 9, 17, 20] rankdef rank=9
+IDX 176020 S=[1, 2, 3, 5, 6, 7, 8, 9, 18, 19] rankdef rank=9
+IDX 176021 S=[1, 2, 3, 5, 6, 7, 8, 9, 18, 20] rankdef rank=9
+IDX 176022 S=[1, 2, 3, 5, 6, 7, 8, 9, 19, 20] infeasible
+IDX 176023 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 12] rankdef rank=8
+IDX 176024 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 13] rankdef rank=9
+IDX 176025 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 14] rankdef rank=9
+IDX 176026 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 15] rankdef rank=8
+IDX 176027 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 16] rankdef rank=8
+IDX 176028 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 17] rankdef rank=8
+IDX 176029 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 18] rankdef rank=9
+IDX 176030 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 19] rankdef rank=9
+IDX 176031 S=[1, 2, 3, 5, 6, 7, 8, 10, 11, 20] rankdef rank=9
+IDX 176032 S=[1, 2, 3, 5, 6, 7, 8, 10, 12, 13] rankdef rank=9
+IDX 176033 S=[1, 2, 3, 5, 6, 7, 8, 10, 12, 14] rankdef rank=9
+IDX 176034 S=[1, 2, 3, 5, 6, 7, 8, 10, 12, 15] rankdef rank=8
+IDX 176035 S=[1, 2, 3, 5, 6, 7, 8, 10, 12, 16] rankdef rank=8
+IDX 176036 S=[1, 2, 3, 5, 6, 7, 8, 10, 12, 17] rankdef rank=8
+IDX 176037 S=[1, 2, 3, 5, 6, 7, 8, 10, 12, 18] rankdef rank=9
+IDX 176038 S=[1, 2, 3, 5, 6, 7, 8, 10, 12, 19] rankdef rank=9
+IDX 176039 S=[1, 2, 3, 5, 6, 7, 8, 10, 12, 20] rankdef rank=9
+IDX 176040 S=[1, 2, 3, 5, 6, 7, 8, 10, 13, 14] rankdef rank=9
+IDX 176041 S=[1, 2, 3, 5, 6, 7, 8, 10, 13, 15] rankdef rank=9
+IDX 176042 S=[1, 2, 3, 5, 6, 7, 8, 10, 13, 16] rankdef rank=9
+IDX 176043 S=[1, 2, 3, 5, 6, 7, 8, 10, 13, 17] rankdef rank=9
+IDX 176044 S=[1, 2, 3, 5, 6, 7, 8, 10, 13, 18] infeasible
+IDX 176045 S=[1, 2, 3, 5, 6, 7, 8, 10, 13, 19] infeasible
+IDX 176046 S=[1, 2, 3, 5, 6, 7, 8, 10, 13, 20] infeasible
+IDX 176047 S=[1, 2, 3, 5, 6, 7, 8, 10, 14, 15] rankdef rank=9
+IDX 176048 S=[1, 2, 3, 5, 6, 7, 8, 10, 14, 16] rankdef rank=9
+IDX 176049 S=[1, 2, 3, 5, 6, 7, 8, 10, 14, 17] rankdef rank=9
+IDX 176050 S=[1, 2, 3, 5, 6, 7, 8, 10, 14, 18] infeasible
+IDX 176051 S=[1, 2, 3, 5, 6, 7, 8, 10, 14, 19] infeasible
+IDX 176052 S=[1, 2, 3, 5, 6, 7, 8, 10, 14, 20] infeasible
+IDX 176053 S=[1, 2, 3, 5, 6, 7, 8, 10, 15, 16] rankdef rank=8
+IDX 176054 S=[1, 2, 3, 5, 6, 7, 8, 10, 15, 17] rankdef rank=8
+IDX 176055 S=[1, 2, 3, 5, 6, 7, 8, 10, 15, 18] rankdef rank=9
+IDX 176056 S=[1, 2, 3, 5, 6, 7, 8, 10, 15, 19] rankdef rank=9
+IDX 176057 S=[1, 2, 3, 5, 6, 7, 8, 10, 15, 20] rankdef rank=9
+IDX 176058 S=[1, 2, 3, 5, 6, 7, 8, 10, 16, 17] rankdef rank=8
+IDX 176059 S=[1, 2, 3, 5, 6, 7, 8, 10, 16, 18] rankdef rank=9
+IDX 176060 S=[1, 2, 3, 5, 6, 7, 8, 10, 16, 19] rankdef rank=9
+IDX 176061 S=[1, 2, 3, 5, 6, 7, 8, 10, 16, 20] rankdef rank=9
+IDX 176062 S=[1, 2, 3, 5, 6, 7, 8, 10, 17, 18] rankdef rank=9
+IDX 176063 S=[1, 2, 3, 5, 6, 7, 8, 10, 17, 19] rankdef rank=9
+IDX 176064 S=[1, 2, 3, 5, 6, 7, 8, 10, 17, 20] rankdef rank=9
+IDX 176065 S=[1, 2, 3, 5, 6, 7, 8, 10, 18, 19] rankdef rank=9
+IDX 176066 S=[1, 2, 3, 5, 6, 7, 8, 10, 18, 20] infeasible
+IDX 176067 S=[1, 2, 3, 5, 6, 7, 8, 10, 19, 20] infeasible
+IDX 176068 S=[1, 2, 3, 5, 6, 7, 8, 11, 12, 13] rankdef rank=8
+IDX 176069 S=[1, 2, 3, 5, 6, 7, 8, 11, 12, 14] rankdef rank=8
+IDX 176070 S=[1, 2, 3, 5, 6, 7, 8, 11, 12, 15] rankdef rank=7
+IDX 176071 S=[1, 2, 3, 5, 6, 7, 8, 11, 12, 16] rankdef rank=7
+IDX 176072 S=[1, 2, 3, 5, 6, 7, 8, 11, 12, 17] rankdef rank=7
+IDX 176073 S=[1, 2, 3, 5, 6, 7, 8, 11, 12, 18] rankdef rank=8
+IDX 176074 S=[1, 2, 3, 5, 6, 7, 8, 11, 12, 19] rankdef rank=8
+IDX 176075 S=[1, 2, 3, 5, 6, 7, 8, 11, 12, 20] rankdef rank=8
+IDX 176076 S=[1, 2, 3, 5, 6, 7, 8, 11, 13, 14] rankdef rank=8
+IDX 176077 S=[1, 2, 3, 5, 6, 7, 8, 11, 13, 15] rankdef rank=8
+IDX 176078 S=[1, 2, 3, 5, 6, 7, 8, 11, 13, 16] rankdef rank=8
+IDX 176079 S=[1, 2, 3, 5, 6, 7, 8, 11, 13, 17] rankdef rank=8
+IDX 176080 S=[1, 2, 3, 5, 6, 7, 8, 11, 13, 18] rankdef rank=9
+IDX 176081 S=[1, 2, 3, 5, 6, 7, 8, 11, 13, 19] rankdef rank=9
+IDX 176082 S=[1, 2, 3, 5, 6, 7, 8, 11, 13, 20] rankdef rank=9
+IDX 176083 S=[1, 2, 3, 5, 6, 7, 8, 11, 14, 15] rankdef rank=8
+IDX 176084 S=[1, 2, 3, 5, 6, 7, 8, 11, 14, 16] rankdef rank=8
+IDX 176085 S=[1, 2, 3, 5, 6, 7, 8, 11, 14, 17] rankdef rank=8
+IDX 176086 S=[1, 2, 3, 5, 6, 7, 8, 11, 14, 18] rankdef rank=9
+IDX 176087 S=[1, 2, 3, 5, 6, 7, 8, 11, 14, 19] rankdef rank=9
+IDX 176088 S=[1, 2, 3, 5, 6, 7, 8, 11, 14, 20] rankdef rank=9
+IDX 176089 S=[1, 2, 3, 5, 6, 7, 8, 11, 15, 16] rankdef rank=7
+IDX 176090 S=[1, 2, 3, 5, 6, 7, 8, 11, 15, 17] rankdef rank=7
+IDX 176091 S=[1, 2, 3, 5, 6, 7, 8, 11, 15, 18] rankdef rank=8
+IDX 176092 S=[1, 2, 3, 5, 6, 7, 8, 11, 15, 19] rankdef rank=8
+IDX 176093 S=[1, 2, 3, 5, 6, 7, 8, 11, 15, 20] rankdef rank=8
+IDX 176094 S=[1, 2, 3, 5, 6, 7, 8, 11, 16, 17] rankdef rank=7
+IDX 176095 S=[1, 2, 3, 5, 6, 7, 8, 11, 16, 18] rankdef rank=8
+IDX 176096 S=[1, 2, 3, 5, 6, 7, 8, 11, 16, 19] rankdef rank=8
+IDX 176097 S=[1, 2, 3, 5, 6, 7, 8, 11, 16, 20] rankdef rank=8
+IDX 176098 S=[1, 2, 3, 5, 6, 7, 8, 11, 17, 18] rankdef rank=8
+IDX 176099 S=[1, 2, 3, 5, 6, 7, 8, 11, 17, 19] rankdef rank=8
+IDX 176100 S=[1, 2, 3, 5, 6, 7, 8, 11, 17, 20] rankdef rank=8
+IDX 176101 S=[1, 2, 3, 5, 6, 7, 8, 11, 18, 19] rankdef rank=9
+IDX 176102 S=[1, 2, 3, 5, 6, 7, 8, 11, 18, 20] rankdef rank=9
+IDX 176103 S=[1, 2, 3, 5, 6, 7, 8, 11, 19, 20] rankdef rank=9
+IDX 176104 S=[1, 2, 3, 5, 6, 7, 8, 12, 13, 14] rankdef rank=8
+IDX 176105 S=[1, 2, 3, 5, 6, 7, 8, 12, 13, 15] rankdef rank=8
+IDX 176106 S=[1, 2, 3, 5, 6, 7, 8, 12, 13, 16] rankdef rank=8
+IDX 176107 S=[1, 2, 3, 5, 6, 7, 8, 12, 13, 17] rankdef rank=8
+IDX 176108 S=[1, 2, 3, 5, 6, 7, 8, 12, 13, 18] rankdef rank=9
+IDX 176109 S=[1, 2, 3, 5, 6, 7, 8, 12, 13, 19] rankdef rank=9
+IDX 176110 S=[1, 2, 3, 5, 6, 7, 8, 12, 13, 20] rankdef rank=9
+IDX 176111 S=[1, 2, 3, 5, 6, 7, 8, 12, 14, 15] rankdef rank=8
+IDX 176112 S=[1, 2, 3, 5, 6, 7, 8, 12, 14, 16] rankdef rank=8
+IDX 176113 S=[1, 2, 3, 5, 6, 7, 8, 12, 14, 17] rankdef rank=8
+IDX 176114 S=[1, 2, 3, 5, 6, 7, 8, 12, 14, 18] rankdef rank=9
+IDX 176115 S=[1, 2, 3, 5, 6, 7, 8, 12, 14, 19] rankdef rank=9
+IDX 176116 S=[1, 2, 3, 5, 6, 7, 8, 12, 14, 20] rankdef rank=9
+IDX 176117 S=[1, 2, 3, 5, 6, 7, 8, 12, 15, 16] rankdef rank=7
+IDX 176118 S=[1, 2, 3, 5, 6, 7, 8, 12, 15, 17] rankdef rank=7
+IDX 176119 S=[1, 2, 3, 5, 6, 7, 8, 12, 15, 18] rankdef rank=8
+IDX 176120 S=[1, 2, 3, 5, 6, 7, 8, 12, 15, 19] rankdef rank=8
+IDX 176121 S=[1, 2, 3, 5, 6, 7, 8, 12, 15, 20] rankdef rank=8
+IDX 176122 S=[1, 2, 3, 5, 6, 7, 8, 12, 16, 17] rankdef rank=7
+IDX 176123 S=[1, 2, 3, 5, 6, 7, 8, 12, 16, 18] rankdef rank=8
+IDX 176124 S=[1, 2, 3, 5, 6, 7, 8, 12, 16, 19] rankdef rank=8
+IDX 176125 S=[1, 2, 3, 5, 6, 7, 8, 12, 16, 20] rankdef rank=8
+IDX 176126 S=[1, 2, 3, 5, 6, 7, 8, 12, 17, 18] rankdef rank=8
+IDX 176127 S=[1, 2, 3, 5, 6, 7, 8, 12, 17, 19] rankdef rank=8
+IDX 176128 S=[1, 2, 3, 5, 6, 7, 8, 12, 17, 20] rankdef rank=8
+IDX 176129 S=[1, 2, 3, 5, 6, 7, 8, 12, 18, 19] rankdef rank=9
+IDX 176130 S=[1, 2, 3, 5, 6, 7, 8, 12, 18, 20] rankdef rank=9
+IDX 176131 S=[1, 2, 3, 5, 6, 7, 8, 12, 19, 20] rankdef rank=9
+IDX 176132 S=[1, 2, 3, 5, 6, 7, 8, 13, 14, 15] rankdef rank=8
+IDX 176133 S=[1, 2, 3, 5, 6, 7, 8, 13, 14, 16] rankdef rank=8
+IDX 176134 S=[1, 2, 3, 5, 6, 7, 8, 13, 14, 17] rankdef rank=8
+IDX 176135 S=[1, 2, 3, 5, 6, 7, 8, 13, 14, 18] rankdef rank=9
+IDX 176136 S=[1, 2, 3, 5, 6, 7, 8, 13, 14, 19] rankdef rank=9
+IDX 176137 S=[1, 2, 3, 5, 6, 7, 8, 13, 14, 20] rankdef rank=9
+IDX 176138 S=[1, 2, 3, 5, 6, 7, 8, 13, 15, 16] rankdef rank=8
+IDX 176139 S=[1, 2, 3, 5, 6, 7, 8, 13, 15, 17] rankdef rank=8
+IDX 176140 S=[1, 2, 3, 5, 6, 7, 8, 13, 15, 18] rankdef rank=9
+IDX 176141 S=[1, 2, 3, 5, 6, 7, 8, 13, 15, 19] rankdef rank=9
+IDX 176142 S=[1, 2, 3, 5, 6, 7, 8, 13, 15, 20] rankdef rank=9
+IDX 176143 S=[1, 2, 3, 5, 6, 7, 8, 13, 16, 17] rankdef rank=8
+IDX 176144 S=[1, 2, 3, 5, 6, 7, 8, 13, 16, 18] rankdef rank=9
+IDX 176145 S=[1, 2, 3, 5, 6, 7, 8, 13, 16, 19] rankdef rank=9
+IDX 176146 S=[1, 2, 3, 5, 6, 7, 8, 13, 16, 20] rankdef rank=9
+IDX 176147 S=[1, 2, 3, 5, 6, 7, 8, 13, 17, 18] rankdef rank=9
+IDX 176148 S=[1, 2, 3, 5, 6, 7, 8, 13, 17, 19] rankdef rank=9
+IDX 176149 S=[1, 2, 3, 5, 6, 7, 8, 13, 17, 20] rankdef rank=9
+IDX 176150 S=[1, 2, 3, 5, 6, 7, 8, 13, 18, 19] infeasible
+IDX 176151 S=[1, 2, 3, 5, 6, 7, 8, 13, 18, 20] infeasible
+IDX 176152 S=[1, 2, 3, 5, 6, 7, 8, 13, 19, 20] infeasible
+IDX 176153 S=[1, 2, 3, 5, 6, 7, 8, 14, 15, 16] rankdef rank=8
+IDX 176154 S=[1, 2, 3, 5, 6, 7, 8, 14, 15, 17] rankdef rank=8
+IDX 176155 S=[1, 2, 3, 5, 6, 7, 8, 14, 15, 18] rankdef rank=9
+IDX 176156 S=[1, 2, 3, 5, 6, 7, 8, 14, 15, 19] rankdef rank=9
+IDX 176157 S=[1, 2, 3, 5, 6, 7, 8, 14, 15, 20] rankdef rank=9
+IDX 176158 S=[1, 2, 3, 5, 6, 7, 8, 14, 16, 17] rankdef rank=8
+IDX 176159 S=[1, 2, 3, 5, 6, 7, 8, 14, 16, 18] rankdef rank=9
+IDX 176160 S=[1, 2, 3, 5, 6, 7, 8, 14, 16, 19] rankdef rank=9
+IDX 176161 S=[1, 2, 3, 5, 6, 7, 8, 14, 16, 20] rankdef rank=9
+IDX 176162 S=[1, 2, 3, 5, 6, 7, 8, 14, 17, 18] rankdef rank=9
+IDX 176163 S=[1, 2, 3, 5, 6, 7, 8, 14, 17, 19] rankdef rank=9
+IDX 176164 S=[1, 2, 3, 5, 6, 7, 8, 14, 17, 20] rankdef rank=9
+IDX 176165 S=[1, 2, 3, 5, 6, 7, 8, 14, 18, 19] infeasible
+IDX 176166 S=[1, 2, 3, 5, 6, 7, 8, 14, 18, 20] infeasible
+IDX 176167 S=[1, 2, 3, 5, 6, 7, 8, 14, 19, 20] infeasible
+IDX 176168 S=[1, 2, 3, 5, 6, 7, 8, 15, 16, 17] rankdef rank=7
+IDX 176169 S=[1, 2, 3, 5, 6, 7, 8, 15, 16, 18] rankdef rank=8
+IDX 176170 S=[1, 2, 3, 5, 6, 7, 8, 15, 16, 19] rankdef rank=8
+IDX 176171 S=[1, 2, 3, 5, 6, 7, 8, 15, 16, 20] rankdef rank=8
+IDX 176172 S=[1, 2, 3, 5, 6, 7, 8, 15, 17, 18] rankdef rank=8
+IDX 176173 S=[1, 2, 3, 5, 6, 7, 8, 15, 17, 19] rankdef rank=8
+IDX 176174 S=[1, 2, 3, 5, 6, 7, 8, 15, 17, 20] rankdef rank=8
+IDX 176175 S=[1, 2, 3, 5, 6, 7, 8, 15, 18, 19] rankdef rank=9
+IDX 176176 S=[1, 2, 3, 5, 6, 7, 8, 15, 18, 20] rankdef rank=9
+IDX 176177 S=[1, 2, 3, 5, 6, 7, 8, 15, 19, 20] rankdef rank=9
+IDX 176178 S=[1, 2, 3, 5, 6, 7, 8, 16, 17, 18] rankdef rank=8
+IDX 176179 S=[1, 2, 3, 5, 6, 7, 8, 16, 17, 19] rankdef rank=8
+IDX 176180 S=[1, 2, 3, 5, 6, 7, 8, 16, 17, 20] rankdef rank=8
+IDX 176181 S=[1, 2, 3, 5, 6, 7, 8, 16, 18, 19] rankdef rank=9
+IDX 176182 S=[1, 2, 3, 5, 6, 7, 8, 16, 18, 20] rankdef rank=9
+IDX 176183 S=[1, 2, 3, 5, 6, 7, 8, 16, 19, 20] rankdef rank=9
+IDX 176184 S=[1, 2, 3, 5, 6, 7, 8, 17, 18, 19] rankdef rank=9
+IDX 176185 S=[1, 2, 3, 5, 6, 7, 8, 17, 18, 20] rankdef rank=9
+IDX 176186 S=[1, 2, 3, 5, 6, 7, 8, 17, 19, 20] rankdef rank=9
+IDX 176187 S=[1, 2, 3, 5, 6, 7, 8, 18, 19, 20] infeasible
+IDX 176188 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 12] rankdef rank=8
+IDX 176189 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 13] rankdef rank=9
+IDX 176190 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 14] rankdef rank=9
+IDX 176191 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 15] rankdef rank=8
+IDX 176192 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 16] rankdef rank=8
+IDX 176193 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 17] rankdef rank=9
+IDX 176194 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 18] rankdef rank=9
+IDX 176195 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 19] rankdef rank=8
+IDX 176196 S=[1, 2, 3, 5, 6, 7, 9, 10, 11, 20] rankdef rank=9
+IDX 176197 S=[1, 2, 3, 5, 6, 7, 9, 10, 12, 13] rankdef rank=9
+IDX 176198 S=[1, 2, 3, 5, 6, 7, 9, 10, 12, 14] rankdef rank=9
+IDX 176199 S=[1, 2, 3, 5, 6, 7, 9, 10, 12, 15] rankdef rank=8
+IDX 176200 S=[1, 2, 3, 5, 6, 7, 9, 10, 12, 16] rankdef rank=8
+IDX 176201 S=[1, 2, 3, 5, 6, 7, 9, 10, 12, 17] rankdef rank=9
+IDX 176202 S=[1, 2, 3, 5, 6, 7, 9, 10, 12, 18] rankdef rank=9
+IDX 176203 S=[1, 2, 3, 5, 6, 7, 9, 10, 12, 19] rankdef rank=8
+IDX 176204 S=[1, 2, 3, 5, 6, 7, 9, 10, 12, 20] rankdef rank=9
+IDX 176205 S=[1, 2, 3, 5, 6, 7, 9, 10, 13, 14] rankdef rank=9
+IDX 176206 S=[1, 2, 3, 5, 6, 7, 9, 10, 13, 15] rankdef rank=9
+IDX 176207 S=[1, 2, 3, 5, 6, 7, 9, 10, 13, 16] rankdef rank=9
+IDX 176208 S=[1, 2, 3, 5, 6, 7, 9, 10, 13, 17] infeasible
+IDX 176209 S=[1, 2, 3, 5, 6, 7, 9, 10, 13, 18] infeasible
+IDX 176210 S=[1, 2, 3, 5, 6, 7, 9, 10, 13, 19] rankdef rank=9
+IDX 176211 S=[1, 2, 3, 5, 6, 7, 9, 10, 13, 20] infeasible
+IDX 176212 S=[1, 2, 3, 5, 6, 7, 9, 10, 14, 15] rankdef rank=9
+IDX 176213 S=[1, 2, 3, 5, 6, 7, 9, 10, 14, 16] rankdef rank=9
+IDX 176214 S=[1, 2, 3, 5, 6, 7, 9, 10, 14, 17] infeasible
+IDX 176215 S=[1, 2, 3, 5, 6, 7, 9, 10, 14, 18] infeasible
+IDX 176216 S=[1, 2, 3, 5, 6, 7, 9, 10, 14, 19] rankdef rank=9
+IDX 176217 S=[1, 2, 3, 5, 6, 7, 9, 10, 14, 20] infeasible
+IDX 176218 S=[1, 2, 3, 5, 6, 7, 9, 10, 15, 16] rankdef rank=8
+IDX 176219 S=[1, 2, 3, 5, 6, 7, 9, 10, 15, 17] rankdef rank=9
+IDX 176220 S=[1, 2, 3, 5, 6, 7, 9, 10, 15, 18] rankdef rank=9
+IDX 176221 S=[1, 2, 3, 5, 6, 7, 9, 10, 15, 19] rankdef rank=8
+IDX 176222 S=[1, 2, 3, 5, 6, 7, 9, 10, 15, 20] rankdef rank=9
+IDX 176223 S=[1, 2, 3, 5, 6, 7, 9, 10, 16, 17] rankdef rank=9
+IDX 176224 S=[1, 2, 3, 5, 6, 7, 9, 10, 16, 18] rankdef rank=9
+IDX 176225 S=[1, 2, 3, 5, 6, 7, 9, 10, 16, 19] rankdef rank=8
+IDX 176226 S=[1, 2, 3, 5, 6, 7, 9, 10, 16, 20] rankdef rank=9
+IDX 176227 S=[1, 2, 3, 5, 6, 7, 9, 10, 17, 18] rankdef rank=9
+IDX 176228 S=[1, 2, 3, 5, 6, 7, 9, 10, 17, 19] rankdef rank=9
+IDX 176229 S=[1, 2, 3, 5, 6, 7, 9, 10, 17, 20] infeasible
+IDX 176230 S=[1, 2, 3, 5, 6, 7, 9, 10, 18, 19] rankdef rank=9
+IDX 176231 S=[1, 2, 3, 5, 6, 7, 9, 10, 18, 20] infeasible
+IDX 176232 S=[1, 2, 3, 5, 6, 7, 9, 10, 19, 20] rankdef rank=9
+IDX 176233 S=[1, 2, 3, 5, 6, 7, 9, 11, 12, 13] rankdef rank=8
+IDX 176234 S=[1, 2, 3, 5, 6, 7, 9, 11, 12, 14] rankdef rank=8
+IDX 176235 S=[1, 2, 3, 5, 6, 7, 9, 11, 12, 15] rankdef rank=7
+IDX 176236 S=[1, 2, 3, 5, 6, 7, 9, 11, 12, 16] rankdef rank=7
+IDX 176237 S=[1, 2, 3, 5, 6, 7, 9, 11, 12, 17] rankdef rank=8
+IDX 176238 S=[1, 2, 3, 5, 6, 7, 9, 11, 12, 18] rankdef rank=8
+IDX 176239 S=[1, 2, 3, 5, 6, 7, 9, 11, 12, 19] rankdef rank=8
+IDX 176240 S=[1, 2, 3, 5, 6, 7, 9, 11, 12, 20] rankdef rank=8
+IDX 176241 S=[1, 2, 3, 5, 6, 7, 9, 11, 13, 14] rankdef rank=8
+IDX 176242 S=[1, 2, 3, 5, 6, 7, 9, 11, 13, 15] rankdef rank=8
+IDX 176243 S=[1, 2, 3, 5, 6, 7, 9, 11, 13, 16] rankdef rank=8
+IDX 176244 S=[1, 2, 3, 5, 6, 7, 9, 11, 13, 17] rankdef rank=9
+IDX 176245 S=[1, 2, 3, 5, 6, 7, 9, 11, 13, 18] rankdef rank=9
+IDX 176246 S=[1, 2, 3, 5, 6, 7, 9, 11, 13, 19] rankdef rank=9
+IDX 176247 S=[1, 2, 3, 5, 6, 7, 9, 11, 13, 20] rankdef rank=9
+IDX 176248 S=[1, 2, 3, 5, 6, 7, 9, 11, 14, 15] rankdef rank=8
+IDX 176249 S=[1, 2, 3, 5, 6, 7, 9, 11, 14, 16] rankdef rank=8
+IDX 176250 S=[1, 2, 3, 5, 6, 7, 9, 11, 14, 17] rankdef rank=9
+IDX 176251 S=[1, 2, 3, 5, 6, 7, 9, 11, 14, 18] rankdef rank=9
+IDX 176252 S=[1, 2, 3, 5, 6, 7, 9, 11, 14, 19] rankdef rank=9
+IDX 176253 S=[1, 2, 3, 5, 6, 7, 9, 11, 14, 20] rankdef rank=9
+IDX 176254 S=[1, 2, 3, 5, 6, 7, 9, 11, 15, 16] rankdef rank=7
+IDX 176255 S=[1, 2, 3, 5, 6, 7, 9, 11, 15, 17] rankdef rank=8
+IDX 176256 S=[1, 2, 3, 5, 6, 7, 9, 11, 15, 18] rankdef rank=8
+IDX 176257 S=[1, 2, 3, 5, 6, 7, 9, 11, 15, 19] rankdef rank=8
+IDX 176258 S=[1, 2, 3, 5, 6, 7, 9, 11, 15, 20] rankdef rank=8
+IDX 176259 S=[1, 2, 3, 5, 6, 7, 9, 11, 16, 17] rankdef rank=8
+IDX 176260 S=[1, 2, 3, 5, 6, 7, 9, 11, 16, 18] rankdef rank=8
+IDX 176261 S=[1, 2, 3, 5, 6, 7, 9, 11, 16, 19] rankdef rank=8
+IDX 176262 S=[1, 2, 3, 5, 6, 7, 9, 11, 16, 20] rankdef rank=8
+IDX 176263 S=[1, 2, 3, 5, 6, 7, 9, 11, 17, 18] rankdef rank=8
+IDX 176264 S=[1, 2, 3, 5, 6, 7, 9, 11, 17, 19] rankdef rank=9
+IDX 176265 S=[1, 2, 3, 5, 6, 7, 9, 11, 17, 20] rankdef rank=9
+IDX 176266 S=[1, 2, 3, 5, 6, 7, 9, 11, 18, 19] rankdef rank=9
+IDX 176267 S=[1, 2, 3, 5, 6, 7, 9, 11, 18, 20] rankdef rank=9
+IDX 176268 S=[1, 2, 3, 5, 6, 7, 9, 11, 19, 20] rankdef rank=9
+IDX 176269 S=[1, 2, 3, 5, 6, 7, 9, 12, 13, 14] rankdef rank=8
+IDX 176270 S=[1, 2, 3, 5, 6, 7, 9, 12, 13, 15] rankdef rank=8
+IDX 176271 S=[1, 2, 3, 5, 6, 7, 9, 12, 13, 16] rankdef rank=8
+IDX 176272 S=[1, 2, 3, 5, 6, 7, 9, 12, 13, 17] rankdef rank=9
+IDX 176273 S=[1, 2, 3, 5, 6, 7, 9, 12, 13, 18] rankdef rank=9
+IDX 176274 S=[1, 2, 3, 5, 6, 7, 9, 12, 13, 19] rankdef rank=9
+IDX 176275 S=[1, 2, 3, 5, 6, 7, 9, 12, 13, 20] rankdef rank=9
+IDX 176276 S=[1, 2, 3, 5, 6, 7, 9, 12, 14, 15] rankdef rank=8
+IDX 176277 S=[1, 2, 3, 5, 6, 7, 9, 12, 14, 16] rankdef rank=8
+IDX 176278 S=[1, 2, 3, 5, 6, 7, 9, 12, 14, 17] rankdef rank=9
+IDX 176279 S=[1, 2, 3, 5, 6, 7, 9, 12, 14, 18] rankdef rank=9
+IDX 176280 S=[1, 2, 3, 5, 6, 7, 9, 12, 14, 19] rankdef rank=9
+IDX 176281 S=[1, 2, 3, 5, 6, 7, 9, 12, 14, 20] rankdef rank=9
+IDX 176282 S=[1, 2, 3, 5, 6, 7, 9, 12, 15, 16] rankdef rank=7
+IDX 176283 S=[1, 2, 3, 5, 6, 7, 9, 12, 15, 17] rankdef rank=8
+IDX 176284 S=[1, 2, 3, 5, 6, 7, 9, 12, 15, 18] rankdef rank=8
+IDX 176285 S=[1, 2, 3, 5, 6, 7, 9, 12, 15, 19] rankdef rank=8
+IDX 176286 S=[1, 2, 3, 5, 6, 7, 9, 12, 15, 20] rankdef rank=8
+IDX 176287 S=[1, 2, 3, 5, 6, 7, 9, 12, 16, 17] rankdef rank=8
+IDX 176288 S=[1, 2, 3, 5, 6, 7, 9, 12, 16, 18] rankdef rank=8
+IDX 176289 S=[1, 2, 3, 5, 6, 7, 9, 12, 16, 19] rankdef rank=8
+IDX 176290 S=[1, 2, 3, 5, 6, 7, 9, 12, 16, 20] rankdef rank=8
+IDX 176291 S=[1, 2, 3, 5, 6, 7, 9, 12, 17, 18] rankdef rank=8
+IDX 176292 S=[1, 2, 3, 5, 6, 7, 9, 12, 17, 19] rankdef rank=9
+IDX 176293 S=[1, 2, 3, 5, 6, 7, 9, 12, 17, 20] rankdef rank=9
+IDX 176294 S=[1, 2, 3, 5, 6, 7, 9, 12, 18, 19] rankdef rank=9
+IDX 176295 S=[1, 2, 3, 5, 6, 7, 9, 12, 18, 20] rankdef rank=9
+IDX 176296 S=[1, 2, 3, 5, 6, 7, 9, 12, 19, 20] rankdef rank=9
+IDX 176297 S=[1, 2, 3, 5, 6, 7, 9, 13, 14, 15] rankdef rank=8
+IDX 176298 S=[1, 2, 3, 5, 6, 7, 9, 13, 14, 16] rankdef rank=8
+IDX 176299 S=[1, 2, 3, 5, 6, 7, 9, 13, 14, 17] rankdef rank=9
+IDX 176300 S=[1, 2, 3, 5, 6, 7, 9, 13, 14, 18] rankdef rank=9
+IDX 176301 S=[1, 2, 3, 5, 6, 7, 9, 13, 14, 19] rankdef rank=9
+IDX 176302 S=[1, 2, 3, 5, 6, 7, 9, 13, 14, 20] rankdef rank=9
+IDX 176303 S=[1, 2, 3, 5, 6, 7, 9, 13, 15, 16] rankdef rank=8
+IDX 176304 S=[1, 2, 3, 5, 6, 7, 9, 13, 15, 17] rankdef rank=9
+IDX 176305 S=[1, 2, 3, 5, 6, 7, 9, 13, 15, 18] rankdef rank=9
+IDX 176306 S=[1, 2, 3, 5, 6, 7, 9, 13, 15, 19] rankdef rank=9
+IDX 176307 S=[1, 2, 3, 5, 6, 7, 9, 13, 15, 20] rankdef rank=9
+IDX 176308 S=[1, 2, 3, 5, 6, 7, 9, 13, 16, 17] rankdef rank=9
+IDX 176309 S=[1, 2, 3, 5, 6, 7, 9, 13, 16, 18] rankdef rank=9
+IDX 176310 S=[1, 2, 3, 5, 6, 7, 9, 13, 16, 19] rankdef rank=9
+IDX 176311 S=[1, 2, 3, 5, 6, 7, 9, 13, 16, 20] rankdef rank=9
+IDX 176312 S=[1, 2, 3, 5, 6, 7, 9, 13, 17, 18] rankdef rank=9
+IDX 176313 S=[1, 2, 3, 5, 6, 7, 9, 13, 17, 19] infeasible
+IDX 176314 S=[1, 2, 3, 5, 6, 7, 9, 13, 17, 20] infeasible
+IDX 176315 S=[1, 2, 3, 5, 6, 7, 9, 13, 18, 19] infeasible
+IDX 176316 S=[1, 2, 3, 5, 6, 7, 9, 13, 18, 20] infeasible
+IDX 176317 S=[1, 2, 3, 5, 6, 7, 9, 13, 19, 20] infeasible
+IDX 176318 S=[1, 2, 3, 5, 6, 7, 9, 14, 15, 16] rankdef rank=8
+IDX 176319 S=[1, 2, 3, 5, 6, 7, 9, 14, 15, 17] rankdef rank=9
+IDX 176320 S=[1, 2, 3, 5, 6, 7, 9, 14, 15, 18] rankdef rank=9
+IDX 176321 S=[1, 2, 3, 5, 6, 7, 9, 14, 15, 19] rankdef rank=9
+IDX 176322 S=[1, 2, 3, 5, 6, 7, 9, 14, 15, 20] rankdef rank=9
+IDX 176323 S=[1, 2, 3, 5, 6, 7, 9, 14, 16, 17] rankdef rank=9
+IDX 176324 S=[1, 2, 3, 5, 6, 7, 9, 14, 16, 18] rankdef rank=9
+IDX 176325 S=[1, 2, 3, 5, 6, 7, 9, 14, 16, 19] rankdef rank=9
+IDX 176326 S=[1, 2, 3, 5, 6, 7, 9, 14, 16, 20] rankdef rank=9
+IDX 176327 S=[1, 2, 3, 5, 6, 7, 9, 14, 17, 18] rankdef rank=9
+IDX 176328 S=[1, 2, 3, 5, 6, 7, 9, 14, 17, 19] infeasible
+IDX 176329 S=[1, 2, 3, 5, 6, 7, 9, 14, 17, 20] infeasible
+IDX 176330 S=[1, 2, 3, 5, 6, 7, 9, 14, 18, 19] infeasible
+IDX 176331 S=[1, 2, 3, 5, 6, 7, 9, 14, 18, 20] infeasible
+IDX 176332 S=[1, 2, 3, 5, 6, 7, 9, 14, 19, 20] infeasible
+IDX 176333 S=[1, 2, 3, 5, 6, 7, 9, 15, 16, 17] rankdef rank=8
+IDX 176334 S=[1, 2, 3, 5, 6, 7, 9, 15, 16, 18] rankdef rank=8
+IDX 176335 S=[1, 2, 3, 5, 6, 7, 9, 15, 16, 19] rankdef rank=8
+IDX 176336 S=[1, 2, 3, 5, 6, 7, 9, 15, 16, 20] rankdef rank=8
+IDX 176337 S=[1, 2, 3, 5, 6, 7, 9, 15, 17, 18] rankdef rank=8
+IDX 176338 S=[1, 2, 3, 5, 6, 7, 9, 15, 17, 19] rankdef rank=9
+IDX 176339 S=[1, 2, 3, 5, 6, 7, 9, 15, 17, 20] rankdef rank=9
+IDX 176340 S=[1, 2, 3, 5, 6, 7, 9, 15, 18, 19] rankdef rank=9
+IDX 176341 S=[1, 2, 3, 5, 6, 7, 9, 15, 18, 20] rankdef rank=9
+IDX 176342 S=[1, 2, 3, 5, 6, 7, 9, 15, 19, 20] rankdef rank=9
+IDX 176343 S=[1, 2, 3, 5, 6, 7, 9, 16, 17, 18] rankdef rank=8
+IDX 176344 S=[1, 2, 3, 5, 6, 7, 9, 16, 17, 19] rankdef rank=9
+IDX 176345 S=[1, 2, 3, 5, 6, 7, 9, 16, 17, 20] rankdef rank=9
+IDX 176346 S=[1, 2, 3, 5, 6, 7, 9, 16, 18, 19] rankdef rank=9
+IDX 176347 S=[1, 2, 3, 5, 6, 7, 9, 16, 18, 20] rankdef rank=9
+IDX 176348 S=[1, 2, 3, 5, 6, 7, 9, 16, 19, 20] rankdef rank=9
+IDX 176349 S=[1, 2, 3, 5, 6, 7, 9, 17, 18, 19] rankdef rank=9
+IDX 176350 S=[1, 2, 3, 5, 6, 7, 9, 17, 18, 20] rankdef rank=9
+IDX 176351 S=[1, 2, 3, 5, 6, 7, 9, 17, 19, 20] infeasible
+IDX 176352 S=[1, 2, 3, 5, 6, 7, 9, 18, 19, 20] infeasible
+IDX 176353 S=[1, 2, 3, 5, 6, 7, 10, 11, 12, 13] rankdef rank=8
+IDX 176354 S=[1, 2, 3, 5, 6, 7, 10, 11, 12, 14] rankdef rank=8
+IDX 176355 S=[1, 2, 3, 5, 6, 7, 10, 11, 12, 15] rankdef rank=7
+IDX 176356 S=[1, 2, 3, 5, 6, 7, 10, 11, 12, 16] rankdef rank=7
+IDX 176357 S=[1, 2, 3, 5, 6, 7, 10, 11, 12, 17] rankdef rank=8
+IDX 176358 S=[1, 2, 3, 5, 6, 7, 10, 11, 12, 18] rankdef rank=8
+IDX 176359 S=[1, 2, 3, 5, 6, 7, 10, 11, 12, 19] rankdef rank=8
+IDX 176360 S=[1, 2, 3, 5, 6, 7, 10, 11, 12, 20] rankdef rank=8
+IDX 176361 S=[1, 2, 3, 5, 6, 7, 10, 11, 13, 14] rankdef rank=8
+IDX 176362 S=[1, 2, 3, 5, 6, 7, 10, 11, 13, 15] rankdef rank=8
+IDX 176363 S=[1, 2, 3, 5, 6, 7, 10, 11, 13, 16] rankdef rank=8
+IDX 176364 S=[1, 2, 3, 5, 6, 7, 10, 11, 13, 17] rankdef rank=9
+IDX 176365 S=[1, 2, 3, 5, 6, 7, 10, 11, 13, 18] rankdef rank=9
+IDX 176366 S=[1, 2, 3, 5, 6, 7, 10, 11, 13, 19] rankdef rank=9
+IDX 176367 S=[1, 2, 3, 5, 6, 7, 10, 11, 13, 20] rankdef rank=9
+IDX 176368 S=[1, 2, 3, 5, 6, 7, 10, 11, 14, 15] rankdef rank=8
+IDX 176369 S=[1, 2, 3, 5, 6, 7, 10, 11, 14, 16] rankdef rank=8
+IDX 176370 S=[1, 2, 3, 5, 6, 7, 10, 11, 14, 17] rankdef rank=9
+IDX 176371 S=[1, 2, 3, 5, 6, 7, 10, 11, 14, 18] rankdef rank=9
+IDX 176372 S=[1, 2, 3, 5, 6, 7, 10, 11, 14, 19] rankdef rank=9
+IDX 176373 S=[1, 2, 3, 5, 6, 7, 10, 11, 14, 20] rankdef rank=9
+IDX 176374 S=[1, 2, 3, 5, 6, 7, 10, 11, 15, 16] rankdef rank=7
+IDX 176375 S=[1, 2, 3, 5, 6, 7, 10, 11, 15, 17] rankdef rank=8
+IDX 176376 S=[1, 2, 3, 5, 6, 7, 10, 11, 15, 18] rankdef rank=8
+IDX 176377 S=[1, 2, 3, 5, 6, 7, 10, 11, 15, 19] rankdef rank=8
+IDX 176378 S=[1, 2, 3, 5, 6, 7, 10, 11, 15, 20] rankdef rank=8
+IDX 176379 S=[1, 2, 3, 5, 6, 7, 10, 11, 16, 17] rankdef rank=8
+IDX 176380 S=[1, 2, 3, 5, 6, 7, 10, 11, 16, 18] rankdef rank=8
+IDX 176381 S=[1, 2, 3, 5, 6, 7, 10, 11, 16, 19] rankdef rank=8
+IDX 176382 S=[1, 2, 3, 5, 6, 7, 10, 11, 16, 20] rankdef rank=8
+IDX 176383 S=[1, 2, 3, 5, 6, 7, 10, 11, 17, 18] rankdef rank=9
+IDX 176384 S=[1, 2, 3, 5, 6, 7, 10, 11, 17, 19] rankdef rank=9
+IDX 176385 S=[1, 2, 3, 5, 6, 7, 10, 11, 17, 20] rankdef rank=9
+IDX 176386 S=[1, 2, 3, 5, 6, 7, 10, 11, 18, 19] rankdef rank=9
+IDX 176387 S=[1, 2, 3, 5, 6, 7, 10, 11, 18, 20] rankdef rank=9
+IDX 176388 S=[1, 2, 3, 5, 6, 7, 10, 11, 19, 20] rankdef rank=9
+IDX 176389 S=[1, 2, 3, 5, 6, 7, 10, 12, 13, 14] rankdef rank=8
+IDX 176390 S=[1, 2, 3, 5, 6, 7, 10, 12, 13, 15] rankdef rank=8
+IDX 176391 S=[1, 2, 3, 5, 6, 7, 10, 12, 13, 16] rankdef rank=8
+IDX 176392 S=[1, 2, 3, 5, 6, 7, 10, 12, 13, 17] rankdef rank=9
+IDX 176393 S=[1, 2, 3, 5, 6, 7, 10, 12, 13, 18] rankdef rank=9
+IDX 176394 S=[1, 2, 3, 5, 6, 7, 10, 12, 13, 19] rankdef rank=9
+IDX 176395 S=[1, 2, 3, 5, 6, 7, 10, 12, 13, 20] rankdef rank=9
+IDX 176396 S=[1, 2, 3, 5, 6, 7, 10, 12, 14, 15] rankdef rank=8
+IDX 176397 S=[1, 2, 3, 5, 6, 7, 10, 12, 14, 16] rankdef rank=8
+IDX 176398 S=[1, 2, 3, 5, 6, 7, 10, 12, 14, 17] rankdef rank=9
+IDX 176399 S=[1, 2, 3, 5, 6, 7, 10, 12, 14, 18] rankdef rank=9
+IDX 176400 S=[1, 2, 3, 5, 6, 7, 10, 12, 14, 19] rankdef rank=9
+IDX 176401 S=[1, 2, 3, 5, 6, 7, 10, 12, 14, 20] rankdef rank=9
+IDX 176402 S=[1, 2, 3, 5, 6, 7, 10, 12, 15, 16] rankdef rank=7
+IDX 176403 S=[1, 2, 3, 5, 6, 7, 10, 12, 15, 17] rankdef rank=8
+IDX 176404 S=[1, 2, 3, 5, 6, 7, 10, 12, 15, 18] rankdef rank=8
+IDX 176405 S=[1, 2, 3, 5, 6, 7, 10, 12, 15, 19] rankdef rank=8
+IDX 176406 S=[1, 2, 3, 5, 6, 7, 10, 12, 15, 20] rankdef rank=8
+IDX 176407 S=[1, 2, 3, 5, 6, 7, 10, 12, 16, 17] rankdef rank=8
+IDX 176408 S=[1, 2, 3, 5, 6, 7, 10, 12, 16, 18] rankdef rank=8
+IDX 176409 S=[1, 2, 3, 5, 6, 7, 10, 12, 16, 19] rankdef rank=8
+IDX 176410 S=[1, 2, 3, 5, 6, 7, 10, 12, 16, 20] rankdef rank=8
+IDX 176411 S=[1, 2, 3, 5, 6, 7, 10, 12, 17, 18] rankdef rank=9
+IDX 176412 S=[1, 2, 3, 5, 6, 7, 10, 12, 17, 19] rankdef rank=9
+IDX 176413 S=[1, 2, 3, 5, 6, 7, 10, 12, 17, 20] rankdef rank=9
+IDX 176414 S=[1, 2, 3, 5, 6, 7, 10, 12, 18, 19] rankdef rank=9
+IDX 176415 S=[1, 2, 3, 5, 6, 7, 10, 12, 18, 20] rankdef rank=9
+IDX 176416 S=[1, 2, 3, 5, 6, 7, 10, 12, 19, 20] rankdef rank=9
+IDX 176417 S=[1, 2, 3, 5, 6, 7, 10, 13, 14, 15] rankdef rank=8
+IDX 176418 S=[1, 2, 3, 5, 6, 7, 10, 13, 14, 16] rankdef rank=8
+IDX 176419 S=[1, 2, 3, 5, 6, 7, 10, 13, 14, 17] rankdef rank=9
+IDX 176420 S=[1, 2, 3, 5, 6, 7, 10, 13, 14, 18] rankdef rank=9
+IDX 176421 S=[1, 2, 3, 5, 6, 7, 10, 13, 14, 19] rankdef rank=9
+IDX 176422 S=[1, 2, 3, 5, 6, 7, 10, 13, 14, 20] rankdef rank=9
+IDX 176423 S=[1, 2, 3, 5, 6, 7, 10, 13, 15, 16] rankdef rank=8
+IDX 176424 S=[1, 2, 3, 5, 6, 7, 10, 13, 15, 17] rankdef rank=9
+IDX 176425 S=[1, 2, 3, 5, 6, 7, 10, 13, 15, 18] rankdef rank=9
+IDX 176426 S=[1, 2, 3, 5, 6, 7, 10, 13, 15, 19] rankdef rank=9
+IDX 176427 S=[1, 2, 3, 5, 6, 7, 10, 13, 15, 20] rankdef rank=9
+IDX 176428 S=[1, 2, 3, 5, 6, 7, 10, 13, 16, 17] rankdef rank=9
+IDX 176429 S=[1, 2, 3, 5, 6, 7, 10, 13, 16, 18] rankdef rank=9
+IDX 176430 S=[1, 2, 3, 5, 6, 7, 10, 13, 16, 19] rankdef rank=9
+IDX 176431 S=[1, 2, 3, 5, 6, 7, 10, 13, 16, 20] rankdef rank=9
+IDX 176432 S=[1, 2, 3, 5, 6, 7, 10, 13, 17, 18] infeasible
+IDX 176433 S=[1, 2, 3, 5, 6, 7, 10, 13, 17, 19] infeasible
+IDX 176434 S=[1, 2, 3, 5, 6, 7, 10, 13, 17, 20] infeasible
+IDX 176435 S=[1, 2, 3, 5, 6, 7, 10, 13, 18, 19] infeasible
+IDX 176436 S=[1, 2, 3, 5, 6, 7, 10, 13, 18, 20] infeasible
+IDX 176437 S=[1, 2, 3, 5, 6, 7, 10, 13, 19, 20] infeasible
+IDX 176438 S=[1, 2, 3, 5, 6, 7, 10, 14, 15, 16] rankdef rank=8
+IDX 176439 S=[1, 2, 3, 5, 6, 7, 10, 14, 15, 17] rankdef rank=9
+IDX 176440 S=[1, 2, 3, 5, 6, 7, 10, 14, 15, 18] rankdef rank=9
+IDX 176441 S=[1, 2, 3, 5, 6, 7, 10, 14, 15, 19] rankdef rank=9
+IDX 176442 S=[1, 2, 3, 5, 6, 7, 10, 14, 15, 20] rankdef rank=9
+IDX 176443 S=[1, 2, 3, 5, 6, 7, 10, 14, 16, 17] rankdef rank=9
+IDX 176444 S=[1, 2, 3, 5, 6, 7, 10, 14, 16, 18] rankdef rank=9
+IDX 176445 S=[1, 2, 3, 5, 6, 7, 10, 14, 16, 19] rankdef rank=9
+IDX 176446 S=[1, 2, 3, 5, 6, 7, 10, 14, 16, 20] rankdef rank=9
+IDX 176447 S=[1, 2, 3, 5, 6, 7, 10, 14, 17, 18] infeasible
+IDX 176448 S=[1, 2, 3, 5, 6, 7, 10, 14, 17, 19] infeasible
+IDX 176449 S=[1, 2, 3, 5, 6, 7, 10, 14, 17, 20] infeasible
+IDX 176450 S=[1, 2, 3, 5, 6, 7, 10, 14, 18, 19] infeasible
+IDX 176451 S=[1, 2, 3, 5, 6, 7, 10, 14, 18, 20] infeasible
+IDX 176452 S=[1, 2, 3, 5, 6, 7, 10, 14, 19, 20] infeasible
+IDX 176453 S=[1, 2, 3, 5, 6, 7, 10, 15, 16, 17] rankdef rank=8
+IDX 176454 S=[1, 2, 3, 5, 6, 7, 10, 15, 16, 18] rankdef rank=8
+IDX 176455 S=[1, 2, 3, 5, 6, 7, 10, 15, 16, 19] rankdef rank=8
+IDX 176456 S=[1, 2, 3, 5, 6, 7, 10, 15, 16, 20] rankdef rank=8
+IDX 176457 S=[1, 2, 3, 5, 6, 7, 10, 15, 17, 18] rankdef rank=9
+IDX 176458 S=[1, 2, 3, 5, 6, 7, 10, 15, 17, 19] rankdef rank=9
+IDX 176459 S=[1, 2, 3, 5, 6, 7, 10, 15, 17, 20] rankdef rank=9
+IDX 176460 S=[1, 2, 3, 5, 6, 7, 10, 15, 18, 19] rankdef rank=9
+IDX 176461 S=[1, 2, 3, 5, 6, 7, 10, 15, 18, 20] rankdef rank=9
+IDX 176462 S=[1, 2, 3, 5, 6, 7, 10, 15, 19, 20] rankdef rank=9
+IDX 176463 S=[1, 2, 3, 5, 6, 7, 10, 16, 17, 18] rankdef rank=9
+IDX 176464 S=[1, 2, 3, 5, 6, 7, 10, 16, 17, 19] rankdef rank=9
+IDX 176465 S=[1, 2, 3, 5, 6, 7, 10, 16, 17, 20] rankdef rank=9
+IDX 176466 S=[1, 2, 3, 5, 6, 7, 10, 16, 18, 19] rankdef rank=9
+IDX 176467 S=[1, 2, 3, 5, 6, 7, 10, 16, 18, 20] rankdef rank=9
+IDX 176468 S=[1, 2, 3, 5, 6, 7, 10, 16, 19, 20] rankdef rank=9
+IDX 176469 S=[1, 2, 3, 5, 6, 7, 10, 17, 18, 19] rankdef rank=9
+IDX 176470 S=[1, 2, 3, 5, 6, 7, 10, 17, 18, 20] infeasible
+IDX 176471 S=[1, 2, 3, 5, 6, 7, 10, 17, 19, 20] infeasible
+IDX 176472 S=[1, 2, 3, 5, 6, 7, 10, 18, 19, 20] infeasible
+IDX 176473 S=[1, 2, 3, 5, 6, 7, 11, 12, 13, 14] rankdef rank=7
+IDX 176474 S=[1, 2, 3, 5, 6, 7, 11, 12, 13, 15] rankdef rank=7
+IDX 176475 S=[1, 2, 3, 5, 6, 7, 11, 12, 13, 16] rankdef rank=7
+IDX 176476 S=[1, 2, 3, 5, 6, 7, 11, 12, 13, 17] rankdef rank=8
+IDX 176477 S=[1, 2, 3, 5, 6, 7, 11, 12, 13, 18] rankdef rank=8
+IDX 176478 S=[1, 2, 3, 5, 6, 7, 11, 12, 13, 19] rankdef rank=8
+IDX 176479 S=[1, 2, 3, 5, 6, 7, 11, 12, 13, 20] rankdef rank=8
+IDX 176480 S=[1, 2, 3, 5, 6, 7, 11, 12, 14, 15] rankdef rank=7
+IDX 176481 S=[1, 2, 3, 5, 6, 7, 11, 12, 14, 16] rankdef rank=7
+IDX 176482 S=[1, 2, 3, 5, 6, 7, 11, 12, 14, 17] rankdef rank=8
+IDX 176483 S=[1, 2, 3, 5, 6, 7, 11, 12, 14, 18] rankdef rank=8
+IDX 176484 S=[1, 2, 3, 5, 6, 7, 11, 12, 14, 19] rankdef rank=8
+IDX 176485 S=[1, 2, 3, 5, 6, 7, 11, 12, 14, 20] rankdef rank=8
+IDX 176486 S=[1, 2, 3, 5, 6, 7, 11, 12, 15, 16] rankdef rank=6
+IDX 176487 S=[1, 2, 3, 5, 6, 7, 11, 12, 15, 17] rankdef rank=7
+IDX 176488 S=[1, 2, 3, 5, 6, 7, 11, 12, 15, 18] rankdef rank=7
+IDX 176489 S=[1, 2, 3, 5, 6, 7, 11, 12, 15, 19] rankdef rank=7
+IDX 176490 S=[1, 2, 3, 5, 6, 7, 11, 12, 15, 20] rankdef rank=7
+IDX 176491 S=[1, 2, 3, 5, 6, 7, 11, 12, 16, 17] rankdef rank=7
+IDX 176492 S=[1, 2, 3, 5, 6, 7, 11, 12, 16, 18] rankdef rank=7
+IDX 176493 S=[1, 2, 3, 5, 6, 7, 11, 12, 16, 19] rankdef rank=7
+IDX 176494 S=[1, 2, 3, 5, 6, 7, 11, 12, 16, 20] rankdef rank=7
+IDX 176495 S=[1, 2, 3, 5, 6, 7, 11, 12, 17, 18] rankdef rank=8
+IDX 176496 S=[1, 2, 3, 5, 6, 7, 11, 12, 17, 19] rankdef rank=8
+IDX 176497 S=[1, 2, 3, 5, 6, 7, 11, 12, 17, 20] rankdef rank=8
+IDX 176498 S=[1, 2, 3, 5, 6, 7, 11, 12, 18, 19] rankdef rank=8
+IDX 176499 S=[1, 2, 3, 5, 6, 7, 11, 12, 18, 20] rankdef rank=8
+IDX 176500 S=[1, 2, 3, 5, 6, 7, 11, 12, 19, 20] rankdef rank=8
+IDX 176501 S=[1, 2, 3, 5, 6, 7, 11, 13, 14, 15] rankdef rank=7
+IDX 176502 S=[1, 2, 3, 5, 6, 7, 11, 13, 14, 16] rankdef rank=7
+IDX 176503 S=[1, 2, 3, 5, 6, 7, 11, 13, 14, 17] rankdef rank=8
+IDX 176504 S=[1, 2, 3, 5, 6, 7, 11, 13, 14, 18] rankdef rank=8
+IDX 176505 S=[1, 2, 3, 5, 6, 7, 11, 13, 14, 19] rankdef rank=8
+IDX 176506 S=[1, 2, 3, 5, 6, 7, 11, 13, 14, 20] rankdef rank=8
+IDX 176507 S=[1, 2, 3, 5, 6, 7, 11, 13, 15, 16] rankdef rank=7
+IDX 176508 S=[1, 2, 3, 5, 6, 7, 11, 13, 15, 17] rankdef rank=8
+IDX 176509 S=[1, 2, 3, 5, 6, 7, 11, 13, 15, 18] rankdef rank=8
+IDX 176510 S=[1, 2, 3, 5, 6, 7, 11, 13, 15, 19] rankdef rank=8
+IDX 176511 S=[1, 2, 3, 5, 6, 7, 11, 13, 15, 20] rankdef rank=8
+IDX 176512 S=[1, 2, 3, 5, 6, 7, 11, 13, 16, 17] rankdef rank=8
+IDX 176513 S=[1, 2, 3, 5, 6, 7, 11, 13, 16, 18] rankdef rank=8
+IDX 176514 S=[1, 2, 3, 5, 6, 7, 11, 13, 16, 19] rankdef rank=8
+IDX 176515 S=[1, 2, 3, 5, 6, 7, 11, 13, 16, 20] rankdef rank=8
+IDX 176516 S=[1, 2, 3, 5, 6, 7, 11, 13, 17, 18] rankdef rank=9
+IDX 176517 S=[1, 2, 3, 5, 6, 7, 11, 13, 17, 19] rankdef rank=9
+IDX 176518 S=[1, 2, 3, 5, 6, 7, 11, 13, 17, 20] rankdef rank=9
+IDX 176519 S=[1, 2, 3, 5, 6, 7, 11, 13, 18, 19] rankdef rank=9
+IDX 176520 S=[1, 2, 3, 5, 6, 7, 11, 13, 18, 20] rankdef rank=9
+IDX 176521 S=[1, 2, 3, 5, 6, 7, 11, 13, 19, 20] rankdef rank=9
+IDX 176522 S=[1, 2, 3, 5, 6, 7, 11, 14, 15, 16] rankdef rank=7
+IDX 176523 S=[1, 2, 3, 5, 6, 7, 11, 14, 15, 17] rankdef rank=8
+IDX 176524 S=[1, 2, 3, 5, 6, 7, 11, 14, 15, 18] rankdef rank=8
+IDX 176525 S=[1, 2, 3, 5, 6, 7, 11, 14, 15, 19] rankdef rank=8
+IDX 176526 S=[1, 2, 3, 5, 6, 7, 11, 14, 15, 20] rankdef rank=8
+IDX 176527 S=[1, 2, 3, 5, 6, 7, 11, 14, 16, 17] rankdef rank=8
+IDX 176528 S=[1, 2, 3, 5, 6, 7, 11, 14, 16, 18] rankdef rank=8
+IDX 176529 S=[1, 2, 3, 5, 6, 7, 11, 14, 16, 19] rankdef rank=8
+IDX 176530 S=[1, 2, 3, 5, 6, 7, 11, 14, 16, 20] rankdef rank=8
+IDX 176531 S=[1, 2, 3, 5, 6, 7, 11, 14, 17, 18] rankdef rank=9
+IDX 176532 S=[1, 2, 3, 5, 6, 7, 11, 14, 17, 19] rankdef rank=9
+IDX 176533 S=[1, 2, 3, 5, 6, 7, 11, 14, 17, 20] rankdef rank=9
+IDX 176534 S=[1, 2, 3, 5, 6, 7, 11, 14, 18, 19] rankdef rank=9
+IDX 176535 S=[1, 2, 3, 5, 6, 7, 11, 14, 18, 20] rankdef rank=9
+IDX 176536 S=[1, 2, 3, 5, 6, 7, 11, 14, 19, 20] rankdef rank=9
+IDX 176537 S=[1, 2, 3, 5, 6, 7, 11, 15, 16, 17] rankdef rank=7
+IDX 176538 S=[1, 2, 3, 5, 6, 7, 11, 15, 16, 18] rankdef rank=7
+IDX 176539 S=[1, 2, 3, 5, 6, 7, 11, 15, 16, 19] rankdef rank=7
+IDX 176540 S=[1, 2, 3, 5, 6, 7, 11, 15, 16, 20] rankdef rank=7
+IDX 176541 S=[1, 2, 3, 5, 6, 7, 11, 15, 17, 18] rankdef rank=8
+IDX 176542 S=[1, 2, 3, 5, 6, 7, 11, 15, 17, 19] rankdef rank=8
+IDX 176543 S=[1, 2, 3, 5, 6, 7, 11, 15, 17, 20] rankdef rank=8
+IDX 176544 S=[1, 2, 3, 5, 6, 7, 11, 15, 18, 19] rankdef rank=8
+IDX 176545 S=[1, 2, 3, 5, 6, 7, 11, 15, 18, 20] rankdef rank=8
+IDX 176546 S=[1, 2, 3, 5, 6, 7, 11, 15, 19, 20] rankdef rank=8
+IDX 176547 S=[1, 2, 3, 5, 6, 7, 11, 16, 17, 18] rankdef rank=8
+IDX 176548 S=[1, 2, 3, 5, 6, 7, 11, 16, 17, 19] rankdef rank=8
+IDX 176549 S=[1, 2, 3, 5, 6, 7, 11, 16, 17, 20] rankdef rank=8
+IDX 176550 S=[1, 2, 3, 5, 6, 7, 11, 16, 18, 19] rankdef rank=8
+IDX 176551 S=[1, 2, 3, 5, 6, 7, 11, 16, 18, 20] rankdef rank=8
+IDX 176552 S=[1, 2, 3, 5, 6, 7, 11, 16, 19, 20] rankdef rank=8
+IDX 176553 S=[1, 2, 3, 5, 6, 7, 11, 17, 18, 19] rankdef rank=9
+IDX 176554 S=[1, 2, 3, 5, 6, 7, 11, 17, 18, 20] rankdef rank=9
+IDX 176555 S=[1, 2, 3, 5, 6, 7, 11, 17, 19, 20] rankdef rank=9
+IDX 176556 S=[1, 2, 3, 5, 6, 7, 11, 18, 19, 20] rankdef rank=9
+IDX 176557 S=[1, 2, 3, 5, 6, 7, 12, 13, 14, 15] rankdef rank=7
+IDX 176558 S=[1, 2, 3, 5, 6, 7, 12, 13, 14, 16] rankdef rank=7
+IDX 176559 S=[1, 2, 3, 5, 6, 7, 12, 13, 14, 17] rankdef rank=8
+IDX 176560 S=[1, 2, 3, 5, 6, 7, 12, 13, 14, 18] rankdef rank=8
+IDX 176561 S=[1, 2, 3, 5, 6, 7, 12, 13, 14, 19] rankdef rank=8
+IDX 176562 S=[1, 2, 3, 5, 6, 7, 12, 13, 14, 20] rankdef rank=8
+IDX 176563 S=[1, 2, 3, 5, 6, 7, 12, 13, 15, 16] rankdef rank=7
+IDX 176564 S=[1, 2, 3, 5, 6, 7, 12, 13, 15, 17] rankdef rank=8
+IDX 176565 S=[1, 2, 3, 5, 6, 7, 12, 13, 15, 18] rankdef rank=8
+IDX 176566 S=[1, 2, 3, 5, 6, 7, 12, 13, 15, 19] rankdef rank=8
+IDX 176567 S=[1, 2, 3, 5, 6, 7, 12, 13, 15, 20] rankdef rank=8
+IDX 176568 S=[1, 2, 3, 5, 6, 7, 12, 13, 16, 17] rankdef rank=8
+IDX 176569 S=[1, 2, 3, 5, 6, 7, 12, 13, 16, 18] rankdef rank=8
+IDX 176570 S=[1, 2, 3, 5, 6, 7, 12, 13, 16, 19] rankdef rank=8
+IDX 176571 S=[1, 2, 3, 5, 6, 7, 12, 13, 16, 20] rankdef rank=8
+IDX 176572 S=[1, 2, 3, 5, 6, 7, 12, 13, 17, 18] rankdef rank=9
+IDX 176573 S=[1, 2, 3, 5, 6, 7, 12, 13, 17, 19] rankdef rank=9
+IDX 176574 S=[1, 2, 3, 5, 6, 7, 12, 13, 17, 20] rankdef rank=9
+IDX 176575 S=[1, 2, 3, 5, 6, 7, 12, 13, 18, 19] rankdef rank=9
+IDX 176576 S=[1, 2, 3, 5, 6, 7, 12, 13, 18, 20] rankdef rank=9
+IDX 176577 S=[1, 2, 3, 5, 6, 7, 12, 13, 19, 20] rankdef rank=9
+IDX 176578 S=[1, 2, 3, 5, 6, 7, 12, 14, 15, 16] rankdef rank=7
+IDX 176579 S=[1, 2, 3, 5, 6, 7, 12, 14, 15, 17] rankdef rank=8
+IDX 176580 S=[1, 2, 3, 5, 6, 7, 12, 14, 15, 18] rankdef rank=8
+IDX 176581 S=[1, 2, 3, 5, 6, 7, 12, 14, 15, 19] rankdef rank=8
+IDX 176582 S=[1, 2, 3, 5, 6, 7, 12, 14, 15, 20] rankdef rank=8
+IDX 176583 S=[1, 2, 3, 5, 6, 7, 12, 14, 16, 17] rankdef rank=8
+IDX 176584 S=[1, 2, 3, 5, 6, 7, 12, 14, 16, 18] rankdef rank=8
+IDX 176585 S=[1, 2, 3, 5, 6, 7, 12, 14, 16, 19] rankdef rank=8
+IDX 176586 S=[1, 2, 3, 5, 6, 7, 12, 14, 16, 20] rankdef rank=8
+IDX 176587 S=[1, 2, 3, 5, 6, 7, 12, 14, 17, 18] rankdef rank=9
+IDX 176588 S=[1, 2, 3, 5, 6, 7, 12, 14, 17, 19] rankdef rank=9
+IDX 176589 S=[1, 2, 3, 5, 6, 7, 12, 14, 17, 20] rankdef rank=9
+IDX 176590 S=[1, 2, 3, 5, 6, 7, 12, 14, 18, 19] rankdef rank=9
+IDX 176591 S=[1, 2, 3, 5, 6, 7, 12, 14, 18, 20] rankdef rank=9
+IDX 176592 S=[1, 2, 3, 5, 6, 7, 12, 14, 19, 20] rankdef rank=9
+IDX 176593 S=[1, 2, 3, 5, 6, 7, 12, 15, 16, 17] rankdef rank=7
+IDX 176594 S=[1, 2, 3, 5, 6, 7, 12, 15, 16, 18] rankdef rank=7
+IDX 176595 S=[1, 2, 3, 5, 6, 7, 12, 15, 16, 19] rankdef rank=7
+IDX 176596 S=[1, 2, 3, 5, 6, 7, 12, 15, 16, 20] rankdef rank=7
+IDX 176597 S=[1, 2, 3, 5, 6, 7, 12, 15, 17, 18] rankdef rank=8
+IDX 176598 S=[1, 2, 3, 5, 6, 7, 12, 15, 17, 19] rankdef rank=8
+IDX 176599 S=[1, 2, 3, 5, 6, 7, 12, 15, 17, 20] rankdef rank=8
+IDX 176600 S=[1, 2, 3, 5, 6, 7, 12, 15, 18, 19] rankdef rank=8
+IDX 176601 S=[1, 2, 3, 5, 6, 7, 12, 15, 18, 20] rankdef rank=8
+IDX 176602 S=[1, 2, 3, 5, 6, 7, 12, 15, 19, 20] rankdef rank=8
+IDX 176603 S=[1, 2, 3, 5, 6, 7, 12, 16, 17, 18] rankdef rank=8
+IDX 176604 S=[1, 2, 3, 5, 6, 7, 12, 16, 17, 19] rankdef rank=8
+IDX 176605 S=[1, 2, 3, 5, 6, 7, 12, 16, 17, 20] rankdef rank=8
+IDX 176606 S=[1, 2, 3, 5, 6, 7, 12, 16, 18, 19] rankdef rank=8
+IDX 176607 S=[1, 2, 3, 5, 6, 7, 12, 16, 18, 20] rankdef rank=8
+IDX 176608 S=[1, 2, 3, 5, 6, 7, 12, 16, 19, 20] rankdef rank=8
+IDX 176609 S=[1, 2, 3, 5, 6, 7, 12, 17, 18, 19] rankdef rank=9
+IDX 176610 S=[1, 2, 3, 5, 6, 7, 12, 17, 18, 20] rankdef rank=9
+IDX 176611 S=[1, 2, 3, 5, 6, 7, 12, 17, 19, 20] rankdef rank=9
+IDX 176612 S=[1, 2, 3, 5, 6, 7, 12, 18, 19, 20] rankdef rank=9
+IDX 176613 S=[1, 2, 3, 5, 6, 7, 13, 14, 15, 16] rankdef rank=7
+IDX 176614 S=[1, 2, 3, 5, 6, 7, 13, 14, 15, 17] rankdef rank=8
+IDX 176615 S=[1, 2, 3, 5, 6, 7, 13, 14, 15, 18] rankdef rank=8
+IDX 176616 S=[1, 2, 3, 5, 6, 7, 13, 14, 15, 19] rankdef rank=8
+IDX 176617 S=[1, 2, 3, 5, 6, 7, 13, 14, 15, 20] rankdef rank=8
+IDX 176618 S=[1, 2, 3, 5, 6, 7, 13, 14, 16, 17] rankdef rank=8
+IDX 176619 S=[1, 2, 3, 5, 6, 7, 13, 14, 16, 18] rankdef rank=8
+IDX 176620 S=[1, 2, 3, 5, 6, 7, 13, 14, 16, 19] rankdef rank=8
+IDX 176621 S=[1, 2, 3, 5, 6, 7, 13, 14, 16, 20] rankdef rank=8
+IDX 176622 S=[1, 2, 3, 5, 6, 7, 13, 14, 17, 18] rankdef rank=9
+IDX 176623 S=[1, 2, 3, 5, 6, 7, 13, 14, 17, 19] rankdef rank=9
+IDX 176624 S=[1, 2, 3, 5, 6, 7, 13, 14, 17, 20] rankdef rank=9
+IDX 176625 S=[1, 2, 3, 5, 6, 7, 13, 14, 18, 19] rankdef rank=9
+IDX 176626 S=[1, 2, 3, 5, 6, 7, 13, 14, 18, 20] rankdef rank=9
+IDX 176627 S=[1, 2, 3, 5, 6, 7, 13, 14, 19, 20] rankdef rank=9
+IDX 176628 S=[1, 2, 3, 5, 6, 7, 13, 15, 16, 17] rankdef rank=8
+IDX 176629 S=[1, 2, 3, 5, 6, 7, 13, 15, 16, 18] rankdef rank=8
+IDX 176630 S=[1, 2, 3, 5, 6, 7, 13, 15, 16, 19] rankdef rank=8
+IDX 176631 S=[1, 2, 3, 5, 6, 7, 13, 15, 16, 20] rankdef rank=8
+IDX 176632 S=[1, 2, 3, 5, 6, 7, 13, 15, 17, 18] rankdef rank=9
+IDX 176633 S=[1, 2, 3, 5, 6, 7, 13, 15, 17, 19] rankdef rank=9
+IDX 176634 S=[1, 2, 3, 5, 6, 7, 13, 15, 17, 20] rankdef rank=9
+IDX 176635 S=[1, 2, 3, 5, 6, 7, 13, 15, 18, 19] rankdef rank=9
+IDX 176636 S=[1, 2, 3, 5, 6, 7, 13, 15, 18, 20] rankdef rank=9
+IDX 176637 S=[1, 2, 3, 5, 6, 7, 13, 15, 19, 20] rankdef rank=9
+IDX 176638 S=[1, 2, 3, 5, 6, 7, 13, 16, 17, 18] rankdef rank=9
+IDX 176639 S=[1, 2, 3, 5, 6, 7, 13, 16, 17, 19] rankdef rank=9
+IDX 176640 S=[1, 2, 3, 5, 6, 7, 13, 16, 17, 20] rankdef rank=9
+IDX 176641 S=[1, 2, 3, 5, 6, 7, 13, 16, 18, 19] rankdef rank=9
+IDX 176642 S=[1, 2, 3, 5, 6, 7, 13, 16, 18, 20] rankdef rank=9
+IDX 176643 S=[1, 2, 3, 5, 6, 7, 13, 16, 19, 20] rankdef rank=9
+IDX 176644 S=[1, 2, 3, 5, 6, 7, 13, 17, 18, 19] infeasible
+IDX 176645 S=[1, 2, 3, 5, 6, 7, 13, 17, 18, 20] infeasible
+IDX 176646 S=[1, 2, 3, 5, 6, 7, 13, 17, 19, 20] infeasible
+IDX 176647 S=[1, 2, 3, 5, 6, 7, 13, 18, 19, 20] infeasible
+IDX 176648 S=[1, 2, 3, 5, 6, 7, 14, 15, 16, 17] rankdef rank=8
+IDX 176649 S=[1, 2, 3, 5, 6, 7, 14, 15, 16, 18] rankdef rank=8
+IDX 176650 S=[1, 2, 3, 5, 6, 7, 14, 15, 16, 19] rankdef rank=8
+IDX 176651 S=[1, 2, 3, 5, 6, 7, 14, 15, 16, 20] rankdef rank=8
+IDX 176652 S=[1, 2, 3, 5, 6, 7, 14, 15, 17, 18] rankdef rank=9
+IDX 176653 S=[1, 2, 3, 5, 6, 7, 14, 15, 17, 19] rankdef rank=9
+IDX 176654 S=[1, 2, 3, 5, 6, 7, 14, 15, 17, 20] rankdef rank=9
+IDX 176655 S=[1, 2, 3, 5, 6, 7, 14, 15, 18, 19] rankdef rank=9
+IDX 176656 S=[1, 2, 3, 5, 6, 7, 14, 15, 18, 20] rankdef rank=9
+IDX 176657 S=[1, 2, 3, 5, 6, 7, 14, 15, 19, 20] rankdef rank=9
+IDX 176658 S=[1, 2, 3, 5, 6, 7, 14, 16, 17, 18] rankdef rank=9
+IDX 176659 S=[1, 2, 3, 5, 6, 7, 14, 16, 17, 19] rankdef rank=9
+IDX 176660 S=[1, 2, 3, 5, 6, 7, 14, 16, 17, 20] rankdef rank=9
+IDX 176661 S=[1, 2, 3, 5, 6, 7, 14, 16, 18, 19] rankdef rank=9
+IDX 176662 S=[1, 2, 3, 5, 6, 7, 14, 16, 18, 20] rankdef rank=9
+IDX 176663 S=[1, 2, 3, 5, 6, 7, 14, 16, 19, 20] rankdef rank=9
+IDX 176664 S=[1, 2, 3, 5, 6, 7, 14, 17, 18, 19] infeasible
+IDX 176665 S=[1, 2, 3, 5, 6, 7, 14, 17, 18, 20] infeasible
+IDX 176666 S=[1, 2, 3, 5, 6, 7, 14, 17, 19, 20] infeasible
+IDX 176667 S=[1, 2, 3, 5, 6, 7, 14, 18, 19, 20] infeasible
+IDX 176668 S=[1, 2, 3, 5, 6, 7, 15, 16, 17, 18] rankdef rank=8
+IDX 176669 S=[1, 2, 3, 5, 6, 7, 15, 16, 17, 19] rankdef rank=8
+IDX 176670 S=[1, 2, 3, 5, 6, 7, 15, 16, 17, 20] rankdef rank=8
+IDX 176671 S=[1, 2, 3, 5, 6, 7, 15, 16, 18, 19] rankdef rank=8
+IDX 176672 S=[1, 2, 3, 5, 6, 7, 15, 16, 18, 20] rankdef rank=8
+IDX 176673 S=[1, 2, 3, 5, 6, 7, 15, 16, 19, 20] rankdef rank=8
+IDX 176674 S=[1, 2, 3, 5, 6, 7, 15, 17, 18, 19] rankdef rank=9
+IDX 176675 S=[1, 2, 3, 5, 6, 7, 15, 17, 18, 20] rankdef rank=9
+IDX 176676 S=[1, 2, 3, 5, 6, 7, 15, 17, 19, 20] rankdef rank=9
+IDX 176677 S=[1, 2, 3, 5, 6, 7, 15, 18, 19, 20] rankdef rank=9
+IDX 176678 S=[1, 2, 3, 5, 6, 7, 16, 17, 18, 19] rankdef rank=9
+IDX 176679 S=[1, 2, 3, 5, 6, 7, 16, 17, 18, 20] rankdef rank=9
+IDX 176680 S=[1, 2, 3, 5, 6, 7, 16, 17, 19, 20] rankdef rank=9
+IDX 176681 S=[1, 2, 3, 5, 6, 7, 16, 18, 19, 20] rankdef rank=9
+IDX 176682 S=[1, 2, 3, 5, 6, 7, 17, 18, 19, 20] infeasible
+IDX 176683 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 12] rankdef rank=8
+IDX 176684 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 13] rankdef rank=9
+IDX 176685 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 14] rankdef rank=9
+IDX 176686 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 15] rankdef rank=8
+IDX 176687 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 16] rankdef rank=9
+IDX 176688 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 17] rankdef rank=9
+IDX 176689 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 18] rankdef rank=8
+IDX 176690 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 19] rankdef rank=8
+IDX 176691 S=[1, 2, 3, 5, 6, 8, 9, 10, 11, 20] rankdef rank=9
+IDX 176692 S=[1, 2, 3, 5, 6, 8, 9, 10, 12, 13] rankdef rank=9
+IDX 176693 S=[1, 2, 3, 5, 6, 8, 9, 10, 12, 14] rankdef rank=9
+IDX 176694 S=[1, 2, 3, 5, 6, 8, 9, 10, 12, 15] rankdef rank=8
+IDX 176695 S=[1, 2, 3, 5, 6, 8, 9, 10, 12, 16] rankdef rank=9
+IDX 176696 S=[1, 2, 3, 5, 6, 8, 9, 10, 12, 17] rankdef rank=9
+IDX 176697 S=[1, 2, 3, 5, 6, 8, 9, 10, 12, 18] rankdef rank=8
+IDX 176698 S=[1, 2, 3, 5, 6, 8, 9, 10, 12, 19] rankdef rank=8
+IDX 176699 S=[1, 2, 3, 5, 6, 8, 9, 10, 12, 20] rankdef rank=9
+IDX 176700 S=[1, 2, 3, 5, 6, 8, 9, 10, 13, 14] rankdef rank=9
+IDX 176701 S=[1, 2, 3, 5, 6, 8, 9, 10, 13, 15] rankdef rank=9
+IDX 176702 S=[1, 2, 3, 5, 6, 8, 9, 10, 13, 16] infeasible
+IDX 176703 S=[1, 2, 3, 5, 6, 8, 9, 10, 13, 17] infeasible
+IDX 176704 S=[1, 2, 3, 5, 6, 8, 9, 10, 13, 18] rankdef rank=9
+IDX 176705 S=[1, 2, 3, 5, 6, 8, 9, 10, 13, 19] rankdef rank=9
+IDX 176706 S=[1, 2, 3, 5, 6, 8, 9, 10, 13, 20] infeasible
+IDX 176707 S=[1, 2, 3, 5, 6, 8, 9, 10, 14, 15] rankdef rank=9
+IDX 176708 S=[1, 2, 3, 5, 6, 8, 9, 10, 14, 16] infeasible
+IDX 176709 S=[1, 2, 3, 5, 6, 8, 9, 10, 14, 17] infeasible
+IDX 176710 S=[1, 2, 3, 5, 6, 8, 9, 10, 14, 18] rankdef rank=9
+IDX 176711 S=[1, 2, 3, 5, 6, 8, 9, 10, 14, 19] rankdef rank=9
+IDX 176712 S=[1, 2, 3, 5, 6, 8, 9, 10, 14, 20] infeasible
+IDX 176713 S=[1, 2, 3, 5, 6, 8, 9, 10, 15, 16] rankdef rank=9
+IDX 176714 S=[1, 2, 3, 5, 6, 8, 9, 10, 15, 17] rankdef rank=9
+IDX 176715 S=[1, 2, 3, 5, 6, 8, 9, 10, 15, 18] rankdef rank=8
+IDX 176716 S=[1, 2, 3, 5, 6, 8, 9, 10, 15, 19] rankdef rank=8
+IDX 176717 S=[1, 2, 3, 5, 6, 8, 9, 10, 15, 20] rankdef rank=9
+IDX 176718 S=[1, 2, 3, 5, 6, 8, 9, 10, 16, 17] rankdef rank=9
+IDX 176719 S=[1, 2, 3, 5, 6, 8, 9, 10, 16, 18] rankdef rank=9
+IDX 176720 S=[1, 2, 3, 5, 6, 8, 9, 10, 16, 19] rankdef rank=9
+IDX 176721 S=[1, 2, 3, 5, 6, 8, 9, 10, 16, 20] infeasible
+IDX 176722 S=[1, 2, 3, 5, 6, 8, 9, 10, 17, 18] rankdef rank=9
+IDX 176723 S=[1, 2, 3, 5, 6, 8, 9, 10, 17, 19] rankdef rank=9
+IDX 176724 S=[1, 2, 3, 5, 6, 8, 9, 10, 17, 20] infeasible
+IDX 176725 S=[1, 2, 3, 5, 6, 8, 9, 10, 18, 19] rankdef rank=8
+IDX 176726 S=[1, 2, 3, 5, 6, 8, 9, 10, 18, 20] rankdef rank=9
+IDX 176727 S=[1, 2, 3, 5, 6, 8, 9, 10, 19, 20] rankdef rank=9
+IDX 176728 S=[1, 2, 3, 5, 6, 8, 9, 11, 12, 13] rankdef rank=8
+IDX 176729 S=[1, 2, 3, 5, 6, 8, 9, 11, 12, 14] rankdef rank=8
+IDX 176730 S=[1, 2, 3, 5, 6, 8, 9, 11, 12, 15] rankdef rank=7
+IDX 176731 S=[1, 2, 3, 5, 6, 8, 9, 11, 12, 16] rankdef rank=8
+IDX 176732 S=[1, 2, 3, 5, 6, 8, 9, 11, 12, 17] rankdef rank=8
+IDX 176733 S=[1, 2, 3, 5, 6, 8, 9, 11, 12, 18] rankdef rank=7
+IDX 176734 S=[1, 2, 3, 5, 6, 8, 9, 11, 12, 19] rankdef rank=8
+IDX 176735 S=[1, 2, 3, 5, 6, 8, 9, 11, 12, 20] rankdef rank=8
+IDX 176736 S=[1, 2, 3, 5, 6, 8, 9, 11, 13, 14] rankdef rank=8
+IDX 176737 S=[1, 2, 3, 5, 6, 8, 9, 11, 13, 15] rankdef rank=8
+IDX 176738 S=[1, 2, 3, 5, 6, 8, 9, 11, 13, 16] rankdef rank=9
+IDX 176739 S=[1, 2, 3, 5, 6, 8, 9, 11, 13, 17] rankdef rank=9
+IDX 176740 S=[1, 2, 3, 5, 6, 8, 9, 11, 13, 18] rankdef rank=8
+IDX 176741 S=[1, 2, 3, 5, 6, 8, 9, 11, 13, 19] rankdef rank=9
+IDX 176742 S=[1, 2, 3, 5, 6, 8, 9, 11, 13, 20] rankdef rank=9
+IDX 176743 S=[1, 2, 3, 5, 6, 8, 9, 11, 14, 15] rankdef rank=8
+IDX 176744 S=[1, 2, 3, 5, 6, 8, 9, 11, 14, 16] rankdef rank=9
+IDX 176745 S=[1, 2, 3, 5, 6, 8, 9, 11, 14, 17] rankdef rank=9
+IDX 176746 S=[1, 2, 3, 5, 6, 8, 9, 11, 14, 18] rankdef rank=8
+IDX 176747 S=[1, 2, 3, 5, 6, 8, 9, 11, 14, 19] rankdef rank=9
+IDX 176748 S=[1, 2, 3, 5, 6, 8, 9, 11, 14, 20] rankdef rank=9
+IDX 176749 S=[1, 2, 3, 5, 6, 8, 9, 11, 15, 16] rankdef rank=8
+IDX 176750 S=[1, 2, 3, 5, 6, 8, 9, 11, 15, 17] rankdef rank=8
+IDX 176751 S=[1, 2, 3, 5, 6, 8, 9, 11, 15, 18] rankdef rank=7
+IDX 176752 S=[1, 2, 3, 5, 6, 8, 9, 11, 15, 19] rankdef rank=8
+IDX 176753 S=[1, 2, 3, 5, 6, 8, 9, 11, 15, 20] rankdef rank=8
+IDX 176754 S=[1, 2, 3, 5, 6, 8, 9, 11, 16, 17] rankdef rank=8
+IDX 176755 S=[1, 2, 3, 5, 6, 8, 9, 11, 16, 18] rankdef rank=8
+IDX 176756 S=[1, 2, 3, 5, 6, 8, 9, 11, 16, 19] rankdef rank=9
+IDX 176757 S=[1, 2, 3, 5, 6, 8, 9, 11, 16, 20] rankdef rank=9
+IDX 176758 S=[1, 2, 3, 5, 6, 8, 9, 11, 17, 18] rankdef rank=8
+IDX 176759 S=[1, 2, 3, 5, 6, 8, 9, 11, 17, 19] rankdef rank=9
+IDX 176760 S=[1, 2, 3, 5, 6, 8, 9, 11, 17, 20] rankdef rank=9
+IDX 176761 S=[1, 2, 3, 5, 6, 8, 9, 11, 18, 19] rankdef rank=8
+IDX 176762 S=[1, 2, 3, 5, 6, 8, 9, 11, 18, 20] rankdef rank=8
+IDX 176763 S=[1, 2, 3, 5, 6, 8, 9, 11, 19, 20] rankdef rank=9
+IDX 176764 S=[1, 2, 3, 5, 6, 8, 9, 12, 13, 14] rankdef rank=8
+IDX 176765 S=[1, 2, 3, 5, 6, 8, 9, 12, 13, 15] rankdef rank=8
+IDX 176766 S=[1, 2, 3, 5, 6, 8, 9, 12, 13, 16] rankdef rank=9
+IDX 176767 S=[1, 2, 3, 5, 6, 8, 9, 12, 13, 17] rankdef rank=9
+IDX 176768 S=[1, 2, 3, 5, 6, 8, 9, 12, 13, 18] rankdef rank=8
+IDX 176769 S=[1, 2, 3, 5, 6, 8, 9, 12, 13, 19] rankdef rank=9
+IDX 176770 S=[1, 2, 3, 5, 6, 8, 9, 12, 13, 20] rankdef rank=9
+IDX 176771 S=[1, 2, 3, 5, 6, 8, 9, 12, 14, 15] rankdef rank=8
+IDX 176772 S=[1, 2, 3, 5, 6, 8, 9, 12, 14, 16] rankdef rank=9
+IDX 176773 S=[1, 2, 3, 5, 6, 8, 9, 12, 14, 17] rankdef rank=9
+IDX 176774 S=[1, 2, 3, 5, 6, 8, 9, 12, 14, 18] rankdef rank=8
+IDX 176775 S=[1, 2, 3, 5, 6, 8, 9, 12, 14, 19] rankdef rank=9
+IDX 176776 S=[1, 2, 3, 5, 6, 8, 9, 12, 14, 20] rankdef rank=9
+IDX 176777 S=[1, 2, 3, 5, 6, 8, 9, 12, 15, 16] rankdef rank=8
+IDX 176778 S=[1, 2, 3, 5, 6, 8, 9, 12, 15, 17] rankdef rank=8
+IDX 176779 S=[1, 2, 3, 5, 6, 8, 9, 12, 15, 18] rankdef rank=7
+IDX 176780 S=[1, 2, 3, 5, 6, 8, 9, 12, 15, 19] rankdef rank=8
+IDX 176781 S=[1, 2, 3, 5, 6, 8, 9, 12, 15, 20] rankdef rank=8
+IDX 176782 S=[1, 2, 3, 5, 6, 8, 9, 12, 16, 17] rankdef rank=8
+IDX 176783 S=[1, 2, 3, 5, 6, 8, 9, 12, 16, 18] rankdef rank=8
+IDX 176784 S=[1, 2, 3, 5, 6, 8, 9, 12, 16, 19] rankdef rank=9
+IDX 176785 S=[1, 2, 3, 5, 6, 8, 9, 12, 16, 20] rankdef rank=9
+IDX 176786 S=[1, 2, 3, 5, 6, 8, 9, 12, 17, 18] rankdef rank=8
+IDX 176787 S=[1, 2, 3, 5, 6, 8, 9, 12, 17, 19] rankdef rank=9
+IDX 176788 S=[1, 2, 3, 5, 6, 8, 9, 12, 17, 20] rankdef rank=9
+IDX 176789 S=[1, 2, 3, 5, 6, 8, 9, 12, 18, 19] rankdef rank=8
+IDX 176790 S=[1, 2, 3, 5, 6, 8, 9, 12, 18, 20] rankdef rank=8
+IDX 176791 S=[1, 2, 3, 5, 6, 8, 9, 12, 19, 20] rankdef rank=9
+IDX 176792 S=[1, 2, 3, 5, 6, 8, 9, 13, 14, 15] rankdef rank=8
+IDX 176793 S=[1, 2, 3, 5, 6, 8, 9, 13, 14, 16] rankdef rank=9
+IDX 176794 S=[1, 2, 3, 5, 6, 8, 9, 13, 14, 17] rankdef rank=9
+IDX 176795 S=[1, 2, 3, 5, 6, 8, 9, 13, 14, 18] rankdef rank=8
+IDX 176796 S=[1, 2, 3, 5, 6, 8, 9, 13, 14, 19] rankdef rank=9
+IDX 176797 S=[1, 2, 3, 5, 6, 8, 9, 13, 14, 20] rankdef rank=9
+IDX 176798 S=[1, 2, 3, 5, 6, 8, 9, 13, 15, 16] rankdef rank=9
+IDX 176799 S=[1, 2, 3, 5, 6, 8, 9, 13, 15, 17] rankdef rank=9
+IDX 176800 S=[1, 2, 3, 5, 6, 8, 9, 13, 15, 18] rankdef rank=8
+IDX 176801 S=[1, 2, 3, 5, 6, 8, 9, 13, 15, 19] rankdef rank=9
+IDX 176802 S=[1, 2, 3, 5, 6, 8, 9, 13, 15, 20] rankdef rank=9
+IDX 176803 S=[1, 2, 3, 5, 6, 8, 9, 13, 16, 17] rankdef rank=9
+IDX 176804 S=[1, 2, 3, 5, 6, 8, 9, 13, 16, 18] rankdef rank=9
+IDX 176805 S=[1, 2, 3, 5, 6, 8, 9, 13, 16, 19] infeasible
+IDX 176806 S=[1, 2, 3, 5, 6, 8, 9, 13, 16, 20] infeasible
+IDX 176807 S=[1, 2, 3, 5, 6, 8, 9, 13, 17, 18] rankdef rank=9
+IDX 176808 S=[1, 2, 3, 5, 6, 8, 9, 13, 17, 19] infeasible
+IDX 176809 S=[1, 2, 3, 5, 6, 8, 9, 13, 17, 20] infeasible
+IDX 176810 S=[1, 2, 3, 5, 6, 8, 9, 13, 18, 19] rankdef rank=9
+IDX 176811 S=[1, 2, 3, 5, 6, 8, 9, 13, 18, 20] rankdef rank=9
+IDX 176812 S=[1, 2, 3, 5, 6, 8, 9, 13, 19, 20] infeasible
+IDX 176813 S=[1, 2, 3, 5, 6, 8, 9, 14, 15, 16] rankdef rank=9
+IDX 176814 S=[1, 2, 3, 5, 6, 8, 9, 14, 15, 17] rankdef rank=9
+IDX 176815 S=[1, 2, 3, 5, 6, 8, 9, 14, 15, 18] rankdef rank=8
+IDX 176816 S=[1, 2, 3, 5, 6, 8, 9, 14, 15, 19] rankdef rank=9
+IDX 176817 S=[1, 2, 3, 5, 6, 8, 9, 14, 15, 20] rankdef rank=9
+IDX 176818 S=[1, 2, 3, 5, 6, 8, 9, 14, 16, 17] rankdef rank=9
+IDX 176819 S=[1, 2, 3, 5, 6, 8, 9, 14, 16, 18] rankdef rank=9
+IDX 176820 S=[1, 2, 3, 5, 6, 8, 9, 14, 16, 19] infeasible
+IDX 176821 S=[1, 2, 3, 5, 6, 8, 9, 14, 16, 20] infeasible
+IDX 176822 S=[1, 2, 3, 5, 6, 8, 9, 14, 17, 18] rankdef rank=9
+IDX 176823 S=[1, 2, 3, 5, 6, 8, 9, 14, 17, 19] infeasible
+IDX 176824 S=[1, 2, 3, 5, 6, 8, 9, 14, 17, 20] infeasible
+IDX 176825 S=[1, 2, 3, 5, 6, 8, 9, 14, 18, 19] rankdef rank=9
+IDX 176826 S=[1, 2, 3, 5, 6, 8, 9, 14, 18, 20] rankdef rank=9
+IDX 176827 S=[1, 2, 3, 5, 6, 8, 9, 14, 19, 20] infeasible
+IDX 176828 S=[1, 2, 3, 5, 6, 8, 9, 15, 16, 17] rankdef rank=8
+IDX 176829 S=[1, 2, 3, 5, 6, 8, 9, 15, 16, 18] rankdef rank=8
+IDX 176830 S=[1, 2, 3, 5, 6, 8, 9, 15, 16, 19] rankdef rank=9
+IDX 176831 S=[1, 2, 3, 5, 6, 8, 9, 15, 16, 20] rankdef rank=9
+IDX 176832 S=[1, 2, 3, 5, 6, 8, 9, 15, 17, 18] rankdef rank=8
+IDX 176833 S=[1, 2, 3, 5, 6, 8, 9, 15, 17, 19] rankdef rank=9
+IDX 176834 S=[1, 2, 3, 5, 6, 8, 9, 15, 17, 20] rankdef rank=9
+IDX 176835 S=[1, 2, 3, 5, 6, 8, 9, 15, 18, 19] rankdef rank=8
+IDX 176836 S=[1, 2, 3, 5, 6, 8, 9, 15, 18, 20] rankdef rank=8
+IDX 176837 S=[1, 2, 3, 5, 6, 8, 9, 15, 19, 20] rankdef rank=9
+IDX 176838 S=[1, 2, 3, 5, 6, 8, 9, 16, 17, 18] rankdef rank=8
+IDX 176839 S=[1, 2, 3, 5, 6, 8, 9, 16, 17, 19] rankdef rank=9
+IDX 176840 S=[1, 2, 3, 5, 6, 8, 9, 16, 17, 20] rankdef rank=9
+IDX 176841 S=[1, 2, 3, 5, 6, 8, 9, 16, 18, 19] rankdef rank=9
+IDX 176842 S=[1, 2, 3, 5, 6, 8, 9, 16, 18, 20] rankdef rank=9
+IDX 176843 S=[1, 2, 3, 5, 6, 8, 9, 16, 19, 20] infeasible
+IDX 176844 S=[1, 2, 3, 5, 6, 8, 9, 17, 18, 19] rankdef rank=9
+IDX 176845 S=[1, 2, 3, 5, 6, 8, 9, 17, 18, 20] rankdef rank=9
+IDX 176846 S=[1, 2, 3, 5, 6, 8, 9, 17, 19, 20] infeasible
+IDX 176847 S=[1, 2, 3, 5, 6, 8, 9, 18, 19, 20] rankdef rank=9
+IDX 176848 S=[1, 2, 3, 5, 6, 8, 10, 11, 12, 13] rankdef rank=8
+IDX 176849 S=[1, 2, 3, 5, 6, 8, 10, 11, 12, 14] rankdef rank=8
+IDX 176850 S=[1, 2, 3, 5, 6, 8, 10, 11, 12, 15] rankdef rank=7
+IDX 176851 S=[1, 2, 3, 5, 6, 8, 10, 11, 12, 16] rankdef rank=8
+IDX 176852 S=[1, 2, 3, 5, 6, 8, 10, 11, 12, 17] rankdef rank=8
+IDX 176853 S=[1, 2, 3, 5, 6, 8, 10, 11, 12, 18] rankdef rank=8
+IDX 176854 S=[1, 2, 3, 5, 6, 8, 10, 11, 12, 19] rankdef rank=8
+IDX 176855 S=[1, 2, 3, 5, 6, 8, 10, 11, 12, 20] rankdef rank=8
+IDX 176856 S=[1, 2, 3, 5, 6, 8, 10, 11, 13, 14] rankdef rank=8
+IDX 176857 S=[1, 2, 3, 5, 6, 8, 10, 11, 13, 15] rankdef rank=8
+IDX 351716 S=[7, 8, 9, 10, 11, 12, 13, 14, 15, 17] rankdef rank=9
+IDX 351717 S=[7, 8, 9, 10, 11, 12, 13, 14, 15, 18] rankdef rank=9
+IDX 351718 S=[7, 8, 9, 10, 11, 12, 13, 14, 15, 19] infeasible
+IDX 351719 S=[7, 8, 9, 10, 11, 12, 13, 14, 15, 20] infeasible
+IDX 351720 S=[7, 8, 9, 10, 11, 12, 13, 14, 16, 17] rankdef rank=9
+IDX 351721 S=[7, 8, 9, 10, 11, 12, 13, 14, 16, 18] rankdef rank=9
+IDX 351722 S=[7, 8, 9, 10, 11, 12, 13, 14, 16, 19] infeasible
+IDX 351723 S=[7, 8, 9, 10, 11, 12, 13, 14, 16, 20] infeasible
+IDX 351724 S=[7, 8, 9, 10, 11, 12, 13, 14, 17, 18] rankdef rank=8
+IDX 351725 S=[7, 8, 9, 10, 11, 12, 13, 14, 17, 19] rankdef rank=9
+IDX 351726 S=[7, 8, 9, 10, 11, 12, 13, 14, 17, 20] rankdef rank=9
+IDX 351727 S=[7, 8, 9, 10, 11, 12, 13, 14, 18, 19] rankdef rank=9
+IDX 351728 S=[7, 8, 9, 10, 11, 12, 13, 14, 18, 20] rankdef rank=9
+IDX 351729 S=[7, 8, 9, 10, 11, 12, 13, 14, 19, 20] infeasible
+IDX 351730 S=[7, 8, 9, 10, 11, 12, 13, 15, 16, 17] rankdef rank=9
+IDX 351731 S=[7, 8, 9, 10, 11, 12, 13, 15, 16, 18] rankdef rank=9
+IDX 351732 S=[7, 8, 9, 10, 11, 12, 13, 15, 16, 19] infeasible
+IDX 351733 S=[7, 8, 9, 10, 11, 12, 13, 15, 16, 20] infeasible
+IDX 351734 S=[7, 8, 9, 10, 11, 12, 13, 15, 17, 18] rankdef rank=8
+IDX 351735 S=[7, 8, 9, 10, 11, 12, 13, 15, 17, 19] rankdef rank=9
+IDX 351736 S=[7, 8, 9, 10, 11, 12, 13, 15, 17, 20] rankdef rank=9
+IDX 351737 S=[7, 8, 9, 10, 11, 12, 13, 15, 18, 19] rankdef rank=9
+IDX 351738 S=[7, 8, 9, 10, 11, 12, 13, 15, 18, 20] rankdef rank=9
+IDX 351739 S=[7, 8, 9, 10, 11, 12, 13, 15, 19, 20] infeasible
+IDX 351740 S=[7, 8, 9, 10, 11, 12, 13, 16, 17, 18] rankdef rank=8
+IDX 351741 S=[7, 8, 9, 10, 11, 12, 13, 16, 17, 19] rankdef rank=9
+IDX 351742 S=[7, 8, 9, 10, 11, 12, 13, 16, 17, 20] rankdef rank=9
+IDX 351743 S=[7, 8, 9, 10, 11, 12, 13, 16, 18, 19] rankdef rank=9
+IDX 351744 S=[7, 8, 9, 10, 11, 12, 13, 16, 18, 20] rankdef rank=9
+IDX 351745 S=[7, 8, 9, 10, 11, 12, 13, 16, 19, 20] infeasible
+IDX 351746 S=[7, 8, 9, 10, 11, 12, 13, 17, 18, 19] rankdef rank=8
+IDX 351747 S=[7, 8, 9, 10, 11, 12, 13, 17, 18, 20] rankdef rank=8
+IDX 351748 S=[7, 8, 9, 10, 11, 12, 13, 17, 19, 20] rankdef rank=9
+IDX 351749 S=[7, 8, 9, 10, 11, 12, 13, 18, 19, 20] rankdef rank=9
+IDX 351750 S=[7, 8, 9, 10, 11, 12, 14, 15, 16, 17] rankdef rank=9
+IDX 351751 S=[7, 8, 9, 10, 11, 12, 14, 15, 16, 18] rankdef rank=9
+IDX 351752 S=[7, 8, 9, 10, 11, 12, 14, 15, 16, 19] infeasible
+IDX 351753 S=[7, 8, 9, 10, 11, 12, 14, 15, 16, 20] infeasible
+IDX 351754 S=[7, 8, 9, 10, 11, 12, 14, 15, 17, 18] rankdef rank=8
+IDX 351755 S=[7, 8, 9, 10, 11, 12, 14, 15, 17, 19] rankdef rank=9
+IDX 351756 S=[7, 8, 9, 10, 11, 12, 14, 15, 17, 20] rankdef rank=9
+IDX 351757 S=[7, 8, 9, 10, 11, 12, 14, 15, 18, 19] rankdef rank=9
+IDX 351758 S=[7, 8, 9, 10, 11, 12, 14, 15, 18, 20] rankdef rank=9
+IDX 351759 S=[7, 8, 9, 10, 11, 12, 14, 15, 19, 20] infeasible
+IDX 351760 S=[7, 8, 9, 10, 11, 12, 14, 16, 17, 18] rankdef rank=8
+IDX 351761 S=[7, 8, 9, 10, 11, 12, 14, 16, 17, 19] rankdef rank=9
+IDX 351762 S=[7, 8, 9, 10, 11, 12, 14, 16, 17, 20] rankdef rank=9
+IDX 351763 S=[7, 8, 9, 10, 11, 12, 14, 16, 18, 19] rankdef rank=9
+IDX 351764 S=[7, 8, 9, 10, 11, 12, 14, 16, 18, 20] rankdef rank=9
+IDX 351765 S=[7, 8, 9, 10, 11, 12, 14, 16, 19, 20] infeasible
+IDX 351766 S=[7, 8, 9, 10, 11, 12, 14, 17, 18, 19] rankdef rank=8
+IDX 351767 S=[7, 8, 9, 10, 11, 12, 14, 17, 18, 20] rankdef rank=8
+IDX 351768 S=[7, 8, 9, 10, 11, 12, 14, 17, 19, 20] rankdef rank=9
+IDX 351769 S=[7, 8, 9, 10, 11, 12, 14, 18, 19, 20] rankdef rank=9
+IDX 351770 S=[7, 8, 9, 10, 11, 12, 15, 16, 17, 18] rankdef rank=8
+IDX 351771 S=[7, 8, 9, 10, 11, 12, 15, 16, 17, 19] rankdef rank=9
+IDX 351772 S=[7, 8, 9, 10, 11, 12, 15, 16, 17, 20] rankdef rank=9
+IDX 351773 S=[7, 8, 9, 10, 11, 12, 15, 16, 18, 19] rankdef rank=9
+IDX 351774 S=[7, 8, 9, 10, 11, 12, 15, 16, 18, 20] rankdef rank=9
+IDX 351775 S=[7, 8, 9, 10, 11, 12, 15, 16, 19, 20] infeasible
+IDX 351776 S=[7, 8, 9, 10, 11, 12, 15, 17, 18, 19] rankdef rank=8
+IDX 351777 S=[7, 8, 9, 10, 11, 12, 15, 17, 18, 20] rankdef rank=8
+IDX 351778 S=[7, 8, 9, 10, 11, 12, 15, 17, 19, 20] rankdef rank=9
+IDX 351779 S=[7, 8, 9, 10, 11, 12, 15, 18, 19, 20] rankdef rank=9
+IDX 351780 S=[7, 8, 9, 10, 11, 12, 16, 17, 18, 19] rankdef rank=8
+IDX 351781 S=[7, 8, 9, 10, 11, 12, 16, 17, 18, 20] rankdef rank=8
+IDX 351782 S=[7, 8, 9, 10, 11, 12, 16, 17, 19, 20] rankdef rank=9
+IDX 351783 S=[7, 8, 9, 10, 11, 12, 16, 18, 19, 20] rankdef rank=9
+IDX 351784 S=[7, 8, 9, 10, 11, 12, 17, 18, 19, 20] rankdef rank=8
+IDX 351785 S=[7, 8, 9, 10, 11, 13, 14, 15, 16, 17] rankdef rank=9
+IDX 351786 S=[7, 8, 9, 10, 11, 13, 14, 15, 16, 18] rankdef rank=9
+IDX 351787 S=[7, 8, 9, 10, 11, 13, 14, 15, 16, 19] infeasible
+IDX 351788 S=[7, 8, 9, 10, 11, 13, 14, 15, 16, 20] infeasible
+IDX 351789 S=[7, 8, 9, 10, 11, 13, 14, 15, 17, 18] rankdef rank=8
+IDX 351790 S=[7, 8, 9, 10, 11, 13, 14, 15, 17, 19] rankdef rank=9
+IDX 351791 S=[7, 8, 9, 10, 11, 13, 14, 15, 17, 20] rankdef rank=9
+IDX 351792 S=[7, 8, 9, 10, 11, 13, 14, 15, 18, 19] rankdef rank=9
+IDX 351793 S=[7, 8, 9, 10, 11, 13, 14, 15, 18, 20] rankdef rank=9
+IDX 351794 S=[7, 8, 9, 10, 11, 13, 14, 15, 19, 20] infeasible
+IDX 351795 S=[7, 8, 9, 10, 11, 13, 14, 16, 17, 18] rankdef rank=8
+IDX 351796 S=[7, 8, 9, 10, 11, 13, 14, 16, 17, 19] rankdef rank=9
+IDX 351797 S=[7, 8, 9, 10, 11, 13, 14, 16, 17, 20] rankdef rank=9
+IDX 351798 S=[7, 8, 9, 10, 11, 13, 14, 16, 18, 19] rankdef rank=9
+IDX 351799 S=[7, 8, 9, 10, 11, 13, 14, 16, 18, 20] rankdef rank=9
+IDX 351800 S=[7, 8, 9, 10, 11, 13, 14, 16, 19, 20] infeasible
+IDX 351801 S=[7, 8, 9, 10, 11, 13, 14, 17, 18, 19] rankdef rank=8
+IDX 351802 S=[7, 8, 9, 10, 11, 13, 14, 17, 18, 20] rankdef rank=8
+IDX 351803 S=[7, 8, 9, 10, 11, 13, 14, 17, 19, 20] rankdef rank=9
+IDX 351804 S=[7, 8, 9, 10, 11, 13, 14, 18, 19, 20] rankdef rank=9
+IDX 351805 S=[7, 8, 9, 10, 11, 13, 15, 16, 17, 18] rankdef rank=8
+IDX 351806 S=[7, 8, 9, 10, 11, 13, 15, 16, 17, 19] rankdef rank=9
+IDX 351807 S=[7, 8, 9, 10, 11, 13, 15, 16, 17, 20] rankdef rank=9
+IDX 351808 S=[7, 8, 9, 10, 11, 13, 15, 16, 18, 19] rankdef rank=9
+IDX 351809 S=[7, 8, 9, 10, 11, 13, 15, 16, 18, 20] rankdef rank=9
+IDX 351810 S=[7, 8, 9, 10, 11, 13, 15, 16, 19, 20] infeasible
+IDX 351811 S=[7, 8, 9, 10, 11, 13, 15, 17, 18, 19] rankdef rank=8
+IDX 351812 S=[7, 8, 9, 10, 11, 13, 15, 17, 18, 20] rankdef rank=8
+IDX 351813 S=[7, 8, 9, 10, 11, 13, 15, 17, 19, 20] rankdef rank=9
+IDX 351814 S=[7, 8, 9, 10, 11, 13, 15, 18, 19, 20] rankdef rank=9
+IDX 351815 S=[7, 8, 9, 10, 11, 13, 16, 17, 18, 19] rankdef rank=8
+IDX 351816 S=[7, 8, 9, 10, 11, 13, 16, 17, 18, 20] rankdef rank=8
+IDX 351817 S=[7, 8, 9, 10, 11, 13, 16, 17, 19, 20] rankdef rank=9
+IDX 351818 S=[7, 8, 9, 10, 11, 13, 16, 18, 19, 20] rankdef rank=9
+IDX 351819 S=[7, 8, 9, 10, 11, 13, 17, 18, 19, 20] rankdef rank=8
+IDX 351820 S=[7, 8, 9, 10, 11, 14, 15, 16, 17, 18] rankdef rank=8
+IDX 351821 S=[7, 8, 9, 10, 11, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 351822 S=[7, 8, 9, 10, 11, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 351823 S=[7, 8, 9, 10, 11, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 351824 S=[7, 8, 9, 10, 11, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 351825 S=[7, 8, 9, 10, 11, 14, 15, 16, 19, 20] infeasible
+IDX 351826 S=[7, 8, 9, 10, 11, 14, 15, 17, 18, 19] rankdef rank=8
+IDX 351827 S=[7, 8, 9, 10, 11, 14, 15, 17, 18, 20] rankdef rank=8
+IDX 351828 S=[7, 8, 9, 10, 11, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 351829 S=[7, 8, 9, 10, 11, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 351830 S=[7, 8, 9, 10, 11, 14, 16, 17, 18, 19] rankdef rank=8
+IDX 351831 S=[7, 8, 9, 10, 11, 14, 16, 17, 18, 20] rankdef rank=8
+IDX 351832 S=[7, 8, 9, 10, 11, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 351833 S=[7, 8, 9, 10, 11, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 351834 S=[7, 8, 9, 10, 11, 14, 17, 18, 19, 20] rankdef rank=8
+IDX 351835 S=[7, 8, 9, 10, 11, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 351836 S=[7, 8, 9, 10, 11, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 351837 S=[7, 8, 9, 10, 11, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 351838 S=[7, 8, 9, 10, 11, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 351839 S=[7, 8, 9, 10, 11, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 351840 S=[7, 8, 9, 10, 11, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 351841 S=[7, 8, 9, 10, 12, 13, 14, 15, 16, 17] rankdef rank=9
+IDX 351842 S=[7, 8, 9, 10, 12, 13, 14, 15, 16, 18] rankdef rank=9
+IDX 351843 S=[7, 8, 9, 10, 12, 13, 14, 15, 16, 19] infeasible
+IDX 351844 S=[7, 8, 9, 10, 12, 13, 14, 15, 16, 20] infeasible
+IDX 351845 S=[7, 8, 9, 10, 12, 13, 14, 15, 17, 18] rankdef rank=8
+IDX 351846 S=[7, 8, 9, 10, 12, 13, 14, 15, 17, 19] rankdef rank=9
+IDX 351847 S=[7, 8, 9, 10, 12, 13, 14, 15, 17, 20] rankdef rank=9
+IDX 351848 S=[7, 8, 9, 10, 12, 13, 14, 15, 18, 19] rankdef rank=9
+IDX 351849 S=[7, 8, 9, 10, 12, 13, 14, 15, 18, 20] rankdef rank=9
+IDX 351850 S=[7, 8, 9, 10, 12, 13, 14, 15, 19, 20] infeasible
+IDX 351851 S=[7, 8, 9, 10, 12, 13, 14, 16, 17, 18] rankdef rank=8
+IDX 351852 S=[7, 8, 9, 10, 12, 13, 14, 16, 17, 19] rankdef rank=9
+IDX 351853 S=[7, 8, 9, 10, 12, 13, 14, 16, 17, 20] rankdef rank=9
+IDX 351854 S=[7, 8, 9, 10, 12, 13, 14, 16, 18, 19] rankdef rank=9
+IDX 351855 S=[7, 8, 9, 10, 12, 13, 14, 16, 18, 20] rankdef rank=9
+IDX 351856 S=[7, 8, 9, 10, 12, 13, 14, 16, 19, 20] infeasible
+IDX 351857 S=[7, 8, 9, 10, 12, 13, 14, 17, 18, 19] rankdef rank=8
+IDX 351858 S=[7, 8, 9, 10, 12, 13, 14, 17, 18, 20] rankdef rank=8
+IDX 351859 S=[7, 8, 9, 10, 12, 13, 14, 17, 19, 20] rankdef rank=9
+IDX 351860 S=[7, 8, 9, 10, 12, 13, 14, 18, 19, 20] rankdef rank=9
+IDX 351861 S=[7, 8, 9, 10, 12, 13, 15, 16, 17, 18] rankdef rank=8
+IDX 351862 S=[7, 8, 9, 10, 12, 13, 15, 16, 17, 19] rankdef rank=9
+IDX 351863 S=[7, 8, 9, 10, 12, 13, 15, 16, 17, 20] rankdef rank=9
+IDX 351864 S=[7, 8, 9, 10, 12, 13, 15, 16, 18, 19] rankdef rank=9
+IDX 351865 S=[7, 8, 9, 10, 12, 13, 15, 16, 18, 20] rankdef rank=9
+IDX 351866 S=[7, 8, 9, 10, 12, 13, 15, 16, 19, 20] infeasible
+IDX 351867 S=[7, 8, 9, 10, 12, 13, 15, 17, 18, 19] rankdef rank=8
+IDX 351868 S=[7, 8, 9, 10, 12, 13, 15, 17, 18, 20] rankdef rank=8
+IDX 351869 S=[7, 8, 9, 10, 12, 13, 15, 17, 19, 20] rankdef rank=9
+IDX 351870 S=[7, 8, 9, 10, 12, 13, 15, 18, 19, 20] rankdef rank=9
+IDX 351871 S=[7, 8, 9, 10, 12, 13, 16, 17, 18, 19] rankdef rank=8
+IDX 351872 S=[7, 8, 9, 10, 12, 13, 16, 17, 18, 20] rankdef rank=8
+IDX 351873 S=[7, 8, 9, 10, 12, 13, 16, 17, 19, 20] rankdef rank=9
+IDX 351874 S=[7, 8, 9, 10, 12, 13, 16, 18, 19, 20] rankdef rank=9
+IDX 351875 S=[7, 8, 9, 10, 12, 13, 17, 18, 19, 20] rankdef rank=8
+IDX 351876 S=[7, 8, 9, 10, 12, 14, 15, 16, 17, 18] rankdef rank=8
+IDX 351877 S=[7, 8, 9, 10, 12, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 351878 S=[7, 8, 9, 10, 12, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 351879 S=[7, 8, 9, 10, 12, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 351880 S=[7, 8, 9, 10, 12, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 351881 S=[7, 8, 9, 10, 12, 14, 15, 16, 19, 20] infeasible
+IDX 351882 S=[7, 8, 9, 10, 12, 14, 15, 17, 18, 19] rankdef rank=8
+IDX 351883 S=[7, 8, 9, 10, 12, 14, 15, 17, 18, 20] rankdef rank=8
+IDX 351884 S=[7, 8, 9, 10, 12, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 351885 S=[7, 8, 9, 10, 12, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 351886 S=[7, 8, 9, 10, 12, 14, 16, 17, 18, 19] rankdef rank=8
+IDX 351887 S=[7, 8, 9, 10, 12, 14, 16, 17, 18, 20] rankdef rank=8
+IDX 351888 S=[7, 8, 9, 10, 12, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 351889 S=[7, 8, 9, 10, 12, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 351890 S=[7, 8, 9, 10, 12, 14, 17, 18, 19, 20] rankdef rank=8
+IDX 351891 S=[7, 8, 9, 10, 12, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 351892 S=[7, 8, 9, 10, 12, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 351893 S=[7, 8, 9, 10, 12, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 351894 S=[7, 8, 9, 10, 12, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 351895 S=[7, 8, 9, 10, 12, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 351896 S=[7, 8, 9, 10, 12, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 351897 S=[7, 8, 9, 10, 13, 14, 15, 16, 17, 18] rankdef rank=8
+IDX 351898 S=[7, 8, 9, 10, 13, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 351899 S=[7, 8, 9, 10, 13, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 351900 S=[7, 8, 9, 10, 13, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 351901 S=[7, 8, 9, 10, 13, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 351902 S=[7, 8, 9, 10, 13, 14, 15, 16, 19, 20] infeasible
+IDX 351903 S=[7, 8, 9, 10, 13, 14, 15, 17, 18, 19] rankdef rank=8
+IDX 351904 S=[7, 8, 9, 10, 13, 14, 15, 17, 18, 20] rankdef rank=8
+IDX 351905 S=[7, 8, 9, 10, 13, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 351906 S=[7, 8, 9, 10, 13, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 351907 S=[7, 8, 9, 10, 13, 14, 16, 17, 18, 19] rankdef rank=8
+IDX 351908 S=[7, 8, 9, 10, 13, 14, 16, 17, 18, 20] rankdef rank=8
+IDX 351909 S=[7, 8, 9, 10, 13, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 351910 S=[7, 8, 9, 10, 13, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 351911 S=[7, 8, 9, 10, 13, 14, 17, 18, 19, 20] rankdef rank=8
+IDX 351912 S=[7, 8, 9, 10, 13, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 351913 S=[7, 8, 9, 10, 13, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 351914 S=[7, 8, 9, 10, 13, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 351915 S=[7, 8, 9, 10, 13, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 351916 S=[7, 8, 9, 10, 13, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 351917 S=[7, 8, 9, 10, 13, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 351918 S=[7, 8, 9, 10, 14, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 351919 S=[7, 8, 9, 10, 14, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 351920 S=[7, 8, 9, 10, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 351921 S=[7, 8, 9, 10, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 351922 S=[7, 8, 9, 10, 14, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 351923 S=[7, 8, 9, 10, 14, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 351924 S=[7, 8, 9, 10, 15, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 351925 S=[7, 8, 9, 11, 12, 13, 14, 15, 16, 17] rankdef rank=9
+IDX 351926 S=[7, 8, 9, 11, 12, 13, 14, 15, 16, 18] rankdef rank=9
+IDX 351927 S=[7, 8, 9, 11, 12, 13, 14, 15, 16, 19] infeasible
+IDX 351928 S=[7, 8, 9, 11, 12, 13, 14, 15, 16, 20] infeasible
+IDX 351929 S=[7, 8, 9, 11, 12, 13, 14, 15, 17, 18] rankdef rank=8
+IDX 351930 S=[7, 8, 9, 11, 12, 13, 14, 15, 17, 19] rankdef rank=9
+IDX 351931 S=[7, 8, 9, 11, 12, 13, 14, 15, 17, 20] rankdef rank=9
+IDX 351932 S=[7, 8, 9, 11, 12, 13, 14, 15, 18, 19] rankdef rank=9
+IDX 351933 S=[7, 8, 9, 11, 12, 13, 14, 15, 18, 20] rankdef rank=9
+IDX 351934 S=[7, 8, 9, 11, 12, 13, 14, 15, 19, 20] infeasible
+IDX 351935 S=[7, 8, 9, 11, 12, 13, 14, 16, 17, 18] rankdef rank=8
+IDX 351936 S=[7, 8, 9, 11, 12, 13, 14, 16, 17, 19] rankdef rank=9
+IDX 351937 S=[7, 8, 9, 11, 12, 13, 14, 16, 17, 20] rankdef rank=9
+IDX 351938 S=[7, 8, 9, 11, 12, 13, 14, 16, 18, 19] rankdef rank=9
+IDX 351939 S=[7, 8, 9, 11, 12, 13, 14, 16, 18, 20] rankdef rank=9
+IDX 351940 S=[7, 8, 9, 11, 12, 13, 14, 16, 19, 20] infeasible
+IDX 351941 S=[7, 8, 9, 11, 12, 13, 14, 17, 18, 19] rankdef rank=8
+IDX 351942 S=[7, 8, 9, 11, 12, 13, 14, 17, 18, 20] rankdef rank=8
+IDX 351943 S=[7, 8, 9, 11, 12, 13, 14, 17, 19, 20] rankdef rank=9
+IDX 351944 S=[7, 8, 9, 11, 12, 13, 14, 18, 19, 20] rankdef rank=9
+IDX 351945 S=[7, 8, 9, 11, 12, 13, 15, 16, 17, 18] rankdef rank=8
+IDX 351946 S=[7, 8, 9, 11, 12, 13, 15, 16, 17, 19] rankdef rank=9
+IDX 351947 S=[7, 8, 9, 11, 12, 13, 15, 16, 17, 20] rankdef rank=9
+IDX 351948 S=[7, 8, 9, 11, 12, 13, 15, 16, 18, 19] rankdef rank=9
+IDX 351949 S=[7, 8, 9, 11, 12, 13, 15, 16, 18, 20] rankdef rank=9
+IDX 351950 S=[7, 8, 9, 11, 12, 13, 15, 16, 19, 20] infeasible
+IDX 351951 S=[7, 8, 9, 11, 12, 13, 15, 17, 18, 19] rankdef rank=8
+IDX 351952 S=[7, 8, 9, 11, 12, 13, 15, 17, 18, 20] rankdef rank=8
+IDX 351953 S=[7, 8, 9, 11, 12, 13, 15, 17, 19, 20] rankdef rank=9
+IDX 351954 S=[7, 8, 9, 11, 12, 13, 15, 18, 19, 20] rankdef rank=9
+IDX 351955 S=[7, 8, 9, 11, 12, 13, 16, 17, 18, 19] rankdef rank=8
+IDX 351956 S=[7, 8, 9, 11, 12, 13, 16, 17, 18, 20] rankdef rank=8
+IDX 351957 S=[7, 8, 9, 11, 12, 13, 16, 17, 19, 20] rankdef rank=9
+IDX 351958 S=[7, 8, 9, 11, 12, 13, 16, 18, 19, 20] rankdef rank=9
+IDX 351959 S=[7, 8, 9, 11, 12, 13, 17, 18, 19, 20] rankdef rank=8
+IDX 351960 S=[7, 8, 9, 11, 12, 14, 15, 16, 17, 18] rankdef rank=8
+IDX 351961 S=[7, 8, 9, 11, 12, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 351962 S=[7, 8, 9, 11, 12, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 351963 S=[7, 8, 9, 11, 12, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 351964 S=[7, 8, 9, 11, 12, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 351965 S=[7, 8, 9, 11, 12, 14, 15, 16, 19, 20] infeasible
+IDX 351966 S=[7, 8, 9, 11, 12, 14, 15, 17, 18, 19] rankdef rank=8
+IDX 351967 S=[7, 8, 9, 11, 12, 14, 15, 17, 18, 20] rankdef rank=8
+IDX 351968 S=[7, 8, 9, 11, 12, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 351969 S=[7, 8, 9, 11, 12, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 351970 S=[7, 8, 9, 11, 12, 14, 16, 17, 18, 19] rankdef rank=8
+IDX 351971 S=[7, 8, 9, 11, 12, 14, 16, 17, 18, 20] rankdef rank=8
+IDX 351972 S=[7, 8, 9, 11, 12, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 351973 S=[7, 8, 9, 11, 12, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 351974 S=[7, 8, 9, 11, 12, 14, 17, 18, 19, 20] rankdef rank=8
+IDX 351975 S=[7, 8, 9, 11, 12, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 351976 S=[7, 8, 9, 11, 12, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 351977 S=[7, 8, 9, 11, 12, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 351978 S=[7, 8, 9, 11, 12, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 351979 S=[7, 8, 9, 11, 12, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 351980 S=[7, 8, 9, 11, 12, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 351981 S=[7, 8, 9, 11, 13, 14, 15, 16, 17, 18] rankdef rank=8
+IDX 351982 S=[7, 8, 9, 11, 13, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 351983 S=[7, 8, 9, 11, 13, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 351984 S=[7, 8, 9, 11, 13, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 351985 S=[7, 8, 9, 11, 13, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 351986 S=[7, 8, 9, 11, 13, 14, 15, 16, 19, 20] infeasible
+IDX 351987 S=[7, 8, 9, 11, 13, 14, 15, 17, 18, 19] rankdef rank=8
+IDX 351988 S=[7, 8, 9, 11, 13, 14, 15, 17, 18, 20] rankdef rank=8
+IDX 351989 S=[7, 8, 9, 11, 13, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 351990 S=[7, 8, 9, 11, 13, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 351991 S=[7, 8, 9, 11, 13, 14, 16, 17, 18, 19] rankdef rank=8
+IDX 351992 S=[7, 8, 9, 11, 13, 14, 16, 17, 18, 20] rankdef rank=8
+IDX 351993 S=[7, 8, 9, 11, 13, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 351994 S=[7, 8, 9, 11, 13, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 351995 S=[7, 8, 9, 11, 13, 14, 17, 18, 19, 20] rankdef rank=8
+IDX 351996 S=[7, 8, 9, 11, 13, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 351997 S=[7, 8, 9, 11, 13, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 351998 S=[7, 8, 9, 11, 13, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 351999 S=[7, 8, 9, 11, 13, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352000 S=[7, 8, 9, 11, 13, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 352001 S=[7, 8, 9, 11, 13, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352002 S=[7, 8, 9, 11, 14, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 352003 S=[7, 8, 9, 11, 14, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 352004 S=[7, 8, 9, 11, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352005 S=[7, 8, 9, 11, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352006 S=[7, 8, 9, 11, 14, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 352007 S=[7, 8, 9, 11, 14, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352008 S=[7, 8, 9, 11, 15, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352009 S=[7, 8, 9, 12, 13, 14, 15, 16, 17, 18] rankdef rank=8
+IDX 352010 S=[7, 8, 9, 12, 13, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 352011 S=[7, 8, 9, 12, 13, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 352012 S=[7, 8, 9, 12, 13, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 352013 S=[7, 8, 9, 12, 13, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 352014 S=[7, 8, 9, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352015 S=[7, 8, 9, 12, 13, 14, 15, 17, 18, 19] rankdef rank=8
+IDX 352016 S=[7, 8, 9, 12, 13, 14, 15, 17, 18, 20] rankdef rank=8
+IDX 352017 S=[7, 8, 9, 12, 13, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 352018 S=[7, 8, 9, 12, 13, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 352019 S=[7, 8, 9, 12, 13, 14, 16, 17, 18, 19] rankdef rank=8
+IDX 352020 S=[7, 8, 9, 12, 13, 14, 16, 17, 18, 20] rankdef rank=8
+IDX 352021 S=[7, 8, 9, 12, 13, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 352022 S=[7, 8, 9, 12, 13, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 352023 S=[7, 8, 9, 12, 13, 14, 17, 18, 19, 20] rankdef rank=8
+IDX 352024 S=[7, 8, 9, 12, 13, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 352025 S=[7, 8, 9, 12, 13, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 352026 S=[7, 8, 9, 12, 13, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352027 S=[7, 8, 9, 12, 13, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352028 S=[7, 8, 9, 12, 13, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 352029 S=[7, 8, 9, 12, 13, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352030 S=[7, 8, 9, 12, 14, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 352031 S=[7, 8, 9, 12, 14, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 352032 S=[7, 8, 9, 12, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352033 S=[7, 8, 9, 12, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352034 S=[7, 8, 9, 12, 14, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 352035 S=[7, 8, 9, 12, 14, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352036 S=[7, 8, 9, 12, 15, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352037 S=[7, 8, 9, 13, 14, 15, 16, 17, 18, 19] rankdef rank=8
+IDX 352038 S=[7, 8, 9, 13, 14, 15, 16, 17, 18, 20] rankdef rank=8
+IDX 352039 S=[7, 8, 9, 13, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352040 S=[7, 8, 9, 13, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352041 S=[7, 8, 9, 13, 14, 15, 17, 18, 19, 20] rankdef rank=8
+IDX 352042 S=[7, 8, 9, 13, 14, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352043 S=[7, 8, 9, 13, 15, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352044 S=[7, 8, 9, 14, 15, 16, 17, 18, 19, 20] rankdef rank=8
+IDX 352045 S=[7, 8, 10, 11, 12, 13, 14, 15, 16, 17] rankdef rank=9
+IDX 352046 S=[7, 8, 10, 11, 12, 13, 14, 15, 16, 18] infeasible
+IDX 352047 S=[7, 8, 10, 11, 12, 13, 14, 15, 16, 19] infeasible
+IDX 352048 S=[7, 8, 10, 11, 12, 13, 14, 15, 16, 20] infeasible
+IDX 352049 S=[7, 8, 10, 11, 12, 13, 14, 15, 17, 18] rankdef rank=9
+IDX 352050 S=[7, 8, 10, 11, 12, 13, 14, 15, 17, 19] rankdef rank=9
+IDX 352051 S=[7, 8, 10, 11, 12, 13, 14, 15, 17, 20] rankdef rank=9
+IDX 352052 S=[7, 8, 10, 11, 12, 13, 14, 15, 18, 19] infeasible
+IDX 352053 S=[7, 8, 10, 11, 12, 13, 14, 15, 18, 20] infeasible
+IDX 352054 S=[7, 8, 10, 11, 12, 13, 14, 15, 19, 20] infeasible
+IDX 352055 S=[7, 8, 10, 11, 12, 13, 14, 16, 17, 18] rankdef rank=9
+IDX 352056 S=[7, 8, 10, 11, 12, 13, 14, 16, 17, 19] rankdef rank=9
+IDX 352057 S=[7, 8, 10, 11, 12, 13, 14, 16, 17, 20] rankdef rank=9
+IDX 352058 S=[7, 8, 10, 11, 12, 13, 14, 16, 18, 19] infeasible
+IDX 352059 S=[7, 8, 10, 11, 12, 13, 14, 16, 18, 20] infeasible
+IDX 352060 S=[7, 8, 10, 11, 12, 13, 14, 16, 19, 20] infeasible
+IDX 352061 S=[7, 8, 10, 11, 12, 13, 14, 17, 18, 19] rankdef rank=9
+IDX 352062 S=[7, 8, 10, 11, 12, 13, 14, 17, 18, 20] rankdef rank=9
+IDX 352063 S=[7, 8, 10, 11, 12, 13, 14, 17, 19, 20] rankdef rank=9
+IDX 352064 S=[7, 8, 10, 11, 12, 13, 14, 18, 19, 20] infeasible
+IDX 352065 S=[7, 8, 10, 11, 12, 13, 15, 16, 17, 18] rankdef rank=9
+IDX 352066 S=[7, 8, 10, 11, 12, 13, 15, 16, 17, 19] rankdef rank=9
+IDX 352067 S=[7, 8, 10, 11, 12, 13, 15, 16, 17, 20] rankdef rank=9
+IDX 352068 S=[7, 8, 10, 11, 12, 13, 15, 16, 18, 19] infeasible
+IDX 352069 S=[7, 8, 10, 11, 12, 13, 15, 16, 18, 20] infeasible
+IDX 352070 S=[7, 8, 10, 11, 12, 13, 15, 16, 19, 20] infeasible
+IDX 352071 S=[7, 8, 10, 11, 12, 13, 15, 17, 18, 19] rankdef rank=9
+IDX 352072 S=[7, 8, 10, 11, 12, 13, 15, 17, 18, 20] rankdef rank=9
+IDX 352073 S=[7, 8, 10, 11, 12, 13, 15, 17, 19, 20] rankdef rank=9
+IDX 352074 S=[7, 8, 10, 11, 12, 13, 15, 18, 19, 20] infeasible
+IDX 352075 S=[7, 8, 10, 11, 12, 13, 16, 17, 18, 19] rankdef rank=9
+IDX 352076 S=[7, 8, 10, 11, 12, 13, 16, 17, 18, 20] rankdef rank=9
+IDX 352077 S=[7, 8, 10, 11, 12, 13, 16, 17, 19, 20] rankdef rank=9
+IDX 352078 S=[7, 8, 10, 11, 12, 13, 16, 18, 19, 20] infeasible
+IDX 352079 S=[7, 8, 10, 11, 12, 13, 17, 18, 19, 20] rankdef rank=9
+IDX 352080 S=[7, 8, 10, 11, 12, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352081 S=[7, 8, 10, 11, 12, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 352082 S=[7, 8, 10, 11, 12, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 352083 S=[7, 8, 10, 11, 12, 14, 15, 16, 18, 19] infeasible
+IDX 352084 S=[7, 8, 10, 11, 12, 14, 15, 16, 18, 20] infeasible
+IDX 352085 S=[7, 8, 10, 11, 12, 14, 15, 16, 19, 20] infeasible
+IDX 352086 S=[7, 8, 10, 11, 12, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352087 S=[7, 8, 10, 11, 12, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352088 S=[7, 8, 10, 11, 12, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 352089 S=[7, 8, 10, 11, 12, 14, 15, 18, 19, 20] infeasible
+IDX 352090 S=[7, 8, 10, 11, 12, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352091 S=[7, 8, 10, 11, 12, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352092 S=[7, 8, 10, 11, 12, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 352093 S=[7, 8, 10, 11, 12, 14, 16, 18, 19, 20] infeasible
+IDX 352094 S=[7, 8, 10, 11, 12, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352095 S=[7, 8, 10, 11, 12, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352096 S=[7, 8, 10, 11, 12, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352097 S=[7, 8, 10, 11, 12, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352098 S=[7, 8, 10, 11, 12, 15, 16, 18, 19, 20] infeasible
+IDX 352099 S=[7, 8, 10, 11, 12, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352100 S=[7, 8, 10, 11, 12, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352101 S=[7, 8, 10, 11, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352102 S=[7, 8, 10, 11, 13, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 352103 S=[7, 8, 10, 11, 13, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 352104 S=[7, 8, 10, 11, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352105 S=[7, 8, 10, 11, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352106 S=[7, 8, 10, 11, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352107 S=[7, 8, 10, 11, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352108 S=[7, 8, 10, 11, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352109 S=[7, 8, 10, 11, 13, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 352110 S=[7, 8, 10, 11, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352111 S=[7, 8, 10, 11, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352112 S=[7, 8, 10, 11, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352113 S=[7, 8, 10, 11, 13, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 352114 S=[7, 8, 10, 11, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352115 S=[7, 8, 10, 11, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352116 S=[7, 8, 10, 11, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352117 S=[7, 8, 10, 11, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352118 S=[7, 8, 10, 11, 13, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352119 S=[7, 8, 10, 11, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352120 S=[7, 8, 10, 11, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352121 S=[7, 8, 10, 11, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352122 S=[7, 8, 10, 11, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352123 S=[7, 8, 10, 11, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352124 S=[7, 8, 10, 11, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352125 S=[7, 8, 10, 11, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352126 S=[7, 8, 10, 11, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352127 S=[7, 8, 10, 11, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352128 S=[7, 8, 10, 11, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352129 S=[7, 8, 10, 12, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352130 S=[7, 8, 10, 12, 13, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 352131 S=[7, 8, 10, 12, 13, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 352132 S=[7, 8, 10, 12, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352133 S=[7, 8, 10, 12, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352134 S=[7, 8, 10, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352135 S=[7, 8, 10, 12, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352136 S=[7, 8, 10, 12, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352137 S=[7, 8, 10, 12, 13, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 352138 S=[7, 8, 10, 12, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352139 S=[7, 8, 10, 12, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352140 S=[7, 8, 10, 12, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352141 S=[7, 8, 10, 12, 13, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 352142 S=[7, 8, 10, 12, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352143 S=[7, 8, 10, 12, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352144 S=[7, 8, 10, 12, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352145 S=[7, 8, 10, 12, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352146 S=[7, 8, 10, 12, 13, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352147 S=[7, 8, 10, 12, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352148 S=[7, 8, 10, 12, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352149 S=[7, 8, 10, 12, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352150 S=[7, 8, 10, 12, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352151 S=[7, 8, 10, 12, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352152 S=[7, 8, 10, 12, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352153 S=[7, 8, 10, 12, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352154 S=[7, 8, 10, 12, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352155 S=[7, 8, 10, 12, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352156 S=[7, 8, 10, 12, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352157 S=[7, 8, 10, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352158 S=[7, 8, 10, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352159 S=[7, 8, 10, 13, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352160 S=[7, 8, 10, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352161 S=[7, 8, 10, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352162 S=[7, 8, 10, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352163 S=[7, 8, 10, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352164 S=[7, 8, 10, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352165 S=[7, 8, 11, 12, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352166 S=[7, 8, 11, 12, 13, 14, 15, 16, 17, 19] rankdef rank=9
+IDX 352167 S=[7, 8, 11, 12, 13, 14, 15, 16, 17, 20] rankdef rank=9
+IDX 352168 S=[7, 8, 11, 12, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352169 S=[7, 8, 11, 12, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352170 S=[7, 8, 11, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352171 S=[7, 8, 11, 12, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352172 S=[7, 8, 11, 12, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352173 S=[7, 8, 11, 12, 13, 14, 15, 17, 19, 20] rankdef rank=9
+IDX 352174 S=[7, 8, 11, 12, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352175 S=[7, 8, 11, 12, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352176 S=[7, 8, 11, 12, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352177 S=[7, 8, 11, 12, 13, 14, 16, 17, 19, 20] rankdef rank=9
+IDX 352178 S=[7, 8, 11, 12, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352179 S=[7, 8, 11, 12, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352180 S=[7, 8, 11, 12, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352181 S=[7, 8, 11, 12, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352182 S=[7, 8, 11, 12, 13, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352183 S=[7, 8, 11, 12, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352184 S=[7, 8, 11, 12, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352185 S=[7, 8, 11, 12, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352186 S=[7, 8, 11, 12, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352187 S=[7, 8, 11, 12, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352188 S=[7, 8, 11, 12, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352189 S=[7, 8, 11, 12, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352190 S=[7, 8, 11, 12, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352191 S=[7, 8, 11, 12, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352192 S=[7, 8, 11, 12, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352193 S=[7, 8, 11, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352194 S=[7, 8, 11, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352195 S=[7, 8, 11, 13, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352196 S=[7, 8, 11, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352197 S=[7, 8, 11, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352198 S=[7, 8, 11, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352199 S=[7, 8, 11, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352200 S=[7, 8, 11, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352201 S=[7, 8, 12, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352202 S=[7, 8, 12, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352203 S=[7, 8, 12, 13, 14, 15, 16, 17, 19, 20] rankdef rank=9
+IDX 352204 S=[7, 8, 12, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352205 S=[7, 8, 12, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352206 S=[7, 8, 12, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352207 S=[7, 8, 12, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352208 S=[7, 8, 12, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352209 S=[7, 8, 13, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352210 S=[7, 9, 10, 11, 12, 13, 14, 15, 16, 17] infeasible
+IDX 352211 S=[7, 9, 10, 11, 12, 13, 14, 15, 16, 18] infeasible
+IDX 352212 S=[7, 9, 10, 11, 12, 13, 14, 15, 16, 19] rankdef rank=9
+IDX 352213 S=[7, 9, 10, 11, 12, 13, 14, 15, 16, 20] infeasible
+IDX 352214 S=[7, 9, 10, 11, 12, 13, 14, 15, 17, 18] rankdef rank=9
+IDX 352215 S=[7, 9, 10, 11, 12, 13, 14, 15, 17, 19] infeasible
+IDX 352216 S=[7, 9, 10, 11, 12, 13, 14, 15, 17, 20] infeasible
+IDX 352217 S=[7, 9, 10, 11, 12, 13, 14, 15, 18, 19] infeasible
+IDX 352218 S=[7, 9, 10, 11, 12, 13, 14, 15, 18, 20] infeasible
+IDX 352219 S=[7, 9, 10, 11, 12, 13, 14, 15, 19, 20] infeasible
+IDX 352220 S=[7, 9, 10, 11, 12, 13, 14, 16, 17, 18] rankdef rank=9
+IDX 352221 S=[7, 9, 10, 11, 12, 13, 14, 16, 17, 19] infeasible
+IDX 352222 S=[7, 9, 10, 11, 12, 13, 14, 16, 17, 20] infeasible
+IDX 352223 S=[7, 9, 10, 11, 12, 13, 14, 16, 18, 19] infeasible
+IDX 352224 S=[7, 9, 10, 11, 12, 13, 14, 16, 18, 20] infeasible
+IDX 352225 S=[7, 9, 10, 11, 12, 13, 14, 16, 19, 20] infeasible
+IDX 352226 S=[7, 9, 10, 11, 12, 13, 14, 17, 18, 19] rankdef rank=9
+IDX 352227 S=[7, 9, 10, 11, 12, 13, 14, 17, 18, 20] rankdef rank=9
+IDX 352228 S=[7, 9, 10, 11, 12, 13, 14, 17, 19, 20] infeasible
+IDX 352229 S=[7, 9, 10, 11, 12, 13, 14, 18, 19, 20] infeasible
+IDX 352230 S=[7, 9, 10, 11, 12, 13, 15, 16, 17, 18] rankdef rank=9
+IDX 352231 S=[7, 9, 10, 11, 12, 13, 15, 16, 17, 19] infeasible
+IDX 352232 S=[7, 9, 10, 11, 12, 13, 15, 16, 17, 20] infeasible
+IDX 352233 S=[7, 9, 10, 11, 12, 13, 15, 16, 18, 19] infeasible
+IDX 352234 S=[7, 9, 10, 11, 12, 13, 15, 16, 18, 20] infeasible
+IDX 352235 S=[7, 9, 10, 11, 12, 13, 15, 16, 19, 20] infeasible
+IDX 352236 S=[7, 9, 10, 11, 12, 13, 15, 17, 18, 19] rankdef rank=9
+IDX 352237 S=[7, 9, 10, 11, 12, 13, 15, 17, 18, 20] rankdef rank=9
+IDX 352238 S=[7, 9, 10, 11, 12, 13, 15, 17, 19, 20] infeasible
+IDX 352239 S=[7, 9, 10, 11, 12, 13, 15, 18, 19, 20] infeasible
+IDX 352240 S=[7, 9, 10, 11, 12, 13, 16, 17, 18, 19] rankdef rank=9
+IDX 352241 S=[7, 9, 10, 11, 12, 13, 16, 17, 18, 20] rankdef rank=9
+IDX 352242 S=[7, 9, 10, 11, 12, 13, 16, 17, 19, 20] infeasible
+IDX 352243 S=[7, 9, 10, 11, 12, 13, 16, 18, 19, 20] infeasible
+IDX 352244 S=[7, 9, 10, 11, 12, 13, 17, 18, 19, 20] rankdef rank=9
+IDX 352245 S=[7, 9, 10, 11, 12, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352246 S=[7, 9, 10, 11, 12, 14, 15, 16, 17, 19] infeasible
+IDX 352247 S=[7, 9, 10, 11, 12, 14, 15, 16, 17, 20] infeasible
+IDX 352248 S=[7, 9, 10, 11, 12, 14, 15, 16, 18, 19] infeasible
+IDX 352249 S=[7, 9, 10, 11, 12, 14, 15, 16, 18, 20] infeasible
+IDX 352250 S=[7, 9, 10, 11, 12, 14, 15, 16, 19, 20] infeasible
+IDX 352251 S=[7, 9, 10, 11, 12, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352252 S=[7, 9, 10, 11, 12, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352253 S=[7, 9, 10, 11, 12, 14, 15, 17, 19, 20] infeasible
+IDX 352254 S=[7, 9, 10, 11, 12, 14, 15, 18, 19, 20] infeasible
+IDX 352255 S=[7, 9, 10, 11, 12, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352256 S=[7, 9, 10, 11, 12, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352257 S=[7, 9, 10, 11, 12, 14, 16, 17, 19, 20] infeasible
+IDX 352258 S=[7, 9, 10, 11, 12, 14, 16, 18, 19, 20] infeasible
+IDX 352259 S=[7, 9, 10, 11, 12, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352260 S=[7, 9, 10, 11, 12, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352261 S=[7, 9, 10, 11, 12, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352262 S=[7, 9, 10, 11, 12, 15, 16, 17, 19, 20] infeasible
+IDX 352263 S=[7, 9, 10, 11, 12, 15, 16, 18, 19, 20] infeasible
+IDX 352264 S=[7, 9, 10, 11, 12, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352265 S=[7, 9, 10, 11, 12, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352266 S=[7, 9, 10, 11, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352267 S=[7, 9, 10, 11, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352268 S=[7, 9, 10, 11, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352269 S=[7, 9, 10, 11, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352270 S=[7, 9, 10, 11, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352271 S=[7, 9, 10, 11, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352272 S=[7, 9, 10, 11, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352273 S=[7, 9, 10, 11, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352274 S=[7, 9, 10, 11, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352275 S=[7, 9, 10, 11, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352276 S=[7, 9, 10, 11, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352277 S=[7, 9, 10, 11, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352278 S=[7, 9, 10, 11, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352279 S=[7, 9, 10, 11, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352280 S=[7, 9, 10, 11, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352281 S=[7, 9, 10, 11, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352282 S=[7, 9, 10, 11, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352283 S=[7, 9, 10, 11, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352284 S=[7, 9, 10, 11, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352285 S=[7, 9, 10, 11, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352286 S=[7, 9, 10, 11, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352287 S=[7, 9, 10, 11, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352288 S=[7, 9, 10, 11, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352289 S=[7, 9, 10, 11, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352290 S=[7, 9, 10, 11, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352291 S=[7, 9, 10, 11, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352292 S=[7, 9, 10, 11, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352293 S=[7, 9, 10, 11, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352294 S=[7, 9, 10, 12, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352295 S=[7, 9, 10, 12, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352296 S=[7, 9, 10, 12, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352297 S=[7, 9, 10, 12, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352298 S=[7, 9, 10, 12, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352299 S=[7, 9, 10, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352300 S=[7, 9, 10, 12, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352301 S=[7, 9, 10, 12, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352302 S=[7, 9, 10, 12, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352303 S=[7, 9, 10, 12, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352304 S=[7, 9, 10, 12, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352305 S=[7, 9, 10, 12, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352306 S=[7, 9, 10, 12, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352307 S=[7, 9, 10, 12, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352308 S=[7, 9, 10, 12, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352309 S=[7, 9, 10, 12, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352310 S=[7, 9, 10, 12, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352311 S=[7, 9, 10, 12, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352312 S=[7, 9, 10, 12, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352313 S=[7, 9, 10, 12, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352314 S=[7, 9, 10, 12, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352315 S=[7, 9, 10, 12, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352316 S=[7, 9, 10, 12, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352317 S=[7, 9, 10, 12, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352318 S=[7, 9, 10, 12, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352319 S=[7, 9, 10, 12, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352320 S=[7, 9, 10, 12, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352321 S=[7, 9, 10, 12, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352322 S=[7, 9, 10, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352323 S=[7, 9, 10, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352324 S=[7, 9, 10, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352325 S=[7, 9, 10, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352326 S=[7, 9, 10, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352327 S=[7, 9, 10, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352328 S=[7, 9, 10, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352329 S=[7, 9, 10, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352330 S=[7, 9, 11, 12, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352331 S=[7, 9, 11, 12, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352332 S=[7, 9, 11, 12, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352333 S=[7, 9, 11, 12, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352334 S=[7, 9, 11, 12, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352335 S=[7, 9, 11, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352336 S=[7, 9, 11, 12, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352337 S=[7, 9, 11, 12, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352338 S=[7, 9, 11, 12, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352339 S=[7, 9, 11, 12, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352340 S=[7, 9, 11, 12, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352341 S=[7, 9, 11, 12, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352342 S=[7, 9, 11, 12, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352343 S=[7, 9, 11, 12, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352344 S=[7, 9, 11, 12, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352345 S=[7, 9, 11, 12, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352346 S=[7, 9, 11, 12, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352347 S=[7, 9, 11, 12, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352348 S=[7, 9, 11, 12, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352349 S=[7, 9, 11, 12, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352350 S=[7, 9, 11, 12, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352351 S=[7, 9, 11, 12, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352352 S=[7, 9, 11, 12, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352353 S=[7, 9, 11, 12, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352354 S=[7, 9, 11, 12, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352355 S=[7, 9, 11, 12, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352356 S=[7, 9, 11, 12, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352357 S=[7, 9, 11, 12, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352358 S=[7, 9, 11, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352359 S=[7, 9, 11, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352360 S=[7, 9, 11, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352361 S=[7, 9, 11, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352362 S=[7, 9, 11, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352363 S=[7, 9, 11, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352364 S=[7, 9, 11, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352365 S=[7, 9, 11, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352366 S=[7, 9, 12, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352367 S=[7, 9, 12, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352368 S=[7, 9, 12, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352369 S=[7, 9, 12, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352370 S=[7, 9, 12, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352371 S=[7, 9, 12, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352372 S=[7, 9, 12, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352373 S=[7, 9, 12, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352374 S=[7, 9, 13, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352375 S=[7, 10, 11, 12, 13, 14, 15, 16, 17, 18] infeasible
+IDX 352376 S=[7, 10, 11, 12, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352377 S=[7, 10, 11, 12, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352378 S=[7, 10, 11, 12, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352379 S=[7, 10, 11, 12, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352380 S=[7, 10, 11, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352381 S=[7, 10, 11, 12, 13, 14, 15, 17, 18, 19] infeasible
+IDX 352382 S=[7, 10, 11, 12, 13, 14, 15, 17, 18, 20] infeasible
+IDX 352383 S=[7, 10, 11, 12, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352384 S=[7, 10, 11, 12, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352385 S=[7, 10, 11, 12, 13, 14, 16, 17, 18, 19] infeasible
+IDX 352386 S=[7, 10, 11, 12, 13, 14, 16, 17, 18, 20] infeasible
+IDX 352387 S=[7, 10, 11, 12, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352388 S=[7, 10, 11, 12, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352389 S=[7, 10, 11, 12, 13, 14, 17, 18, 19, 20] infeasible
+IDX 352390 S=[7, 10, 11, 12, 13, 15, 16, 17, 18, 19] infeasible
+IDX 352391 S=[7, 10, 11, 12, 13, 15, 16, 17, 18, 20] infeasible
+IDX 352392 S=[7, 10, 11, 12, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352393 S=[7, 10, 11, 12, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352394 S=[7, 10, 11, 12, 13, 15, 17, 18, 19, 20] infeasible
+IDX 352395 S=[7, 10, 11, 12, 13, 16, 17, 18, 19, 20] infeasible
+IDX 352396 S=[7, 10, 11, 12, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352397 S=[7, 10, 11, 12, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352398 S=[7, 10, 11, 12, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352399 S=[7, 10, 11, 12, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352400 S=[7, 10, 11, 12, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352401 S=[7, 10, 11, 12, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352402 S=[7, 10, 11, 12, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352403 S=[7, 10, 11, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352404 S=[7, 10, 11, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352405 S=[7, 10, 11, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352406 S=[7, 10, 11, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352407 S=[7, 10, 11, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352408 S=[7, 10, 11, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352409 S=[7, 10, 11, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352410 S=[7, 10, 11, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352411 S=[7, 10, 12, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352412 S=[7, 10, 12, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352413 S=[7, 10, 12, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352414 S=[7, 10, 12, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352415 S=[7, 10, 12, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352416 S=[7, 10, 12, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352417 S=[7, 10, 12, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352418 S=[7, 10, 12, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352419 S=[7, 10, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352420 S=[7, 11, 12, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352421 S=[7, 11, 12, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352422 S=[7, 11, 12, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352423 S=[7, 11, 12, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352424 S=[7, 11, 12, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352425 S=[7, 11, 12, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352426 S=[7, 11, 12, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352427 S=[7, 11, 12, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352428 S=[7, 11, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352429 S=[7, 12, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352430 S=[8, 9, 10, 11, 12, 13, 14, 15, 16, 17] infeasible
+IDX 352431 S=[8, 9, 10, 11, 12, 13, 14, 15, 16, 18] rankdef rank=9
+IDX 352432 S=[8, 9, 10, 11, 12, 13, 14, 15, 16, 19] infeasible
+IDX 352433 S=[8, 9, 10, 11, 12, 13, 14, 15, 16, 20] infeasible
+IDX 352434 S=[8, 9, 10, 11, 12, 13, 14, 15, 17, 18] rankdef rank=9
+IDX 352435 S=[8, 9, 10, 11, 12, 13, 14, 15, 17, 19] infeasible
+IDX 352436 S=[8, 9, 10, 11, 12, 13, 14, 15, 17, 20] infeasible
+IDX 352437 S=[8, 9, 10, 11, 12, 13, 14, 15, 18, 19] rankdef rank=9
+IDX 352438 S=[8, 9, 10, 11, 12, 13, 14, 15, 18, 20] rankdef rank=9
+IDX 352439 S=[8, 9, 10, 11, 12, 13, 14, 15, 19, 20] infeasible
+IDX 352440 S=[8, 9, 10, 11, 12, 13, 14, 16, 17, 18] rankdef rank=9
+IDX 352441 S=[8, 9, 10, 11, 12, 13, 14, 16, 17, 19] infeasible
+IDX 352442 S=[8, 9, 10, 11, 12, 13, 14, 16, 17, 20] infeasible
+IDX 352443 S=[8, 9, 10, 11, 12, 13, 14, 16, 18, 19] rankdef rank=9
+IDX 352444 S=[8, 9, 10, 11, 12, 13, 14, 16, 18, 20] rankdef rank=9
+IDX 352445 S=[8, 9, 10, 11, 12, 13, 14, 16, 19, 20] infeasible
+IDX 352446 S=[8, 9, 10, 11, 12, 13, 14, 17, 18, 19] rankdef rank=9
+IDX 352447 S=[8, 9, 10, 11, 12, 13, 14, 17, 18, 20] rankdef rank=9
+IDX 352448 S=[8, 9, 10, 11, 12, 13, 14, 17, 19, 20] infeasible
+IDX 352449 S=[8, 9, 10, 11, 12, 13, 14, 18, 19, 20] rankdef rank=9
+IDX 352450 S=[8, 9, 10, 11, 12, 13, 15, 16, 17, 18] rankdef rank=9
+IDX 352451 S=[8, 9, 10, 11, 12, 13, 15, 16, 17, 19] infeasible
+IDX 352452 S=[8, 9, 10, 11, 12, 13, 15, 16, 17, 20] infeasible
+IDX 352453 S=[8, 9, 10, 11, 12, 13, 15, 16, 18, 19] rankdef rank=9
+IDX 352454 S=[8, 9, 10, 11, 12, 13, 15, 16, 18, 20] rankdef rank=9
+IDX 352455 S=[8, 9, 10, 11, 12, 13, 15, 16, 19, 20] infeasible
+IDX 352456 S=[8, 9, 10, 11, 12, 13, 15, 17, 18, 19] rankdef rank=9
+IDX 352457 S=[8, 9, 10, 11, 12, 13, 15, 17, 18, 20] rankdef rank=9
+IDX 352458 S=[8, 9, 10, 11, 12, 13, 15, 17, 19, 20] infeasible
+IDX 352459 S=[8, 9, 10, 11, 12, 13, 15, 18, 19, 20] rankdef rank=9
+IDX 352460 S=[8, 9, 10, 11, 12, 13, 16, 17, 18, 19] rankdef rank=9
+IDX 352461 S=[8, 9, 10, 11, 12, 13, 16, 17, 18, 20] rankdef rank=9
+IDX 352462 S=[8, 9, 10, 11, 12, 13, 16, 17, 19, 20] infeasible
+IDX 352463 S=[8, 9, 10, 11, 12, 13, 16, 18, 19, 20] rankdef rank=9
+IDX 352464 S=[8, 9, 10, 11, 12, 13, 17, 18, 19, 20] rankdef rank=9
+IDX 352465 S=[8, 9, 10, 11, 12, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352466 S=[8, 9, 10, 11, 12, 14, 15, 16, 17, 19] infeasible
+IDX 352467 S=[8, 9, 10, 11, 12, 14, 15, 16, 17, 20] infeasible
+IDX 352468 S=[8, 9, 10, 11, 12, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 352469 S=[8, 9, 10, 11, 12, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 352470 S=[8, 9, 10, 11, 12, 14, 15, 16, 19, 20] infeasible
+IDX 352471 S=[8, 9, 10, 11, 12, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352472 S=[8, 9, 10, 11, 12, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352473 S=[8, 9, 10, 11, 12, 14, 15, 17, 19, 20] infeasible
+IDX 352474 S=[8, 9, 10, 11, 12, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 352475 S=[8, 9, 10, 11, 12, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352476 S=[8, 9, 10, 11, 12, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352477 S=[8, 9, 10, 11, 12, 14, 16, 17, 19, 20] infeasible
+IDX 352478 S=[8, 9, 10, 11, 12, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 352479 S=[8, 9, 10, 11, 12, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352480 S=[8, 9, 10, 11, 12, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352481 S=[8, 9, 10, 11, 12, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352482 S=[8, 9, 10, 11, 12, 15, 16, 17, 19, 20] infeasible
+IDX 352483 S=[8, 9, 10, 11, 12, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352484 S=[8, 9, 10, 11, 12, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352485 S=[8, 9, 10, 11, 12, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352486 S=[8, 9, 10, 11, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352487 S=[8, 9, 10, 11, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352488 S=[8, 9, 10, 11, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352489 S=[8, 9, 10, 11, 13, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 352490 S=[8, 9, 10, 11, 13, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 352491 S=[8, 9, 10, 11, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352492 S=[8, 9, 10, 11, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352493 S=[8, 9, 10, 11, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352494 S=[8, 9, 10, 11, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352495 S=[8, 9, 10, 11, 13, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 352496 S=[8, 9, 10, 11, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352497 S=[8, 9, 10, 11, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352498 S=[8, 9, 10, 11, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352499 S=[8, 9, 10, 11, 13, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 352500 S=[8, 9, 10, 11, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352501 S=[8, 9, 10, 11, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352502 S=[8, 9, 10, 11, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352503 S=[8, 9, 10, 11, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352504 S=[8, 9, 10, 11, 13, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352505 S=[8, 9, 10, 11, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352506 S=[8, 9, 10, 11, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352507 S=[8, 9, 10, 11, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352508 S=[8, 9, 10, 11, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352509 S=[8, 9, 10, 11, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352510 S=[8, 9, 10, 11, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352511 S=[8, 9, 10, 11, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352512 S=[8, 9, 10, 11, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352513 S=[8, 9, 10, 11, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352514 S=[8, 9, 10, 12, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352515 S=[8, 9, 10, 12, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352516 S=[8, 9, 10, 12, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352517 S=[8, 9, 10, 12, 13, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 352518 S=[8, 9, 10, 12, 13, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 352519 S=[8, 9, 10, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352520 S=[8, 9, 10, 12, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352521 S=[8, 9, 10, 12, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352522 S=[8, 9, 10, 12, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352523 S=[8, 9, 10, 12, 13, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 352524 S=[8, 9, 10, 12, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352525 S=[8, 9, 10, 12, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352526 S=[8, 9, 10, 12, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352527 S=[8, 9, 10, 12, 13, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 352528 S=[8, 9, 10, 12, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352529 S=[8, 9, 10, 12, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352530 S=[8, 9, 10, 12, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352531 S=[8, 9, 10, 12, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352532 S=[8, 9, 10, 12, 13, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352533 S=[8, 9, 10, 12, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352534 S=[8, 9, 10, 12, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352535 S=[8, 9, 10, 12, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352536 S=[8, 9, 10, 12, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352537 S=[8, 9, 10, 12, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352538 S=[8, 9, 10, 12, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352539 S=[8, 9, 10, 12, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352540 S=[8, 9, 10, 12, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352541 S=[8, 9, 10, 12, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352542 S=[8, 9, 10, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352543 S=[8, 9, 10, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352544 S=[8, 9, 10, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352545 S=[8, 9, 10, 13, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352546 S=[8, 9, 10, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352547 S=[8, 9, 10, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352548 S=[8, 9, 10, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352549 S=[8, 9, 10, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352550 S=[8, 9, 11, 12, 13, 14, 15, 16, 17, 18] rankdef rank=9
+IDX 352551 S=[8, 9, 11, 12, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352552 S=[8, 9, 11, 12, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352553 S=[8, 9, 11, 12, 13, 14, 15, 16, 18, 19] rankdef rank=9
+IDX 352554 S=[8, 9, 11, 12, 13, 14, 15, 16, 18, 20] rankdef rank=9
+IDX 352555 S=[8, 9, 11, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352556 S=[8, 9, 11, 12, 13, 14, 15, 17, 18, 19] rankdef rank=9
+IDX 352557 S=[8, 9, 11, 12, 13, 14, 15, 17, 18, 20] rankdef rank=9
+IDX 352558 S=[8, 9, 11, 12, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352559 S=[8, 9, 11, 12, 13, 14, 15, 18, 19, 20] rankdef rank=9
+IDX 352560 S=[8, 9, 11, 12, 13, 14, 16, 17, 18, 19] rankdef rank=9
+IDX 352561 S=[8, 9, 11, 12, 13, 14, 16, 17, 18, 20] rankdef rank=9
+IDX 352562 S=[8, 9, 11, 12, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352563 S=[8, 9, 11, 12, 13, 14, 16, 18, 19, 20] rankdef rank=9
+IDX 352564 S=[8, 9, 11, 12, 13, 14, 17, 18, 19, 20] rankdef rank=9
+IDX 352565 S=[8, 9, 11, 12, 13, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352566 S=[8, 9, 11, 12, 13, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352567 S=[8, 9, 11, 12, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352568 S=[8, 9, 11, 12, 13, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352569 S=[8, 9, 11, 12, 13, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352570 S=[8, 9, 11, 12, 13, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352571 S=[8, 9, 11, 12, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352572 S=[8, 9, 11, 12, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352573 S=[8, 9, 11, 12, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352574 S=[8, 9, 11, 12, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352575 S=[8, 9, 11, 12, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352576 S=[8, 9, 11, 12, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352577 S=[8, 9, 11, 12, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352578 S=[8, 9, 11, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352579 S=[8, 9, 11, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352580 S=[8, 9, 11, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352581 S=[8, 9, 11, 13, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352582 S=[8, 9, 11, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352583 S=[8, 9, 11, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352584 S=[8, 9, 11, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352585 S=[8, 9, 11, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352586 S=[8, 9, 12, 13, 14, 15, 16, 17, 18, 19] rankdef rank=9
+IDX 352587 S=[8, 9, 12, 13, 14, 15, 16, 17, 18, 20] rankdef rank=9
+IDX 352588 S=[8, 9, 12, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352589 S=[8, 9, 12, 13, 14, 15, 16, 18, 19, 20] rankdef rank=9
+IDX 352590 S=[8, 9, 12, 13, 14, 15, 17, 18, 19, 20] rankdef rank=9
+IDX 352591 S=[8, 9, 12, 13, 14, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352592 S=[8, 9, 12, 13, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352593 S=[8, 9, 12, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352594 S=[8, 9, 13, 14, 15, 16, 17, 18, 19, 20] rankdef rank=9
+IDX 352595 S=[8, 10, 11, 12, 13, 14, 15, 16, 17, 18] infeasible
+IDX 352596 S=[8, 10, 11, 12, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352597 S=[8, 10, 11, 12, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352598 S=[8, 10, 11, 12, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352599 S=[8, 10, 11, 12, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352600 S=[8, 10, 11, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352601 S=[8, 10, 11, 12, 13, 14, 15, 17, 18, 19] infeasible
+IDX 352602 S=[8, 10, 11, 12, 13, 14, 15, 17, 18, 20] infeasible
+IDX 352603 S=[8, 10, 11, 12, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352604 S=[8, 10, 11, 12, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352605 S=[8, 10, 11, 12, 13, 14, 16, 17, 18, 19] infeasible
+IDX 352606 S=[8, 10, 11, 12, 13, 14, 16, 17, 18, 20] infeasible
+IDX 352607 S=[8, 10, 11, 12, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352608 S=[8, 10, 11, 12, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352609 S=[8, 10, 11, 12, 13, 14, 17, 18, 19, 20] infeasible
+IDX 352610 S=[8, 10, 11, 12, 13, 15, 16, 17, 18, 19] infeasible
+IDX 352611 S=[8, 10, 11, 12, 13, 15, 16, 17, 18, 20] infeasible
+IDX 352612 S=[8, 10, 11, 12, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352613 S=[8, 10, 11, 12, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352614 S=[8, 10, 11, 12, 13, 15, 17, 18, 19, 20] infeasible
+IDX 352615 S=[8, 10, 11, 12, 13, 16, 17, 18, 19, 20] infeasible
+IDX 352616 S=[8, 10, 11, 12, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352617 S=[8, 10, 11, 12, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352618 S=[8, 10, 11, 12, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352619 S=[8, 10, 11, 12, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352620 S=[8, 10, 11, 12, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352621 S=[8, 10, 11, 12, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352622 S=[8, 10, 11, 12, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352623 S=[8, 10, 11, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352624 S=[8, 10, 11, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352625 S=[8, 10, 11, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352626 S=[8, 10, 11, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352627 S=[8, 10, 11, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352628 S=[8, 10, 11, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352629 S=[8, 10, 11, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352630 S=[8, 10, 11, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352631 S=[8, 10, 12, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352632 S=[8, 10, 12, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352633 S=[8, 10, 12, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352634 S=[8, 10, 12, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352635 S=[8, 10, 12, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352636 S=[8, 10, 12, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352637 S=[8, 10, 12, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352638 S=[8, 10, 12, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352639 S=[8, 10, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352640 S=[8, 11, 12, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352641 S=[8, 11, 12, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352642 S=[8, 11, 12, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352643 S=[8, 11, 12, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352644 S=[8, 11, 12, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352645 S=[8, 11, 12, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352646 S=[8, 11, 12, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352647 S=[8, 11, 12, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352648 S=[8, 11, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352649 S=[8, 12, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352650 S=[9, 10, 11, 12, 13, 14, 15, 16, 17, 18] infeasible
+IDX 352651 S=[9, 10, 11, 12, 13, 14, 15, 16, 17, 19] infeasible
+IDX 352652 S=[9, 10, 11, 12, 13, 14, 15, 16, 17, 20] infeasible
+IDX 352653 S=[9, 10, 11, 12, 13, 14, 15, 16, 18, 19] infeasible
+IDX 352654 S=[9, 10, 11, 12, 13, 14, 15, 16, 18, 20] infeasible
+IDX 352655 S=[9, 10, 11, 12, 13, 14, 15, 16, 19, 20] infeasible
+IDX 352656 S=[9, 10, 11, 12, 13, 14, 15, 17, 18, 19] infeasible
+IDX 352657 S=[9, 10, 11, 12, 13, 14, 15, 17, 18, 20] infeasible
+IDX 352658 S=[9, 10, 11, 12, 13, 14, 15, 17, 19, 20] infeasible
+IDX 352659 S=[9, 10, 11, 12, 13, 14, 15, 18, 19, 20] infeasible
+IDX 352660 S=[9, 10, 11, 12, 13, 14, 16, 17, 18, 19] infeasible
+IDX 352661 S=[9, 10, 11, 12, 13, 14, 16, 17, 18, 20] infeasible
+IDX 352662 S=[9, 10, 11, 12, 13, 14, 16, 17, 19, 20] infeasible
+IDX 352663 S=[9, 10, 11, 12, 13, 14, 16, 18, 19, 20] infeasible
+IDX 352664 S=[9, 10, 11, 12, 13, 14, 17, 18, 19, 20] infeasible
+IDX 352665 S=[9, 10, 11, 12, 13, 15, 16, 17, 18, 19] infeasible
+IDX 352666 S=[9, 10, 11, 12, 13, 15, 16, 17, 18, 20] infeasible
+IDX 352667 S=[9, 10, 11, 12, 13, 15, 16, 17, 19, 20] infeasible
+IDX 352668 S=[9, 10, 11, 12, 13, 15, 16, 18, 19, 20] infeasible
+IDX 352669 S=[9, 10, 11, 12, 13, 15, 17, 18, 19, 20] infeasible
+IDX 352670 S=[9, 10, 11, 12, 13, 16, 17, 18, 19, 20] infeasible
+IDX 352671 S=[9, 10, 11, 12, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352672 S=[9, 10, 11, 12, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352673 S=[9, 10, 11, 12, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352674 S=[9, 10, 11, 12, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352675 S=[9, 10, 11, 12, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352676 S=[9, 10, 11, 12, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352677 S=[9, 10, 11, 12, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352678 S=[9, 10, 11, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352679 S=[9, 10, 11, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352680 S=[9, 10, 11, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352681 S=[9, 10, 11, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352682 S=[9, 10, 11, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352683 S=[9, 10, 11, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352684 S=[9, 10, 11, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352685 S=[9, 10, 11, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352686 S=[9, 10, 12, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352687 S=[9, 10, 12, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352688 S=[9, 10, 12, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352689 S=[9, 10, 12, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352690 S=[9, 10, 12, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352691 S=[9, 10, 12, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352692 S=[9, 10, 12, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352693 S=[9, 10, 12, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352694 S=[9, 10, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352695 S=[9, 11, 12, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352696 S=[9, 11, 12, 13, 14, 15, 16, 17, 18, 20] infeasible
+IDX 352697 S=[9, 11, 12, 13, 14, 15, 16, 17, 19, 20] infeasible
+IDX 352698 S=[9, 11, 12, 13, 14, 15, 16, 18, 19, 20] infeasible
+IDX 352699 S=[9, 11, 12, 13, 14, 15, 17, 18, 19, 20] infeasible
+IDX 352700 S=[9, 11, 12, 13, 14, 16, 17, 18, 19, 20] infeasible
+IDX 352701 S=[9, 11, 12, 13, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352702 S=[9, 11, 12, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352703 S=[9, 11, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352704 S=[9, 12, 13, 14, 15, 16, 17, 18, 19, 20] infeasible
+IDX 352705 S=[10, 11, 12, 13, 14, 15, 16, 17, 18, 19] infeasible
+IDX 352706 S=[10, 11, 12, 13, 14, 15, 16, 17, 18, 20] feasible 268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517
+IDX 352707 S=[10, 11, 12, 13, 14, 15, 16, 17, 19, 20] feasible 425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517
+IDX 352708 S=[10, 11, 12, 13, 14, 15, 16, 18, 19, 20] feasible 674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517
+IDX 352709 S=[10, 11, 12, 13, 14, 15, 17, 18, 19, 20] feasible 1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517
+IDX 352710 S=[10, 11, 12, 13, 14, 16, 17, 18, 19, 20] feasible 1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517
+IDX 352711 S=[10, 11, 12, 13, 15, 16, 17, 18, 19, 20] feasible 2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517
+IDX 352712 S=[10, 11, 12, 14, 15, 16, 17, 18, 19, 20] feasible 4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517
+IDX 352713 S=[10, 11, 13, 14, 15, 16, 17, 18, 19, 20] feasible 6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517
+IDX 352714 S=[10, 12, 13, 14, 15, 16, 17, 18, 19, 20] feasible 10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517,16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517
+IDX 352715 S=[11, 12, 13, 14, 15, 16, 17, 18, 19, 20] feasible 16943799376828068972800696095535335134095427034000/22725261161011054784967090441968436961748593517,268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517,425460131430400000000000000000000000000000000000/22725261161011054784967090441968436961748593517,674338353562255360000000000000000000000000000000/22725261161011054784967090441968436961748593517,1068801002707916161024000000000000000000000000000/22725261161011054784967090441968436961748593517,1694009509254445568367001600000000000000000000000/22725261161011054784967090441968436961748593517,2684941546811699184152883773440000000000000000000/22725261161011054784967090441968436961748593517,4255531666388537768162915047760896000000000000000/22725261161011054784967090441968436961748593517,6744858108788342792371914241386729126400000000000/22725261161011054784967090441968436961748593517,10690347170250443763054770125813913663001760000000/22725261161011054784967090441968436961748593517

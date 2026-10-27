@@ -1,0 +1,9 @@
+     909 offsets_view3.txt
+0000000    =   =   =       P   R   I   N   T   E   D       p   1   5    
+0000020    l   i   n   e       w   i   t   h       b   o   u   n   n   d
+0000040        =   =   =  \n   A   p   p   l   y   i   n   g       t   h
+0000060    i   s       l   o   w   e   r       K       b   o   u   n   n
+0000100    d       a       l   a   s   t       t   i   m   e       w   e
+0000120        g   e   t       m       2       ≥  **  **       9   1   ,
+0000140        δ  **       &   l   t   ;       K   +   L       K       &
+0000160    l   t   ;       δ  **       +       1   .   1   1       ·  **

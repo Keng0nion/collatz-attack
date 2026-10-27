@@ -1,0 +1,3 @@
+NLINES 32
+SAMPLE " '11'   dy=-1.349  h=7.97"
+SAMPLE2 " '17'   dy=-1.349  h=7.97"

@@ -1,0 +1,23 @@
+=== 下载 1：JIS 印出版 hercher5.pdf ===
+HTTP=200 SIZE=250655 URL=https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/hercher5.pdf
+=== 下载 2：勘误 corrigendum.pdf ===
+HTTP=200 SIZE=124287 URL=https://cs.uwaterloo.ca/journals/JIS/VOL26/Hercher/corrigendum.pdf
+=== 下载 3：arXiv v3 ===
+HTTP=200 SIZE=236361 URL=https://arxiv.org/pdf/2201.00406v3
+=== md5 与字节数（本次下载） ===
+hercher5.pdf	3e2377bef0b1c0435dc455c9bbee43a1	250655
+corrigendum.pdf	f23d5f969116cb1af6e9b981b4b3ba7a	124287
+arxiv-2201.00406v3.pdf	92a5047052911ac7a45d59cc32efbe65	236361
+=== md5 与字节数（轨道归档件） ===
+hercher5.pdf	3e2377bef0b1c0435dc455c9bbee43a1	250655
+corrigendum.pdf	f23d5f969116cb1af6e9b981b4b3ba7a	124287
+arxiv-2201.00406v3.pdf	92a5047052911ac7a45d59cc32efbe65	236361
+=== 渲染第 13 至 16 页 ===
+printed_p13-13.png
+printed_p14-14.png
+printed_p15-15.png
+printed_p16-16.png
+v3_p13-13.png
+v3_p14-14.png
+v3_p15-15.png
+v3_p16-16.png

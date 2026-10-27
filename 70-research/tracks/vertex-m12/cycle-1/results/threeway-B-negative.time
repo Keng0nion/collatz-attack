@@ -1,0 +1,1 @@
+"$PY" scripts/three_way_baseline.py B > results/threeway-B-negative.txt  0.09s user 0.04s system 54% cpu 0.241 total

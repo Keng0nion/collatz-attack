@@ -1,0 +1,2147 @@
+arXiv:2201.00406v3 [math.NT] 4 Apr 2023
+
+There are no Collatz m-Cycles with m ≤ 91
+Christian Hercher
+Institut für Mathematik
+Europa-Universität Flensburg
+Auf dem Campius 1b
+24944 Flensburg
+Germany
+christian.hercher@uni-flensburg.de
+Abstract
+The Collatz conjecture (or “Syracuse problem”) considers recursively-defined sequences of positive integers where n is succeeded by n2 , if n is even, or 3n+1
+2 , if n is odd.
+The conjecture states that for all starting values n the sequence eventually reaches the
+trivial cycle 1, 2, 1, 2, . . . . We are interested in the existence of nontrivial cycles.
+Let m be the number of local minima in such a nontrivial cycle. Simons and de
+Weger proved that m ≥ 76. With newer bounds on the range of starting values for
+which the Collatz conjecture has been checked, one gets m ≥ 83. In this paper, we
+prove m ≥ 92.
+The last part of this paper considers what must be proven in order to raise the
+number of odd members a nontrivial cycle has to have to the next bound—that is, to
+at least K ≥ 1.375 · 1011 . We prove that it suffices to show that, for every integer
+smaller than or equal to 1536 · 260 = 3 · 269 , the respective Collatz sequence enters the
+trivial cycle. This reduces the range of numbers to be checked by nearly 60%.
+
+1
+
+Introduction
+
+The Collatz conjecture1 (or Syracuse problem) considers recursively-defined sequences of
+positive integers.
+Definition 1. Let n be a positive integer. The Collatz operator C : Z>0 → Z>0 is defined
+as follows:
+(
+n
+,
+if n is even;
+2
+C(n) := 3n+1
+, if n is odd.
+2
+We define an e-step to be of type n 7→ n2 , since it occurs after an even number n, and an
+o-step to be of type n 7→ 3n+1
+, since it follows after an odd number n.
+2
+1
+
+Named after German mathematician Lothar Collatz, 1910–1990.
+
+1
+
+Conjecture 2 (Collatz). For all n ∈ Z>0 , the sequence n, C(n), C 2 (n) := C(C(n)), C 3 (n), . . .
+eventually reaches the trivial cycle 1, 2, 1, 2, . . . .
+Remark 3. While the Collatz conjecture is currently unproven, there are good reasons to
+believe it holds. In [14], for example, Terras showed that the respective Collatz sequence
+enters the trivial cycle for almost all integers. More recently, Tao also proved in [13] that,
+for every function f : Z>0 → R with lim f (n) = ∞ and almost every positive integer n, the
+n→∞
+
+Collatz sequence starting with n reaches a number less than or equal to f (n):
+lim inf C k (n) ≤ f (n).
+k→∞
+
+Nevertheless, the conjecture could be wrong in two possible ways:
+• There could be an unbounded sequence n, C(n), . . . with lim supi→∞ C i (n) = ∞.
+• There could be a nontrivial cycle n, C(n), . . . with C i (n) = n for some positive integer i.
+This paper concerns itself with the second case. Specifically, we consider the properties a
+nontrivial cycle would need to have.
+Over time, different projects, [6, 10, 7, 8, 4, 5, 1], have taken various approaches to prove
+or disprove the Collatz conjecture by checking whether the respective sequences of increasing
+numbers converge to the trivial cycle. The best known bound is from Barina [2]:
+Definition 4. We define X0 as the largest number for which it is known that for all positive
+integers n ≤ X0 their Collatz sequences reach the trivial cycle. As of the date of writing this
+paper, we have
+X0 = 704 · 260 .
+Since the Collatz sequences converge to the trivial cycle for all numbers less than or equal
+to X0 , we can derive estimates of properties of hypothetically existing nontrivial cycles. On
+the basis of the value of X0 known at the time, Eliahou [3] used methods derived from
+diophantine approximation and continued fractions to prove that such a nontrivial cycle
+must include at least K > 107 o-steps. This bound was subsequently improved by Hercher
+and Puchert [4, 5, 9] to the current K > 7.2 · 1010 .
+Another property of such a nontrivial cycle was investigated by Simons and de Weger [11].
+> n > n2 , such a nontrivial cycle has strictly increasing and strictly decreasing
+As 3n+1
+2
+passages:
+Definition 5. Let n, C(n), . . . , C i (n) = n be a nontrivial cycle. (That is, n > 2.) Let us call
+it an m-cycle if it has exactly m local minima (and therefore also exactly m local maxima).
+Simons and de Weger [11] proved that m ≥ 68 for every nontrivial cycle. Based on the
+rate of growth of X0 in the year 2005, when [11] appeared, they estimated that bounds on
+m like m ≥ 77 were unlikely to be obtained before the year 2419. In an updated version
+2
+
+of the paper [12] in 2010, the same authors used what was then a new bound X0 to prove
+that m ≥ 76. Regarding future bounds, estimates suggested that m ≥ 83 could not be
+reached before the year 2429 if progress on X0 maintained the then-current pace and no new
+insights into the topic emerged. In 2018, Hercher [4, 5]—using his newly derived bound on
+X0 —proved that m ≥ 77.
+With the current best bound on X0 , Simons and de Weger [11, 12] suggested that with
+methods of their paper m ≥ 83 could be proven.2 In this paper, we prove that m ≥ 92.
+
+1.1
+
+Outline
+
+Pi
+1
+. This is the sum of the
+In Section 2, we consider sums of the form T (ni ) = kk=0
+C k (ni )
+reciprocals of the odd numbers starting with and following a local minimum ni in an mcycle. In Remark 7, Lemma 11, and Corollary 13, we give subsequently improving upper
+bounds on the average of these T (ni ) in sets of up to three consecutive such terms. This
+leads to Lemma 12 and Theorem 14, where we give bounds on sums of an arbitrary number
+of consecutive T (ni ).
+This is motivated and used in Section 3. At the start of this section, some results
+on nontrivial cycles in Collatz sequences are listed and proved in a way similar to that
+K+L
+in
+Pm[3, 11, 4]. In particular, Theorem 16 gives bounds on the fraction K in terms of
+i=1 T (ni ). Here, K is the number of odd and L the number of even entries in the cycle
+and therefore the number of o-steps and e-steps, respectively. Together with the bounds on
+. These
+such sums over T (ni ) and further refinements, this leads to better bounds on K+L
+K
+bounds are given in Corollary 17 and Theorem 21. (Corollary 19 is a version of Corollary 17
+which gives an absolute bound independently of X0 , where we used a computer program to
+derive it.)
+The proof of Theorem 21 is based on the idea that ki cannot grow at an unlimited rate:
+i +1)
+There is a constant 1 < δ < 2 such that ki+j ≤ δ j · log(n
+for all i, j; see Lemma 20. Then
+log(2)
+Pm
+we split the sum i=1 T (ni ) into two parts. The first one, with “small” ni , is bounded using
+Theorem 14 from Section 2, and the second one with “large” and “growing” ki (and therefore
+“large” ni , too). The second partial sum is estimated in the proof of Theorem 21 itself.
+The results for the bounds on K+L
+can then be used together with Lemma 22. This
+K
+lemma states how to obtain the smallest possible denominator of all fractions in a given
+nonempty open interval. We use this lemma in our main theorem, Theorem 23, to show that
+there is no m-cycle with m ≤ 91. To do so, we assume m ≤ 91 and give a new lower bound
+on K, which then can be used in the same way to get an even better lower bound, and so on.
+Finally, we arrive at a proven lower bound on K which is larger than the upper bound for
+this value of m given by Simons and de Weger [12]. This result shows that no such m-cycle
+with m ≤ 91 can exist.
+In the same way, we can give new lower bounds on K for m-cycles with m ≥ 92. A
+selection of them is given in Corollary 24. The computations for Theorem 23 and Corollary 24
+2
+
+Private e-mail conversation in September 2021.
+
+3
+
+were done using a Sagemath worksheet, with the total computing time lasting a few minutes.
+Finally, in Section 4 the methods of the previous sections are used to consider the case
+of nontrivial Collatz cycles independent of m. The result on the average value of the T (ni )
+yielded Lemma 26 is analogous to the ones given by Lemma 11 and Corollary 13. However
+there the values T (ni ) are weighted by the numbers ki . This is used to get Theorem 27,
+which yields a result analogous to that of Corollary 17, but independent of m. As stated in
+Remark 28, this lowers the value X0 has to have for proving K > 1.375·1011 (which is the next
+threshold reachable) from 3781·260 to 2836·260. To get this result with an even smaller known
+value of X0 , we implemented the methods in a computer program which—after extensive
+computations—proved Corollary 29, which states that already X0 ≥ 1536 · 260 = 3 · 269 is
+sufficient.
+
+2
+
+Upper bounds on T (ni)
+
+Definition 6. For a given m-cycle, we call the local minima in order of appearance in the
+cycle n1 , n2 , . . . , nm . To keep the notation simple, we further set nm+1 := n1 , nm+2 := n2
+and so on. Note that we do not need n1 to be the smallest of these minima, as every cyclic
+permutation of these minima yields to the same results. All we need is that, for all i, the
+next local minimum after ni in this Collatz trajectory is ni+1 .
+Further let ki be the exact number of consecutive o-steps directly following the local
+minimum ni , and let ℓi be the exact number of e-steps directly following them. Thus, the
+numbers ni , C(ni ), . . ., and C ki −1 (ni ) are all odd (as they are followed by an o-step) and
+C ki (ni ) is even. Therefore, C ki (ni ) is the local maximum following ni . From that point on,
+the numbers C ki (ni ), C ki +1 (ni ), . . . and C ki +ℓi −1 (ni ) are all even (since they are followed by
+an e-step) and C ki +ℓi (ni ) is odd. Therefore, C ki +ℓi (ni ) = ni+1 is the next local minimum
+after ni .
+For positive integers i, let
+ki
+−1
+X
+1
+T (ni ) :=
+.
+t
+C (ni )
+t=0
+Remark 7. We have T (ni ) < n3i < X30 for all 1 ≤ i.
+Proof. As C(n) > 32 n for odd n, we have C t (ni ) ≥
+kX
+i −1
+
+
+3 t
+· ni , and therefore
+2
+
+∞
+∞  t
+X
+1 X 2
+3
+3
+1
+1
+=
+<
+·
+<
+.
+=
+T (ni ) =
+
+t
+t (n )
+3
+C
+n
+3
+n
+X
+i
+i
+i
+0
+n
+·
+t=0 i
+t=0
+t=0
+2
+
+The last inequality follows from ni > X0 .
+
+Lemma 8. Let n and k be positive integers, where n, C(n), . . . , C k−1 (n) are all odd. Then
+n ≡ −1 (mod 2k ). In particular, n ≥ 2k − 1.
+4
+
+Proof. We proceed by induction on k to show that not only n ≡ −1 (mod 2k ), but also
+C k (n) = a · 3k − 1, if n = a · 2k − 1. If k = 1, then the statement is obvious: We have
+n = a · 21 − 1 for some positive integer a and C 1 (n) = a · 31 − 1.
+Now let k be at least 2 and n, C(n), . . . , C k−2(n) all odd. Then there is a positive integer a
+with n = a · 2k−1 − 1 and C k−1 (n) = a · 3k−1 − 1. Since in order for C k−1 (n) to be odd, a
+must be even, a = 2a′ , n = a′ · 2k − 1 and C k (n) = a′ · 3k − 1. Thus, n ≡ −1 (mod 2k ) and
+n ≥ 2k − 1.
+Note that this well-known statement has been used before and proven in many publications on this subject, e.g., [14].
+Lemma 9. Let ni be an odd positive integer. Let ki be the exact number of o-steps directly
+following ni in its Collatz sequence and ℓi the exact number of e-steps following them.
+If ℓi ≥ 2, then the Collatz sequences of ni and n′i := ni2−1 merge since C ki +2 (ni ) =
+ki +1
+C
+(n′i ).
+Proof. Let ni , ki and ℓi be as in the lemma. Then, there is a positive integer a with ni =
+a · 2ki +2 + 2ki − 1 if ki is even, or ni = a · 2ki +2 + 3 · 2ki − 1 if ki is odd. To see this, we recall
+with Lemma 8 that ni is congruent to −1 modulo 2ki , but not modulo 2ki +1 . Therefore,
+there is a positive integer b with ni = b · 2ki +1 + 2ki − 1. With this, according to the proof
+of Lemma 8 we get
+C
+
+ki +1
+
+(2b + 1) · 3ki − 1
+3ki − 1
+=
+.
+(ni ) = b · 3 +
+2
+2
+ki
+
+Since we want another e-step to follow this number, it has to be even. Hence, we get
+(2b + 1) · 3ki ≡ 1 (mod 4). For even ki we have 3ki ≡ 1 (mod 4), thus, b = 2a has to be even.
+For odd ki we have 3ki ≡ 3 (mod 4), such that b = 2a + 1 has to be odd.
+k
+If ki is even, this leads to the equality C ki +2 (ni ) = a·3ki + 3 i4−1 . But this number is also a
+Collatz successor of the number n′i := ni2−1 = a · 2ki+1 + 2ki −1 − 1, since through n′i ≡ 2ki −1 − 1
+k −1
+k −1
+(mod 2ki ) we get C ki (n′i ) = a · 2 · 3ki −1 + 3 i 2 −1 . But when ki is even we know that 3 i 2 −1
+is odd and that, therefore, C ki (n′i ) is odd, too. As a result, we get
+C ki +1 (n′i ) = a · 3ki +
+
+3ki − 1
+= C ki +2 (ni ).
+4
+
+Similarly, for odd ki we get
+(2(2a + 1) + 1) · 3ki − 1
+4a · 3ki + 3 · 3ki − 1
+=
+2
+2
+ki +1
+3
+−1
+= 2a · 3ki +
+2
+
+C ki +1 (ni ) =
+
+k +1
+
+and therefore C ki +2 (ni ) = a · 3ki + 3 i 4 −1 . Now this is C ki +1 (n′i ) with n′i = ni2−1 = a · 2ki+1 +
+k −1
+3 · 2ki −1 − 1, too: By n′i ≡ 2ki −1 − 1 (mod 2ki ), we know C ki (n′i ) = a · 2 · 3ki −1 + 3 i 2 −1 . As
+5
+
+ki is odd, C ki (n′i ) is odd, too, and we get
+C ki +1 (n′i ) = a · 3ki +
+
+3ki − 1
+= C ki +2 (ni ).
+4
+
+Remark 10. From this lemma we also get a small result for unbounded Collatz sequences:
+Let n1 be the smallest positive integer, if any, for which the Collatz sequence is unbounded. Let k1 and ℓ1 be as above. Then ℓ1 = 1 and k1 ≥ 2. (If ℓ1 were greater, then there
+would be a smaller number n′1 which would also have an unbounded Collatz sequence, and
+this would contradict the minimality of n1 . The same would hold, if k1 = ℓ1 = 1, since in
+that case we would have C 2 (n1 ) = 3n14+1 < n1 , which also has an unbounded sequence.)
+Lemma 11. For all 1 ≤ i, we have
+35 1
+·
+or
+18 X0
+35 1
+·
+.
+T (ni ) + T (ni+1 ) < 2 ·
+18 X0
+T (ni ) <
+
+Proof. Let ki be as in Definition 6. For ki ≤ 2 we have
+
+
+1
+5 1
+2
+35 1
+35 1
+T (ni ) <
+= ·
+· 1+
+<
+·
+<
+·
+.
+ni
+3
+3 ni
+18 ni
+18 X0
+Now let ki ≥ 3. Then
+kX
+i −1
+1
+1
+<
+T (ni ) =
+
+t
+3 t
+C (ni )
+t=0 ni · 2
+t=0
+ki
+1 1 − 32
+=
+·
+ni
+1 − 32
+  ki !
+1
+2
+=
+· 3−3·
+ni
+3
+kX
+i −1
+
+and C ki (ni ) >
+
+
+3 ki
+· ni . As an e-step follows, we get
+2
+C ki +1 (ni ) >
+
+1
+·
+2
+
+6
+
+
+3 ki
+· ni .
+2
+
+If C ki +1 (ni ) is already the next local minimum, that is ni+1 = C ki +1 (ni ), we get
+ ki
+3
+1
+2
+T (ni+1 ) <
+<6·
+· ,
+ni+1
+3
+ni
+ ki
+ ki !
+2
+2
+1
+· 3−3·
++6·
+T (ni ) + T (ni+1 ) <
+ni
+3
+3
+!
+ ki
+1
+2
+=
+· 3+3·
+ni
+3
+
+35 1
+1 35
+·
+.
+<2·
+·
+ni 9
+18 X0
+k
+8
+The second-to-last inequality follows from 32 i ≤ 27
+for ki ≥ 3.
+Finally, we must consider the case when there are at least two e-steps after the ki o-steps
+following ni . Then from Lemma 9 we know that there exists an integer n′i = ni2−1 for which
+the Collatz sequence merges with that of ni , and thus with the considered cycle.
+But n′i > X0 since for every positive integer less than or equal to X0 the Collatz sequence
+35 1
+· X0 ,
+enters the trivial cycle. Hence, we have ni > 2·n′i > 2X0 and thus T (ni ) < n3i < 32 · X10 < 18
+which concludes the proof.
+≤
+
+Lemma 12. Let 0 ≤ m1 be an integer. Then
+m
+1
+X
+
+T (ni ) <
+
+i=1
+
+35m1 + 19 1
+.
+·
+18
+X0
+
+Proof. We split the sum into single summands or sums of two consecutive summands, to
+· 1
+each of which we apply the previous lemma. From Lemma 11, we know that T (n1 ) < 35
+18 X0
+35
+or T (n1 ) + T (n2 ) < 2 · 18
+· X10 . In the first case, our first part consists solely of T (n1 ). In
+the second case, it is the partial sum T (n1 ) + T (n2 ). The second partial sum is defined in a
+similar way, and so on. We say such a partial sum is complete if from Lemma 11 we know
+35
+that it is smaller than 35
+· 1 for one summand or 2 · 18
+· X10 for two summands. Since all
+18 X0
+such partial sums until the one with T (nm1 −1 ) are complete, they therefore have an average
+· 1 per summand. Thus, if T (nm1 ) is in a complete partial sum we get
+value of less than 35
+18 X0
+Pm1
+35
+1
+i=1 T (ni ) < 18 · m1 · X0 , and if T (nm1 ) is not part of a complete partial sum, it cannot be
+in a partial sum together with T (nm1 −1 ). Thus, we have
+m
+1
+X
+i=1
+
+T (ni ) = T (nm1 ) +
+
+m1
+−1
+X
+
+T (ni ) < T (nm1 ) + (m1 − 1) ·
+
+i=1
+
+35 1
+·
+18 X0
+
+35 1
+35m1 + 19 1
+3
+<
++ (m1 − 1) ·
+=
+,
+·
+·
+X0
+18 X0
+18
+X0
+
+where we used the trivial bound T (nm1 ) < X30 from Remark 7.
+Note that this bound holds for all sums with m1 consecutive local minima.
+7
+
+A more detailed analysis in the proof of Lemma 11 yields a slightly better result:
+Corollary 13. For all 1 ≤ i ≤ m we have
+97 1
+·
+,
+54 X0
+97 1
+·
+,
+T (ni ) + T (ni+1 ) < 2 ·
+54 X0
+97 1
+or T (ni ) + T (ni+1 ) + T (ni+2 ) < 3 ·
+·
+.
+54 X0
+T (ni ) <
+
+Proof. As in the proof of Lemma 11 let ki be the exact number of consecutive o-steps
+after ni , and let ℓi be the exact number of consecutive e-steps thereafter. Then we have
+C ki +ℓi (ni ) = ni+1 .
+97
+In the case of ki ≤ 2, we get T (ni ) < 35 · n1i < 54
+· X10 , as with the proof of Lemma 11.
+· 1 . If ℓi = 1 and ki ≥ 4, we
+Similarly, in the case that ℓi ≥ 2, we get T (ni ) < 32 · X10 < 97
+54 X0
+have
+ ki !
+1
+2
+1 97
+97 1
+T (ni ) + T (ni+1 ) <
+· 3+3·
+≤
+·
+,
+<2·
+·
+ni
+3
+ni 27
+54 X0
+k
+16
+where the second-to-last inequality follows from 3 + 3 · 23 i ≤ 3 + 3 · 81
+= 97
+as ki ≥ 4.
+27
+Thus, the only case that requires closer analysis is ki = 3 and ℓi = 1. Then there exists a
+nonnegative integer a with ni = a · 16 + 7 and ni+1 = 27 · a + 13. If ℓi+1 ≥ 2, then—as in the
+proof of Lemma 11—there exists a nonnegative integer n′i+1 = ni+12 −1 for which the Collatz
+sequence merges with the one of ni+1 and therefore with the considered m-cycle. Thus, we
+32
+0 −10
+have n′i+1 ≥ X0 + 1 and subsequently a ≥ 2X27
+and ni ≥ 32X0 −160+189
+> 27
+· X0 . That leads
+27
+to the following bounds:
+
+
+1
+1 19
+2 4
+T (ni ) <
+=
+· 1+ +
+·
+ni
+3 9
+ni 9
+1
+97 1
+57 1
+19
+< 32
+<
+.
+=
+·
+·
+·
+32 X0
+54 X0
+· X0 9
+27
+Hence, the only remaining case is ki = 3 and ℓi = ℓi+1 = 1. As ki = 3 and ℓi = 1, we know
+1
+· n1i and ni+1 > 27
+· ni and that therefore ni+1
+< 16
+· 1.
+that T (ni ) < 19
+9
+16
+27 ni
+If ki+1 ≤ 2 we have
+1
+80 1
+1
+5
+·
+<
+·
+< ,
+3 ni+1
+81 ni
+ni
+28 1
+97 1
+T (ni ) + T (ni+1 ) <
+·
+<2·
+·
+.
+9 ni
+54 X0
+T (ni+1 ) <
+
+8
+
+If ki+1 ≥ 3, from the proof of Lemma 11 we know
+35
+35 16 1
+<
+·
+·
+ni+1 9
+9 27 ni
+560 1
+=
+· ,
+243 ni
+
+
+19 560
+1
+1073 1
+T (ni ) + T (ni+1 ) + T (ni+2 ) <
+·
++
+=
+·
+9
+243
+ni
+243 ni
+97 1
+<3·
+.
+·
+54 X0
+1
+
+T (ni+1 ) + T (ni+2 ) <
+
+·
+
+With this, we also get a similar but slightly better result than with Lemma 12:
+Theorem 14. Let 0 ≤ m1 be an integer. Then
+m1
+X
+
+T (ni ) <
+
+i=1
+
+97m1 + 73 1
+·
+.
+54
+X0
+
+Proof. As in the proof of Lemma 12, we break the sum into parts of length one, two, or
+three consecutive summands in the sense from Corollary 13. With exception of the last one
+(in some cases), all of these partial sums are complete. So we know that these partial sums
+are smaller than 97
+· 1 times the number of their respective summands.
+54 X0
+If T (nm1 ) is part of such a complete partial sum, we have
+m1
+X
+
+T (ni ) <
+
+i=1
+
+97m1 1
+·
+.
+54
+X0
+
+If T (nm1 ) is not part of such a complete partial sum but T (nm1 −1 ) is, we have
+m1
+X
+
+T (ni ) <
+
+i=1
+
+3
+97m1 + 65 1
+97(m1 − 1) 1
++
+=
+.
+·
+·
+54
+X0 X0
+54
+X0
+
+Here, we used the trivial bound T (nm1 ) < X30 , as noted in Remark 7.
+If neither T (nm1 ) nor T (nm1 −1 ) are part of such a complete partial sum, we know that
+the last complete partial sum ended with T (nm1 −2 ). With this, and by applying Lemma 12
+to the sum T (nm1 −1 ) + T (nm1 ), we get
+m1
+X
+i=1
+
+T (ni ) <
+
+97(m1 − 2) 1
+89 1
+97m1 + 73 1
+·
++
+·
+=
+·
+.
+54
+X0 18 X0
+54
+X0
+
+9
+
+3
+
+On Collatz m-cycles
+
+log(3)
+Definition 15. From now on, let δ := log(2)
+> 1.
+
+The following theorem and its proof are similar to the work done by Eliahou in [3].
+Theorem 16. Let K be the number of odd numbers in a given m-cycle and L be the number
+of even numbers in it. Further let ki , ni and T (ni ) be as in Definition 6. Then,
+m
+X
+1
+K +L
+<δ+
+·
+T (ni ).
+δ<
+K
+K · 3 · log(2) i=1
+
+Proof. Let Ω be the set of numbers in the m-cycle, Ωo the subset of odd numbers and Ωe
+the subset of even numbers. Then we have |Ωo | = K, |Ωe | = L, and (due to cyclicity)
+Y
+
+Y
+
+n=
+
+n∈Ω
+
+C(n) =
+
+n∈Ω
+
+Y
+
+C(n) ·
+
+Y
+
+n∈Ω
+
+n∈Ω
+
+C(n) =
+
+Y n
+
+n∈Ω
+
+o
+e
+ e
+Y  1 Y  1 
+1
+n·
+=
+n· · 3+
+·
+2
+2
+n
+n∈Ωe
+n∈Ωo
+
+
+Y
+Y
+1
+,
+3+
+= 2−(L+K) ·
+n·
+n
+n∈Ω
+n∈Ωo
+
+Y 
+1
+.
+3+
+2K+L =
+n
+n∈Ω
+
+2
+
+·
+
+Y 3n + 1
+
+n∈Ωo
+
+2
+
+o
+
+Q
+The right-hand side is obviously larger than n∈Ωo 3 = 3K ; however, because of the
+inequality between arithmetic and geometric mean, it is also smaller than
+s
+
+!K
+!K
+Y 
+X
+Y 
+1
+1
+1
+1
+3+
+3+
+= K
+·
+≤
+3+
+n
+n
+K n∈Ω
+n
+n∈Ω
+n∈Ω
+o
+
+o
+
+o
+
+K
+
+= (3 + µ) ,
+
+where µ is µ := K1 ·
+
+1
+n∈Ωo n . Putting things together, we get
+
+P
+
+3K < 2K+L ≤ (3 + µ)K ,
+K · log(3) < (K + L) · log(2) ≤ K · log(3 + µ)
+
+
+µ 
+= K · log(3) + log 1 +
+3
+
+µ
+< K · log(3) +
+,
+3
+K +L
+log(3)
+µ
+log(3)
+<
+<
++
+.
+δ=
+log(2)
+K
+log(2) 3 · log(2)
+10
+
+Now let us rewrite µ:
+m ki −1
+1 XX
+1
+1 X 1
+·
+=
+·
+,
+µ=
+t
+K n∈Ω n
+K i=1 t=0 C (ni )
+o
+
+where ki is the exact number
+P of consecutive o-steps after ni to the next local maximum on
+the cycle. Thus, we have m
+i=1 ki = K, as every such step follows an odd number on the
+cycle. The inner sum is T (ni ) as defined in the theorem. Hence, we get
+µ=
+
+m
+1 X
+·
+T (ni ),
+K i=1
+
+m
+X
+K +L
+1
+δ<
+<δ+
+·
+T (ni ).
+K
+K · 3 · log(2) i=1
+
+This leads to the following result:
+Corollary 17. With K, L as in Theorem 16, we have
+δ<
+
+K +L
+1
+97
+1
+<δ+
+·
+·m·
+.
+K
+K · 3 log(2) 54
+X0
+
+Proof. From Theorem 16 we know
+m
+X
+K +L
+1
+δ<
+T (ni ).
+<δ+
+·
+K
+K · 3 · log(2) i=1
+P
+1
+97
+Thus, we need to prove m
+i=1 T (ni ) < 54 · m · X0 . To do so, let t be an arbitrarily large
+integer and remember that we set nm+1 := n1 , nm+2 := n2 , and so on. With m1 := t · m and
+using Theorem 14, we get
+
+t·
+
+m
+X
+
+T (ni ) =
+
+i=1
+
+m
+X
+i=1
+
+t·m
+X
+
+T (ni ) <
+
+i=1
+
+T (ni ) <
+
+97(t · m) + 73 1
+,
+·
+54
+X0
+
+97
+1
+1 73 1
+·m·
++ ·
+·
+.
+54
+X0
+t 54 X0
+
+As one can choose t as large as needed, the second summand can be lessened to ε for every
+ε > 0. Thus, we have
+m
+X
+
+T (ni ) <
+
+97
+1
+·m·
++ ε for every ε > 0 and, therefore,
+54
+X0
+
+T (ni ) ≤
+
+1
+97
+·m·
+,
+54
+X0
+
+i=1
+
+m
+X
+i=1
+
+which proves the claim.
+11
+
+≈ 0.599, this is an improvement of more than 40% over Corollary 5
+Remark 18. Since 31 · 97
+54
+of Simons and de Weger in [12].
+Using a computer program and the known results for X0 , we get a stronger result:
+Corollary 19. Provided that X0 ≥ 704 · 260 , we have
+K +L
+1
+1
+δ<
+<δ+
+·m·
+.
+K
+K · 3 log(2)
+704 · 260
+Proof. In Lemma
+P 11 and Corollary 13, we proved that the average summand in a complete
+partial sum i T (ni ) is smaller than a constant times X10 . We obtained the best value for
+. To achieve this result, we had to consider partial sums
+this constant in Corollary 13 with 97
+54
+of up to three consecutive summands in this sum.
+If we want to get even lower bounds for this constant, we have two possible options:
+First, we can increase the number of considered consecutive summands T (ni ) in a partial
+sum. But this increases also the amount of work necessary in the case-by-case analysis. A
+second possibility is to use the exact known value of X0 instead of using it as a parameter.
+This significantly reduces the number of cases to be considered.
+Providing that X0 > 704 · 260 we want to prove that the average T (ni ) is smaller than
+1
+. To do so, we apply the same methods as above to get upper bounds of the form c · n1i
+704·260
+for sums of T (ni ) for consecutive local minima ni . But if r is the smallest positive integer
+with r ≡ ni (mod 2k ) for some value of k (the number of, for this case, “fixed” steps in the
+Collatz sequence after ni ), we clearly have ni ≥ r. If r is large enough, the calculated bound
+1
+falls below the value of 704·2
+60 . Then we can mark this case as proven.
+Since this kind of proof gets very lengthy, we automated this process by writing a small
+program in C++. It considers partial sums with up to 60 consecutive summands T (ni ).
+Having used the program to prove this property, we can proceed as we did in the proof
+of Corollary 17 and obtain the desired result.
+The following lemma also can be found in [12].
+Lemma 20. Let ni , ni+1 be two successive local minima in an m-cycle. Then we have
+ni+1 < nδi .
+Proof. Let ki be the exact number of consecutive o-steps after ni until the next local maximum in the cycle. By Lemma 8 and its proof, we know that there is a positive integer a
+with ni = a · 2ki − 1 and C ki (ni ) = a · 3ki − 1. Since ki is the exact number of consecutive
+such steps after ni , we know that C ki (ni ) has to be even. Therefore, we know that ni+1 , the
+next odd number, fulfills the inequality ni+1 ≤ 12 · C ki (ni ). Thus, we get
+1
+1
+3ki
+3ki ni + 1
+· C ki (ni ) = · (a · 3ki − 1) <
+·a=
+·
+2
+2
+2
+2
+2ki
+δ−1 1
+δ−1 1
+1
+= 2ki
+· · (ni + 1) ≤ a · 2ki
+· · (ni + 1) = · (ni + 1)δ
+2
+2
+2
+δ
+2
+
+
+n+1
+1
+1
+1
+· nδi < · 1 +
+· nδi < nδi , as ni > X0 > 3.
+= ·
+2
+n
+2
+n
+
+ni+1 ≤
+
+12
+
+Note that the statement is also true for i = m and nm+1 := n1 .
+Theorem 21. Let K be the number of odd numbers in a given m-cycle, and let L be the
+number of even numbers in it. Further, assume there exists a positive integer m2 with
+
+·
+X
+δ m2 − 1 log 162
+m2
+0
+97
+m2 ≤ m and
+·
+≤
+· K.
+δ−1
+log(2)
+m
+. Then we get
+Let v = mm2 · K · δmδ−1
+2 −1
+K +L
+1
+δ<
+<δ+
+·
+K
+K · 3 log(2)
+
+
+
+
+3
+97(m − m2 ) + 73
+3 · (m2 − 1)
++ v
++
+.
+54 · X0
+2 −1
+(2v − 1)δ
+
+If m2 = m − 1 we get the better estimate
+1
+K +L
+<δ+
+·
+δ<
+K
+K · 3 log(2)
+
+
+
+3
+3 · (m − 2)
+3
++ v
++
+X0 2 − 1
+(2v − 1)δ
+
+
+
+and for m2 = m
+1
+K +L
+<δ+
+·
+δ<
+K
+K · 3 log(2)
+
+
+
+3
+3 · (m − 1)
++
+v
+2 −1
+(2v − 1)δ
+
+
+
+.
+
+Proof. First, let m2 be as given in this theorem. If the only nonnegative integer fulfilling the
+.
+given inequality is m2 = 0, Corollary 17 and Corollary 19 give good upper bounds for K+L
+K
+Now let the inequality be true for some integer m2 > 0.
+From Theorem 16, we know
+m
+X
+1
+K +L
+<δ+
+·
+T (ni ).
+δ<
+K
+K · 3 · log(2) i=1
+
+P
+Therefore, we have to give upper bounds on m
+i=1 T (ni ) in the different cases. To do so, we
+use Theorem 14 and Lemma 20:
+There are m2 consecutive local minima which are directly followed by at least mm2 · K osteps in total. (If this would not be the case, all of the sums k1 +· · ·+km2 , k2 +· · ·+km2 +1 , . . .
+and km +k1 +· · ·+km2 −1 would be smaller than mm2 ·K. ButP
+adding these m sums together gives
+m2 · K, as every ki occurs in exactly m2 such sums and m
+i=1 ki = K, which contradicts the
+assumption.) W.l.o.g., let these m2 consecutive local minima be nm−m2 +1 , nm−m2 +2 , . . . , nm .
+i +1)
+From Lemma 8 we know that ki ≤ log(n
+. Now Lemma 20 gives ni+1 < nδi and,
+log(2)
+i +1)
+.
+therefore, ni+1 + 1 < nδi + 1 < (ni + 1)δ which leads to the inequality ki+1 < δ · log(n
+log(2)
+i +1)
+Subsequently, in an analogous way we get ki+ℓ < δ ℓ · log(n
+.
+log(2)
+
+13
+
+Now we can sum up these estimates for i = m − m2 + 1, . . . , m:
+m
+m
+2 −1
+X
+X
+m2
+·K ≤
+ki =
+k(m−m2 +1)+ℓ
+m
+i=m−m +1
+ℓ=0
+2
+
+m −1
+
+X
+log(nm−m2 +1 + 1) 2
+≤
+·
+δℓ
+log(2)
+ℓ=0
+
+log(nm−m2 +1 + 1) δ m2 − 1
+·
+.
+=
+log(2)
+δ−1
+
+From the premise on m2 , we know that this is larger than
+
+·
+X
+δ m2 − 1 log 162
+0
+97
+·
+.
+δ−1
+log(2)
+Thus, we get
+nm−m2 +1 + 1 >
+
+162
+162
+· X0 and, therefore, nm−m2 +1 ≥
+· X0 .
+97
+97
+
+3
+97
+Now with Remark 7 we conclude T (nm−m2 +1 ) < nm−m
+· X10 . Thus, this estimate
+< 54
+2 +1
+on T (nm−m2 +1 ) is at least as good as the one we get from Theorem 14. But we can get a
+better one:
+m2 −1
+From the definition of v, we get v · δ δ−1
+= mm2 · K. Thus, we have
+
+v≤
+
+log(nm−m2 +1 + 1)
+or, equivalently, 2v − 1 ≤ nm−m2 +1 .
+log(2)
+
+Now this gives T (nm−m2 +1 ) < 2v3−1 and, since
+(δℓ )
+
+nm−m2 +1+ℓ < nm−m2 +1 ≤ nδm−m2 +1 ,
+3
+we get the inequality T (nm−m2 +1+ℓ ) < (2v −1)
+δ . Using this together with Theorem 14 and
+m1 := m − m2 , we get
+m
+X
+
+T (ni ) =
+
+i=1
+
+m−m
+X2
+
+T (ni ) + T (nm−m2 +1 ) +
+
+T (ni )
+
+i=m−m2 +1+1
+
+i=1
+
+<
+
+m
+X
+
+3
+3 · (m2 − 1)
+97(m − m2 ) + 1
++ v
++
+,
+54 · X0
+2 −1
+(2v − 1)δ
+
+which
+m2 = m − 1, the first sum
+Pm−m2proves the general statement for 1 ≤ m2 ≤ m. For
+3
+,
+as seen in Remark 7. For
+T
+(n
+)
+=
+T
+(n
+)
+can
+be
+better
+bounded
+above
+by
+i
+1
+i=1
+X0
+m2 = m, this first sum is empty and therefore zero.
+14
+
+We now give a well known lemma for diophantine approximation:
+Lemma 22. Let 0 < α < β be two real numbers with continued fraction expansions α =
+[a0 ; a1 , . . . , ak−1 , ak , . . .] and β = [a0 ; a1 , . . . , ak−1, bk , . . .]. Then every fraction in the open interval (α, β) has a denominator which is not smaller than the one of γ = [a0 ; a1 , . . . , ak−1 , ck ]
+with ck = min(ak , bk ) + 1.
+Proof. First, let γ be some real number with α < γ < β. Since ⌊α⌋ = a0 = ⌊β⌋, we also have
+1
+1
+1
+⌊γ⌋ = a0 . Thus, 0 < α − a0 < γ − a0 < β − a0 < 1 and, therefore, 1 < β−a
+< γ−a
+< α−a
+.
+0
+0
+0
+k
+j
+k
+j
+k
+j
+1
+1
+1
+= a1 = α−a
+, we also get γ−a
+= a1 , and so on.
+Since β−a
+0
+0
+0
+Thus, for every real number γ within the interval (α, β), we get the same beginning in
+the continued fraction expansion of γ: γ = [a0 ; a1 , . . . , ak−1, . . .].
+If k is even, increasing the partial denominator increases the fraction. Thus, we have
+ak < bk and
+[a0 ; a1 , . . . , ak−1 , ak ] < α < [a0 ; a1 , . . . , ak−1, ak + 1] < β.
+If we choose ck := ak + 1 = min(ak + bk ) + 1, we get the fraction with smallest denominator
+in this interval.
+If k is odd, decreasing the partial denominator increases the fraction. Thus, we have
+ak > bk and
+α < [a0 ; a1 , . . . , ak−1, bk + 1] < β < [a0 ; a1 , . . . , ak−1 , bk ].
+If we choose ck := bk + 1 = min(ak + bk ) + 1, we get the fraction with smallest denominator
+in this interval.
+Theorem 23 (Main Theorem). There is no m-cycle with m ≤ 91.
+Proof. Let m ≤ 91. From Theorem 3 in [12] we know that K > 7 · 1011 .
+With X0 = 704 · 260 ≈ 8.1 · 1020 , as given in Definition 4, we get m2 ≥ 47. Now, from
+Theorem 21 we have
+K +L
+δ<
+< δ + 6.9 · 10−32 .
+K
+By using continued fractions as in Lemma 22, we can now get a better lower bound for K
+with
+K > 5.2 · 1015 .
+And now we can reiterate this process!
+In the next run, we get m2 ≥ 67, δ < K+L
+< δ + 5.1 · 10−36 and, therefore, K > 3.97 · 1017.
+K
+Applying this newer bound on K once more, we get m2
+≥
+77,
+K+L
+−38
+18
+δ < K < δ + 4.1 · 10
+and, hence, K > 4.64 · 10 .
+In the forth run we get m2 ≥ 82, δ < K+L
+< δ + 2.3 · 10−39 and with this K > 2.74 · 1019 .
+K
+From there we get m2 ≥ 86, δ < K+L
+< δ + 2.3 · 10−40 and K > 7.76 · 1019 . And from this
+K
+< δ + 5.3 · 10−41 and K > 2.05 · 1020 .
+we get m2 ≥ 88, δ < K+L
+K
+Applying this lower bounnd a last time we get m2 ≥ 91, δ < K+L
+< δ + 1.11 · 10−43 and
+K
+K > 7.94 · 1021 .
+15
+
+But this last lower bound on K is larger than the upper bound of K < 1.4784mδ m <
+2.2 · 1020 given by Simons and de Weger [12]. Thus, no such m-cycle can exist.
+Using the same technique as above and Corollaries 17 and 19, we also get new lower
+bounds on K for m-cycles with m ≥ 92:
+Corollary 24. In Table 1 different pairs of values m und K are listed. If there is a m-cycle
+with m equal or smaller than the given value, this cycle consists of at least the corresponding
+number of K odd members.
+m
+98
+117
+369
+4366
+17096
+..
+.
+
+K
+7.76 · 1019
+2.74 · 1019
+4.64 · 1018
+3.97 · 1017
+1.30 · 1017
+..
+.
+
+802380
+1.07 · 106
+..
+.
+
+5.26 · 1015
+4.78 · 1015
+..
+.
+
+1.89 · 109
+2.18 · 109
+1.34 · 1010
+For all m ∈ N
+
+1.64 · 1012
+8.90 · 1011
+1.37 · 1011
+7.20 · 1010
+
+Table 1: Corollary 24: If m ≤ · · · , then K > · · · .
+
+Proof. The first two lines follow from Theorem 21, all others except the last one from Corollary 19, and the last one from the statement independent of m in [4, 9] or [3], using the
+known value of X0 as in Definition 4 and given in [2].
+Remark 25. Over time, with better known lower limits on X0 , one gets slightly better results
+in Corollary 24. The results in this corollary are in some cases significant improvements on
+the bounds given by Theorem 3 in [12].
+
+4
+
+Cycles without knowing m
+
+In a manner similar to that in Lemma 11 and Corollary 13, we want to give an upper bound
+on another weighted average of the T (ni ):
+
+16
+
+Lemma 26. For all 1 ≤ i, we have
+T (ni ) < ki ·
+
+3 1
+·
+,
+4 X0
+
+3 1
+·
+,
+4 X0
+3 1
+or T (ni ) + T (ni+1 ) + T (ni+2 ) < (ki + ki+1 + ki+2 ) · ·
+.
+4 X0
+T (ni ) + T (ni+1 ) < (ki + ki+1 ) ·
+
+Proof. As in the proofs of Lemma 11 and Corollary 13, let ki be the exact number of osteps following ni and ℓi the exact number of e-steps following them, such that we have
+ni+1 = C ki +ℓi (ni ).
+If ki = 1, there exists a nonnegative integer a with ni = 4·a+1 such that C 2 (ni ) = 3·a+1.
+Since C 2 (ni ) ≥ X0 + 1, we have ni ≥ 34 · X0 + 1 > 43 · X0 and, therefore, T (ni ) < 43 · X10 .
+· X10 < 3 · 43 · X10 .
+If ki = 3 ,we know T (ni ) < 19
+9
+If ki ≥ 4, we have T (ni ) < 3 · X10 ≤ ki · 43 · X10 .
+This only leaves the case ki = 2 for further investigation. There we have T (ni ) = 53 · n1i . If
+ℓi ≥ 2, we know from the cited proofs that ni > 2X0 and, therefore, T (ni ) < 65 · X10 < 2· 43 · X10 .
+Thus, let ki = 2 and ℓi = 1. Then there exists a nonnegative integer a with ni = 8 · a + 3
+32
+32
+and ni+1 = 9 · a + 4. If ki+1 = 1, we have ni+1 ≥ 34 · X0 + 1 and ni ≥ 27
+· X0 + 13 > 27
+· X0 .
+With this, we get
+45 1
+3 1
+5 27 1
+·
+=
+·
+<2· ·
+.
+T (ni ) < ·
+3 32 X0
+32 X0
+4 X0
+In the case ki = 2 and ℓi = 1 we generally have ni+1 > 89 · ni . Thus, if ki+1 ≥ 5, we get
+
+
+1
+121 1
+9
+5
+·
+=
++3·
+·
+T (ni ) + T (ni+1 ) <
+3
+8
+X0
+24 X0
+3 1
+3 1
+≤ (ki + ki+1 ) · ·
+.
+<7· ·
+4 X0
+4 X0
+65
+1
+If ki = 2, ℓi = 1 and ki+1 = 4, with the better estimate T (ni+1 ) < 27
+· ni+1
+the following
+inequality holds:
+
+
+1
+105 1
+5 65 9
+·
++
+·
+=
+·
+T (ni ) + T (ni+1 ) <
+3 27 8
+X0
+24 X0
+3 1
+3 1
+<6· ·
+= (ki + ki+1 ) · ·
+.
+4 X0
+4 X0
+
+This leaves ki = 2, ℓi = 2 and ki+1 ∈ {2, 3}. If ℓi+1 ≥ 2, we have ni+1 > 2X0 as above
+and, therefore, ni+1 ≥ 2X0 + 1 and, hence, ni = 89 · ni+1 − 59 > 16
+· X0 . With this, we get
+9
+T (ni ) <
+
+5 9
+1
+3 1
+·
+·
+< 2· ·
+.
+3 16 X0
+4 X0
+17
+
+Therefore, from now on we can assume ℓi+1 = 1. Let ki = 2, ℓi = 1 and in this case
+ki+1 = 2. Then there exists a nonnegative integer a with ni = 26 · a + 59 and C 2+1+2+1 (ni ) =
+ni+2 = 34 · a + 76. Moreover, we have
+T (ni ) + T (ni+1 ) <
+
+5 1
+5
+1
+5 1
+5 8 1
+85 1
+·
++ ·
+< ·
++ · ·
+=
+· .
+3 ni 3 ni+1
+3 ni 3 9 ni
+27 ni
+
+If ki = 2, ℓi = 1, ki+1 = 2, ℓi+1 = 1 and ki+2 = 1, we get ni+2 ≥ 34 · X0 + 1 and, therefore,
+256
+ni > 243
+· X0 − 1. Hence,
+85 ni + 1
+1
+·
+·
+27
+ni
+ni + 1
+85 243 ni + 1 1
+·
+·
+·
+<
+27 256
+ni
+X0
+765 ni + 1 1
+·
+·
+=
+256
+ni
+X0
+765 766 1
+<
+(as ni > X0 > 765)
+·
+·
+256 765 X0
+3 1
+766 1
+<4· ·
+.
+·
+<
+256 X0
+4 X0
+
+T (ni ) + T (ni+1 ) <
+
+If ki+2 = 2, we get
+1
+320
+< 35 · 64
+· 1 = 243
+· X10
+T (ni+2 ) = 35 · ni+2
+81 X0
+
+and, thus,
+
+
+
+85 320
+1
+1085 1
+T (ni ) + T (ni+1 ) + T (ni+2 ) <
+·
++
+=
+·
+27 243
+X0
+243 X0
+3 1
+3 1
+<6· ·
+= (ki + ki+1 + ki+2 ) · ·
+.
+4 X0
+4 X0
+· 64
+· 1 = 1216
+· X10 and
+In the same way, for ki+2 = 3 we get T (ni+2 ) < 19
+9
+81 X0
+729
+
+
+85 1216
+1
+3511 1
+T (ni ) + T (ni+1 ) + T (ni+2 ) <
+·
++
+=
+·
+27
+729
+X0
+729 X0
+3 1
+3 1
+= (ki + ki+1 + ki+2 ) · ·
+.
+<7· ·
+4 X0
+4 X0
+64
+64
+For ki+2 ≥ 4 we have T (ni+2 ) < 3 · 81
+· X10 = 27
+· X10 . Thus,
+
+
+85 64
+1
+149 1
+T (ni ) + T (ni+1 ) + T (ni+2 ) <
+·
+=
++
+·
+27 27
+X0
+27 X0
+3 1
+3 1
+= (ki + ki+1 + ki+2 ) · ·
+,
+<8· ·
+4 X0
+4 X0
+
+18
+
+which concludes the proof in the case ki = 2, ℓi = 1, ki+1 = 2 and ℓi+1 = 1.
+Now we only need to consider the case ki = 2, ℓi = 1, ki+1 = 3 and ℓi+1 = 1. Here, there
+exists a nonnegative integer a with ni = 27 · a + 91 and C 2+1+3+1 (ni ) = ni+2 = 35 · a + 175.
+We also have
+5 1
+19
+1
+5 1
+19 8 1
+297 1
+T (ni ) + T (ni+1 ) < ·
++
+·
+< ·
++
+· ·
+=
+· .
+3 ni
+9 ni+1
+3 ni
+9 9 ni
+81 ni
+1
+128
+If ki+2 = 1, we have T (ni+2 ) = ni+2
+< 243
+· n1i and, therefore,
+
+
+1
+297 128
+·
++
+T (ni ) + T (ni+1 ) + T (ni+1 ) <
+81
+243
+X0
+1019 1
+3 1
+=
+·
+<6· ·
+243 X0
+4 X0
+3 1
+.
+= (ki + ki+1 + ki+2 ) · ·
+4 X0
+3
+At last, if ki+2 ≥ 2 we have T (ni+2 ) < ni+2
+< 128
+· n1i , and with this, we get
+81
+
+
+1
+297 128
+·
++
+T (ni ) + T (ni+1 ) + T (ni+1 ) <
+81
+81
+X0
+425 1
+3 1
+=
+·
+<7· ·
+81 X0
+4 X0
+3 1
+,
+≤ (ki + ki+1 + ki+2 ) · ·
+4 X0
+
+which concludes the last open case and, therefore, the proof.
+This leads to a result similar to that yielded by the Main Theorem 21, but independent
+of the number m of local minima in the nontrivial cycle:
+Theorem 27. Let K be the number of odd numbers in a given m-cycle, and let L be the
+number of even numbers in it. Then
+δ<
+
+K +L
+1
+3 1
+<δ+
+· ·
+.
+K
+3 log(2) 4 X0
+
+Proof. As in the proof of Theorem 21, the only thing we have to do is proving the inequality
+m
+X
+
+T (ni ) ≤ K ·
+
+i=1
+
+3 1
+.
+·
+4 X0
+
+To do so, we proceed as we did in the proofs of Theorem 14 and Corollary 17. First, let m1
+be a positive integer and consider the sum
+m1
+X
+
+T (ni ).
+
+i=1
+
+19
+
+We break this sum into partial sums consisting of one, two, or three consecutive summands.
+We can do this in such a way that for all partial sums (with the possible exception of the
+last) we know by Lemma 26 that each of these is smaller than k · 43 · X10 , where k is the number
+of o-steps in the at most three consecutive strictly increasing parts of the given nontrivial
+cycle. The last partial sum consists of at most two summands. Using the trivial bounds
+T (nm1 −1 ) < 3 · X10 and T (nm1 ) < 3 · X10 , we get
+m1
+X
+
+T (ni ) <
+
+i=1
+
+=
+
+m1
+X
+
+!
+
+1
+3 1
++2·3·
+·
+4 X0
+X0
+i=1
+!
+m1
+X
+3 1
+.
+ki + 8 · ·
+4
+X
+0
+i=1
+ki
+
+·
+
+Now, let t be an arbitrarily large integer and m1 = t · m. Then we get
+!
+m
+t·m
+t·m
+X
+X
+X
+3 1
+t·
+T (ni ) =
+T (ni ) <
+ki + 8 · ·
+4 X0
+i=1
+i=1
+i=1
+
+m
+t·m
+X
+X
+3 1
+= (t · K + 8) · ·
+ki = t · K.
+ki = t ·
+, where we used
+4 X0
+i=1
+i=1
+
+This leads directly to
+m
+X
+
+T (ni ) < K ·
+
+3 1
+·
++ ε for all ε > 0 and, therefore,
+4 X0
+
+T (ni ) ≤ K ·
+
+3 1
+as desired.
+·
+4 X0
+
+i=1
+
+m
+X
+i=1
+
+Remark 28. Theorem 27 leads to a reduction of the bounds on X0 given in or computed by
+the methods in [3], which are needed for reaching the next threshold on K in a nontrivial
+cycle, by 25%. Thus, to prove that every nontrivial cycle contains at least K > 1.375 · 1011
+odd numbers, using previous methods one would have to show δ < K+L
+< δ + 1.1032 · 10−22 ,
+K
+60
+and therefore, X0 ≥ 3781 · 2 . With the result given in Theorem 27, it suffices to show
+X0 ≥ 2836 · 260 .
+If one is interested in the problem of lowering the value for X0 given in the last remark
+to the greatest extend possible, one can use the methods of Lemma 26 in an automated way.
+Corollary 29. If X0 ≥ 1536 · 260 = 3 · 269 then every nontrivial cycle contains at least
+K > 1.375 · 1011 odd numbers.
+
+20
+
+Proof. We have written a small C++ program, which mainly uses the methods given in the
+proof of Lemma 26. There is one key exception: for every situation, the program tracks the
+residue classes modulo powers of two for a given number ni . If the smallest positive member
+of this residue class is already larger than the needed bound of 3781 · 260 , this case no longer
+1
+needs to be considered, since then one can use the trivial bound T (ni ) ≤ nkii < ki · 3781·2
+60 .
+This bound on X0 was reached after five weeks of computing time on an i9 processor of
+the 11th generation with 8 cores.
+Remark 30. If one wants to prove that every nontrivial cycle has at least K > 1.375·1011 odd
+members with Corollary 29 it suffices to proof for all numbers less than or equal to 1536 · 260
+that their respective Collatz sequences reach the trivial cycle. This bound on X0 is only
+about 40% of the one needed by the methods in [3], thus saving nearly 60% of computing
+time requierd to reach the next threshold for the next larger lower bound on the number of
+members a nontrivial Collatz cycle must have. As the current fastest project for increasing
+X0 , see [2], needed over 27 months for completing the search up to 512 · 260 = 269 , this
+reduction has some impact.
+In our numerical experiments, we get that by lowering the bound on X0 by 260 (that is,
+e.g., from 1536 · 260 to 1535 · 260 ) the computing time needed increases by about 1.5%. Thus,
+the chosen bound of X0 in Corollary 29 cannot be decreased by a reasonable amount before
+this computation becomes less effective than the search in [2].
+Remark 31. All results in this paper, with the exception of Corollaries 19, 24, and 29, are
+independent of the exact value of X0 , provided it is not too small. (In all other lemmas,
+theorems, and corollaries we needed at most X0 > 765.) Thus, they scale up and give better
+absolute values, as better results on X0 become available.
+
+References
+[1] D. Barina, Convergence verification of the Collatz problem, J. Supercomputing 77
+(2021), 2681–2688.
+[2] D. Barina, Convergence verification of the Collatz problem, preprint, 2023. Available at
+https://pcbarina.fit.vutbr.cz.
+[3] S. Eliahou, The 3x + 1 problem: New lower bounds on nontrivial cycle lengths, Discrete
+Math. 118 (1993), 45–56.
+[4] C. Hercher, Über die Länge nicht-trivialer Collatz-Zyklen (I), Die Wurzel 6 (2018),
+118–128.
+[5] C. Hercher, Über die Länge nicht-trivialer Collatz-Zyklen (II), Die Wurzel 7 (2018),
+146–154.
+
+21
+
+[6] G. T. Leavens and M. Vermeulen, 3x + 1 search programs, Comput. Math. Appl. 11
+(1992), 79–99.
+[7] T. Olivera e Silva, Maximum excursion and stopping time record-holders for the 3x + 1
+problem: computational results, Math. Comp. 225 (1999), 371–384.
+[8] T. Olivera e Silva, Empirical verification of the 3x + 1 and related conjectures, in J.
+Lagarias, ed., The Ultimate Challenge: The 3x + 1 Problem, American Mathematical
+Society, 2010, pp. 189–207.
+[9] S. Puchert, Anmerkung zum Artikel “Über die Länge nicht-trivialer Collatz-Zyklen”,
+Die Wurzel 11 (2018), 243–250.
+[10] E. Roosendaal, 3x + 1 path records, preprint, 2022. Available at https://www.ericr.
+nl/wondrous/pathrecs.html.
+[11] J. Simons and B. de Weger, Theoretical and computational bounds for m-cycles of the
+3n + 1-problem, Acta Arith. 117 (2005), 51–70.
+[12] J. Simons and B. de Weger, Theoretical and computational bounds for m-cycles
+of the 3n + 1 problem, preprint, 2010. Available at https://deweger.net/papers/
+[35a]SidW-3n+1-v1.44[2010].pdf.
+[13] T. Tao, Almost all orbits of the Collatz map attain almost bounded values, Forum
+Math. Pi 10 (2022), e12.
+[14] R. Terras, A stopping time problem on the positive integers, Acta Arith. 30 (1976),
+241–252.
+
+2020 Mathematics Subject Classification: Primary 11B83.
+Keywords: Collatz conjecture, Syracuse problem, nontrivial Collatz cycle.
+
+22
+
+

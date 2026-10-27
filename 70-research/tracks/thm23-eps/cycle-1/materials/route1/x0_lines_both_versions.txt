@@ -1,0 +1,18 @@
+===== pl.txt =====
+  HIT: X0 = 695 · 260 .
+  HIT: Corollary 19. Provided that X0 ≥ 695 · 260 , we have
+  HIT: 695 · 260
+  HIT: Providing that X0 > 695 · 260 we want to prove that the average T (ni ) is smaller than
+  HIT: 5 695·260
+  HIT: bound falls below the value of 57 · 695·2
+  HIT: With X0 = 695 · 260 ≈ 8 · 1020 , as given in Definition 4, we get m2 ≥ 47. Now, fro
+  counts: 695=7 704=0
+===== vv.txt =====
+  HIT: X0 = 704 · 260 .
+  HIT: Corollary 19. Provided that X0 ≥ 704 · 260 , we have
+  HIT: 704 · 260
+  HIT: Providing that X0 > 704 · 260 we want to prove that the average T (ni ) is smaller than
+  HIT: 704·260
+  HIT: falls below the value of 704·2
+  HIT: With X0 = 704 · 260 ≈ 8.1 · 1020 , as given in Definition 4, we get m2 ≥ 47. Now, f
+  counts: 695=0 704=7

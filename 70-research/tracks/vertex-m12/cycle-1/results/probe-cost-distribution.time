@@ -1,0 +1,1 @@
+"$PY" scripts/probe_cost_distribution.py > results/probe-cost-distribution.tx  5.90s user 0.08s system 79% cpu 7.511 total

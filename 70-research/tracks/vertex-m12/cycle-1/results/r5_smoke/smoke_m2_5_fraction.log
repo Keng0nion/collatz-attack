@@ -1,0 +1,22 @@
+==============================================================================
+r5_vm12_enum.py  m2=5  impl=fraction  tag=smoke_m2_5
+δ = 126797/80000（δ 的严格下界（delta_rigorous_bounds(10**7)））  W = 630347359154513105681/40960000000000000000（阈值 (δ^m2−1)/(δ−1)）
+组合数 C(11,5) = 462
+v = W(δ−1)/(δ^5−1) = 1
+脚本 md5 = a0511d9861e56764a7eeaa796385e359
+r2_common.py md5 = cfee819667c0883e73732f03d2dc8bef（期望 cfee819667c0883e73732f03d2dc8bef；一致 = True）
+r2_j_independent_vertices.py md5 = 4b8ce2a500d8ca9021fd0178deca637e（期望 4b8ce2a500d8ca9021fd0178deca637e；一致 = True）
+python 3.12.7 / macOS-27.0.1-arm64-arm-64bit
+note: 
+分片：workers=1 chunks=1 impl=fraction resume=False
+      ... 分片 0 完成 [0,462) count=462 0.026 s（累计墙钟 0 s）
+------------------------------------------------------------------------------
+    子集总数 C(11,5) = 462；已处理 = 462（覆盖校验 = True）
+    用时 0.1 s（墙钟），CPU（含子进程 user+sys）0.1 s，每子集 0.2679 ms（墙钟/总）
+    分检：秩亏/不相容 = 170，满秩不可行 = 262，满秩可行子集 = 30
+    可行顶点数 = 5；与解析的 m2 = 5 个循环旋转相同 = True（解析集大小 5）
+    每个顶点的（活跃约束法向量秩，活跃约束条数）= [(5, 6)]
+    每个可行解被活跃子集捕捉的个数（升序）= [6, 6, 6, 6, 6]
+    独立性：本段只用 constraint_list / solve_exact（或 mpq 镜像）/ feasible，未使用 (L1) 或 v 的任何信息；v 仅用于构造对照解析集
+SUMMARY_JSON {"m2": 5, "delta": "126797/80000", "W": "630347359154513105681/40960000000000000000", "impl": "fraction", "workers": 1, "chunks": 1, "total": 462, "processed": 462, "n_rank_def": 170, "n_infeasible": 262, "n_feasible_subsets": 30, "n_distinct_feasible": 5, "n_analytic": 5, "equal": true, "certs": [[5, 6]], "wall_s": 0.12, "cpu_s": 0.11, "ms_per_subset_wall": 0.2679, "ms_per_subset_cpu": 0.2351}
+口径：本脚本是机器核对（附覆盖范围），不是证明；搜索无力（如秩亏）与可行性都只用精确有理算术判定。

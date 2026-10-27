@@ -1,0 +1,2 @@
+DASH43_PRESENT False None
+POS20_PRESENT False None

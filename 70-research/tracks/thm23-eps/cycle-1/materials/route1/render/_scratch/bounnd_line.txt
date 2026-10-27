@@ -1,0 +1,4 @@
+1:=== PRINTED p15 line with bounnd ===
+2:Applying this lower K bounnd a last time we get m 2 ≥ 91, δ &lt; K+L K &lt; δ + 1.11 · 10 −43 and
+22:=== V3 p15 line with bounnd ===
+23:Applying this lower K bounnd a last time we get m 2 ≥ 91, δ &lt; K+L K &lt; δ + 1.11 · 10 −43 and

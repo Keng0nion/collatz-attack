@@ -1,0 +1,37 @@
+But this last lower bound on K is larger than the upper bound of K &lt; 1.4784mδ m &lt;
+2.2 · 10 20 given by Simons and de Weger [12]. Thus, no such m-cycle can exist.
+Using the same technique as above and Corollaries 17 and 19, we also get new lower
+bounds on K for m-cycles with m ≥ 92:
+Corollary 24. In Table 1 different pairs of values m und K are listed. If there is a m-cycle
+with m equal or smaller than the given value, this cycle consists of at least the corresponding
+number of K odd members.
+m K
+98 7.76 · 10 19
+117 2.74 · 10 19
+369 4.64 · 10 18
+4366 3.97 · 10 17
+17096 1.30 · 10 17
+.. ..
+. .
+802380 5.26 · 10 15
+1.07 · 10 6 4.78 · 10 15
+.. ..
+. .
+1.89 · 10 9 1.64 · 10 12
+2.18 · 10 9 8.90 · 10 11
+1.34 · 10 10 1.37 · 10 11
+For all m ∈ N 7.20 · 10 10
+Table 1: Corollary 24: If m ≤ · · · , then K &gt; · · · .
+Proof. The first two lines follow from Theorem 21, all others except the last one from Corol-
+lary 19, and the last one from the statement independent of m in [4, 9] or [3], using the
+known value of X as in Definition 4 and given in [2].
+0
+Remark 25. Over time, with better known lower limits on X , one gets slightly better results
+0
+in Corollary 24. The results in this corollary are in some cases significant improvements on
+the bounds given by Theorem 3 in [12].
+4 Cycles without knowing m
+In a manner similar to that in Lemma 11 and Corollary 13, we want to give an upper bound
+on another weighted average of the T (n ):
+i
+16

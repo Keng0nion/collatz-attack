@@ -1,0 +1,37 @@
+##### page 13: printed 59 lines, v3 59 lines, diffblocks=0 #####
+##### page 14: printed 55 lines, v3 55 lines, diffblocks=0 #####
+##### page 15: printed 62 lines, v3 62 lines, diffblocks=5 #####
+   --- 
+   +++ 
+   @@ -37 +37 @@
+   -With X = 695 · 2 60 ≈ 8 · 10 20 , as given in Definition 4, we get m ≥ 47. Now, from
+   +With X = 704 · 2 60 ≈ 8.1 · 10 20 , as given in Definition 4, we get m ≥ 47. Now, from
+##### page 16: printed 37 lines, v3 37 lines, diffblocks=28 #####
+   --- 
+   +++ 
+   @@ -11,3 +11,3 @@
+   -276 4.68 · 10 18
+   -3079 3.97 · 10 17
+   -12055 1.30 · 10 17
+   +369 4.64 · 10 18
+   +4366 3.97 · 10 17
+   +17096 1.30 · 10 17
+   @@ -16,2 +16,2 @@
+   -948987 4.30 · 10 15
+   -1.14 · 10 6 3.81 · 10 15
+   +802380 5.26 · 10 15
+   +1.07 · 10 6 4.78 · 10 15
+   @@ -20,3 +20,3 @@
+   -1.33 · 10 9 1.64 · 10 12
+   -1.54 · 10 9 8.90 · 10 11
+   -9.46 · 10 9 1.37 · 10 11
+   +1.89 · 10 9 1.64 · 10 12
+   +2.18 · 10 9 8.90 · 10 11
+   +1.34 · 10 10 1.37 · 10 11
+   @@ -25,3 +25,3 @@
+   -Proof. The first three lines follow from Theorem 21, all others except the last one from
+   -Corollary 19, and the last one from the statement independent of m in [4, 9] or [3], using
+   -the known value of X as in Definition 4 and given in [2].
+   +Proof. The first two lines follow from Theorem 21, all others except the last one from Corol-
+   +lary 19, and the last one from the statement independent of m in [4, 9] or [3], using the
+   +known value of X as in Definition 4 and given in [2].

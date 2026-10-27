@@ -1,0 +1,2 @@
+DASH43_INDEX -1
+CONTEXT "N 32\n '11'   dy=-1.349  h=7.97\n '20'   "

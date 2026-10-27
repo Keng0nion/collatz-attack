@@ -1,0 +1,4 @@
+RAWLEN 1362
+NDY 32
+SAMPLE1 "=== PRINTED p15 line with bounnd ===\nApplying this lower K bounnd a last time we get m 2 ≥ 91, δ &lt; K+L K &lt; δ + 1.11 · 10 −43 and\n\n--- PRINTED p15 exponent offsets ---\n    '11'      dy=-1.349  h="
+SAMPLE2 "7.97\n    '20'      dy=-1.349  h=7.97\n    '−32'     dy=-0.461  h=5.01\n    '15'      dy=-1.943  h=7.97\n    '−36'     dy=+0.133  h=5.01\n    '17'      dy=-1.349  h=7.97\n    '−38'     dy=+0.133  h=5.01\n    '18'      dy=-1.349  h=7.97\n    '−39'     dy=+0.124  h=5.01\n    '19'      dy=-1.358  h=7.97\n    '−4"

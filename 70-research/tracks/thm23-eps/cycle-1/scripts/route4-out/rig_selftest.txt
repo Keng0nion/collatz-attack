@@ -1,0 +1,14 @@
+[selftest] ln2 宽度 = 1.062e-118
+[selftest] ln3 宽度 = 7.764e-76
+[selftest] delta 宽度 = 1.120e-75
+[selftest] mpmath ln2 在区间内 litmus: 前 40 位 = 0.6931471805599453094172321214581765680755
+[selftest] ln(2): 宽度 1.06e-118，mpmath 值在区间内 = True
+[selftest] ln(3): 宽度 1.06e-118，mpmath 值在区间内 = True
+[selftest] ln(112590/97): 宽度 1.06e-117，mpmath 值在区间内 = True
+[selftest] ln(1160): 宽度 1.06e-117，mpmath 值在区间内 = True
+[selftest] exp(1) 区间宽 1.25e-201，含 mpmath e = True
+[selftest] 2^(1/2) 区间宽 7.51e-119，含 mpmath 值 = True
+[selftest] 2^80 区间宽 0.00e+00（应为 0，整数幂）
+[selftest] gamma_q(100/201, 101/203) = {'q': Fraction(203, 1), 'k': 2, 'ak': 100, 'bk': 101, 'ck': 101, 'n_common': 2} （期望 q=203,k=2,ck=101）
+[selftest] gamma_q 随机核对：违反数 = 0，需收窄数 = 111（400 内穷举）
+[selftest] 总体 = PASS
