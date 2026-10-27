@@ -1,0 +1,1 @@
+probe: written 2026-10-28 by route-4 subagent. If you can read this, the Write/Read channel works.

@@ -1,0 +1,19 @@
+=== 本文件生成时刻：2026-10-28 01:16:36 JST ===
+--- sysctl -n hw.ncpu / hw.physicalcpu / machdep.cpu.brand_string ---
+8
+8
+Apple M2
+--- uname -a ---
+Darwin Kengo.local 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:02:16 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8112 arm64
+--- python ---
+3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]
+gmpy2 2.3.2 mpmath 1.3.0
+--- uptime（现刻）---
+ 1:16  up 16:29, 1 user, load averages: 3.44 6.96 51.09
+
+--- 负载与机器状态的会话观察（转录段；数值转录自当时终端输出，供计时口径判读）---
+1. 2026-10-27 22:59 至 23:05（对照乙、丙、甲运行时段）：无 uptime 记录；对照甲进程自报 92% CPU、user 65.60 s（threeway-A-positive.time）。
+2. 2026-10-27 23:58（成本探针首跑前后）：uptime 输出 load averages: 10.20 59.99 62.61；同刻 top 进程（转录）：zcode-cli 32.8%、mediaanalysisd 27.3%、哔哩哔哩 Helper 23.5%、coreaudiod 14.5%、qemu-system-aarch64 10.4%、Virtualization.VirtualMachine 8.4%、corespeechd 6.7%、ClassIn 5.8%。
+3. 2026-10-28 00:51（冻结脚本重跑结束后）：uptime 输出 load averages: 200.08 222.36 214.35；冻结跑自报 51% CPU、user 178.57 s（threeway-A-frozen-run.time）。
+4. 2026-10-28 01:16：load averages: 3.44 6.96 51.09（本段上方「uptime（现刻）」即其落盘原文）。
+5. 2026-10-28 01:18（S 档第四次运行前后）：load averages: 4.15 6.12 45.63；S 第四次自报 97% CPU、user 2.33 s（threeway-S-cost-sample-rerun3.time）。

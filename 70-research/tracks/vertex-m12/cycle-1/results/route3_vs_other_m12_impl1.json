@@ -1,0 +1,16 @@
+{
+ "mine_file": "route3_impl1_m12.json",
+ "mine_impl": "route3-impl1-mpqscan",
+ "m2": 12,
+ "ckpt_dir": "m2_12_mpq",
+ "ckpt_files": 16,
+ "n_mine_points": 12,
+ "n_mine_distinct": 12,
+ "n_other_points": 12,
+ "n_other_distinct": 12,
+ "point_sets_equal": true,
+ "only_in_mine": [],
+ "only_in_other": [],
+ "n_only_in_mine": 0,
+ "n_only_in_other": 0
+}

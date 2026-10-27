@@ -1,0 +1,17 @@
+  分片 [300000, 352716) 完成：候选 10，3.256 s
+  分片 [0, 100000) 完成：候选 0，4.846 s
+  分片 [100000, 200000) 完成：候选 0，5.372 s
+  分片 [200000, 300000) 完成：候选 0，5.369 s
+{
+ "m2": 10,
+ "total_subsets": 352716,
+ "scanned_subsets": 352716,
+ "elapsed_sec": 5.692,
+ "n_candidate_subsets": 10,
+ "n_distinct_candidates": 10,
+ "analytic_count": 10,
+ "analytic_equal_candidate_set": true,
+ "candidates_with_wrong_rank": [],
+ "agg": "2bde15694dbbcfa9"
+}
+$PY scripts/route3_impl2_struct.py --m2 10 --workers 4 --chunk 100000 >   7.70s user 0.34s system 129% cpu 6.190 total

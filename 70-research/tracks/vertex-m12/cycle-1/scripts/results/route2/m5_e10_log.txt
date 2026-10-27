@@ -15,9 +15,9 @@ THREAD 5 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_r
 THREAD 6 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
 THREAD 7 chunks=0 sets=0 first_chunk=-1 first_range=[-1,-1) last_chunk=-1 last_range=[-1,-1)
 THREAD_SETS_SUM 462 (== total : True)
-TIME_SAMPLE pathA n=2 avg_ns=4500.0
-TIME_SAMPLE pathB n=2 avg_ns=3000.0
-ENUM_WALL_SEC 0.002
+TIME_SAMPLE pathA n=2 avg_ns=130000.0
+TIME_SAMPLE pathB n=2 avg_ns=10500.0
+ENUM_WALL_SEC 0.005
 FEASIBLE_SUBSETS 30
 VERTEX_COUNT 5
 EXPECT_VERTICES PASS (5)

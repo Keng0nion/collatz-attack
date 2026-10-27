@@ -1,0 +1,10 @@
+{
+ "m2": 10,
+ "lo": 0,
+ "hi": 352716,
+ "n_compare": 352716,
+ "n_mismatch": 0,
+ "n_candidates_impl1": 10,
+ "n_candidates_impl2": 10,
+ "first_mismatches": []
+}

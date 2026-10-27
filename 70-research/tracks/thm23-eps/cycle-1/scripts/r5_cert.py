@@ -61,7 +61,7 @@ conv = convergents(digits)
 P("  收敛分数 p_n/q_n（打印 n, p_n, q_n）：")
 for n in range(38, min(len(conv), 47)):
     p, q = conv[n]
-    P("    n = %2d  q_n = %d" % (n, q))
+    P("    n = %2d  p_n = %d  q_n = %d" % (n, p, q))
 assert len(digits) >= 45, "证书位数不足 45，无法定出 a44"
 P("  校验：a44 =", digits[44], "（应为 37）   a45 =", digits[45] if len(digits) > 45 else "未定")
 
@@ -76,6 +76,13 @@ P("  q44 =", q44, "  q42 =", q42)
 P("  a44 = 37 的推论：δ 的尾部 t = [a44; a45, ...] 满足 t ∈ (37, 38)（已证）")
 if len(digits) > 45:
     P("  a45 =", digits[45], " 的推论：38 - t = 1 - 1/[a45; ...] ∈ (3/4, 4/5)（已证）")
+# Legendre 型辅助核对（经典定理：|x - p/q| < 1/(2q^2) 蕴含 p/q 是 x 的收敛分数）
+aux = max(p43 - L * q43, U * q43 - p43) / q43
+P("  辅助核对（Legendre 判别，经典定理，仅作旁证不入选证明链）：")
+P("    |δ - p43/q43| 的上界（区间包络）= %s" % sig_str(aux, 12))
+P("    1/(2 q43^2) = %s" % sig_str(F(1, 2 * q43 * q43), 12))
+P("    上界 < 1/(2 q43^2) ：",
+  q43 * (p43 - L * q43) < F(1, 2) and q43 * (U * q43 - p43) < F(1, 2))
 
 # ---------- 3. 整数恒等式与末值 ----------
 T = 38 * q43 + q42
@@ -97,7 +104,7 @@ P("  最小分母候选 S38 = p/T，p =", S38_NUM)
 d = T - PRINTED_K7
 P("\n[4] 印数 7.94 × 10^21 与 T 的严格对照")
 P("  T - 7.94e21 =", d, "（绝对）")
-P("  3 位有效数字四舍五入：T 的 3 位 =", sig_str(T, 3), " 与印数一致：", abs(d) < F(5, 10) * F(10) ** 18)
+P("  3 位有效数字四舍五入：T 的 3 位 =", sig_str(T, 3), " 与印数一致：", abs(d) < F(5, 10) * F(10) ** 19)
 P("  3 位有效数字截断：", sig_str(T, 3), " 两种取整在此处同一字符串（已证：|d| < 1e19）")
 
 # ---------- 5. 距离界（由连分数系数给出，精确有理） ----------
@@ -157,6 +164,25 @@ P("  S38 = (p44 + p43)/(q44 + q43) 在 (δ, δ+w1) 内（两条精确比较）�
 P("    S38 > δ ：", S38_NUM > U * T, "（由 S38 - δ >= 3/(4 T^2)）")
 P("    S38 < δ + w1 ：", S38_NUM < (L + W1) * T)
 P("  结论：对 w ∈ {w1, w2, w3}，(δ, δ+w) 内最小分母 = T = %d（已证）" % T)
+
+# ---------- 7b. 论文 Lemma 22 构造对照 ----------
+P("\n[7b] 论文 Lemma 22 构造（k = 首个相异下标、c_k = min(a_k,b_k)+1）与本轮最小分母对照")
+for name, w in readings:
+    db, rlo_b, rhi_b = cf_prefix(L + w, U + w, maxlen=400)
+    k = None
+    for i in range(min(len(digits), len(db))):
+        if digits[i] != db[i]:
+            k = i
+            break
+    assert k is not None, "两个不相交区间的证书前缀未在证书长度内分岔"
+    ck = min(digits[k], db[k]) + 1
+    g = convergents(digits[:k] + [ck])[-1]
+    P("  %s：" % name)
+    P("    首个相异下标 k = %d ：δ 侧 a_k = %d，δ+w 侧 b_k = %d（非退化：b_k - a_k >= 2 ：%s）" %
+      (k, digits[k], db[k], db[k] - digits[k] >= 2))
+    P("    c_k = min + 1 = %d；γ' = [前缀; c_k] = %d / %d" % (ck, g[0], g[1]))
+    P("    γ' 分母 = T ：", g[1] == T, "； γ' = S38 ：", g == (S38_NUM, T), "（已证）")
+    P("    γ' > δ（精确比较）：", g[0] > U * g[1], "； γ' < δ + w（精确比较）：", g[0] < (L + w) * g[1])
 
 # ---------- 8. 连分数单元（cell）边界 ----------
 P("\n[8] 连分数单元：使最小分母恰为 T 的 w 集合（区间陈述，非抽样）")

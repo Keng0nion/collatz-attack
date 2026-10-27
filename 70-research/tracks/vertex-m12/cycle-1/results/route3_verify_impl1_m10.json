@@ -1,0 +1,203 @@
+{
+ "impl_checked": "route3-impl1-mpqscan",
+ "m2": 10,
+ "file_m2_analytic_count": 10,
+ "n_candidates_in_file": 10,
+ "per_candidate": [
+  {
+   "rank": 352706,
+   "rotation_index": 0,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352707,
+   "rotation_index": 1,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352708,
+   "rotation_index": 2,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352709,
+   "rotation_index": 3,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352710,
+   "rotation_index": 4,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352711,
+   "rotation_index": 5,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352712,
+   "rotation_index": 6,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352713,
+   "rotation_index": 7,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352714,
+   "rotation_index": 8,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  },
+  {
+   "rank": 352715,
+   "rotation_index": 9,
+   "checks": {
+    "V1_rank_matches_subset": true,
+    "V2_witness_full_rank": true,
+    "V3_witness_equations_hold": true,
+    "V4_feasible_all_constraints": true,
+    "V5_in_analytic_family": true,
+    "V6_active_count_matches": true,
+    "V6_active_rank_equals_m2": true
+   },
+   "witness_rank": 10,
+   "violations_if_any": [],
+   "active_count_recomputed": 10,
+   "active_rank_recomputed": 10,
+   "active_count_in_file": 10,
+   "all_checks_pass": true
+  }
+ ],
+ "n_candidates_failed": 0,
+ "all_candidates_pass": true,
+ "n_distinct_points": 10,
+ "n_rotation_indices_seen": 10,
+ "v": "268435456000000000000000000000000000000000000000/22725261161011054784967090441968436961748593517"
+}

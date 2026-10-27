@@ -1,0 +1,12 @@
+[route2_ref_enum] m2=10 delta=126797/80000 W=2000 N=21 TOTAL=352716 RANGE=[0,352716)
+    ... 100000/352716（89 s）
+    ... 200000/352716（185 s）
+    ... 300000/352716（268 s）
+DECISION_COUNTS S=295780 I=56926 F=10 total=352716
+DECISIONS_FILE results/route2/py_m10_decisions.txt bytes=352716
+DECISIONS_MD5 b269256bfff877a81fa5a81047a4c958
+ELAPSED_SEC 318.3
+ANALYTIC_COUNT 10 VERTEX_COUNT 10 SETS_EQUAL True
+VERTS_FILE results/route2/py_m10_vertices.txt
+EXIT_OK
+"/Users/luna/Documents/math IA/collatz-attack/20-experiments/.venv/bin/python  151.34s user 0.95s system 47% cpu 5:18.55 total

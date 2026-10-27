@@ -1,0 +1,12 @@
+LINES 372
+PROSE_HYPHEN_HITS 5
+(74, '> `Theorem 21. Let K be the number of odd numbers in a given m-cycle, and let L be the num')
+(113, '> `Theorem 23 (Main Theorem). There is no m-cycle with m ≤ 91.`')
+(137, '> `But this last lower bound on K is larger than the upper bound of K < 1.4784mδ^m < 2.2 ·')
+(143, '标题为 `Corrigendum to Article 23.3.5 / There are no Collatz-m-Cycles with m ≤ 91`，作者 Christi')
+(259, '| Definition 15 | 印出版 | 10 | 页内单独一行，位于章标题 `3 On Collatz m-cycles` 之后 | 本次亲读（渲染图） |')
+KEY 让我 0
+KEY 待补 0
+KEY TODO 0
+KEY 将补 0
+KEY 试着 0

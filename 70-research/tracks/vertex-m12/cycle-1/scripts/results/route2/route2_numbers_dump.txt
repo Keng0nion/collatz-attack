@@ -1,0 +1,109 @@
+===== 文件清单 =====
+-rw-r--r--@  1 luna  staff   352716 Oct 28 01:44 c_m10_t1_decisions.txt
+-rw-r--r--@  1 luna  staff    12022 Oct 28 01:44 c_m10_t1_log.txt
+-rw-r--r--@  1 luna  staff      124 Oct 28 01:44 c_m10_t1_time.txt
+-rw-r--r--@  1 luna  staff     1472 Oct 28 01:44 c_m10_t8_chunkmap.txt
+-rw-r--r--@  1 luna  staff   352716 Oct 28 01:44 c_m10_t8_decisions.txt
+-rw-r--r--@  1 luna  staff    12852 Oct 28 01:44 c_m10_t8_log.txt
+-rw-r--r--@  1 luna  staff      124 Oct 28 01:44 c_m10_t8_time.txt
+-rw-r--r--@  1 luna  staff     9970 Oct 28 01:50 c_m12_t8_chunkmap.txt
+-rw-r--r--@  1 luna  staff  5200300 Oct 28 01:50 c_m12_t8_decisions.txt
+-rw-r--r--@  1 luna  staff    20456 Oct 28 01:50 c_m12_t8_log.txt
+-rw-r--r--@  1 luna  staff       51 Oct 28 01:50 c_m12_t8_time.txt
+-rw-r--r--@  1 luna  staff   352716 Oct 28 01:49 py_m10_decisions.txt
+-rw-r--r--@  1 luna  staff      594 Oct 28 01:49 py_m10_log.txt
+-rw-r--r--@  1 luna  staff    11154 Oct 28 01:49 py_m10_vertices.txt
+-rw-r--r--@  1 luna  staff    60000 Oct 28 02:30 py_m12_slice_a.txt
+-rw-r--r--@  1 luna  staff      315 Oct 28 02:30 py_m12_slice_a_log.txt
+-rw-r--r--@  1 luna  staff    60000 Oct 28 02:31 py_m12_slice_b.txt
+-rw-r--r--@  1 luna  staff      323 Oct 28 02:31 py_m12_slice_b_log.txt
+-rw-r--r--@  1 luna  staff    60300 Oct 28 02:33 py_m12_slice_c.txt
+-rw-r--r--@  1 luna  staff      324 Oct 28 02:33 py_m12_slice_c_log.txt
+
+===== m2=5 (E10) =====
+DECISION_COUNTS S=170 I=262 F=30 total=462
+CROSSCHECK compared=462 sol_cmp=292 mismatches=0 mode=2
+ANALYTIC_COUNT 5 VERTEX_COUNT 5 MATCH 5 SETS_EQUAL True
+EXIT_OK
+
+===== m2=10 C 八线程 =====
+TOTAL_SUBSETS mult=352716 pascal=352716 equal=True
+DECISION_COUNTS S=295780 I=56926 F=10 total=352716
+CROSSCHECK compared=352716 sol_cmp=56936 mismatches=0 mode=2
+THREAD_SETS_SUM 352716 (== total : True)
+TIME_SAMPLE pathA n=1274 avg_ns=59706.4
+TIME_SAMPLE pathB n=1274 avg_ns=84562.0
+ENUM_WALL_SEC 2.820
+FEASIBLE_SUBSETS 10
+VERTEX_COUNT 10
+ANALYTIC_COUNT 10 VERTEX_COUNT 10 MATCH 10 SETS_EQUAL True
+ANALYTIC_COUNT 10 VERTEX_COUNT 10 MATCH 10 SETS_EQUAL True
+MISMATCHES_TOTAL 0
+EXIT_OK
+-- 墙钟（time 文件）:
+./route2_vm_enum 10 126797 80000 2000 8 results/route2/c_m10_t8_decisions.txt  6.28s user 0.05s system 222% cpu 2.840 total
+
+===== m2=10 C 单线程 =====
+DECISION_COUNTS S=295780 I=56926 F=10 total=352716
+CROSSCHECK compared=352716 sol_cmp=56936 mismatches=0 mode=2
+ANALYTIC_COUNT 10 VERTEX_COUNT 10 MATCH 10 SETS_EQUAL True
+EXIT_OK
+./route2_vm_enum 10 126797 80000 2000 1 results/route2/c_m10_t1_decisions.txt  5.90s user 0.04s system 42% cpu 14.022 total
+
+===== m2=10 Python 参考 =====
+DECISION_COUNTS S=295780 I=56926 F=10 total=352716
+DECISIONS_MD5 b269256bfff877a81fa5a81047a4c958
+ELAPSED_SEC 318.3
+ANALYTIC_COUNT 10 VERTEX_COUNT 10 SETS_EQUAL True
+EXIT_OK
+
+===== 判串 md5（三方） =====
+b269256bfff877a81fa5a81047a4c958
+b269256bfff877a81fa5a81047a4c958
+b269256bfff877a81fa5a81047a4c958
+
+===== m2=12 C 八线程 =====
+TOTAL_SUBSETS mult=5200300 pascal=5200300 equal=True
+DECISION_COUNTS S=4752735 I=447553 F=12 total=5200300
+CROSSCHECK compared=5200300 sol_cmp=447565 mismatches=0 mode=2
+THREAD_SETS_SUM 5200300 (== total : True)
+TIME_SAMPLE pathA n=18774 avg_ns=566.8
+TIME_SAMPLE pathB n=18774 avg_ns=59151.5
+ENUM_WALL_SEC 38.234
+FEASIBLE_SUBSETS 12
+VERTEX_COUNT 12
+ANALYTIC_COUNT 12 VERTEX_COUNT 12 MATCH 12 SETS_EQUAL True
+ANALYTIC_COUNT 12 VERTEX_COUNT 12 MATCH 12 SETS_EQUAL True
+MISMATCHES_TOTAL 0
+EXIT_OK
+-- 墙钟（time 文件）:
+
+real	0m38.271s
+user	1m51.020s
+sys	0m0.581s
+exit=0
+-- 判串 md5 与字节数:
+8fb4ba1aef28fdc293b52270985ec35e
+ 5200300
+
+===== m2=12 Python 三段分片 =====
+DECISION_COUNTS S=57534 I=2466 F=0 total=60000
+DECISIONS_MD5 3fc7cb4298234a9a35157a67468cdabb
+ELAPSED_SEC 49.5
+EXIT_OK
+DECISION_COUNTS S=57197 I=2803 F=0 total=60000
+DECISIONS_MD5 01d48b64c306fcda9abf601a1cee60da
+ELAPSED_SEC 59.9
+EXIT_OK
+DECISION_COUNTS S=51158 I=9130 F=12 total=60300
+DECISIONS_MD5 6ed10684ab1144eed0718d983ebbac7b
+ELAPSED_SEC 95.5
+EXIT_OK
+
+===== 源文件与二进制 md5 =====
+25edc679aa8ca9ce0650e6eb666e8ec0
+eb4b9978cd187c229788317660229cf3
+8686adc13cb5bcd2040e547f9e47c521
+714ab3cbbf28e812180577731faa9c19
+7cfa5b6c326476bf5cb0fc6ed8bdcf0d
+cfee819667c0883e73732f03d2dc8bef

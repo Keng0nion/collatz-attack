@@ -1,0 +1,1 @@
+"$PY" scripts/frozen/run_frozen_A.py > results/threeway-A-frozen-run.txt 2>   178.57s user 2.39s system 51% cpu 5:49.68 total

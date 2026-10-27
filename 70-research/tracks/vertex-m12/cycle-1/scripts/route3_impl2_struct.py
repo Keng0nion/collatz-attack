@@ -45,7 +45,7 @@ from multiprocessing import Pool
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from route3_defs import (check_delta_anchor, analytic_vertices, v_vertex, canon_point,
                          comb_unrank_lex, comb_next_lex, point_code, agg_term,
-                         rank_fraction, constraint_rows, delta_lo, W_FROZEN)
+                         rank_fraction, constraint_rows, delta_lo, delta_hi, W_FROZEN)
 
 MASK64 = (1 << 64) - 1
 
@@ -226,10 +226,12 @@ def main():
     ap.add_argument("--chunk", type=int, default=100000)
     ap.add_argument("--no-anchor", action="store_true", help="跳过 δ 的整数幂锚点复核（快跑用）")
     ap.add_argument("--limit", type=int, default=0, help="只扫前 LIMIT 个子集（冒烟用）")
+    ap.add_argument("--delta", choices=["lo", "hi"], default="lo",
+                    help="δ 取严格下界（默认，126797/80000）或严格上界（7924813/5000000）")
     args = ap.parse_args()
 
     m2 = args.m2
-    delta = delta_lo(verify=not args.no_anchor)
+    delta = (delta_lo if args.delta == "lo" else delta_hi)(verify=not args.no_anchor)
     W = W_FROZEN
     p, q = delta.numerator, delta.denominator
     wn, wd = W.numerator, W.denominator

@@ -242,7 +242,8 @@ static void *worker(void *arg)
 /* ---------- 后处理 ---------- */
 typedef struct {
     char *key;
-    long long idx;
+    long long idx;  /* 排序键：原子集下标（字典序），保证证书顺序确定 */
+    long long cand; /* 候选数组下标，仅用于访问 Cands */
 } keyref_t;
 
 static int keyref_less(const keyref_t *a, const keyref_t *b)
@@ -522,7 +523,8 @@ int main(int argc, char **argv)
         die("分配失败（keyref）", 4);
     for (long long i = 0; i < NCands; i++) {
         kr[i].key = key_of((const mpq_t *)Cands[i].y);
-        kr[i].idx = i;
+        kr[i].idx = Cands[i].idx;
+        kr[i].cand = i;
     }
     merge_sort_keyref(kr, ktmp, NCands);
     long long nverts = 0;
@@ -548,7 +550,7 @@ int main(int argc, char **argv)
         for (long long g = 0; g < nverts; g++) {
             long long i = group_start[g];
             long long j = (g + 1 < nverts) ? group_start[g + 1] : NCands;
-            cand_t *c0 = &Cands[kr[i].idx];
+            cand_t *c0 = &Cands[kr[i].cand];
             int nact = 0, rk = 0;
             active_cert(w, (const mpq_t *)c0->y, &nact, &rk);
             printf("VERTEX %lld coords=", g);
@@ -560,7 +562,7 @@ int main(int argc, char **argv)
             printf("\n");
             printf("VERTEX %lld certs=%lld cert_subset_idxs=", g, j - i);
             for (long long k = i; k < j; k++) {
-                cand_t *c = &Cands[kr[k].idx];
+                cand_t *c = &Cands[kr[k].cand];
                 printf("%s%lld[", k > i ? "," : "", c->idx);
                 for (int v = 0; v < M; v++)
                     printf(v ? ",%u" : "%u", (unsigned)c->S[v]);

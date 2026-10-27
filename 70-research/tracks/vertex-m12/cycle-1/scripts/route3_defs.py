@@ -53,6 +53,21 @@ def delta_lo(verify=True):
     return Fraction(p, q)
 
 
+def delta_hi(verify=True):
+    """返回 δ 的严格上界 Fraction(p+1, q)：由 3^q < 2^{p+1} 保证。
+
+    用途：与 delta_lo 配对，构成包含真实 δ = log2(3) 的严格有理区间
+    （[126797/80000, 7924813/5000000]）。两个端点各做一次全扫，即为「参数端点稳健性」
+    核对；区间内部的逐点检验本轮未做（见 route-3.md 的边界声明）。
+    """
+    p, q = DELTA_P, DELTA_Q
+    if verify:
+        right = gmpy2.mpz(3) ** q
+        assert right < gmpy2.mpz(2) ** (p + 1), "锚点复核失败：3^10^7 < 2^15849626 不成立"
+        assert gmpy2.mpz(2) ** p < right, "锚点复核失败：2^15849625 < 3^10^7 不成立"
+    return Fraction(p + 1, q)
+
+
 def check_delta_anchor():
     """返回复核行的字符串摘要（供日志落盘）。"""
     p, q = DELTA_P, DELTA_Q

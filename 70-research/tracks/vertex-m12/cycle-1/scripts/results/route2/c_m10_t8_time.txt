@@ -1,0 +1,1 @@
+./route2_vm_enum 10 126797 80000 2000 8 results/route2/c_m10_t8_decisions.txt  6.28s user 0.05s system 222% cpu 2.840 total

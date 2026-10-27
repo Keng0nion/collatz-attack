@@ -9,6 +9,8 @@ echo "# 格式：md5 | 字节 | 行数 | 路径（相对 collatz-attack/）"
 for f in \
   "$TRACK/scripts/three_way_baseline.py" \
   "$TRACK/scripts/diff_norm.py" \
+  "$TRACK/scripts/probe_cost_distribution.py" \
+  "$TRACK/scripts/probe_paired_timing.py" \
   "$TRACK/scripts/make_manifest.sh" \
   "$TRACK/scripts/frozen/run_frozen_A.py" \
   "$TRACK/scripts/frozen/r2_common.py" \
@@ -27,6 +29,20 @@ for f in \
   "$TRACK/results/threeway-P-partition.time" \
   "$TRACK/results/threeway-S-cost-sample.txt" \
   "$TRACK/results/threeway-S-cost-sample.time" \
+  "$TRACK/results/threeway-S-cost-sample-rerun.txt" \
+  "$TRACK/results/threeway-S-cost-sample-rerun.time" \
+  "$TRACK/results/threeway-S-cost-sample-rerun2.txt" \
+  "$TRACK/results/threeway-S-cost-sample-rerun2.time" \
+  "$TRACK/results/threeway-S-cost-sample-rerun3.txt" \
+  "$TRACK/results/threeway-S-cost-sample-rerun3.time" \
+  "$TRACK/results/environment-notes.txt" \
+  "$TRACK/route-1.md" \
+  "$TRACK/results/probe-cost-distribution.txt" \
+  "$TRACK/results/probe-cost-distribution.time" \
+  "$TRACK/results/probe-cost-distribution-rerun.txt" \
+  "$TRACK/results/probe-cost-distribution-rerun.time" \
+  "$TRACK/results/probe-paired-timing.txt" \
+  "$TRACK/results/probe-paired-timing.time" \
   "$C1/scripts/r2_common.py" \
   "$C1/scripts/r2_j_independent_vertices.py" \
   "$C1/scripts/r2_b_vertices.py" \

@@ -22,10 +22,10 @@ route-4（取整约定穷举与窗口反演）严格有理区间库。
   2^v （v<0）：2^v = 1/2^{-v}
 """
 from fractions import Fraction as F
-from math import floor
+from math import floor, ceil
 
-SERN = 120      # ln 级数项数
-SERX = 120      # exp 级数项数
+SERN = 80       # ln 级数项数（ln3 的 2 进制级数收敛最慢，N=80 给 delta 宽 ~1.4e-50）
+SERX = 30       # exp 级数项数（y<=1 时余项 <= 1/30! ~ 4.4e-33，展宽后仍 << 1e-32 相对）
 
 
 # ---------------- 区间基本运算（端点 F，lo <= hi） ----------------
@@ -56,6 +56,18 @@ def wid(a):
     return a[1] - a[0]
 
 
+SNAP = 130      # 向外取整到的十进制网格位数
+
+
+def snap(a, nd=SNAP):
+    """把区间向外取整到 10^-nd 网格：仍严格包含真值，但压住分母位数。
+
+    用途：区间乘积会把分母位数累加（delta^91 走乘积到 4500 位），传给 exp 级数后
+    更会放大 30 倍；对外给 1e-130 的绝对精度对本轮全部判定都绰绰有余。"""
+    s = F(10) ** nd
+    return (floor(a[0] * s) / s, ceil(a[1] * s) / s)
+
+
 # ---------------- ln2 / ln3 ----------------
 def ln2_bounds(N=SERN):
     s = F(0)
@@ -84,7 +96,7 @@ def ln_t_bounds(t, N=SERN):
     if u == 0:
         return (F(0), F(0))
     tail = 2 * u ** (2 * N + 3) / ((2 * N + 3) * (1 - u * u))
-    return (lo, lo + tail)
+    return snap((lo, lo + tail))
 
 
 def _cmp_pow2(num, den, e):
@@ -109,7 +121,7 @@ def ln_rat_bounds(x, N=SERN):
     assert 1 <= t < 2
     l2 = ln2_bounds(N)
     lt = ln_t_bounds(t, N)
-    return iadd(iscale(l2, e), lt)
+    return snap(iadd(iscale(l2, e), lt))
 
 
 def ln_interval(a, N=SERN):
@@ -132,8 +144,10 @@ def exp_unit_bounds(y, N=SERX):
 
 
 def exp_bounds(y, N=SERX):
-    """y >= 0 的 Fraction；exp y 的 [lo,hi]。"""
-    assert y >= 0
+    """y 任意 Fraction；exp y 的 [lo,hi]（y<0 时用 1/exp(-y)）。"""
+    if y < 0:
+        lo, hi = exp_bounds(-y, N)
+        return (1 / hi, 1 / lo)
     if y <= 1:
         return exp_unit_bounds(y, N)
     s = 0
@@ -160,14 +174,60 @@ def pow2_bounds(v, N=SERX):
     elo = exp_bounds(r * l2[0], N)[0]
     ehi = exp_bounds(r * l2[1], N)[1]
     p = F(2) ** n
-    return (p * elo, p * ehi)
+    return snap((p * elo, p * ehi))
+
+
+def pow2_interval(vint, N=SERX):
+    """2^v 的区间（v 为区间，要求 floor 恒定；r=v-n in [0,1) 避免大指数级数）。"""
+    vlo, vhi = vint
+    n = floor(vlo)
+    assert floor(vhi) == n, "2^v 的整数部分不恒定，需收窄"
+    l2 = ln2_bounds()
+    r = (vlo - n, vhi - n)
+    elo = exp_bounds(r[0] * l2[0], N)[0]
+    ehi = exp_bounds(r[1] * l2[1], N)[1]
+    p = F(2) ** n
+    return snap((p * elo, p * ehi))
+
+
+def oneminus_pow2delta(vint, dint, N=SERX):
+    """(2^v - 1)^delta 的区间。恒等式（避免平方放大）：
+       (2^v-1)^delta = exp(delta*(v ln2 + ln(1-2^-v))) = 3^n * exp(r ln3 + delta ln(1-2^-v)),
+       v = n + r, n=floor(v), r in [0,1)；z = 2^-v 很小时
+       -（z+2z^2) <= ln(1-z) <= -z  （0<z<=1/2 时成立：ln(1-z) = -sum z^k/k）。
+       要求 z_hi <= 1/2。
+    """
+    vlo, vhi = vint
+    n = floor(vlo)
+    assert floor(vhi) == n, "floor(v) 不恒定"
+    r = (vlo - n, vhi - n)
+    l3 = ln3_bounds()
+    zhi = pow2_bounds(-vlo, N)[1]
+    zlo = pow2_bounds(-vhi, N)[0]
+    assert zhi <= F(1, 2), "z 不够小"
+    dlo, dhi = dint
+    y_lo = r[0] * l3[0] - dhi * (zhi + 2 * zhi * zhi)
+    y_hi = r[1] * l3[1] - dlo * zlo
+    e_lo = exp_bounds(y_lo, N)[0]
+    e_hi = exp_bounds(y_hi, N)[1]
+    p = F(3) ** n
+    return snap((p * e_lo, p * e_hi))
+
+
+def delta_pow_prod(m, N=SERN):
+    """delta^m 的区间（区间乘积，避免 exp 的大指数平方放大；相对宽 ~ m*delta^{m-1}*w(delta)/delta^m）。"""
+    dl = delta_bounds(N)
+    p = (F(1), F(1))
+    for _ in range(m):
+        p = snap(imul(p, dl))
+    return p
 
 
 # ---------------- delta 与定理 21 的量 ----------------
 def delta_bounds(N=SERN):
     l2 = ln2_bounds(N)
     l3 = ln3_bounds(N)
-    return (l3[0] / l2[1], l3[1] / l2[0])
+    return snap((l3[0] / l2[1], l3[1] / l2[0]))
 
 
 def delta_pow_bounds(m, N=SERN):
@@ -182,7 +242,7 @@ def geom_bounds(m, N=SERN):
     """(delta^m - 1)/(delta - 1) 的区间。"""
     dm = delta_pow_bounds(m, N)
     dl = delta_bounds(N)
-    return idiv((dm[0] - 1, dm[1] - 1), (dl[0] - 1, dl[1] - 1))
+    return snap(idiv((dm[0] - 1, dm[1] - 1), (dl[0] - 1, dl[1] - 1)))
 
 
 def log2_num_bounds(X0int, N=SERN):

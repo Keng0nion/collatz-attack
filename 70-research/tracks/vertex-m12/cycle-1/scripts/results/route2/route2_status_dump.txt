@@ -1,0 +1,162 @@
+route2 数值状态汇总
+
+======================================================================
+FILE: results/route2/m5_e10_log.txt 
+  DECISION_COUNTS S=170 I=262 F=30 total=462
+  CROSSCHECK compared=462 sol_cmp=292 mismatches=0 mode=2
+  ANALYTIC_COUNT 5 VERTEX_COUNT 5 MATCH 5 SETS_EQUAL True
+  MISMATCHES_TOTAL 0
+  EXIT_OK
+======================================================================
+FILE: results/route2/c_m10_t8_log.txt (m2=10, 8 线程)
+  PARAMS M=10 N=21 delta=126797/80000 W=2000/1 threads=8 cross=full
+  TOTAL_SUBSETS mult=352716 pascal=352716 equal=True
+  EXPECT_TOTAL PASS (352716)
+  ENUM_CONTINUITY_CHECK PASS
+  DECISIONS_COMPLETE PASS (undecided=0)
+  DECISION_COUNTS S=295780 I=56926 F=10 total=352716
+  CROSSCHECK compared=352716 sol_cmp=56936 mismatches=0 mode=2
+  THREAD_SETS_SUM 352716 (== total : True)
+  TIME_SAMPLE pathA n=1274 avg_ns=59706.4
+  TIME_SAMPLE pathB n=1274 avg_ns=84562.0
+  ENUM_WALL_SEC 2.820
+  FEASIBLE_SUBSETS 10
+  VERTEX_COUNT 10
+  EXPECT_VERTICES PASS (10)
+  ANALYTIC_COUNT 10 VERTEX_COUNT 10 MATCH 10 SETS_EQUAL True
+  MISMATCHES_TOTAL 0
+  EXIT_OK
+======================================================================
+FILE: results/route2/c_m10_t8_time.txt 
+  ./route2_vm_enum 10 126797 80000 2000 8 results/route2/c_m10_t8_decisions.txt  6.28s user 0.05s system 222% cpu 2.840 total
+======================================================================
+FILE: results/route2/c_m10_t1_log.txt (m2=10, 1 线程)
+  DECISION_COUNTS S=295780 I=56926 F=10 total=352716
+  CROSSCHECK compared=352716 sol_cmp=56936 mismatches=0 mode=2
+  ANALYTIC_COUNT 10 VERTEX_COUNT 10 MATCH 10 SETS_EQUAL True
+  EXIT_OK
+======================================================================
+FILE: results/route2/c_m10_t1_time.txt 
+  ./route2_vm_enum 10 126797 80000 2000 1 results/route2/c_m10_t1_decisions.txt  5.90s user 0.04s system 42% cpu 14.022 total
+======================================================================
+FILE: results/route2/py_m10_log.txt (Python 参考 m2=10)
+  [route2_ref_enum] m2=10 delta=126797/80000 W=2000 N=21 TOTAL=352716 RANGE=[0,352716)
+  DECISION_COUNTS S=295780 I=56926 F=10 total=352716
+  DECISIONS_MD5 b269256bfff877a81fa5a81047a4c958
+  ELAPSED_SEC 318.3
+  ANALYTIC_COUNT 10 VERTEX_COUNT 10 SETS_EQUAL True
+  EXIT_OK
+======================================================================
+判串 md5 三方对比：
+   b269256bfff877a81fa5a81047a4c958 results/route2/c_m10_t8_decisions.txt
+   b269256bfff877a81fa5a81047a4c958 results/route2/c_m10_t1_decisions.txt
+   b269256bfff877a81fa5a81047a4c958 results/route2/py_m10_decisions.txt
+   8fb4ba1aef28fdc293b52270985ec35e results/route2/c_m12_t8_decisions.txt
+======================================================================
+FILE: results/route2/c_m12_t8_log.txt (m2=12, 8 线程)
+  PARAMS M=12 N=25 delta=126797/80000 W=2000/1 threads=8 cross=full
+  TOTAL_SUBSETS mult=5200300 pascal=5200300 equal=True
+  EXPECT_TOTAL PASS (5200300)
+  ENUM_CONTINUITY_CHECK PASS
+  DECISIONS_COMPLETE PASS (undecided=0)
+  DECISION_COUNTS S=4752735 I=447553 F=12 total=5200300
+  CROSSCHECK compared=5200300 sol_cmp=447565 mismatches=0 mode=2
+  THREAD_SETS_SUM 5200300 (== total : True)
+  TIME_SAMPLE pathA n=18774 avg_ns=566.8
+  TIME_SAMPLE pathB n=18774 avg_ns=59151.5
+  ENUM_WALL_SEC 38.234
+  FEASIBLE_SUBSETS 12
+  VERTEX_COUNT 12
+  EXPECT_VERTICES PASS (12)
+  ANALYTIC_COUNT 12 VERTEX_COUNT 12 MATCH 12 SETS_EQUAL True
+  MISMATCHES_TOTAL 0
+  EXIT_OK
+======================================================================
+FILE: results/route2/c_m12_t8_time.txt (m2=12 墙钟)
+  
+  real	0m38.271s
+  user	1m51.020s
+  sys	0m0.581s
+  exit=0
+======================================================================
+FILE: results/route2/py_m12_slice_a_log.txt (Python m2=12 分片 a)
+  [route2_ref_enum] m2=12 delta=126797/80000 W=2000 N=25 TOTAL=5200300 RANGE=[0,60000)
+  DECISION_COUNTS S=57534 I=2466 F=0 total=60000
+  DECISIONS_MD5 3fc7cb4298234a9a35157a67468cdabb
+  ELAPSED_SEC 49.5
+  EXIT_OK
+======================================================================
+FILE: results/route2/py_m12_slice_b_log.txt (Python m2=12 分片 b)
+  [route2_ref_enum] m2=12 delta=126797/80000 W=2000 N=25 TOTAL=5200300 RANGE=[2570000,2630000)
+  DECISION_COUNTS S=57197 I=2803 F=0 total=60000
+  DECISIONS_MD5 01d48b64c306fcda9abf601a1cee60da
+  ELAPSED_SEC 59.9
+  EXIT_OK
+======================================================================
+FILE: results/route2/py_m12_slice_c_log.txt (Python m2=12 分片 c)
+  [route2_ref_enum] m2=12 delta=126797/80000 W=2000 N=25 TOTAL=5200300 RANGE=[5140000,5200300)
+  DECISION_COUNTS S=51158 I=9130 F=12 total=60300
+  DECISIONS_MD5 6ed10684ab1144eed0718d983ebbac7b
+  ELAPSED_SEC 95.5
+  EXIT_OK
+======================================================================
+m2=13 进程状态：
+  c_m13_t8_log.txt 存在: True
+  c_m13_t8_time.txt 存在: True
+======================================================================
+FILE: results/route2/c_m13_t8_time.txt 
+  
+  real	0m17.013s
+  user	0m51.773s
+  sys	0m0.356s
+  exit=0
+======================================================================
+FILE: results/route2/c_m13_t8_log.txt (m2=13, 进行中或已完成)
+  TOTAL_SUBSETS mult=20058300 pascal=20058300 equal=True
+  DECISION_COUNTS S=18811533 I=1246754 F=13 total=20058300
+  CROSSCHECK compared=1246767 sol_cmp=1246767 mismatches=0 mode=1
+  ENUM_WALL_SEC 16.913
+  FEASIBLE_SUBSETS 13
+  VERTEX_COUNT 13
+  ANALYTIC_COUNT 13 VERTEX_COUNT 13 MATCH 13 SETS_EQUAL True
+  MISMATCHES_TOTAL 0
+  EXIT_OK
+======================================================================
+源文件 md5：
+   25edc679aa8ca9ce0650e6eb666e8ec0 route2_vm_main.c
+   eb4b9978cd187c229788317660229cf3 route2_vm_core.c
+   8686adc13cb5bcd2040e547f9e47c521 route2_vm_core.h
+   714ab3cbbf28e812180577731faa9c19 route2_vm_enum
+   7cfa5b6c326476bf5cb0fc6ed8bdcf0d route2_ref_enum.py
+   cfee819667c0883e73732f03d2dc8bef frozen/r2_common.py
+   4b8ce2a500d8ca9021fd0178deca637e frozen/r2_j_independent_vertices.py
+
+结果目录文件清单：
+      352716  c_m10_t1_decisions.txt
+       12022  c_m10_t1_log.txt
+         124  c_m10_t1_time.txt
+        1472  c_m10_t8_chunkmap.txt
+      352716  c_m10_t8_decisions.txt
+       12852  c_m10_t8_log.txt
+         124  c_m10_t8_time.txt
+        9970  c_m12_t8_chunkmap.txt
+     5200300  c_m12_t8_decisions.txt
+       20456  c_m12_t8_log.txt
+          51  c_m12_t8_time.txt
+    20058300  c_m13_t8_decisions.txt
+       25269  c_m13_t8_log.txt
+          51  c_m13_t8_time.txt
+          28  channel_probe.txt
+         462  m5_e10_decisions.txt
+        2987  m5_e10_log.txt
+      352716  py_m10_decisions.txt
+         594  py_m10_log.txt
+       11154  py_m10_vertices.txt
+       60000  py_m12_slice_a.txt
+         315  py_m12_slice_a_log.txt
+       60000  py_m12_slice_b.txt
+         323  py_m12_slice_b_log.txt
+       60300  py_m12_slice_c.txt
+         324  py_m12_slice_c_log.txt
+        4244  route2_numbers_dump.txt
+           0  route2_status_dump.txt

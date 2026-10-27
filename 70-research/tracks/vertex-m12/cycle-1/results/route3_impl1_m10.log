@@ -1,0 +1,18 @@
+  分片 [300000, 352716) 完成：奇异 41418，唯一解不可行 11288，候选 10，11.775 s
+  分片 [0, 100000) 完成：奇异 88376，唯一解不可行 11624，候选 0，20.52 s
+  分片 [100000, 200000) 完成：奇异 83881，唯一解不可行 16119，候选 0，20.726 s
+  分片 [200000, 300000) 完成：奇异 82105，唯一解不可行 17895，候选 0，21.718 s
+{
+ "m2": 10,
+ "total_subsets": 352716,
+ "scanned_subsets": 352716,
+ "elapsed_sec": 22.182,
+ "n_singular": 295780,
+ "n_infeasible_unique": 56926,
+ "n_candidate_subsets": 10,
+ "n_distinct_candidates": 10,
+ "analytic_count": 10,
+ "analytic_equal_candidate_set": true,
+ "agg": "2bde15694dbbcfa9"
+}
+$PY scripts/route3_impl1_mpqscan.py --m2 10 --workers 6 --chunk 100000 >   30.06s user 0.78s system 136% cpu 22.577 total

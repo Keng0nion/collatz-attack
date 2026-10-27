@@ -104,27 +104,50 @@ def _exp_pos_bounds(x, N=N_EXP):
     return ef_lo / E_HI ** (-n), ef_hi / E_LO ** (-n)
 
 
-def exp_bounds(x_lo, x_hi, N=N_EXP):
-    """e^x 在 [x_lo, x_hi] 上的区间（e^x 单调增）。"""
-    lo, _ = _exp_pos_bounds(F(x_lo), N)
-    _, hi = _exp_pos_bounds(F(x_hi), N)
+def exp_bounds(x_lo, x_hi, N=N_EXP, S=None):
+    """e^x 在 [x_lo, x_hi] 上的区间（e^x 单调增；S 给定时按 10^-S 网格向外缩，保持包含性）。"""
+    x_lo, x_hi = F(x_lo), F(x_hi)
+    if S is not None:
+        x_lo, x_hi = dec_floor(x_lo, S), dec_ceil(x_hi, S)
+    lo, _ = _exp_pos_bounds(x_lo, N)
+    _, hi = _exp_pos_bounds(x_hi, N)
     return lo, hi
 
 
-def pow2_bounds(v_lo, v_hi):
+def pow2_bounds(v_lo, v_hi, N=N_EXP, S=None):
     """2^v 在 v in [v_lo, v_hi] 上的区间，v_lo > 0。"""
     assert F(v_lo) > 0
-    return exp_bounds(F(v_lo) * L2_LO, F(v_hi) * L2_HI)
+    return exp_bounds(F(v_lo) * L2_LO, F(v_hi) * L2_HI, N, S)
 
 
-def pow_bounds(x_lo, x_hi, p_lo, p_hi):
-    """1 < x_lo <= x_hi，0 < p_lo <= p_hi；返回 (lo, hi) 使 lo < x^p < hi 对一切 x in [x_lo, x_hi]、p in [p_lo, p_hi]。"""
+def dec_floor(x, S):
+    """把有理数向外（向下）取整到 10^-S 的十进制网格。"""
+    x = F(x)
+    grid = 10 ** S
+    return F((x.numerator * grid) // x.denominator, grid)
+
+
+def dec_ceil(x, S):
+    """把有理数向外（向上）取整到 10^-S 的十进制网格。"""
+    x = F(x)
+    grid = 10 ** S
+    return F(-((-x.numerator * grid) // x.denominator), grid)
+
+
+def pow_bounds(x_lo, x_hi, p_lo, p_hi, N_ln=N_ATANH, N_exp=N_EXP, S=None):
+    """1 < x_lo <= x_hi，0 < p_lo <= p_hi；返回 (lo, hi) 使 lo < x^p < hi 对一切 x in [x_lo, x_hi]、p in [p_lo, p_hi]。
+
+    S 给定时先按 10^-S 网格向外（下界向下、上界向上）缩，保持包含性。
+    """
     x_lo, x_hi, p_lo, p_hi = F(x_lo), F(x_hi), F(p_lo), F(p_hi)
     assert x_lo > 1 and p_lo > 0
-    a1, b1 = ln_bounds(x_lo)
-    a2, b2 = ln_bounds(x_hi)
-    lo, _ = exp_bounds(p_lo * a1, p_lo * b1)      # 下界取 x_lo^p_lo
-    _, hi = exp_bounds(p_hi * a2, p_hi * b2)      # 上界取 x_hi^p_hi
+    if S is not None:
+        x_lo, p_lo = dec_floor(x_lo, S), dec_floor(p_lo, S)
+        x_hi, p_hi = dec_ceil(x_hi, S), dec_ceil(p_hi, S)
+    a1, b1 = ln_bounds(x_lo, N_ln)
+    a2, b2 = ln_bounds(x_hi, N_ln)
+    lo, _ = exp_bounds(p_lo * a1, p_lo * b1, N_exp, S)      # 下界取 x_lo^p_lo
+    _, hi = exp_bounds(p_hi * a2, p_hi * b2, N_exp, S)      # 上界取 x_hi^p_hi
     return lo, hi
 
 

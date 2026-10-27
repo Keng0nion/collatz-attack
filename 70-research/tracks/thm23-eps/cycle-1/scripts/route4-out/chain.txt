@@ -1,0 +1,428 @@
+==============================================================================
+route-4 七步取整约定穷举（严格有理区间；K 回代 × K 印刷 × ε 印刷 × A × X0）
+==============================================================================
+
+[A] 16 条轨迹：每步 m2（最大可行）、ε 区间宽度、q(gamma)
+
+  轨迹 kfeed=exact c=73 X0=695：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5267319278509397.0000000000  m2max=67（m2min=1） ε 宽 1.2e-90  q=397560349370386783
+    步3 K_in=397560349370386783.0000000000  m2max=77（m2min=1） ε 宽 6.3e-89  q=4640282259296926456
+    步4 K_in=4640282259296926456.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27444133206411171953.0000000000  m2max=86（m2min=1） ε 宽 7.7e-96  q=77692117359936589403
+    步6 K_in=77692117359936589403.0000000000  m2max=88（m2min=1） ε 宽 4.2e-93  q=205632218873398596256
+    步7 K_in=205632218873398596256.0000000000  m2max=91（m2min=1） ε 宽 1.2e-89  q=7941964418702608664581
+
+  轨迹 kfeed=exact c=73 X0=704：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5267319278509397.0000000000  m2max=67（m2min=1） ε 宽 1.2e-90  q=397560349370386783
+    步3 K_in=397560349370386783.0000000000  m2max=77（m2min=1） ε 宽 6.3e-89  q=4640282259296926456
+    步4 K_in=4640282259296926456.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27444133206411171953.0000000000  m2max=86（m2min=1） ε 宽 7.7e-96  q=77692117359936589403
+    步6 K_in=77692117359936589403.0000000000  m2max=88（m2min=1） ε 宽 4.2e-93  q=205632218873398596256
+    步7 K_in=205632218873398596256.0000000000  m2max=91（m2min=1） ε 宽 1.2e-89  q=7941964418702608664581
+
+  轨迹 kfeed=exact c=1 X0=695：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5267319278509397.0000000000  m2max=67（m2min=1） ε 宽 1.2e-90  q=397560349370386783
+    步3 K_in=397560349370386783.0000000000  m2max=77（m2min=1） ε 宽 6.3e-89  q=4640282259296926456
+    步4 K_in=4640282259296926456.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27444133206411171953.0000000000  m2max=86（m2min=1） ε 宽 7.7e-96  q=77692117359936589403
+    步6 K_in=77692117359936589403.0000000000  m2max=88（m2min=1） ε 宽 4.2e-93  q=205632218873398596256
+    步7 K_in=205632218873398596256.0000000000  m2max=91（m2min=1） ε 宽 1.2e-89  q=7941964418702608664581
+
+  轨迹 kfeed=exact c=1 X0=704：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5267319278509397.0000000000  m2max=67（m2min=1） ε 宽 1.2e-90  q=397560349370386783
+    步3 K_in=397560349370386783.0000000000  m2max=77（m2min=1） ε 宽 6.3e-89  q=4640282259296926456
+    步4 K_in=4640282259296926456.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27444133206411171953.0000000000  m2max=86（m2min=1） ε 宽 7.7e-96  q=77692117359936589403
+    步6 K_in=77692117359936589403.0000000000  m2max=88（m2min=1） ε 宽 4.2e-93  q=205632218873398596256
+    步7 K_in=205632218873398596256.0000000000  m2max=91（m2min=1） ε 宽 1.2e-89  q=7941964418702608664581
+
+  轨迹 kfeed=trunc c=73 X0=695：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5200000000000000.0000000000  m2max=67（m2min=1） ε 宽 1.3e-83  q=397560349370386783
+    步3 K_in=397000000000000000.0000000000  m2max=77（m2min=1） ε 宽 3.1e-81  q=4640282259296926456
+    步4 K_in=4640000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27400000000000000000.0000000000  m2max=86（m2min=1） ε 宽 8.5e-96  q=77692117359936589403
+    步6 K_in=77600000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.7e-95  q=205632218873398596256
+    步7 K_in=205000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 9.0e-91  q=7941964418702608664581
+
+  轨迹 kfeed=trunc c=73 X0=704：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5200000000000000.0000000000  m2max=67（m2min=1） ε 宽 1.3e-83  q=397560349370386783
+    步3 K_in=397000000000000000.0000000000  m2max=77（m2min=1） ε 宽 3.1e-81  q=4640282259296926456
+    步4 K_in=4640000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27400000000000000000.0000000000  m2max=86（m2min=1） ε 宽 8.5e-96  q=77692117359936589403
+    步6 K_in=77600000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.7e-95  q=205632218873398596256
+    步7 K_in=205000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 9.0e-91  q=7941964418702608664581
+
+  轨迹 kfeed=trunc c=1 X0=695：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5200000000000000.0000000000  m2max=67（m2min=1） ε 宽 1.3e-83  q=397560349370386783
+    步3 K_in=397000000000000000.0000000000  m2max=77（m2min=1） ε 宽 3.1e-81  q=4640282259296926456
+    步4 K_in=4640000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27400000000000000000.0000000000  m2max=86（m2min=1） ε 宽 8.5e-96  q=77692117359936589403
+    步6 K_in=77600000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.7e-95  q=205632218873398596256
+    步7 K_in=205000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 9.0e-91  q=7941964418702608664581
+
+  轨迹 kfeed=trunc c=1 X0=704：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5200000000000000.0000000000  m2max=67（m2min=1） ε 宽 1.3e-83  q=397560349370386783
+    步3 K_in=397000000000000000.0000000000  m2max=77（m2min=1） ε 宽 3.1e-81  q=4640282259296926456
+    步4 K_in=4640000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27400000000000000000.0000000000  m2max=86（m2min=1） ε 宽 8.5e-96  q=77692117359936589403
+    步6 K_in=77600000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.7e-95  q=205632218873398596256
+    步7 K_in=205000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 9.0e-91  q=7941964418702608664581
+
+  轨迹 kfeed=round c=73 X0=695：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5300000000000000.0000000000  m2max=67（m2min=1） ε 宽 2.7e-89  q=397560349370386783
+    步3 K_in=398000000000000000.0000000000  m2max=77（m2min=1） ε 宽 5.9e-89  q=4640282259296926456
+    步4 K_in=4640000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27400000000000000000.0000000000  m2max=86（m2min=1） ε 宽 8.5e-96  q=77692117359936589403
+    步6 K_in=77700000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.9e-93  q=205632218873398596256
+    步7 K_in=206000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 5.6e-87  q=7941964418702608664581
+
+  轨迹 kfeed=round c=73 X0=704：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5300000000000000.0000000000  m2max=67（m2min=1） ε 宽 2.7e-89  q=397560349370386783
+    步3 K_in=398000000000000000.0000000000  m2max=77（m2min=1） ε 宽 5.9e-89  q=4640282259296926456
+    步4 K_in=4640000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27400000000000000000.0000000000  m2max=86（m2min=1） ε 宽 8.5e-96  q=77692117359936589403
+    步6 K_in=77700000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.9e-93  q=205632218873398596256
+    步7 K_in=206000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 5.6e-87  q=7941964418702608664581
+
+  轨迹 kfeed=round c=1 X0=695：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5300000000000000.0000000000  m2max=67（m2min=1） ε 宽 2.7e-89  q=397560349370386783
+    步3 K_in=398000000000000000.0000000000  m2max=77（m2min=1） ε 宽 5.9e-89  q=4640282259296926456
+    步4 K_in=4640000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27400000000000000000.0000000000  m2max=86（m2min=1） ε 宽 8.5e-96  q=77692117359936589403
+    步6 K_in=77700000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.9e-93  q=205632218873398596256
+    步7 K_in=206000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 5.6e-87  q=7941964418702608664581
+
+  轨迹 kfeed=round c=1 X0=704：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5300000000000000.0000000000  m2max=67（m2min=1） ε 宽 2.7e-89  q=397560349370386783
+    步3 K_in=398000000000000000.0000000000  m2max=77（m2min=1） ε 宽 5.9e-89  q=4640282259296926456
+    步4 K_in=4640000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.4e-95  q=27444133206411171953
+    步5 K_in=27400000000000000000.0000000000  m2max=86（m2min=1） ε 宽 8.5e-96  q=77692117359936589403
+    步6 K_in=77700000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.9e-93  q=205632218873398596256
+    步7 K_in=206000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 5.6e-87  q=7941964418702608664581
+
+  轨迹 kfeed=ceil c=73 X0=695：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5300000000000000.0000000000  m2max=67（m2min=1） ε 宽 2.7e-89  q=397560349370386783
+    步3 K_in=398000000000000000.0000000000  m2max=77（m2min=1） ε 宽 5.9e-89  q=4640282259296926456
+    步4 K_in=4650000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.2e-95  q=27444133206411171953
+    步5 K_in=27500000000000000000.0000000000  m2max=86（m2min=1） ε 宽 2.2e-95  q=77692117359936589403
+    步6 K_in=77700000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.9e-93  q=205632218873398596256
+    步7 K_in=206000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 5.6e-87  q=7941964418702608664581
+
+  轨迹 kfeed=ceil c=73 X0=704：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5300000000000000.0000000000  m2max=67（m2min=1） ε 宽 2.7e-89  q=397560349370386783
+    步3 K_in=398000000000000000.0000000000  m2max=77（m2min=1） ε 宽 5.9e-89  q=4640282259296926456
+    步4 K_in=4650000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.2e-95  q=27444133206411171953
+    步5 K_in=27500000000000000000.0000000000  m2max=86（m2min=1） ε 宽 2.2e-95  q=77692117359936589403
+    步6 K_in=77700000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.9e-93  q=205632218873398596256
+    步7 K_in=206000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 5.6e-87  q=7941964418702608664581
+
+  轨迹 kfeed=ceil c=1 X0=695：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5300000000000000.0000000000  m2max=67（m2min=1） ε 宽 2.7e-89  q=397560349370386783
+    步3 K_in=398000000000000000.0000000000  m2max=77（m2min=1） ε 宽 5.9e-89  q=4640282259296926456
+    步4 K_in=4650000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.2e-95  q=27444133206411171953
+    步5 K_in=27500000000000000000.0000000000  m2max=86（m2min=1） ε 宽 2.2e-95  q=77692117359936589403
+    步6 K_in=77700000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.9e-93  q=205632218873398596256
+    步7 K_in=206000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 5.6e-87  q=7941964418702608664581
+
+  轨迹 kfeed=ceil c=1 X0=704：
+    步1 K_in=700000000000.0000000000  m2max=47（m2min=1） ε 宽 3.9e-85  q=5267319278509397
+    步2 K_in=5300000000000000.0000000000  m2max=67（m2min=1） ε 宽 2.7e-89  q=397560349370386783
+    步3 K_in=398000000000000000.0000000000  m2max=77（m2min=1） ε 宽 5.9e-89  q=4640282259296926456
+    步4 K_in=4650000000000000000.0000000000  m2max=82（m2min=1） ε 宽 1.2e-95  q=27444133206411171953
+    步5 K_in=27500000000000000000.0000000000  m2max=86（m2min=1） ε 宽 2.2e-95  q=77692117359936589403
+    步6 K_in=77700000000000000000.0000000000  m2max=88（m2min=1） ε 宽 5.9e-93  q=205632218873398596256
+    步7 K_in=206000000000000000000.0000000000  m2max=91（m2min=1） ε 宽 5.6e-87  q=7941964418702608664581
+
+[B] 每步 q(gamma) 的印刷核对（K 三态）与 ε 印刷核对（六态，含去零变体）
+
+  轨迹 kfeed=exact c=73 X0=695：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(68) trunc2:x(689) round1:O round2:x(689) ceil1:O ceil2:o
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(50) trunc2:x(506) round1:O round2:x(507) ceil1:O ceil2:x(507)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(40) trunc2:x(400) round1:x(40) round2:x(400) ceil1:O ceil2:x(401)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(22) trunc2:x(226) round1:O round2:x(227) ceil1:O ceil2:x(227)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(22) trunc2:x(225) round1:O round2:x(226) ceil1:O ceil2:x(226)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(52) trunc2:x(520) round1:x(52) round2:x(521) ceil1:O ceil2:x(521)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(12) trunc2:x(122) round1:x(12) round2:x(123) ceil1:x(13) ceil2:x(123)
+
+  轨迹 kfeed=exact c=73 X0=704：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(68) trunc2:x(680) round1:x(68) round2:x(680) ceil1:O ceil2:x(681)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(50) trunc2:x(500) round1:x(50) round2:x(500) ceil1:O ceil2:x(501)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(39) trunc2:x(395) round1:x(40) round2:x(395) ceil1:x(40) ceil2:x(396)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(22) trunc2:x(223) round1:x(22) round2:x(224) ceil1:O ceil2:x(224)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(22) trunc2:x(223) round1:x(22) round2:x(223) ceil1:O ceil2:x(224)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(51) trunc2:x(514) round1:x(51) round2:x(514) ceil1:x(52) ceil2:x(515)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(12) trunc2:x(122) round1:x(12) round2:x(123) ceil1:x(13) ceil2:x(123)
+
+  轨迹 kfeed=exact c=1 X0=695：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(67) trunc2:x(677) round1:x(68) round2:x(678) ceil1:x(68) ceil2:x(678)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(49) trunc2:x(491) round1:x(49) round2:x(491) ceil1:x(50) ceil2:x(492)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(38) trunc2:x(380) round1:x(38) round2:x(380) ceil1:x(39) ceil2:x(381)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(20) trunc2:x(209) round1:x(21) round2:x(209) ceil1:x(21) ceil2:x(210)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(19) trunc2:x(196) round1:x(20) round2:x(197) ceil1:x(20) ceil2:x(197)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(41) trunc2:x(417) round1:x(42) round2:x(418) ceil1:x(42) ceil2:x(418)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(12) trunc2:x(122) round1:x(12) round2:x(123) ceil1:x(13) ceil2:x(123)
+
+  轨迹 kfeed=exact c=1 X0=704：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(66) trunc2:x(669) round1:x(67) round2:x(669) ceil1:x(67) ceil2:x(670)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(48) trunc2:x(485) round1:x(49) round2:x(485) ceil1:x(49) ceil2:x(486)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(37) trunc2:x(375) round1:x(38) round2:x(375) ceil1:x(38) ceil2:x(376)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(20) trunc2:x(206) round1:x(21) round2:x(207) ceil1:x(21) ceil2:x(207)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(19) trunc2:x(194) round1:x(19) round2:x(194) ceil1:x(20) ceil2:x(195)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(41) trunc2:x(412) round1:x(41) round2:x(412) ceil1:x(42) ceil2:x(413)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(12) trunc2:x(122) round1:x(12) round2:x(123) ceil1:x(13) ceil2:x(123)
+
+  轨迹 kfeed=trunc c=73 X0=695：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(68) trunc2:x(689) round1:O round2:x(689) ceil1:O ceil2:o
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:O trunc2:x(513) round1:O round2:x(513) ceil1:x(52) ceil2:x(514)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(40) trunc2:x(400) round1:x(40) round2:x(401) ceil1:O ceil2:x(401)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(22) trunc2:x(226) round1:O round2:x(227) ceil1:O ceil2:x(227)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(22) trunc2:x(226) round1:O round2:x(226) ceil1:O ceil2:x(227)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(52) trunc2:x(521) round1:x(52) round2:x(521) ceil1:O ceil2:x(522)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(14) trunc2:x(144) round1:x(14) round2:x(145) ceil1:x(15) ceil2:x(145)
+
+  轨迹 kfeed=trunc c=73 X0=704：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(68) trunc2:x(680) round1:x(68) round2:x(680) ceil1:O ceil2:x(681)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(50) trunc2:x(506) round1:O round2:x(507) ceil1:O ceil2:x(507)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(39) trunc2:x(395) round1:x(40) round2:x(396) ceil1:x(40) ceil2:x(396)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(22) trunc2:x(223) round1:x(22) round2:x(224) ceil1:O ceil2:x(224)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(22) trunc2:x(223) round1:x(22) round2:x(223) ceil1:O ceil2:x(224)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(51) trunc2:x(514) round1:x(51) round2:x(515) ceil1:x(52) ceil2:x(515)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(14) trunc2:x(144) round1:x(14) round2:x(145) ceil1:x(15) ceil2:x(145)
+
+  轨迹 kfeed=trunc c=1 X0=695：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(67) trunc2:x(677) round1:x(68) round2:x(678) ceil1:x(68) ceil2:x(678)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(49) trunc2:x(497) round1:x(50) round2:x(498) ceil1:x(50) ceil2:x(498)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(38) trunc2:x(380) round1:x(38) round2:x(381) ceil1:x(39) ceil2:x(381)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(20) trunc2:x(209) round1:x(21) round2:x(209) ceil1:x(21) ceil2:x(210)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(19) trunc2:x(197) round1:x(20) round2:x(197) ceil1:x(20) ceil2:x(198)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(41) trunc2:x(418) round1:x(42) round2:x(418) ceil1:x(42) ceil2:x(419)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(14) trunc2:x(144) round1:x(14) round2:x(145) ceil1:x(15) ceil2:x(145)
+
+  轨迹 kfeed=trunc c=1 X0=704：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(66) trunc2:x(669) round1:x(67) round2:x(669) ceil1:x(67) ceil2:x(670)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(49) trunc2:x(491) round1:x(49) round2:x(491) ceil1:x(50) ceil2:x(492)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(37) trunc2:x(375) round1:x(38) round2:x(376) ceil1:x(38) ceil2:x(376)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(20) trunc2:x(206) round1:x(21) round2:x(207) ceil1:x(21) ceil2:x(207)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(19) trunc2:x(194) round1:x(19) round2:x(195) ceil1:x(20) ceil2:x(195)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(41) trunc2:x(412) round1:x(41) round2:x(413) ceil1:x(42) ceil2:x(413)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(14) trunc2:x(144) round1:x(14) round2:x(145) ceil1:x(15) ceil2:x(145)
+
+  轨迹 kfeed=round c=73 X0=695：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(68) trunc2:x(689) round1:O round2:x(689) ceil1:O ceil2:o
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(50) trunc2:x(503) round1:x(50) round2:x(503) ceil1:O ceil2:x(504)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(39) trunc2:x(399) round1:x(40) round2:x(400) ceil1:x(40) ceil2:x(400)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(22) trunc2:x(226) round1:O round2:x(227) ceil1:O ceil2:x(227)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(22) trunc2:x(226) round1:O round2:x(226) ceil1:O ceil2:x(227)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(52) trunc2:x(520) round1:x(52) round2:x(521) ceil1:O ceil2:x(521)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(11) trunc2:O round1:x(11) round2:x(112) ceil1:x(12) ceil2:x(112)
+
+  轨迹 kfeed=round c=73 X0=704：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(68) trunc2:x(680) round1:x(68) round2:x(680) ceil1:O ceil2:x(681)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(49) trunc2:x(497) round1:x(50) round2:x(497) ceil1:x(50) ceil2:x(498)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(39) trunc2:x(394) round1:x(39) round2:x(395) ceil1:x(40) ceil2:x(395)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(22) trunc2:x(223) round1:x(22) round2:x(224) ceil1:O ceil2:x(224)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(22) trunc2:x(223) round1:x(22) round2:x(223) ceil1:O ceil2:x(224)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(51) trunc2:x(514) round1:x(51) round2:x(514) ceil1:x(52) ceil2:x(515)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(11) trunc2:O round1:x(11) round2:x(112) ceil1:x(12) ceil2:x(112)
+
+  轨迹 kfeed=round c=1 X0=695：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(67) trunc2:x(677) round1:x(68) round2:x(678) ceil1:x(68) ceil2:x(678)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(48) trunc2:x(488) round1:x(49) round2:x(488) ceil1:x(49) ceil2:x(489)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(37) trunc2:x(379) round1:x(38) round2:x(380) ceil1:x(38) ceil2:x(380)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(20) trunc2:x(209) round1:x(21) round2:x(209) ceil1:x(21) ceil2:x(210)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(19) trunc2:x(197) round1:x(20) round2:x(197) ceil1:x(20) ceil2:x(198)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(41) trunc2:x(417) round1:x(42) round2:x(418) ceil1:x(42) ceil2:x(418)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(11) trunc2:O round1:x(11) round2:x(112) ceil1:x(12) ceil2:x(112)
+
+  轨迹 kfeed=round c=1 X0=704：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(66) trunc2:x(669) round1:x(67) round2:x(669) ceil1:x(67) ceil2:x(670)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(48) trunc2:x(482) round1:x(48) round2:x(482) ceil1:x(49) ceil2:x(483)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(37) trunc2:x(374) round1:x(37) round2:x(375) ceil1:x(38) ceil2:x(375)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(20) trunc2:x(206) round1:x(21) round2:x(207) ceil1:x(21) ceil2:x(207)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(19) trunc2:x(194) round1:x(19) round2:x(195) ceil1:x(20) ceil2:x(195)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(41) trunc2:x(412) round1:x(41) round2:x(412) ceil1:x(42) ceil2:x(413)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(11) trunc2:O round1:x(11) round2:x(112) ceil1:x(12) ceil2:x(112)
+
+  轨迹 kfeed=ceil c=73 X0=695：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(68) trunc2:x(689) round1:O round2:x(689) ceil1:O ceil2:o
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(50) trunc2:x(503) round1:x(50) round2:x(503) ceil1:O ceil2:x(504)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(39) trunc2:x(399) round1:x(40) round2:x(400) ceil1:x(40) ceil2:x(400)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(22) trunc2:x(226) round1:O round2:x(226) ceil1:O ceil2:x(227)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(22) trunc2:x(225) round1:O round2:x(226) ceil1:O ceil2:x(226)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(52) trunc2:x(520) round1:x(52) round2:x(521) ceil1:O ceil2:x(521)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(11) trunc2:O round1:x(11) round2:x(112) ceil1:x(12) ceil2:x(112)
+
+  轨迹 kfeed=ceil c=73 X0=704：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(68) trunc2:x(680) round1:x(68) round2:x(680) ceil1:O ceil2:x(681)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(49) trunc2:x(497) round1:x(50) round2:x(497) ceil1:x(50) ceil2:x(498)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(39) trunc2:x(394) round1:x(39) round2:x(395) ceil1:x(40) ceil2:x(395)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(22) trunc2:x(223) round1:x(22) round2:x(223) ceil1:O ceil2:x(224)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(22) trunc2:x(222) round1:x(22) round2:x(223) ceil1:O ceil2:x(223)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(51) trunc2:x(514) round1:x(51) round2:x(514) ceil1:x(52) ceil2:x(515)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(11) trunc2:O round1:x(11) round2:x(112) ceil1:x(12) ceil2:x(112)
+
+  轨迹 kfeed=ceil c=1 X0=695：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(67) trunc2:x(677) round1:x(68) round2:x(678) ceil1:x(68) ceil2:x(678)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(48) trunc2:x(488) round1:x(49) round2:x(488) ceil1:x(49) ceil2:x(489)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(37) trunc2:x(379) round1:x(38) round2:x(380) ceil1:x(38) ceil2:x(380)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(20) trunc2:x(208) round1:x(21) round2:x(209) ceil1:x(21) ceil2:x(209)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(19) trunc2:x(196) round1:x(20) round2:x(196) ceil1:x(20) ceil2:x(197)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(41) trunc2:x(417) round1:x(42) round2:x(418) ceil1:x(42) ceil2:x(418)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(11) trunc2:O round1:x(11) round2:x(112) ceil1:x(12) ceil2:x(112)
+
+  轨迹 kfeed=ceil c=1 X0=704：
+    步1 印 K 核对 trunc:O(52) round:x(53) ceil:x(53)
+    步1 印 ε 核对 trunc1:x(66) trunc2:x(669) round1:x(67) round2:x(669) ceil1:x(67) ceil2:x(670)
+    步2 印 K 核对 trunc:O(397) round:x(398) ceil:x(398)
+    步2 印 ε 核对 trunc1:x(48) trunc2:x(482) round1:x(48) round2:x(482) ceil1:x(49) ceil2:x(483)
+    步3 印 K 核对 trunc:O(464) round:O(464) ceil:x(465)
+    步3 印 ε 核对 trunc1:x(37) trunc2:x(374) round1:x(37) round2:x(375) ceil1:x(38) ceil2:x(375)
+    步4 印 K 核对 trunc:O(274) round:O(274) ceil:x(275)
+    步4 印 ε 核对 trunc1:x(20) trunc2:x(206) round1:x(21) round2:x(206) ceil1:x(21) ceil2:x(207)
+    步5 印 K 核对 trunc:O(776) round:x(777) ceil:x(777)
+    步5 印 ε 核对 trunc1:x(19) trunc2:x(193) round1:x(19) round2:x(194) ceil1:x(20) ceil2:x(194)
+    步6 印 K 核对 trunc:O(205) round:x(206) ceil:x(206)
+    步6 印 ε 核对 trunc1:x(41) trunc2:x(412) round1:x(41) round2:x(412) ceil1:x(42) ceil2:x(413)
+    步7 印 K 核对 trunc:O(794) round:O(794) ceil:x(795)
+    步7 印 ε 核对 trunc1:x(11) trunc2:O round1:x(11) round2:x(112) ceil1:x(12) ceil2:x(112)
+
+[C] 组合全集：能同时复现七步全部印数（m2、K 串、ε 串）的组合
+  同时复现七步的组合数 = 0
+  复现 >=6 步的组合（含具体步数）：
+    ('exact', 'trunc', 'ceil', 1, False, 73, 695, 6)
+    ('exact', 'trunc', 'ceil', 1, True, 73, 695, 6)
+
+[D] 第七步输入的窗口归属（窗口边界由 route4_step7.solve_K 严格二分得到）
+  trunc-2位（目标 1.11）：小端=[205992347284566368048.000000,205992347696551063030.000000] 大端=[206026886099773711086.000000,206026886511827483698.000000]
+  round-2位（目标 1.11）：小端=[206009577957864500026.000000,206009578369883656355.000000] 大端=[206044272409906652179.000000,206044272821995197412.000000]
+  ceil-2位（目标 1.11）：小端=[206061737597395634365.000000,206061738009519109973.000000] 大端=[206026886099773711086.000000,206026886511827483698.000000]
+
+  第七步输入 K_in = 205632218873398596256（轨迹 kfeed=exact c=73 X0=695 首次出现）
+      trunc-2位→窗口外（偏小侧）；round-2位→窗口外（偏小侧）；ceil-2位→窗口外（偏小侧）
+      ε₇ 印刷：ceil1=1.30 ceil2=1.23 round1=1.20 round2=1.23 trunc1=1.20 trunc2=1.22
+  第七步输入 K_in = 205000000000000000000（轨迹 kfeed=trunc c=73 X0=695 首次出现）
+      trunc-2位→窗口外（偏小侧）；round-2位→窗口外（偏小侧）；ceil-2位→窗口外（偏小侧）
+      ε₇ 印刷：ceil1=1.50 ceil2=1.45 round1=1.40 round2=1.45 trunc1=1.40 trunc2=1.44
+  第七步输入 K_in = 206000000000000000000（轨迹 kfeed=round c=73 X0=695 首次出现）
+      trunc-2位→在窗口内；round-2位→窗口外（偏小侧）；ceil-2位→窗口外（偏小侧）
+      ε₇ 印刷：ceil1=1.20 ceil2=1.12 round1=1.10 round2=1.12 trunc1=1.10 trunc2=1.11✓

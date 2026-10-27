@@ -1,0 +1,16 @@
+{
+ "mine_file": "route3_impl2_m14.json",
+ "mine_impl": "route3-impl2-structural",
+ "m2": 14,
+ "ckpt_dir": "m2_14_mpq",
+ "ckpt_files": 32,
+ "n_mine_points": 14,
+ "n_mine_distinct": 14,
+ "n_other_points": 14,
+ "n_other_distinct": 14,
+ "point_sets_equal": true,
+ "only_in_mine": [],
+ "only_in_other": [],
+ "n_only_in_mine": 0,
+ "n_only_in_other": 0
+}

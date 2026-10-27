@@ -1,0 +1,3 @@
+    可行顶点数 = 14；与解析的 m2 = 14 个循环旋转相同 = True（解析集大小 14）
+    每个顶点的（活跃约束法向量秩，活跃约束条数）= [(14, 14)]
+SUMMARY_JSON {"m2": 14, "delta": "126797/80000", "W": "2000", "impl": "mpq", "workers": 8, "chunks": 32, "total": 77558760, "processed": 77558760, "n_rank_def": 74098262, "n_infeasible": 3460484, "n_feasible_subsets": 14, "n_distinct_feasible": 14, "n_analytic": 14, "equal": true, "certs": [[14, 14]], "wall_s": 2912.24, "cpu_s": 13477.7, "ms_per_subset_wall": 0.0375, "ms_per_subset_cpu": 0.1738}

@@ -1,0 +1,1 @@
+"$PY" scripts/probe_paired_timing.py > results/probe-paired-timing.txt  12.52s user 0.25s system 51% cpu 25.021 total

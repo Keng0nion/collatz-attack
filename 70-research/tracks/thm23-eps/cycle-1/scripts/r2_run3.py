@@ -35,7 +35,7 @@ ROWS = [
     ("步 1（K=7e11）", 47, 7 * 10 ** 11),
     ("步 2（K=5267319278509397）", 67, 5267319278509397),
     ("步 3（K=397560349370386783）", 77, 397560349370386783),
-    ("步 4（K=4640282259296926456）", 82, 4640252259296926456 if False else 4640282259296926456),
+    ("步 4（K=4640282259296926456）", 82, 4640282259296926456),
     ("步 5（K=27444133206411171953）", 86, 27444133206411171953),
     ("步 6（K=77692117359936589463）", 88, 77692117359936589403),
     ("步 7（K=K*）", 91, KSTAR),
@@ -46,6 +46,13 @@ ROWS = [
 
 def frac_to_mpf(mp, f):
     return mp.mpf(f.numerator) / mp.mpf(f.denominator)
+
+
+def mpf_to_frac(v):
+    """mpmath 的 mpf 是有限二进制小数：_mpf_ = (sign, man, exp, bc)，
+    值 = (-1)^sign * man * 2^exp。转成精确 Fraction（不经十进制）。"""
+    s, man, exp, bc = v._mpf_
+    return F((-1) ** s * man) * F(2) ** exp
 
 
 def main():
@@ -84,10 +91,9 @@ def main():
         s400 = mp.nstr(v400, 30)
         # 判定
         inter_rc = not (iv[1] < giv[0] or giv[1] < iv[0])
-        in_my_400 = iv[0] <= frac_to_mpf(mp, iv[0]) * 0 + mp.mpf(0) or True  # 占位，下面用精确方式
-        # 精确方式：把 mpmath 值转成有理数（mpmath 的 mpf 有限二进制 -> 精确 Fraction）
-        v400f = F(v400)
-        v200f = F(v200)
+        # 精确方式：把 mpmath 值转成有理数（mpf 是有限二进制小数，经 _mpf_ 精确转换）
+        v400f = mpf_to_frac(v400)
+        v200f = mpf_to_frac(v200)
         in400 = iv[0] <= v400f <= iv[1]
         in200 = iv[0] <= v200f <= iv[1]
         in400_g = giv[0] <= v400f <= giv[1]

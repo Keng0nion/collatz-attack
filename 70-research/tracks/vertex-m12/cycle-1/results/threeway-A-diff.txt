@@ -1,0 +1,4 @@
+对拍：基线 = /Users/luna/Documents/math IA/collatz-attack/70-research/cycle-1/scripts/results/verify-round2/r2_j_A.txt
+      重跑 = results/threeway-A-frozen-run.txt
+归一化规则：『（数字 s）』与『用时 数字 s』中的时间数字统一写为 TS；其余逐字节比较
+归一化后逐行一致：True；两文件行数 = 16 / 16
