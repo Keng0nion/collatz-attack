@@ -31,3 +31,7 @@ __pycache__/
 20-experiments/scripts/reverse_tree_deep
 20-experiments/scripts/_maxrss_units
 20-experiments/scripts/_sizes
+
+# 逐子集判定明细（单行重复文本，单个文件可达数十 MB，会触发 GitHub 大文件警告；
+# 可重新生成）。同目录的摘要、证书与检查点照常入库，只有这种巨量明细不入。
+**/results/route2/*_decisions.txt
