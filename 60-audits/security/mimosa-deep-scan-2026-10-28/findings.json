@@ -1,0 +1,4014 @@
+{
+  "schemaVersion": "mimosa-security-scan-findings/v1",
+  "scanId": "scan-2026-10-28T13-16-49.918Z-bec62bd1a500",
+  "verdictEffect": "none",
+  "findings": [
+    {
+      "findingId": "finding:f86625ba5cc0657c4ebbadd1",
+      "occurrenceId": "occurrence:88b6bca7937cee79bbc38bc8",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:b1cbae1bba01a4ea3974cac86c45e6770a02d714f86625ba5cc0657c4ebbadd1",
+        "instance": "sha256:b80087c315aa91e8e23b218abead03f717f1135588b6bca7937cee79bbc38bc8"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/cycles_bs_formula_check.py",
+        "line": 116,
+        "endLine": 116
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:aabeae71b96530a8a708b053",
+      "occurrenceId": "occurrence:c2fc970bcab984e0011c39d6",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:658642f455e18ee4d011f207e2edf113c9cf57ddaabeae71b96530a8a708b053",
+        "instance": "sha256:97851d1b67d9d62c8ee6ba989fe5922a19f1d4c5c2fc970bcab984e0011c39d6"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/parity_vectors.py",
+        "line": 131,
+        "endLine": 131
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:cbf956757694e9c74e2344e2",
+      "occurrenceId": "occurrence:a2d6cfef5df3a8e24bdf927d",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:657dac2fd206dda652b5d3d1e9b1df31a6c8c377cbf956757694e9c74e2344e2",
+        "instance": "sha256:0f5198da3c32a3ff848a5e438f204af1d5e13cd8a2d6cfef5df3a8e24bdf927d"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/parity_vectors.py",
+        "line": 132,
+        "endLine": 132
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:e843f77758766b8cef728141",
+      "occurrenceId": "occurrence:61cd3899e62381c63f840c3e",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:718ee42b24e83b0490e3495f03226df205fd67c7e843f77758766b8cef728141",
+        "instance": "sha256:9c56acd252d08a89a2ed7736c3a89b097579a5f661cd3899e62381c63f840c3e"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/sweep_check.py",
+        "line": 178,
+        "endLine": 178
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:528a73f3aa9277a9eaddaffa",
+      "occurrenceId": "occurrence:a7ec4fb0d6b9e1afe6130a15",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:c65d66636fde3c49e8061a1773e3381db7147bc2528a73f3aa9277a9eaddaffa",
+        "instance": "sha256:189a7e50bd34e377bfa1f26c5282e13aa23df189a7ec4fb0d6b9e1afe6130a15"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/formal-automata/checks_formal_automata.py",
+        "line": 342,
+        "endLine": 342
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:528a73f3aa9277a9eaddaffa",
+      "occurrenceId": "occurrence:77d48591f04c5af391b6a765",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:c65d66636fde3c49e8061a1773e3381db7147bc2528a73f3aa9277a9eaddaffa",
+        "instance": "sha256:7a186f8d7b70c1682c093b80ef4e0796419c71cd77d48591f04c5af391b6a765"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/formal-automata/checks_formal_automata.py",
+        "line": 362,
+        "endLine": 362
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:528a73f3aa9277a9eaddaffa",
+      "occurrenceId": "occurrence:62b1199acf6d69f1d7fcbe10",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:c65d66636fde3c49e8061a1773e3381db7147bc2528a73f3aa9277a9eaddaffa",
+        "instance": "sha256:4e58481c50c857e51b469e28e827c232158007df62b1199acf6d69f1d7fcbe10"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/formal-automata/checks_formal_automata.py",
+        "line": 394,
+        "endLine": 394
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:fec6ae44b789a4903c9ee52a",
+      "occurrenceId": "occurrence:a609fe0f9774b5743c134726",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:861db52182e59e81387d6ea695fb277836921c3cfec6ae44b789a4903c9ee52a",
+        "instance": "sha256:b08c9f2a1c8033a188756f4a31c702abe3ffb1a3a609fe0f9774b5743c134726"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/tao-quantitative/checks/check_E_rotation.py",
+        "line": 176,
+        "endLine": 176
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:6e791ea55963dffc5272092c",
+      "occurrenceId": "occurrence:f8549368709d1284fabe76a7",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:f817879dd09b58b3b3440d4080e8b83b0105bce36e791ea55963dffc5272092c",
+        "instance": "sha256:35574eeebb110da3831bd84ca417caa3468a45bef8549368709d1284fabe76a7"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/tao-quantitative/checks/check_H_kq.py",
+        "line": 85,
+        "endLine": 85
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:cd037cbe98a0d200058713fd",
+      "occurrenceId": "occurrence:5234800016653c0c40991736",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:95edc9845a003839fc9400718677c0ec7221fba6cd037cbe98a0d200058713fd",
+        "instance": "sha256:8bdebdd9887168286b04c567686feb4c63b3fcb85234800016653c0c40991736"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/two-adic-control/scripts/round2_verify.py",
+        "line": 670,
+        "endLine": 670
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:5b937f8e8c66a48a76adc7d3",
+      "occurrenceId": "occurrence:3be73310bb5a9cd01494292e",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:7293d8ce2fb3e570a3694916f588010da4bcadad5b937f8e8c66a48a76adc7d3",
+        "instance": "sha256:6ffe48da2ec06f7d72dc2184326058ed0c0c41e73be73310bb5a9cd01494292e"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/two-adic-control/scripts/two_adic_verify.py",
+        "line": 589,
+        "endLine": 589
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:b086319213d78dd106ab4681",
+      "occurrenceId": "occurrence:3e36577f8349f10d78d955f4",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:b8b55c61a6b5e4346e6149eb695df7ac4bcaac42b086319213d78dd106ab4681",
+        "instance": "sha256:dce82788d860372f2201bbcf07320553c23b1dfe3e36577f8349f10d78d955f4"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "40-formal/exact_check.py",
+        "line": 153,
+        "endLine": 153
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:b086319213d78dd106ab4681",
+      "occurrenceId": "occurrence:a66d39d508cf851d5b181696",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:b8b55c61a6b5e4346e6149eb695df7ac4bcaac42b086319213d78dd106ab4681",
+        "instance": "sha256:0224ef56abed723f6843d3cf0aa816dd92a887ffa66d39d508cf851d5b181696"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "40-formal/exact_check.py",
+        "line": 386,
+        "endLine": 386
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:035d2c4d7612c652f298a8de",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:e1a40f173924c1509009e05b7b2bc6e9ccac238f035d2c4d7612c652f298a8de"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 665,
+        "endLine": 665
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:b196ff0aff3b752b4245243e",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:57e7d94b7c486ff2defbfb5fce38d7181e670eeeb196ff0aff3b752b4245243e"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 667,
+        "endLine": 667
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:ba40163eb3c66d7adb906e57",
+      "occurrenceId": "occurrence:907a2855eb7a800832924e41",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:138ed3d5ee5c4d27412c17eb17cb7701f7fa009dba40163eb3c66d7adb906e57",
+        "instance": "sha256:7ac03685b7b822ea8d94521e04969ad434d22fd1907a2855eb7a800832924e41"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 668,
+        "endLine": 668
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:3a31b86c132eaa554442c3ad",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:e6683dc19c5c33f54cf046562209754d4ed5a5ff3a31b86c132eaa554442c3ad"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 670,
+        "endLine": 670
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:ba40163eb3c66d7adb906e57",
+      "occurrenceId": "occurrence:fcf658a26e76623ba774e67e",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:138ed3d5ee5c4d27412c17eb17cb7701f7fa009dba40163eb3c66d7adb906e57",
+        "instance": "sha256:1e3ceae980a645c0fc5a22586b84ef8388a15820fcf658a26e76623ba774e67e"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 674,
+        "endLine": 674
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:ba40163eb3c66d7adb906e57",
+      "occurrenceId": "occurrence:256a5027e5fa092b49325c14",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:138ed3d5ee5c4d27412c17eb17cb7701f7fa009dba40163eb3c66d7adb906e57",
+        "instance": "sha256:3eb6f2af21d1d70fd3f46a528799be5cb445fec7256a5027e5fa092b49325c14"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 675,
+        "endLine": 675
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:a847860964c51945ebafff8f",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:4286c653040672c7fcfde683fc57803c4b726115a847860964c51945ebafff8f"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 699,
+        "endLine": 699
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:ba40163eb3c66d7adb906e57",
+      "occurrenceId": "occurrence:7acf18f5f0678fb69ef743d1",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:138ed3d5ee5c4d27412c17eb17cb7701f7fa009dba40163eb3c66d7adb906e57",
+        "instance": "sha256:3d6365b51a9d6352f979395f6077493082d2c06d7acf18f5f0678fb69ef743d1"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 706,
+        "endLine": 706
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:0bb3d767bc83262737083c14",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:749c3af3b65cdaac43826470b9248578ff0488b90bb3d767bc83262737083c14"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 708,
+        "endLine": 708
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:57683d96d0814172c84dcbc3",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:16685279e54e6708b85ff2d6166ab765d421d64357683d96d0814172c84dcbc3"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 768,
+        "endLine": 768
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:210925791e34aa1f80f0a592",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:bba846fcf30c7be78c0fc711521f249f6d1b0251210925791e34aa1f80f0a592"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 770,
+        "endLine": 770
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:b3503d84cd61342d282cb331",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:5e65c4c198d9149fdd2cae2b6a37fe9891d299ffb3503d84cd61342d282cb331"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 774,
+        "endLine": 774
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:ba40163eb3c66d7adb906e57",
+      "occurrenceId": "occurrence:e91d58346b905b80e5585e29",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:138ed3d5ee5c4d27412c17eb17cb7701f7fa009dba40163eb3c66d7adb906e57",
+        "instance": "sha256:9e33aecc1eff746b958d7b0b66808a6808b42775e91d58346b905b80e5585e29"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 775,
+        "endLine": 775
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:ad8bbcc4c0275eb8b97f1266",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:337a503aee983ddab4f95332082ce677ebdb930ead8bbcc4c0275eb8b97f1266"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 786,
+        "endLine": 786
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:ba40163eb3c66d7adb906e57",
+      "occurrenceId": "occurrence:9a369cae84b51ceb8fdf84c0",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:138ed3d5ee5c4d27412c17eb17cb7701f7fa009dba40163eb3c66d7adb906e57",
+        "instance": "sha256:3a620cfb043ad51a1aa2066be0ba0787d86238629a369cae84b51ceb8fdf84c0"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 794,
+        "endLine": 794
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f85ac7219f4c1e5010c494de",
+      "occurrenceId": "occurrence:e11e79d31ac2114fadb6bc0d",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a16da7be613efd314b4acb1b5c7146278dd56bc1f85ac7219f4c1e5010c494de",
+        "instance": "sha256:af6e0096068dbb47aa1e1c312cd8c183b437c692e11e79d31ac2114fadb6bc0d"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-erratum.py",
+        "line": 796,
+        "endLine": 796
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:0c8b825f8ff9f69517369a5f",
+      "occurrenceId": "occurrence:78945693300a465c2ed83373",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:be86c26217491982fa2054eaabf1657718a4ebd10c8b825f8ff9f69517369a5f",
+        "instance": "sha256:993c5202b472ff693a4bc052d5b411e4abd3226578945693300a465c2ed83373"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r1_selfcheck.py",
+        "line": 176,
+        "endLine": 176
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:d73f96fdb9f6e7fcbed4f9d6",
+      "occurrenceId": "occurrence:f9374a304932ad463bb5e351",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:429d02c9973471b742dbd6400838698502806223d73f96fdb9f6e7fcbed4f9d6",
+        "instance": "sha256:c9f8ee3ed142558ba953d9a17cde499c59d81b50f9374a304932ad463bb5e351"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r1_selfcheck.py",
+        "line": 188,
+        "endLine": 188
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2e1ecb8bd4c4ae87c5851e28",
+      "occurrenceId": "occurrence:002924d41bc3348ee0da5965",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:80c80be7118fa5b51e652458ce81591a926229572e1ecb8bd4c4ae87c5851e28",
+        "instance": "sha256:916a2f4c2a213dd5519019927d55fce5efa1a990002924d41bc3348ee0da5965"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r4x_run1.py",
+        "line": 82,
+        "endLine": 82
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2e1ecb8bd4c4ae87c5851e28",
+      "occurrenceId": "occurrence:01f87347f97ccd8949bd8a3b",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:80c80be7118fa5b51e652458ce81591a926229572e1ecb8bd4c4ae87c5851e28",
+        "instance": "sha256:cfca0bfd74e070325381d8680bf26276a241e0a001f87347f97ccd8949bd8a3b"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r4x_run1.py",
+        "line": 83,
+        "endLine": 83
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:6fee85b496ce9eff3279a8d8",
+      "occurrenceId": "occurrence:37f32d9670ca35c9af28f971",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:7850c1e635e12d6cdaff9b9ed51416f531701ab16fee85b496ce9eff3279a8d8",
+        "instance": "sha256:7301ed218e369183a6d4f4eaf240de68279c7f0e37f32d9670ca35c9af28f971"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/verify.py",
+        "line": 308,
+        "endLine": 308
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:6fee85b496ce9eff3279a8d8",
+      "occurrenceId": "occurrence:112d6f91dd6e6e4d169b06f7",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:7850c1e635e12d6cdaff9b9ed51416f531701ab16fee85b496ce9eff3279a8d8",
+        "instance": "sha256:3cce297bcc9460f7e6b781d2075d1c8fabc61955112d6f91dd6e6e4d169b06f7"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/verify.py",
+        "line": 395,
+        "endLine": 395
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:728f819de32dbb4c580b8b04",
+      "occurrenceId": "occurrence:8a5bd1dd8aa83bfea610040d",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:159bb2e7b34f429bf7679682debefd4886d57515728f819de32dbb4c580b8b04",
+        "instance": "sha256:83cb37903e5b18ac6956008d37416019ed9921cf8a5bd1dd8aa83bfea610040d"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_selftest.py",
+        "line": 121,
+        "endLine": 121
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:728f819de32dbb4c580b8b04",
+      "occurrenceId": "occurrence:e99fdc4c57728eb12f2e702c",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:159bb2e7b34f429bf7679682debefd4886d57515728f819de32dbb4c580b8b04",
+        "instance": "sha256:649a14afd5d3c8d165c7afa827ba64a16d20a120e99fdc4c57728eb12f2e702c"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_selftest.py",
+        "line": 122,
+        "endLine": 122
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:728f819de32dbb4c580b8b04",
+      "occurrenceId": "occurrence:12e786ae7bc61cba8dfc5017",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:159bb2e7b34f429bf7679682debefd4886d57515728f819de32dbb4c580b8b04",
+        "instance": "sha256:54877a0fb40c7371cd4dd0a8f569927a7a26aae012e786ae7bc61cba8dfc5017"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_selftest.py",
+        "line": 123,
+        "endLine": 123
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:728f819de32dbb4c580b8b04",
+      "occurrenceId": "occurrence:e41e5d58366b364376f9fc3d",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:159bb2e7b34f429bf7679682debefd4886d57515728f819de32dbb4c580b8b04",
+        "instance": "sha256:08d15cc6051b41598b8f17e3d5b9be9ce9faf088e41e5d58366b364376f9fc3d"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_selftest.py",
+        "line": 124,
+        "endLine": 124
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:de4ac1fd04f63243e2b96d6d",
+      "occurrenceId": "occurrence:b12735b902c3b2054825e1e6",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:755886a66a281423a287b447202c00156aad5833de4ac1fd04f63243e2b96d6d",
+        "instance": "sha256:f6f5c22fb2c0804b09f15394b8caf4496fc77bd8b12735b902c3b2054825e1e6"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route3_median.py",
+        "line": 95,
+        "endLine": 95
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:de4ac1fd04f63243e2b96d6d",
+      "occurrenceId": "occurrence:af514a559a6e074f4bfc5531",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:755886a66a281423a287b447202c00156aad5833de4ac1fd04f63243e2b96d6d",
+        "instance": "sha256:e0184010f73174464568c4655aa4a1fba393291faf514a559a6e074f4bfc5531"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route3_median.py",
+        "line": 96,
+        "endLine": 96
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:de4ac1fd04f63243e2b96d6d",
+      "occurrenceId": "occurrence:4619ce6f4f28dc50c50dd9d4",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:755886a66a281423a287b447202c00156aad5833de4ac1fd04f63243e2b96d6d",
+        "instance": "sha256:479c8a3ca6d247fa7f853dbecec0869ef0a28ce44619ce6f4f28dc50c50dd9d4"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route3_median.py",
+        "line": 97,
+        "endLine": 97
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:de4ac1fd04f63243e2b96d6d",
+      "occurrenceId": "occurrence:9c1ba10c46ad5e27a1a0bd09",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:755886a66a281423a287b447202c00156aad5833de4ac1fd04f63243e2b96d6d",
+        "instance": "sha256:32845dd69581c9bc7f5b750db8f9da9cbe49a27d9c1ba10c46ad5e27a1a0bd09"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route3_median.py",
+        "line": 98,
+        "endLine": 98
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:159ae88403f2a58732c28f4b",
+      "occurrenceId": "occurrence:75632a16ffa7abbeb00c44ed",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:67be654bdccdc201c9953973bc9cedd123d9ad03159ae88403f2a58732c28f4b",
+        "instance": "sha256:9c64cd7508025c54cebec686bcbbe5e9b862d1af75632a16ffa7abbeb00c44ed"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route3_median.py",
+        "line": 180,
+        "endLine": 180
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:de4ac1fd04f63243e2b96d6d",
+      "occurrenceId": "occurrence:da1bc1bd2705a81392b7afe5",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:755886a66a281423a287b447202c00156aad5833de4ac1fd04f63243e2b96d6d",
+        "instance": "sha256:d54c6699a267cf35747278d4edbf8bfc214faa2ada1bc1bd2705a81392b7afe5"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route3_median.py",
+        "line": 181,
+        "endLine": 181
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:de4ac1fd04f63243e2b96d6d",
+      "occurrenceId": "occurrence:27f974a217922bfb697f3379",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:755886a66a281423a287b447202c00156aad5833de4ac1fd04f63243e2b96d6d",
+        "instance": "sha256:62b97a413cd7fc1f9aca691f72486423d075e86b27f974a217922bfb697f3379"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route3_median.py",
+        "line": 183,
+        "endLine": 183
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:feb439448186fdae74decf9c",
+      "occurrenceId": "occurrence:c7b98b566fc323ca9bf5e32b",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:25d5fa452f7c97f987febffd03c4c7b956e42733feb439448186fdae74decf9c",
+        "instance": "sha256:8ddc6c734eec237056c2a78e5201c20ca08411b1c7b98b566fc323ca9bf5e32b"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/verify.py",
+        "line": 540,
+        "endLine": 540
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:84cf7582f1143fb7d693f7a4",
+      "occurrenceId": "occurrence:76edd464360f3d17a5e69fed",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:a6143c0f93f4b41beccd49cb6d89ba0edb7a3a9c84cf7582f1143fb7d693f7a4",
+        "instance": "sha256:70cad451214faf561a744e47cba1deec978c62de76edd464360f3d17a5e69fed"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4a_search_low.py",
+        "line": 76,
+        "endLine": 76
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:c3337e14ec5a8d2cbea5bf5c",
+      "occurrenceId": "occurrence:cc48607c2b7f34dbf9dfe914",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:238ea91e65f12174d55f6febad95e116259339b7c3337e14ec5a8d2cbea5bf5c",
+        "instance": "sha256:bf1668e391eb4fe67b2fd9a5824945b62c53e844cc48607c2b7f34dbf9dfe914"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4b_search_epsopt.py",
+        "line": 82,
+        "endLine": 82
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:45b401316c5df5d207ce7072",
+      "occurrenceId": "occurrence:419d2e217015849d291a5aa7",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:3659b570db432b1afda80ab5fcdb0d3e4788f35745b401316c5df5d207ce7072",
+        "instance": "sha256:bd2eae83c6010619986310e79d3f45a9ba7a6528419d2e217015849d291a5aa7"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/r3_convention_search.py",
+        "line": 160,
+        "endLine": 160
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:0cb9241f80c7e375254d591e",
+      "occurrenceId": "occurrence:46ec3a174979765658c7e5bb",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:92722ff733a59d3cd544fe77d0faf5c02fdbef7a0cb9241f80c7e375254d591e",
+        "instance": "sha256:cbb660ab978268aefc3ced0e6b6270b54243b8e646ec3a174979765658c7e5bb"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/route4_rig.py",
+        "line": 367,
+        "endLine": 367
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:0cb9241f80c7e375254d591e",
+      "occurrenceId": "occurrence:b21f3b6a1003600b36dea3d0",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:92722ff733a59d3cd544fe77d0faf5c02fdbef7a0cb9241f80c7e375254d591e",
+        "instance": "sha256:422677c14b1ece9d47f923f18adcc2c2e7e3c9cbb21f3b6a1003600b36dea3d0"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/route4_rig.py",
+        "line": 368,
+        "endLine": 368
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:0cb9241f80c7e375254d591e",
+      "occurrenceId": "occurrence:f6b62ea42710410d6f21d99e",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:92722ff733a59d3cd544fe77d0faf5c02fdbef7a0cb9241f80c7e375254d591e",
+        "instance": "sha256:9ffd779510f519400bb52c822ba07fcf2b2a35f1f6b62ea42710410d6f21d99e"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/route4_rig.py",
+        "line": 369,
+        "endLine": 369
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:0cb9241f80c7e375254d591e",
+      "occurrenceId": "occurrence:c8e1535ff5a4572b79832036",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:92722ff733a59d3cd544fe77d0faf5c02fdbef7a0cb9241f80c7e375254d591e",
+        "instance": "sha256:c6d20fb9120ef6f68a43074dbb10f0dbefb4f4efc8e1535ff5a4572b79832036"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/route4_rig.py",
+        "line": 370,
+        "endLine": 370
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:82fbb63ccc7e3756329d880a",
+      "occurrenceId": "occurrence:369ee43959734b02b072b739",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:72bc967aeb6ce7427130f3d2f99fb7bd32fca5a382fbb63ccc7e3756329d880a",
+        "instance": "sha256:8e9dfa99cda1458271786385214275313b3ff024369ee43959734b02b072b739"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/route3_bareiss_probe.py",
+        "line": 70,
+        "endLine": 70
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:82fbb63ccc7e3756329d880a",
+      "occurrenceId": "occurrence:10123611b3fbf689d8812c0e",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:72bc967aeb6ce7427130f3d2f99fb7bd32fca5a382fbb63ccc7e3756329d880a",
+        "instance": "sha256:411ebdb60e7677606c962cc0ef98ddfbb9b02bea10123611b3fbf689d8812c0e"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/route3_bareiss_probe.py",
+        "line": 71,
+        "endLine": 71
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:82fbb63ccc7e3756329d880a",
+      "occurrenceId": "occurrence:acf72b23c7b71f878c10cd21",
+      "identity": {
+        "publicClass": "insecure-randomness",
+        "anchor": "sha256:72bc967aeb6ce7427130f3d2f99fb7bd32fca5a382fbb63ccc7e3756329d880a",
+        "instance": "sha256:2d858aecc911b431a9993aa83c472198b92f6862acf72b23c7b71f878c10cd21"
+      },
+      "kind": "static",
+      "severity": "low",
+      "title": "不安全的随机数",
+      "message": "随机性不足。",
+      "cwe": [
+        "CWE-330"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/route3_bareiss_probe.py",
+        "line": 72,
+        "endLine": 72
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2bd69cebc7ae2e0fb914cfcf",
+      "occurrenceId": "occurrence:4d25b0d53f14375a1123b952",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:20f0e789358c589cfade20eb40dd9c9233e6d00e2bd69cebc7ae2e0fb914cfcf",
+        "instance": "sha256:f26f38648e3d072e5472c3eaa70d813a131b85234d25b0d53f14375a1123b952"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/deadcode.DeadStores",
+      "message": "Value stored to 'resolved' is never read",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/cycles_verify_bound.c",
+        "line": 59,
+        "endLine": 59
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:2bd69cebc7ae2e0fb914cfcf",
+      "occurrenceId": "occurrence:04f6d391c9a87c11935cc6de",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:20f0e789358c589cfade20eb40dd9c9233e6d00e2bd69cebc7ae2e0fb914cfcf",
+        "instance": "sha256:2d995141b83d68401aa6478c866df904b873226b04f6d391c9a87c11935cc6de"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/deadcode.DeadStores",
+      "message": "Value stored to 'resolved' is never read",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/cycles_verify_bound.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:2bd69cebc7ae2e0fb914cfcf",
+      "occurrenceId": "occurrence:27ebeb37b236c13f5e792485",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:20f0e789358c589cfade20eb40dd9c9233e6d00e2bd69cebc7ae2e0fb914cfcf",
+        "instance": "sha256:912b4ad18043ebf154f5c111c9ae130f1358ab1a27ebeb37b236c13f5e792485"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/deadcode.DeadStores",
+      "message": "Value stored to 'resolved' is never read",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/cycles_verify_bound.c",
+        "line": 70,
+        "endLine": 70
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:2bd69cebc7ae2e0fb914cfcf",
+      "occurrenceId": "occurrence:72189ef8beff7e36c7cf6fa5",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:20f0e789358c589cfade20eb40dd9c9233e6d00e2bd69cebc7ae2e0fb914cfcf",
+        "instance": "sha256:8a6234a7b6105fabb98c7134c57d5b182fb0479272189ef8beff7e36c7cf6fa5"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/deadcode.DeadStores",
+      "message": "Value stored to 'resolved' is never read",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/cycles_verify_bound.c",
+        "line": 76,
+        "endLine": 76
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:823e41b7453eb9c5550fa837",
+      "occurrenceId": "occurrence:df24e424630b1ec427621267",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:457184cdb77bb954cb0bb13c7e1ee632d1cfc148823e41b7453eb9c5550fa837",
+        "instance": "sha256:87a6318f9cbbced8db760caf5bceb9b132d25dc8df24e424630b1ec427621267"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'cur'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_deep.c",
+        "line": 89,
+        "endLine": 89
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:1676003ae3b895b067b0ea56",
+      "occurrenceId": "occurrence:deb7284b511043bdf1fdd279",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:5b3150c59926140a6365237750c991a779015c8c1676003ae3b895b067b0ea56",
+        "instance": "sha256:5773ccec69297cde32097fb3eae60cd2345b9267deb7284b511043bdf1fdd279"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'nxt'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_deep.c",
+        "line": 89,
+        "endLine": 89
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:2d0f9e0bff6cb7e9b44dab65",
+      "occurrenceId": "occurrence:466dd0ae196aa7e55405bca8",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:555234a1def1500c8f1723c9b7ebd7c36e5ca27c2d0f9e0bff6cb7e9b44dab65",
+        "instance": "sha256:6fe2e1bc4fae1227e54d020cfdee5d870ed37776466dd0ae196aa7e55405bca8"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'buf'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_deep.c",
+        "line": 216,
+        "endLine": 216
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:065f6b82de1e0870ded53ceb",
+      "occurrenceId": "occurrence:d035c9c9de06ce454c5062ce",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:6c5312ac9bb5d4e7cc8df06ada715fd98e27a673065f6b82de1e0870ded53ceb",
+        "instance": "sha256:9ff37ae5bb033debd0c616ccd1b9661714a2307fd035c9c9de06ce454c5062ce"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'omn_s'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_deep.c",
+        "line": 216,
+        "endLine": 216
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:f72011e8ee900305e1617e76",
+      "occurrenceId": "occurrence:8f3da04039f793f3799688e2",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:582ce5d69b8c7e53cfb029b8f4285a81af39fe61f72011e8ee900305e1617e76",
+        "instance": "sha256:b5cc6181864f57c627f35d6b93e2026c7e19831a8f3da04039f793f3799688e2"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'omx_s'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_deep.c",
+        "line": 216,
+        "endLine": 216
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:7623a98bdff1aa26e75aebc0",
+      "occurrenceId": "occurrence:cd51a499279af9d62d422dbf",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:86eadeb78657786ea4dd3585c27a568ae51121d87623a98bdff1aa26e75aebc0",
+        "instance": "sha256:5195f7dcc20bb9a5438c81eff2caf91ac97f894ccd51a499279af9d62d422dbf"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'mx_s'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_deep.c",
+        "line": 216,
+        "endLine": 216
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:d8bccf7d9c4565e1a4f3789f",
+      "occurrenceId": "occurrence:291fd7e618c117619190091b",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:d46acc1aa6b0b6ffb4cd0d4cb8c3b874bf55e557d8bccf7d9c4565e1a4f3789f",
+        "instance": "sha256:fe657e3580e54c1315e6f6f27cc50fafb2b089ff291fd7e618c117619190091b"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'tot'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:b207440c8edc8c8679027363",
+      "occurrenceId": "occurrence:d9bee2d7f41849a800b3888c",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:a52e78f57efa364cb37ea171e43acfc45daf34ffb207440c8edc8c8679027363",
+        "instance": "sha256:101a90e848efa5a39b7f7c4a286c4a97363dbe6bd9bee2d7f41849a800b3888c"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'cs'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:85028210676b932e14dd9e2a",
+      "occurrenceId": "occurrence:15cd605641ad72baac1fd82a",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:725f44a375075058b070459eb322b5b27bea5ac585028210676b932e14dd9e2a",
+        "instance": "sha256:fc0e0f30957db257112bf4abf2ef989aa6e8a67d15cd605641ad72baac1fd82a"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'ca'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:fc7152118b1530762b4b90e0",
+      "occurrenceId": "occurrence:ca197821e9d2fbcf42b86dba",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:dded588e5e7566d4d970fd6d21b9614398a7f63afc7152118b1530762b4b90e0",
+        "instance": "sha256:3f77768f4756bc2cfb29afb2759ddce130d4b034ca197821e9d2fbcf42b86dba"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'hist_tot'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:906a91e4c1925a87c160aa4b",
+      "occurrenceId": "occurrence:be514c31e4661e4c41fd2097",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:02503cf2952e0e4a3ed542d60bd155a7fe57d3e9906a91e4c1925a87c160aa4b",
+        "instance": "sha256:04e14e83b2e037993ecd73bfee9dc20475e77bafbe514c31e4661e4c41fd2097"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'hist_cs'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:41562b63fe8b1f9fcdb72ee2",
+      "occurrenceId": "occurrence:92e472f968d362974e961365",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:75df2dfc3815ad87fb41c8a45db8a3b30f80f68441562b63fe8b1f9fcdb72ee2",
+        "instance": "sha256:032b66f614cb3717c274157bad7d1e66e18ad18292e472f968d362974e961365"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'hist_ca'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:7577f2245afe3edd72912f89",
+      "occurrenceId": "occurrence:d2346f80e76c4edf05c22cdc",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:39ad770d1b0ddccfd0672e1a6cf55a6536d794d77577f2245afe3edd72912f89",
+        "instance": "sha256:b29da4a94e9603284adcd122cad8b3d841c1c7dcd2346f80e76c4edf05c22cdc"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'b2_tot'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:9de574f67a12631977a4e051",
+      "occurrenceId": "occurrence:2e128c7949f61f8411fc3eeb",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:b45cabb162b25503a2d62d43d767549a8ae1e1de9de574f67a12631977a4e051",
+        "instance": "sha256:651e603983afb0a7a38c76ee437f60ad06879a1f2e128c7949f61f8411fc3eeb"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Malloc",
+      "message": "Potential leak of memory pointed to by 'b2_ca'",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 64,
+        "endLine": 64
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:d963d166b2ada70fa7de8ed4",
+      "occurrenceId": "occurrence:9e28d5c27fd6b9142cc7e0f5",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:2c5563f8744a3b17a430e4f9e82f5018296b21d5d963d166b2ada70fa7de8ed4",
+        "instance": "sha256:14366eb6fef42b427b6f01cf070d72d25e765a109e28d5c27fd6b9142cc7e0f5"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/unix.Stream",
+      "message": "Stream pointer might be NULL",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_dist.c",
+        "line": 130,
+        "endLine": 130
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:b35bd009d0d117f63df965fc",
+      "occurrenceId": "occurrence:7bf2b6386abce2d18934c4d8",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:1acb77c8403a998a308cb9fc2b8e0b232090e1e0b35bd009d0d117f63df965fc",
+        "instance": "sha256:dbf83116f231a384f16dfe9765b885ba798596257bf2b6386abce2d18934c4d8"
+      },
+      "kind": "external-static",
+      "severity": "medium",
+      "title": "clang/core.DivideZero",
+      "message": "Division by zero",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/sweep.c",
+        "line": 268,
+        "endLine": 268
+      },
+      "proofGaps": [
+        "外部静态分析是第二意见，未由 Mimosa 运行时 Oracle 验证。"
+      ]
+    },
+    {
+      "findingId": "finding:70119013fe7c7b5ed5c54262",
+      "occurrenceId": "occurrence:6f5c0bc5272f65df5b4e7019",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:81e0c4dd7e717ef1d026f06252f27f48aeae3fea70119013fe7c7b5ed5c54262",
+        "instance": "sha256:227f23ac12001a9e64a274d3b326df6d96fb29996f5c0bc5272f65df5b4e7019"
+      },
+      "kind": "cross-file",
+      "severity": "high",
+      "title": "main 是 path-traversal 入口",
+      "message": "不可信数据「命令行参数」流入 main() → 污点链：main(sink:path-traversal)",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/two-adic-control/scripts/round2_verify.py",
+        "line": 739,
+        "endLine": 739
+      },
+      "proofGaps": [
+        "静态 advisory 需要人工确认真实数据流和可利用性。"
+      ]
+    },
+    {
+      "findingId": "finding:5d2bd3604d6e35d0841ceb76",
+      "occurrenceId": "occurrence:feee8f48467f103e8b17d0ce",
+      "identity": {
+        "publicClass": "other-security",
+        "anchor": "sha256:877ed4040e12a7b92c53f9c1b14d5dc882e4bb4d5d2bd3604d6e35d0841ceb76",
+        "instance": "sha256:c358d09111ce2bdda738d2e9bb360fa041085aa2feee8f48467f103e8b17d0ce"
+      },
+      "kind": "cross-file",
+      "severity": "high",
+      "title": "read_result 是 path-traversal 入口",
+      "message": "不可信数据「命令行参数」流入 read_result() → 污点链：read_result(sink:path-traversal)",
+      "cwe": [],
+      "advisory": true,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/route3_verify.py",
+        "line": 72,
+        "endLine": 72
+      },
+      "proofGaps": [
+        "静态 advisory 需要人工确认真实数据流和可利用性。"
+      ]
+    },
+    {
+      "findingId": "finding:f82b2e82e84e0cb7988c2b37",
+      "occurrenceId": "occurrence:2b5002eb01de3aae32917b1a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:3344794c07367365a5c29a4695163b05c2b35841f82b2e82e84e0cb7988c2b37",
+        "instance": "sha256:142e55aae034116b832f6b515de6f9e50ff6a4d02b5002eb01de3aae32917b1a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_analysis.py",
+        "line": 214,
+        "endLine": 214
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:bf4e937f21d33d88dde7cd33",
+      "occurrenceId": "occurrence:892900b1be87503bb5df16ae",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:367213ba8fe0547e558e27de68137ed76f0c561bbf4e937f21d33d88dde7cd33",
+        "instance": "sha256:eb348ff078cff43f83214f447b84dde8bd1f9f63892900b1be87503bb5df16ae"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_bfs.py",
+        "line": 341,
+        "endLine": 341
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:bf4e937f21d33d88dde7cd33",
+      "occurrenceId": "occurrence:8a9f4fc9e40ad6a133921851",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:367213ba8fe0547e558e27de68137ed76f0c561bbf4e937f21d33d88dde7cd33",
+        "instance": "sha256:323a89fc327f71169d6f28bc3b35266899611ff38a9f4fc9e40ad6a133921851"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_bfs.py",
+        "line": 345,
+        "endLine": 345
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:6d59a128d5a13031f278a707",
+      "occurrenceId": "occurrence:e4ebf14163aa0aa7b1ad739c",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:e237545fcb1c4eedd2156ec4fcfe6667711425b26d59a128d5a13031f278a707",
+        "instance": "sha256:e3e90e6d2899da3ed88e7fdcb7eb32d0ca76929be4ebf14163aa0aa7b1ad739c"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/reverse_tree_recheck.py",
+        "line": 133,
+        "endLine": 133
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:89c309101736e073dd27c36d",
+      "occurrenceId": "occurrence:d33a2ef3b870586405804ee7",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:7208a6719c9daf3e1e67a923b4a0a629f0ccd52e89c309101736e073dd27c36d",
+        "instance": "sha256:551d9264dcf5e8c97d12f50662fa0f39c2c822fcd33a2ef3b870586405804ee7"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/smt_certificate_search.py",
+        "line": 344,
+        "endLine": 344
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:7a65c774e107ff157106258d",
+      "occurrenceId": "occurrence:c09ad11c19ffe715decf1641",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:21857a5bf6ec987a0e38e59b545ea0b16c6898f17a65c774e107ff157106258d",
+        "instance": "sha256:a0aaed9321a4659ff68f3aed8d706c11bf8f2b47c09ad11c19ffe715decf1641"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/smt_orbit_counterexample.py",
+        "line": 172,
+        "endLine": 172
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:4adbc44cb123cb189c768341",
+      "occurrenceId": "occurrence:9e8d040d92c58c913df8f776",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:0897da3f0fb96ac1566768904414e58e15a9d5274adbc44cb123cb189c768341",
+        "instance": "sha256:bf34233fa245984bd7f18b7c2672c59aac1efb259e8d040d92c58c913df8f776"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/stoptime_stats.py",
+        "line": 591,
+        "endLine": 591
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2bddb85536e3cdbb235aad7f",
+      "occurrenceId": "occurrence:b0f4f74ffb8f22de24570786",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:0717a20c9e61d6b4569de2bf1a764213a1d56e9b2bddb85536e3cdbb235aad7f",
+        "instance": "sha256:974c905957217e20baa4d76e183c02ab36b1384db0f4f74ffb8f22de24570786"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "20-experiments/scripts/verify_fib_certificate.py",
+        "line": 163,
+        "endLine": 163
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:54efbaae7adba9ed6a4f9214",
+      "occurrenceId": "occurrence:be65924cb9dad5190423ce06",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:19577b09081494f0b1a0e015a0a3059b47b9040a54efbaae7adba9ed6a4f9214",
+        "instance": "sha256:c867e462ee3aedfd70fd6d6dbaa7496cd946f2b9be65924cb9dad5190423ce06"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/arithmetic-cycles/scripts/arithmetic_cycles_check.py",
+        "line": 551,
+        "endLine": 551
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:c16c3e48c2cb3c4ca7696f1a",
+      "occurrenceId": "occurrence:ee0dfd9330caab94365d7cfd",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:6d742ac3081f2b0ae09c7e65ec16c54e4ccd56adc16c3e48c2cb3c4ca7696f1a",
+        "instance": "sha256:e78342c9cde64a349202418ec2fec7748393479cee0dfd9330caab94365d7cfd"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/arithmetic-cycles/scripts/arithmetic_cycles_round2.py",
+        "line": 622,
+        "endLine": 622
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:45e42247b35f910724990729",
+      "occurrenceId": "occurrence:02306f1d1e3fe5fd72791ef1",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:44f5578bcd527cc90af390cb01a66ca7a8eb8ffb45e42247b35f910724990729",
+        "instance": "sha256:4768d3a32195299644ede7d552b1bde84beada5b02306f1d1e3fe5fd72791ef1"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/diophantine-transcendence/dt2_cf.py",
+        "line": 48,
+        "endLine": 48
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:8ddd5f14e1b12c878347eb28",
+      "occurrenceId": "occurrence:9e4fa546c573fb728d500a22",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:84388ea0b89ca9b17b293e77d196fed4be3333b98ddd5f14e1b12c878347eb28",
+        "instance": "sha256:a2a2846ece377adaf3823df1f4ef9ab5c267f9009e4fa546c573fb728d500a22"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/two-adic-control/scripts/round2_verify.py",
+        "line": 733,
+        "endLine": 733
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:6ac37d26d0546d009167ff96",
+      "occurrenceId": "occurrence:64dcb8b817246fe2dcf96001",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:b497d1a2ca7cb9f3ba8c4f324110a40900d11bc66ac37d26d0546d009167ff96",
+        "instance": "sha256:2ec6899b4878f5aa58188117808c97db251aa5f564dcb8b817246fe2dcf96001"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "30-proof-attempts/two-adic-control/scripts/two_adic_verify.py",
+        "line": 815,
+        "endLine": 815
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:5c6d7d379e7f9c85e87dad25",
+      "occurrenceId": "occurrence:6dd7837835d6447433540378",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:3067e98fcac5bc125be2e3711a35c67650cf4a4c5c6d7d379e7f9c85e87dad25",
+        "instance": "sha256:80d5c56aea2e36de042c5701230e27a6b9db23ff6dd7837835d6447433540378"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-as-printed.py",
+        "line": 594,
+        "endLine": 594
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:e651e10a702ee7d299e74705",
+      "occurrenceId": "occurrence:986759b4a6b5b9f3140de4f5",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:239e27afb0e8bcd191e79c812c55823c001810a0e651e10a702ee7d299e74705",
+        "instance": "sha256:eb86b88850738b2c86daf97c67cea9387ad1720a986759b4a6b5b9f3140de4f5"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "60-audits/hercher-t21/scripts/rederive-lean-sound.py",
+        "line": 571,
+        "endLine": 571
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:09508153ea54f67edbe29093",
+      "occurrenceId": "occurrence:8cd15f03d0328e521a207612",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:0ccb4cc165ec9a1e37477e8488def36979f5af9309508153ea54f67edbe29093",
+        "instance": "sha256:7925f5a2716d52967da57b48ce78554ed0b5b9238cd15f03d0328e521a207612"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r4x_run1.py",
+        "line": 104,
+        "endLine": 104
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:1cf01277017af38a776a8aa9",
+      "occurrenceId": "occurrence:86b25ba0770fc8e0d08bfdc8",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:fa057801a24f80940d44ecc5f6edd6827836eaa51cf01277017af38a776a8aa9",
+        "instance": "sha256:b14005e7f0ad92021ba5a737ce4a3ccfaf9125a486b25ba0770fc8e0d08bfdc8"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r4x_run2.py",
+        "line": 179,
+        "endLine": 179
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:0c0614e7d37d001fb55ad79b",
+      "occurrenceId": "occurrence:0d1d1903f62694aa9d25ea6c",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:23b3e042e9e9d83dda625d155cb79baf408dbdd40c0614e7d37d001fb55ad79b",
+        "instance": "sha256:60dc6e2b055cf177926dec5978d593f09e7c8aff0d1d1903f62694aa9d25ea6c"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r4x_run3.py",
+        "line": 157,
+        "endLine": 157
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:a01c4b288924bdeb90212d50",
+      "occurrenceId": "occurrence:9b16358236747e7f0c5061e3",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:44e1661a501ec68f2ec3a762af60874f58ac83b7a01c4b288924bdeb90212d50",
+        "instance": "sha256:1a00425857b7f801ed8f4c79f03c245302aa0bb09b16358236747e7f0c5061e3"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r4x_run4.py",
+        "line": 100,
+        "endLine": 100
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:764c3b8dce2f4e78678a70bf",
+      "occurrenceId": "occurrence:58760901bc29d028f3727128",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:4b5a880bb4413b89c9db48df5cd7d1ed4d890302764c3b8dce2f4e78678a70bf",
+        "instance": "sha256:b817c61ac8b8b34f2458c6ee913a50fc336f5df358760901bc29d028f3727128"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r4x_run5.py",
+        "line": 58,
+        "endLine": 58
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:302bb4aa7c1fb02c8631d548",
+      "occurrenceId": "occurrence:8b31c78a431cf9eaf75b18be",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:5ccb442e5238c9223f8f6aa745240726e2cde254302bb4aa7c1fb02c8631d548",
+        "instance": "sha256:415b006966b13575d57227ec36b12a62fb7a79968b31c78a431cf9eaf75b18be"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-1/scripts/r4x_run6.py",
+        "line": 72,
+        "endLine": 72
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:eccc273f54967d14841b0e3e",
+      "occurrenceId": "occurrence:879705f9a1a9ae46651f912f",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:556e52b602d0cdf09f81c9232a1cbeb197824fb7eccc273f54967d14841b0e3e",
+        "instance": "sha256:910d3154ef5ebe8f7994d9ca5df992f7c58dc065879705f9a1a9ae46651f912f"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_cert.py",
+        "line": 249,
+        "endLine": 249
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:b9273f1d84fb384f50975214",
+      "occurrenceId": "occurrence:638427af5ddae31b1816dc11",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:a8f17059b49dbdd7967b14df182534052a120e90b9273f1d84fb384f50975214",
+        "instance": "sha256:d42f4e9b5b56aa66cc98d11050447075bbadea93638427af5ddae31b1816dc11"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_convsplit.py",
+        "line": 59,
+        "endLine": 59
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:7f7d792bb54123a0af0269d6",
+      "occurrenceId": "occurrence:6bbfc26c41a66f5f774bc512",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:7573d48defb3eecbe1cfeb923220f562bd820c907f7d792bb54123a0af0269d6",
+        "instance": "sha256:d8bdedc5e31ab3c4ab75bb78baa2c80b4f7700216bbfc26c41a66f5f774bc512"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_defaudit.py",
+        "line": 136,
+        "endLine": 136
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:75749c07ee0c2fef2e3d59a4",
+      "occurrenceId": "occurrence:eafd4f4987d4c8464184f8ae",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:6ea031b6e147d627e6fc7e3e47959b59a08ea33b75749c07ee0c2fef2e3d59a4",
+        "instance": "sha256:39e8bc1329085f596f82aa06b3e38bca48d2350aeafd4f4987d4c8464184f8ae"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_paperchain.py",
+        "line": 58,
+        "endLine": 58
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:0e87a23e0eddb0e81b36fa78",
+      "occurrenceId": "occurrence:2d13326f5ca6c8ea0f57f5c0",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:2f3c571b3587b0fe91a57fc1075bc5eeac34a6e30e87a23e0eddb0e81b36fa78",
+        "instance": "sha256:ddbd3999a887cdf6de47131b4fcc6b29e0b34df02d13326f5ca6c8ea0f57f5c0"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/c2r5_selftest.py",
+        "line": 170,
+        "endLine": 170
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:d3c78c1e379910cbb9efcaf6",
+      "occurrenceId": "occurrence:78c6749be59bd1f04e5e01e6",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:320340705c68356c8ec8e42210cb2b07c3be5aaad3c78c1e379910cbb9efcaf6",
+        "instance": "sha256:16a05c0f5c1f8b637e51bd8e7349c17359def15978c6749be59bd1f04e5e01e6"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route2_cert.py",
+        "line": 345,
+        "endLine": 345
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:e8dd73913842167e8784df62",
+      "occurrenceId": "occurrence:2ca47df1c6ad64b49cd9bb76",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:de03539e2bccc6da55fcc317ce321985350107b4e8dd73913842167e8784df62",
+        "instance": "sha256:d8720dbf3890c04bec18f6b17d3dba8e8c6df40b2ca47df1c6ad64b49cd9bb76"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/cycle-2/scripts/route2_enum.py",
+        "line": 324,
+        "endLine": 324
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:8597a50e8ee60d039f619676",
+      "occurrenceId": "occurrence:281cd710284afca24d13d658",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:4493f7051af17ea3364f5db728d64f159d0953358597a50e8ee60d039f619676",
+        "instance": "sha256:b9f3bbf03db0326876fe773d806f42ed14548cc5281cd710284afca24d13d658"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/audit_cert_light.py",
+        "line": 417,
+        "endLine": 417
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:8597a50e8ee60d039f619676",
+      "occurrenceId": "occurrence:1b942c9f0c27cccce42a425a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:4493f7051af17ea3364f5db728d64f159d0953358597a50e8ee60d039f619676",
+        "instance": "sha256:325263694c44b9f33a99ec0e8fd5a640f0be87811b942c9f0c27cccce42a425a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/audit_cert_light.py",
+        "line": 419,
+        "endLine": 419
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2c2def565213dbf0b9f41fc1",
+      "occurrenceId": "occurrence:a44810dd4c7419f2c8bf2f59",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:5da7fbaf154d2fec581852a70ad6fe7dbd986c562c2def565213dbf0b9f41fc1",
+        "instance": "sha256:1a14b759aa3505f6b64eaf3e2c2589392e1fdd35a44810dd4c7419f2c8bf2f59"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/audit_cert.py",
+        "line": 403,
+        "endLine": 403
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2c2def565213dbf0b9f41fc1",
+      "occurrenceId": "occurrence:fa681f22dd3b9877bb6ed27e",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:5da7fbaf154d2fec581852a70ad6fe7dbd986c562c2def565213dbf0b9f41fc1",
+        "instance": "sha256:f9b1769857ce0197a797c1c9fedad76fee44e52dfa681f22dd3b9877bb6ed27e"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/audit_cert.py",
+        "line": 407,
+        "endLine": 407
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:09ed4491d0be5474d2239c41",
+      "occurrenceId": "occurrence:7866bc8626b5d72bb296d9d4",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:7817802e1bddabc2fc901298f8ca7c2e0d11c98809ed4491d0be5474d2239c41",
+        "instance": "sha256:1b6245e97bd75e5c98b5c20680725d58738791797866bc8626b5d72bb296d9d4"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/d3wt_cert.py",
+        "line": 463,
+        "endLine": 463
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:9aa888aec8c28093325ffc82",
+      "occurrenceId": "occurrence:037fc9b986a980620540ebc8",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:2821a5b8b346043b40260ba47f95aafb1c1586a29aa888aec8c28093325ffc82",
+        "instance": "sha256:321526b0fcaf57075ee83843809a30f37ab4d23f037fc9b986a980620540ebc8"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/route1_c_recheck.py",
+        "line": 389,
+        "endLine": 389
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2ce65c601837a7f9e90f29d0",
+      "occurrenceId": "occurrence:2991ddb1a2e9d2166e756de9",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:cec32a897cf3d60f870d46295cf0145bb1c546a62ce65c601837a7f9e90f29d0",
+        "instance": "sha256:71d3fad8674dfba393ed4856443eeb9709eede7d2991ddb1a2e9d2166e756de9"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/route1_convsplit_audit.py",
+        "line": 135,
+        "endLine": 135
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2ce65c601837a7f9e90f29d0",
+      "occurrenceId": "occurrence:c859e58a650b96be67a33537",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:cec32a897cf3d60f870d46295cf0145bb1c546a62ce65c601837a7f9e90f29d0",
+        "instance": "sha256:7a7593fba32e40e16ae19813024a87708ad1bd41c859e58a650b96be67a33537"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/route1_convsplit_audit.py",
+        "line": 154,
+        "endLine": 154
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:8793e951c94a8e358810cc10",
+      "occurrenceId": "occurrence:7d4ad16c65551ea2b54c1183",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:1fd6bf50d9ef7f63921729a2b82376be45babfed8793e951c94a8e358810cc10",
+        "instance": "sha256:211212c780b892063bc59ae1e8e8e081caecf8607d4ad16c65551ea2b54c1183"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/d3-window-tail/cycle-1/scripts/route1_window_cert.py",
+        "line": 467,
+        "endLine": 467
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:b513d2d98678c19a20c0df08",
+      "occurrenceId": "occurrence:c2215f186076f5cdd7619913",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:f998400b7209a4282157cf2ea6d7c11bc59d40dab513d2d98678c19a20c0df08",
+        "instance": "sha256:da74229737bcb5dd1f708bb0249885e7424dc03ac2215f186076f5cdd7619913"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/k1_threshold_cert.py",
+        "line": 345,
+        "endLine": 345
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:b513d2d98678c19a20c0df08",
+      "occurrenceId": "occurrence:77c35e2fc53cf15019e9eb9b",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:f998400b7209a4282157cf2ea6d7c11bc59d40dab513d2d98678c19a20c0df08",
+        "instance": "sha256:afd6f87b6e86ec39028438b04b39864cee07ecde77c35e2fc53cf15019e9eb9b"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/k1_threshold_cert.py",
+        "line": 375,
+        "endLine": 375
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:abe67350019b26d9c66b939d",
+      "occurrenceId": "occurrence:7b8421e6f2fbc3310304347d",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:65d083a3be93bad61b61e8febf4fd655f15f4cababe67350019b26d9c66b939d",
+        "instance": "sha256:0a6d1f6fd7db77a107f16fbd1e387d88f39a42ce7b8421e6f2fbc3310304347d"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/k3_run_a.py",
+        "line": 220,
+        "endLine": 220
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:e3ff133c460ec1567a139c13",
+      "occurrenceId": "occurrence:1e69bb477d0440470a3b424a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:e87bef960462d444ce713a1bdb6f1abf6a2f03d3e3ff133c460ec1567a139c13",
+        "instance": "sha256:d157d2743428f282acd4a6af800a17426e6bcbcd1e69bb477d0440470a3b424a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/k3_run_b.py",
+        "line": 153,
+        "endLine": 153
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:497b27ab3ba7a1f49f6f05e7",
+      "occurrenceId": "occurrence:ab8ca10606c609801fe46e4b",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:5cc59273c1b8a4572f9ca46520e18662e67186a8497b27ab3ba7a1f49f6f05e7",
+        "instance": "sha256:09ebababcae5997a5fbeb6894128c479b32c0bc9ab8ca10606c609801fe46e4b"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/k3_run_c.py",
+        "line": 156,
+        "endLine": 156
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:62d10188fd28e94c32d9d4b2",
+      "occurrenceId": "occurrence:652af4b4f207db4a892c6b73",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:756fa008067d8c7d7ffa2ffd13f5f3536a23471e62d10188fd28e94c32d9d4b2",
+        "instance": "sha256:6f28b9e8f0be79ca46d4bf8f09a80e7267eef17b652af4b4f207db4a892c6b73"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/k3_xcheck.py",
+        "line": 129,
+        "endLine": 129
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:6a26afd8020bb029af588ed8",
+      "occurrenceId": "occurrence:ef3d9a00ee5c93b734c642d4",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:5cade3c829297c67d236e11f73c071789a38a65e6a26afd8020bb029af588ed8",
+        "instance": "sha256:a486e6145640373487497d8c0e9f52a3f731fd85ef3d9a00ee5c93b734c642d4"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r2_threshold_cert.py",
+        "line": 413,
+        "endLine": 413
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:a1cba178831bd7b392875226",
+      "occurrenceId": "occurrence:6c9503db4af3f4c058d3c841",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:70ab173a88b02f2966ffefcf4d5fef986fcd35b6a1cba178831bd7b392875226",
+        "instance": "sha256:acf4e1d58c68a6b3039a9aae07827c202991689a6c9503db4af3f4c058d3c841"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4_selftest.py",
+        "line": 66,
+        "endLine": 66
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:6597e206b177105ee968056d",
+      "occurrenceId": "occurrence:cfd288e17781965ccbef6669",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:20b47df549a802f534ba83fada3e9565b125a2fb6597e206b177105ee968056d",
+        "instance": "sha256:3c4bbaf42d6d33e8d6d32fe09a0c08556f4327decfd288e17781965ccbef6669"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4a_search_low.py",
+        "line": 243,
+        "endLine": 243
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:9b470a8adff4efb6520341cf",
+      "occurrenceId": "occurrence:fcc4f9dcedf38dcabba928c7",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:9e88c6e797a3722468210aba68e170f1c1823ff69b470a8adff4efb6520341cf",
+        "instance": "sha256:98f3da97fd337166d5d096db30252ece3f3a3f74fcc4f9dcedf38dcabba928c7"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4b_search_epsopt.py",
+        "line": 246,
+        "endLine": 246
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:4aaf1206638c23ba70ad41bb",
+      "occurrenceId": "occurrence:cdd9168d42790088fcb20322",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:2c9f3a69277ac94a6baf94afbab72bc6ff56b6ef4aaf1206638c23ba70ad41bb",
+        "instance": "sha256:7ea0ea1f8bfc11b55fa8567afab93cf30b00a8f1cdd9168d42790088fcb20322"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4b2_window_probe.py",
+        "line": 154,
+        "endLine": 154
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:cd1c7602c364af37b9a58a21",
+      "occurrenceId": "occurrence:5a47c64d521fa280d7a743eb",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:c2a681d8c508da3eeee45717e7d8728d8cf5d74acd1c7602c364af37b9a58a21",
+        "instance": "sha256:6d6e5932e94fb0f0731b03550a85abd3abb495965a47c64d521fa280d7a743eb"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4c_count_boundary.py",
+        "line": 107,
+        "endLine": 107
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:e0963bfdcbc3590a2d2d8202",
+      "occurrenceId": "occurrence:c87ea261fa2837a439373c54",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:1850d8c17c53160f13088a495573e469b1f1ec80e0963bfdcbc3590a2d2d8202",
+        "instance": "sha256:5437eb5c6b5e3532186e61077cb05a7089d2a550c87ea261fa2837a439373c54"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4d_gauge.py",
+        "line": 87,
+        "endLine": 87
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:e0963bfdcbc3590a2d2d8202",
+      "occurrenceId": "occurrence:00fa35c48c5ce8240b56251d",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:1850d8c17c53160f13088a495573e469b1f1ec80e0963bfdcbc3590a2d2d8202",
+        "instance": "sha256:7ab3d5b918bfb17c72056740507c14fbdff54ffa00fa35c48c5ce8240b56251d"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-proof/cycle-1/scripts/r4d_gauge.py",
+        "line": 158,
+        "endLine": 158
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:c230a62f82d9dbace2348908",
+      "occurrenceId": "occurrence:c53d65b91b27495cd9d10391",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:aa005dd336016bd4c2667fee60e67ed656c46ecdc230a62f82d9dbace2348908",
+        "instance": "sha256:40902a88c7e36d29a4087dc789b803e1499eacb0c53d65b91b27495cd9d10391"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/audit_lines.py",
+        "line": 420,
+        "endLine": 420
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:809caaf63076451b0eaebe78",
+      "occurrenceId": "occurrence:8dc017bf46ec075f153ac4c7",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:17fdc5f0ffc48d86c7eb923d7b81fed64cfdc852809caaf63076451b0eaebe78",
+        "instance": "sha256:90da07eb39215e523e3aae91a8cdd1c443be49688dc017bf46ec075f153ac4c7"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/r3_convention_search.py",
+        "line": 260,
+        "endLine": 260
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:dd9565c4687a18716cfa3018",
+      "occurrenceId": "occurrence:b81c3a9a5e9dbbd5bf9c7d9f",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:01ac0bca90df3a1d3b82c36e5267506b1ac004fcdd9565c4687a18716cfa3018",
+        "instance": "sha256:d660ea90aeaaec500aaae6be90bef881cc0a7713b81c3a9a5e9dbbd5bf9c7d9f"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/r3_cross_search.py",
+        "line": 230,
+        "endLine": 230
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:8f2742c60eab9d4cbb63744f",
+      "occurrenceId": "occurrence:af390d63c7eadc8ec1aec0be",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:292d4dda360f7be435e9b35dbfc60991be3ff6328f2742c60eab9d4cbb63744f",
+        "instance": "sha256:136a377df1442e2cc722821d97c3be072b26fb2baf390d63c7eadc8ec1aec0be"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/r3_list_search.py",
+        "line": 160,
+        "endLine": 160
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:60a0782b40e9420e2e553261",
+      "occurrenceId": "occurrence:7d183aa2ca02fb00efb6e42a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:fc5e97c821016dd3e0892b91cac8c9229ba83b3960a0782b40e9420e2e553261",
+        "instance": "sha256:7fbee08c95018ee9fc31d69802f2f05525229eb57d183aa2ca02fb00efb6e42a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/r3_probe1.py",
+        "line": 72,
+        "endLine": 72
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:4b91bcf92e293d5839d056b9",
+      "occurrenceId": "occurrence:91e3be7657a89b9928073c1b",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:698ef851613a12139489465871da444ad61e7aec4b91bcf92e293d5839d056b9",
+        "instance": "sha256:7b4df6cdc98bc4261fa5135aaed8ad0415d1f43c91e3be7657a89b9928073c1b"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/sc_final_report.py",
+        "line": 346,
+        "endLine": 346
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:4b91bcf92e293d5839d056b9",
+      "occurrenceId": "occurrence:6bb9f3e282fd55d2b1885af7",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:698ef851613a12139489465871da444ad61e7aec4b91bcf92e293d5839d056b9",
+        "instance": "sha256:872dd10a0ccadea2330eedfafaacb35655d6e8f46bb9f3e282fd55d2b1885af7"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/sc_final_report.py",
+        "line": 347,
+        "endLine": 347
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f51f3dc2c53291014ea522c6",
+      "occurrenceId": "occurrence:91f15a9df86dfae75282c362",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:11072a15dd2c55431acbf5574d0fcd813a0d0f73f51f3dc2c53291014ea522c6",
+        "instance": "sha256:b61375adde5bae6d9e6e147014fed95aa53a1aae91f15a9df86dfae75282c362"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/sc1_endpoints_windows.py",
+        "line": 186,
+        "endLine": 186
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:1e842cc3e8c64611f511f8c2",
+      "occurrenceId": "occurrence:8a14f4834bc99eb5fabd2c46",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:523f73a2dffd7d7b51a3679d4970446d733ff62f1e842cc3e8c64611f511f8c2",
+        "instance": "sha256:79c0a74f2750f82c7e706c29f65af446293555188a14f4834bc99eb5fabd2c46"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/sc2_a5_ladder.py",
+        "line": 101,
+        "endLine": 101
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:7cefca20ac94dba8f26d9dd3",
+      "occurrenceId": "occurrence:ea738a77ba1d55aa3695b210",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:4ebd0f008f2397d993a9d2f34a3d58618db06a607cefca20ac94dba8f26d9dd3",
+        "instance": "sha256:5919dcdbe9f6ae0c0ac47c78649d313f7b64acb3ea738a77ba1d55aa3695b210"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/kcross-tail/cycle-1/scripts/sc3_eps_sides.py",
+        "line": 120,
+        "endLine": 120
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:2acdb14d5d40d0f4607055c1",
+      "occurrenceId": "occurrence:2f357d5e23c2f52a0360002d",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:cf728b725988519e2b7e3b8c1defdff56b32ab0b2acdb14d5d40d0f4607055c1",
+        "instance": "sha256:56bc65fa512e904a6116bacb45413dab8864d7f52f357d5e23c2f52a0360002d"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/r2_run1.py",
+        "line": 211,
+        "endLine": 211
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:70913bd61a40c307110e4ac2",
+      "occurrenceId": "occurrence:a7ee9e4f0459bbbade6a0c2b",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:3bf15d3492bf39db3dc7bf45fc52f7f8911ff02c70913bd61a40c307110e4ac2",
+        "instance": "sha256:c3fd4e543f09d512227e6ebc84bf52571c879b84a7ee9e4f0459bbbade6a0c2b"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/r2_run2.py",
+        "line": 245,
+        "endLine": 245
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:f24ac497ffb8815e527e46f5",
+      "occurrenceId": "occurrence:55753a51c7f901bcc3917a90",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:6315ad6abfc488dc41d24a4930bfebac8c18f100f24ac497ffb8815e527e46f5",
+        "instance": "sha256:aece972f7ff931e98ff5c2a57125bd0e6e52f7df55753a51c7f901bcc3917a90"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/r2_run3.py",
+        "line": 133,
+        "endLine": 133
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:599fbd851e847de61e850d44",
+      "occurrenceId": "occurrence:267537bf638701446cc92123",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:f5c6fb3b0b42af7bf8d57b9214fe1f5a9f4aa91a599fbd851e847de61e850d44",
+        "instance": "sha256:36a6b757669f33989be5cfda5d595164e23062e4267537bf638701446cc92123"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/r5_cert.py",
+        "line": 210,
+        "endLine": 210
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:599fbd851e847de61e850d44",
+      "occurrenceId": "occurrence:7aa5cfc06d358c3ba0363030",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:f5c6fb3b0b42af7bf8d57b9214fe1f5a9f4aa91a599fbd851e847de61e850d44",
+        "instance": "sha256:74703d25a7043a9e255f7710c72b9830585b46487aa5cfc06d358c3ba0363030"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/r5_cert.py",
+        "line": 220,
+        "endLine": 220
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:ba5142007b2622fe3ca27a8c",
+      "occurrenceId": "occurrence:f8c5b236bf0945221ee4534a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:951fc92d547fd981ca7b9e37a4b85b6aa318d1d0ba5142007b2622fe3ca27a8c",
+        "instance": "sha256:8bde7ba80cd97496d63893919755c61116646870f8c5b236bf0945221ee4534a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/r5_readings.py",
+        "line": 127,
+        "endLine": 127
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:639410652ede0da716edaf7e",
+      "occurrenceId": "occurrence:81986138a0e7788260ed0f6f",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:b1faef0fb681318d5312b9d7655d32d9e6d7042c639410652ede0da716edaf7e",
+        "instance": "sha256:6456ccdb1a7c7882d2a9587e9d555eb39f33eb3681986138a0e7788260ed0f6f"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/route4_chain.py",
+        "line": 272,
+        "endLine": 272
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:639410652ede0da716edaf7e",
+      "occurrenceId": "occurrence:3dfb87ca8b2746cdbd45100f",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:b1faef0fb681318d5312b9d7655d32d9e6d7042c639410652ede0da716edaf7e",
+        "instance": "sha256:5a00241deb68598f664ed204b8bb455e80811f083dfb87ca8b2746cdbd45100f"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/route4_chain.py",
+        "line": 398,
+        "endLine": 398
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:17601bf132d2797613b71833",
+      "occurrenceId": "occurrence:bb5be9e255bb64b688a2c3ae",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:461fdeff4dbe68bf79c8dcc9b7845d363966bceb17601bf132d2797613b71833",
+        "instance": "sha256:519e7fa8efa09a5f33f0946cf8d2325f6a365367bb5be9e255bb64b688a2c3ae"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/thm23-eps/cycle-1/scripts/route4_step7.py",
+        "line": 334,
+        "endLine": 334
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:b97ea49c49b02c5228d83a40",
+      "occurrenceId": "occurrence:748e77f7524803acc8bc3f8a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:cadd21c100fb7ee1434e4b2c00f469e78ecc7f7eb97ea49c49b02c5228d83a40",
+        "instance": "sha256:314fb83ad2930fea1caf23b576e9fa330ed1b738748e77f7524803acc8bc3f8a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/undefined/cycle-1/scripts/audit_c.py",
+        "line": 274,
+        "endLine": 274
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:532ba9ea127807b0a7621669",
+      "occurrenceId": "occurrence:ae671e0339aee762f3b207e5",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:b77206b6753d73c27ebcc26f3e7a1d0adb3665a5532ba9ea127807b0a7621669",
+        "instance": "sha256:483c6b8d87ef4eb3a5e1d29f7abda9a30269516fae671e0339aee762f3b207e5"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/undefined/cycle-1/scripts/c1u2_window_cert.py",
+        "line": 738,
+        "endLine": 738
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:7409c9cecef662e1003ec776",
+      "occurrenceId": "occurrence:a2e3cd1a1f914e85a3c4c06a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:baea94589ae9696181c842b24907ad06f70759577409c9cecef662e1003ec776",
+        "instance": "sha256:5dc54a2ba4acbd73796e3209dc0f24ab41d7fe68a2e3cd1a1f914e85a3c4c06a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/undefined/cycle-1/scripts/r1_window_analytic.py",
+        "line": 295,
+        "endLine": 295
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:8cdc0fe81d653c0a6649f457",
+      "occurrenceId": "occurrence:b367c37298adb6e9bdd1acb7",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:d047d2263b67109b4c02a5610dc71f9745ec8d458cdc0fe81d653c0a6649f457",
+        "instance": "sha256:779f9268d8ead1db79eb493753433ccaf5538ce0b367c37298adb6e9bdd1acb7"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/undefined/cycle-1/scripts/route3_compare.py",
+        "line": 244,
+        "endLine": 244
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:b64067040dab646bd4f63da7",
+      "occurrenceId": "occurrence:41d40239ac8ba3f4ac25292a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:5130ae99f556dbd69f73e225d024d9f9bc626317b64067040dab646bd4f63da7",
+        "instance": "sha256:6932ecbe560a045da2b2a8520427bc0eea98578841d40239ac8ba3f4ac25292a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/undefined/cycle-1/scripts/route3_indbisect.py",
+        "line": 724,
+        "endLine": 724
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:b64067040dab646bd4f63da7",
+      "occurrenceId": "occurrence:eaa2bad7b235b87bd2c026f2",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:5130ae99f556dbd69f73e225d024d9f9bc626317b64067040dab646bd4f63da7",
+        "instance": "sha256:a23fa6eb466b727be462c451cdfe913b2b4b99b6eaa2bad7b235b87bd2c026f2"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/undefined/cycle-1/scripts/route3_indbisect.py",
+        "line": 730,
+        "endLine": 730
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:5422f3c5d561cfae4c582567",
+      "occurrenceId": "occurrence:864886bf8fb1bb60907176e6",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:711df1894e0c7b52a1c1d4ed52c10e475b880d0a5422f3c5d561cfae4c582567",
+        "instance": "sha256:c7d0e8206babe272a982aaf3ddb65b34679a637d864886bf8fb1bb60907176e6"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/r5_vm12_enum.py",
+        "line": 289,
+        "endLine": 289
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:5422f3c5d561cfae4c582567",
+      "occurrenceId": "occurrence:d2473a75760243310bba5cc9",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:711df1894e0c7b52a1c1d4ed52c10e475b880d0a5422f3c5d561cfae4c582567",
+        "instance": "sha256:e3e67fa191278d3d1a1115f5430215bfc17af5b8d2473a75760243310bba5cc9"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/r5_vm12_enum.py",
+        "line": 403,
+        "endLine": 403
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:79dc0406de7b1e3298173d37",
+      "occurrenceId": "occurrence:4541406521222d7d02e78e4a",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:a49a331f1a1c6bf480ec3608f249fe8cce4b34ae79dc0406de7b1e3298173d37",
+        "instance": "sha256:6a6d93b0c7a73a76cc5c1624fdcda5c50aa781cb4541406521222d7d02e78e4a"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/route2_ref_enum.py",
+        "line": 128,
+        "endLine": 128
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:79dc0406de7b1e3298173d37",
+      "occurrenceId": "occurrence:fb36bf0e7a4c6fe140a56774",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:a49a331f1a1c6bf480ec3608f249fe8cce4b34ae79dc0406de7b1e3298173d37",
+        "instance": "sha256:f714a1e6b4b9a131a9a41b0f55572b73a7e1c039fb36bf0e7a4c6fe140a56774"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/route2_ref_enum.py",
+        "line": 145,
+        "endLine": 145
+      },
+      "proofGaps": []
+    },
+    {
+      "findingId": "finding:753aa6d8418ae5a2383ed7c0",
+      "occurrenceId": "occurrence:e7c3ae8724e2a2c1c7a24195",
+      "identity": {
+        "publicClass": "path-traversal",
+        "anchor": "sha256:5ca25af43f6f5d60480ab99ac294c9cfd59b6331753aa6d8418ae5a2383ed7c0",
+        "instance": "sha256:b9057ab15cecd634ecec4aff58c301f69d077b34e7c3ae8724e2a2c1c7a24195"
+      },
+      "kind": "static",
+      "severity": "high",
+      "title": "路径穿越",
+      "message": "未校验的路径含 ../ 可访问预期之外的文件",
+      "cwe": [
+        "CWE-22"
+      ],
+      "advisory": false,
+      "evidenceState": "static-finding",
+      "verdictEffect": "none",
+      "location": {
+        "path": "70-research/tracks/vertex-m12/cycle-1/scripts/route3_impl1_intscan.py",
+        "line": 305,
+        "endLine": 305
+      },
+      "proofGaps": []
+    }
+  ],
+  "totals": {
+    "high": 83,
+    "medium": 20,
+    "low": 57,
+    "info": 0,
+    "businessLogic": 0
+  }
+}
