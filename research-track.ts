@@ -96,8 +96,36 @@ interface TrackLedgerNote {
 }
 
 const ROOT = "/Users/luna/Documents/math IA/collatz-attack";
-const TAG = String(args.tag);
-const FOCUS = String(args.focus);
+// args 回退（2026 年 10 月 28 日加）：AmendWorkflow 不保留 args，改道时 tag 与 focus
+// 会变成 "undefined"。凡检测到 args 缺失，就从工作区文件读回退值——改道前主代理会把
+// 目标写进 collatz-attack/70-research/.amend-args.json（{"tag": "...", "focus": "..."}）。
+let TAG = String(args.tag);
+let FOCUS = String(args.focus);
+if (TAG === "undefined" || TAG === "" || FOCUS === "undefined" || FOCUS === "") {
+  // 工作区根实测（2026-10-28，EvalWorkflowSnippet，glob("*") 直接列出 tracks/ 与
+  // amend-args.json）：本项目的 workflow 世界里工作区根就是 70-research 本身，所以第一条
+  // 相对路径才对；另两档根（仓库根 collatz-attack、math IA）也一并候选以防运行而异。
+  const candidates = [
+    "amend-args.json",
+    ".amend-args.json",
+    "70-research/amend-args.json",
+    "70-research/.amend-args.json",
+    "collatz-attack/70-research/amend-args.json",
+    "collatz-attack/70-research/.amend-args.json",
+  ];
+  for (const p of candidates) {
+    try {
+      const raw = await files.read(p);
+      const parsed = JSON.parse(raw) as { tag?: string; focus?: string };
+      TAG = String(parsed.tag);
+      FOCUS = String(parsed.focus);
+      log(`args 缺失，已从 ${p} 读回：tag=${TAG}`);
+      break;
+    } catch (e) {
+      log(`回退文件 ${p} 不可读：${String(e).slice(0, 100)}`);
+    }
+  }
+}
 const BASE = `${ROOT}/70-research/tracks/${TAG}`;
 const STYLE =
   "写作纪律：中文正文不要出现半角连字符，破折号用「——」，并列用「、」，编号用 1. 2. 3.。诚实纪律：区分已证定理、仅预印本宣称、你自己的推断；无法核实的标注；禁止编造文献、数字或引理名；未证一律写未证。";
@@ -149,7 +177,7 @@ const scoutPartOne = methodScout.ask<string>(
     `1. 文献里针对这类问题用过什么机具（逐条给出处），各自到达的范围与已知极限。\n` +
     `2. 已知的不可能性结果：哪些做法被证明必然失败（逐条给出处）。\n` +
     `写到 ${BASE}/cycle-${plan.cycleNumber}/methods.md（目录若不存在就创建），两节标题分别为「## 一、文献机具与可达范围」与「## 二、已知的不可能性结果」。\n` +
-    `硬要求：每条都要能追溯到可打开的来源或项目内文件；不确定的标注。返回你写入的文件绝对路径。`,
+    `硬要求：每条都要能追溯到可打开的来源或项目内文件；不确定的标注；读项目内大文件先 grep 再分段读，单次不超过约 150 行。返回你写入的文件绝对路径。`,
 );
 const scoutPartTwo = scoutPartOne.then(() =>
   methodScout.ask<string>(
@@ -167,6 +195,7 @@ const materials = await Promise.all([
       `1. 逐条列出：名称、URL 或本地路径、你是否亲自打开、与疑点相关的关键句（逐字）。\n` +
       `2. 公式若 pdftotext 抽出来乱码，用 pdftoppm 渲染成图再读。\n` +
       `3. 打不开的单列，并写明尝试过什么。\n` +
+      `4. 读项目内旧产物（检查点、日志、.out、decisions 等）先 grep 或 rg 定位再分段读：单次读取不超过约 150 行，不得整读超过 100KB 的文件；关键句逐字保留到 materials.md 即可，不必把全文留在对话里（供方会对过大请求直接返回 400，本轨道已因此被停过一次）。\n` +
       `目录若不存在就创建。返回你写入的文件绝对路径。`,
   ),
   scoutPartTwo,
