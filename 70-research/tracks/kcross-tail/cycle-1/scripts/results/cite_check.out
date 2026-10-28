@@ -1,0 +1,269 @@
+========================================================================
+引用核验：逐条核对「文件、md5、行数、行号含串」
+仓库根：/Users/luna/Documents/math IA/collatz-attack
+========================================================================
+
+[70-research/tracks/kcross-proof/cycle-1/route-1.md]  期望 md5 3319972d070e02baf3399d708c880269、414 行
+    PASS md5 3319972d070e02baf3399d708c880269
+    PASS 行数 414
+    PASS :115 含「**陈述**：设 K_lo ≥ R。则链的第一步」
+    PASS :133 含「**陈述**：设 K_lo ∈ [92C, R)。」
+    PASS :148 含「**注 B7（这条路径的关键不对称）**」
+    PASS :171 含「**推论 1（T = R）**」
+    PASS :202 含「**已证**（初等 L1 至 L4 + 证书 C1 至 C6）」
+    PASS :262 含「窗口宽度的登记本身有分歧」
+    PASS :289 含「**若必须指出本路线最薄的一环**：B3 依赖「γ 的分子分母已约分且分母恰为 K\*」」
+    PASS :299 含「本文件的「已证」一律是「本文初等推理 + 本机实跑证书」意义上的」
+    PASS :313 含「**T = R**：动力学越界阈值等于 ε_opt(K) = γ − δ 的唯一实根」
+
+[70-research/tracks/kcross-proof/cycle-1/route-2.md]  期望 md5 ea82163d12bd6b889b07fe9af7c085c1、253 行
+    PASS md5 ea82163d12bd6b889b07fe9af7c085c1
+    PASS 行数 253
+    PASS :12 含「两侧严格区间证书成立」
+    PASS :23 含「T = R（R 为 ε(92, K) = γ − δ 的根）」
+    PASS :167 含「**未证，本路不裁决**」
+    PASS :253 含「端点 T_hi、T_lo 是参数」
+
+[70-research/tracks/kcross-proof/cycle-1/route-3.md]  期望 md5 91223865e6b538572b6ab60bb218a64e、409 行
+    PASS md5 91223865e6b538572b6ab60bb218a64e
+    PASS 行数 409
+    PASS :21 含「**未证（本路线不裁决，也不提供新证据）**」
+    PASS :129 含「分母小于 `K*` 的清单项 438 条」
+    PASS :243 含「不含任何关于 T 与 R 等同的断言」
+
+[70-research/tracks/kcross-proof/cycle-1/route-4.md]  期望 md5 6a1b4efe2d9a49bf952e71456eefc1ea、287 行
+    PASS md5 6a1b4efe2d9a49bf952e71456eefc1ea
+    PASS 行数 287
+    PASS :157 含「7.80677136541×10⁻¹³（j = 90）与 7.71461775858×10⁻…」
+    PASS :171 含「A(91) − A(92) = 3/X₀ ≈ 5.55×10⁻²¹」
+    PASS :270 含「**本路未证**，只做了等同所需边界的压力测试」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/k1_threshold_cert.log]  期望 md5 23fec892a94f72cb135562b584fe6ec2、94 行
+    PASS md5 23fec892a94f72cb135562b584fe6ec2
+    PASS 行数 94
+    PASS :35 含「分母 > U(92) 上界 ？ True」
+    PASS :37 含「z·y − x·w = 1（= 1）；中项分母 y + w = 79419644187026…」
+    PASS :61 含「KA = 313195478959172262876.6365306194907065260…」
+    PASS :62 含「KB = 313195478959172262876.6365306194907065260…」
+    PASS :63 含「绝对宽度 = 2.052683e-30 ；相对宽度 = 6.554000e-51」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/r2_threshold_cert.log]  期望 md5 c45b3da1f6910ba07c41a27682391904、164 行
+    PASS md5 c45b3da1f6910ba07c41a27682391904
+    PASS 行数 164
+    PASS :52 含「已完成 400 步，宽度 1.161777574454 e-102」
+    PASS :57 含「T_hi 的精确有理 = 154256627532900527984071803941928…」
+    PASS :58 含「T_lo 的精确有理 = 308513255065801055968143607883856…」
+    PASS :67 含「A1：全部 eps(m2, T_hi)_下界 > (gamma - delta)_上界」
+    PASS :76 含「A5：对一切 q <= 6456」
+    PASS :86 含「B2 eps(92, T_lo)_上界 < (gamma - delta)_下界」
+    PASS :149 含「9.1 阈值 T 的严格区间：T ∈ [T_hi, T_lo]，宽度 1.161777574…」
+    PASS :152 含「9.2 「T = R」的识别：本路未裁决」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/k3_run_a.out]  期望 md5 01f48fc0ebd6121c2b372861be96fb6e、71 行
+    PASS md5 01f48fc0ebd6121c2b372861be96fb6e
+    PASS 行数 71
+    PASS :21 含「eps(91, 92, K*) ∈ [8.9732217086171360163257e-4…」
+    PASS :22 含「A 下界剪枝：min_{1<=m2<=90} A(m2)/(3K ln2_hi) = 1.4…」
+    PASS :46 含「清单条数（分母 < K* 的检查条数）= 438」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/k3_run_e.out]  期望 md5 f8b900d497b776778107070a15799443、31 行
+    PASS md5 f8b900d497b776778107070a15799443
+    PASS 行数 31
+    PASS :24 含「完整清单条数 = 442」
+    PASS :26 含「被 cap 掉（分母 >= K*）的条数 = 4」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/r4b2_window_probe.out]  期望 md5 a078e3e631f07858f4b607968403a3c2、77 行
+    PASS md5 a078e3e631f07858f4b607968403a3c2
+    PASS 行数 77
+    PASS :52 含「相对窗口宽度 ∈ [0.000000000000780677136541」
+    PASS :54 含「2e-24 落入？ False ；1.5361313e-23 落入？ False」
+    PASS :57 含「相对窗口宽度 ∈ [0.000000000000771461775858」
+    PASS :73 含「该项约为 9×10^-32」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/r4a_search_low.out]  期望 md5 81bc80dc84bb1a570220b5439fd1ec79、563 行
+    PASS md5 81bc80dc84bb1a570220b5439fd1ec79
+    PASS 行数 563
+    PASS :28 含「点数 = 515 ；未定（Psi 未夹住）= 0」
+    PASS :33 含「不动点 77692117359936589403 ：476 次」
+    PASS :34 含「不动点 205632218873398596256 ：39 次」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/r4c_count_boundary.out]  期望 md5 9881d92a24fb16327f9186144af8f74f、50 行
+    PASS md5 9881d92a24fb16327f9186144af8f74f
+    PASS 行数 50
+    PASS :17 含「比较 WD_STRICT < 1/K* ？ True」
+
+[70-research/cycle-2/scripts/c2r5_cert.py]  期望 md5 54cb5e4bc2cd3321a8306a604a87e4b3、250 行
+    PASS md5 54cb5e4bc2cd3321a8306a604a87e4b3
+    PASS 行数 250
+    PASS :180 含「[5] K_cross 的严格根隔离：eps_opt(K) = gamma - delta …」
+
+[70-research/cycle-2/scripts/results/c2r5_cert.log]  期望 md5 9e827cd1ebfdff89825c14616a3c0e62、89 行
+    PASS md5 9e827cd1ebfdff89825c14616a3c0e62
+    PASS 行数 89
+    PASS :9 含「C = log2((162/97)X0) ∈ [70.1808063283083668248…」
+    PASS :27 含「A(91) 取定理 21 第二段的 3/X0 = 3.7440075021082167505…」
+    PASS :67 含「二分 150 步后：K_cross ∈ [313195478959172262876.636…」
+
+[70-research/cycle-2/route-5.md]  期望 md5 fb9a00e852c9a05b1ebdcb63f57fedf1、442 行
+    PASS md5 fb9a00e852c9a05b1ebdcb63f57fedf1
+    PASS 行数 442
+    PASS :230 含「窗口宽度 ≈ 1.5×10⁻²²/70.18 ≈ 2×10⁻²⁴（相对）」
+    PASS :232 含「分岔窗口宽约 2×10⁻²⁴，网格命中概率约为 10⁻²² 量级」
+    PASS :353 含「没有证明或否证「一切 K_lo ≤ K* 都不能让 m = 92 越界」」
+
+[70-research/cycle-2/route-1.md]  期望 md5 3802c50661385e9a89299e8e5c90a2ec、344 行
+    PASS md5 3802c50661385e9a89299e8e5c90a2ec
+    PASS 行数 344
+    PASS :215 含「**未证**：这是读法，不是定理」
+    PASS :227 含「该读法**未证**」
+
+[70-research/cycle-2/route-4.md]  期望 md5 9fa26ffac726a5dafd4e25eed4f00454、342 行
+    PASS md5 9fa26ffac726a5dafd4e25eed4f00454
+    PASS 行数 342
+    PASS :98 含「**根 = 阈值未证**」
+    PASS :192 含「「该根 = 越界阈值」
+
+[70-research/ledger.md]  期望 md5 8e0b44e3ebbf795dc393e4fa559cbee3、197 行
+    PASS md5 8e0b44e3ebbf795dc393e4fa559cbee3
+    PASS 行数 197
+    PASS :21 含「补「根 = 越界阈值」的定义桥」
+    PASS :30 含「不得写成「K_cross 的 47 位严格定位」」
+    PASS :33 含「窗口真实相对宽度约 7.6×10⁻¹³」
+    PASS :193 含「对 2.3 第 1 项的独立复算（本会话实跑）」
+
+[70-research/learnings.md]  期望 md5 96f3d946b0fbae97e31b873090503fb9、62 行
+    PASS md5 96f3d946b0fbae97e31b873090503fb9
+    PASS 行数 62
+    PASS :29 含「「数值观察」不得写成「定理」」
+    PASS :36 含「报告里的数字与脚本或日志脱钩」
+    PASS :51 含「推窗口宽度只比 log₂(1 + 2^−C)，漏掉同一比较里的第三项」
+    PASS :59 含「用旧版本行号或带错的旧措辞做前提」
+
+[70-research/tracks/kcross-proof/plan.md]  期望 md5 7a3e333b8b9629e28bfc3ddc1b0a884f、218 行
+    PASS md5 7a3e333b8b9629e28bfc3ddc1b0a884f
+    PASS 行数 218
+    PASS :192 含「把 route-1 与 route-4 的「未证」或 route-5 的「已证（条件性）」任…」
+
+[70-research/tracks/kcross-proof/cycle-1/materials.md]  期望 md5 41f686b48c456d82c3323184e0196e98、537 行
+    PASS md5 41f686b48c456d82c3323184e0196e98
+    PASS 行数 537
+    PASS :427 含「当前 130 行，md5 `c238e1003f6cf3b1ee0fcf29ae82e58a…」
+
+[70-research/tracks/kcross-tail/plan.md]  期望 md5 04fb9c97a5713670b2093f2fd8cf6304、182 行
+    PASS md5 04fb9c97a5713670b2093f2fd8cf6304
+    PASS 行数 182
+    PASS :141 含「按 S5 写 `ledger-note.md`」
+    PASS :163 含「19 位以上十进制数字不得经 float 中转」
+
+[70-research/tracks/kcross-proof/cycle-1/route-1.md]  期望 md5 3319972d070e02baf3399d708c880269、414 行
+    PASS md5 3319972d070e02baf3399d708c880269
+    PASS 行数 414
+    PASS :3 含「**T = R**（阈值等于根）」
+    PASS :86 含「故 s ≥ q + q′。等号情形要求两个分子都等于 1」
+    PASS :212 含「| 指称 | 出处（本轮亲读） | 对象 |」
+    PASS :216 含「| 指**数值锚点** |」
+    PASS :218 含「**裁决第一句**：`c2r5_cert.py:180` 是**定义式**的命名」
+
+[70-research/tracks/kcross-proof/cycle-1/route-2.md]  期望 md5 ea82163d12bd6b889b07fe9af7c085c1、253 行
+    PASS md5 ea82163d12bd6b889b07fe9af7c085c1
+    PASS 行数 253
+    PASS :20 含「**严格证书（本路自足）**」
+    PASS :21 含「**严格证书（本路自足）**」
+
+[70-research/tracks/kcross-proof/cycle-1/route-3.md]  期望 md5 91223865e6b538572b6ab60bb218a64e、409 行
+    PASS md5 91223865e6b538572b6ab60bb218a64e
+    PASS 行数 409
+    PASS :15 含「**已证（本路线独立证书；条件：项目 (D1) 至 (D5) 的定义与 Theorem 21…」
+    PASS :130 含「**条数对账**」
+    PASS :272 含「**清单穷举必须带分母上限**」
+
+[70-research/tracks/kcross-proof/cycle-1/route-4.md]  期望 md5 6a1b4efe2d9a49bf952e71456eefc1ea、287 行
+    PASS md5 6a1b4efe2d9a49bf952e71456eefc1ea
+    PASS 行数 287
+    PASS :92 含「C1【已证，精确有理比较】β(K\*) − δ < 1/K\*」
+    PASS :202 含「`[3] 结果汇总` 逐字」
+    PASS :207 含「**读法（与全称结论的分界）**」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/r2_threshold_cert.log]  期望 md5 c45b3da1f6910ba07c41a27682391904、164 行
+    PASS md5 c45b3da1f6910ba07c41a27682391904
+    PASS 行数 164
+    PASS :79 含「A6 结论 A：对一切 K_lo ∈ D_92 且 K_lo <= T_hi」
+    PASS :80 含「故链在域内永不中断，全部迭代 <= K* < U(92)：永不越界。」
+
+[70-research/tracks/kcross-proof/cycle-1/scripts/results/r4b2_window_probe.out]  期望 md5 a078e3e631f07858f4b607968403a3c2、77 行
+    PASS md5 a078e3e631f07858f4b607968403a3c2
+    PASS 行数 77
+    PASS :51 含「窗口右端 K*_j ∈ [123124614107652692133.00723171193…」
+    PASS :56 含「窗口右端 K*_j ∈ [78555824936819382091.475309577063…」
+
+[70-research/cycle-2/scripts/results/c2r5_cert.log]  期望 md5 9e827cd1ebfdff89825c14616a3c0e62、89 行
+    PASS md5 9e827cd1ebfdff89825c14616a3c0e62
+    PASS 行数 89
+    PASS :67 含「二分 150 步后：K_cross ∈ [313195478959172262876」
+    PASS :77 含「对一切 beta <= gamma 的 K：Psi(K) >= simplest(delta…」
+
+[70-research/cycle-2/route-5.md]  期望 md5 fb9a00e852c9a05b1ebdcb63f57fedf1、442 行
+    PASS md5 fb9a00e852c9a05b1ebdcb63f57fedf1
+    PASS 行数 442
+    PASS :101 含「C := log₂((162/97)·X₀) = 70.180806328308364072…」
+
+[70-research/ledger.md]  期望 md5 8e0b44e3ebbf795dc393e4fa559cbee3、197 行
+    PASS md5 8e0b44e3ebbf795dc393e4fa559cbee3
+    PASS 行数 197
+    PASS :23 含「把窗口端点（裁决员数值复算约 7.6×10⁻¹³；账本会话独立复算 7.622、7.715、…」
+    PASS :35 含「「401 点零分歧 ⇒ 约定问题消解」不成立」
+
+[70-research/learnings.md]  期望 md5 96f3d946b0fbae97e31b873090503fb9、62 行
+    PASS md5 96f3d946b0fbae97e31b873090503fb9
+    PASS 行数 62
+    PASS :44 含「网格只能作机制检查或反例搜索，永远不能当全称命题的证据」
+    PASS :53 含「每条判据都要写成能取 False 的形式」
+    PASS :61 含「精确与浮点混用时先转成同一种有理区间再比」
+    PASS :62 含「定稿前要么跑完、要么在引用处显式带「未跑完」标记」
+
+[70-research/tracks/kcross-tail/plan.md]  期望 md5 04fb9c97a5713670b2093f2fd8cf6304、182 行
+    PASS md5 04fb9c97a5713670b2093f2fd8cf6304
+    PASS 行数 182
+    PASS :72 含「账本条目的边界栏按最弱口径取（全部未形式化、未经第三方复核）」
+    PASS :89 含「本轨道 (c) 的正确动作是写成条目交主代理合并，**不直接改账本**」
+    PASS :91 含「条目须分注来源，并把 r4b2 的二分严格区间版本（j = 89、90）补上」
+
+[70-research/tracks/kcross-tail/cycle-1/methods.md]  期望 md5 3ef852437a641e402e96888b115cb1cc、99 行
+    PASS md5 3ef852437a641e402e96888b115cb1cc
+    PASS 行数 99
+    PASS :80 含「python 3.12.7」
+    PASS :81 含「缺席清单：`command -v lean lake coqtop gp pari sage…」
+
+[70-research/tracks/kcross-proof/cycle-1/materials.md]  期望 md5 41f686b48c456d82c3323184e0196e98、537 行
+    PASS md5 41f686b48c456d82c3323184e0196e98
+    PASS 行数 537
+    PASS :71 含「### 1.4 Simons 与 de Weger v1.44（Hercher 的参考文献 …」
+    PASS :185 含「### 2.7 Simons 与 de Weger v1.44 Theorem 3（U(92…」
+    PASS :530 含「## 七、本次未做、未核、未尝试（防误读）」
+
+[70-research/tracks/kcross-tail/cycle-1/materials.md]  期望 md5 b57289f90fd16aa46c1fa9271088363e、383 行
+    PASS md5 b57289f90fd16aa46c1fa9271088363e
+    PASS 行数 383
+    PASS :354 含「## 七、本次实算清单（精确重算，脚本与结果）」
+    PASS :369 含「5. **分母和**：`K* + q₄₄ = 205632218873398596256 +…」
+
+[70-research/cycle-1/route-4.md]  期望 md5 637e123bb02db287466105ebf3c67504、383 行
+    PASS md5 637e123bb02db287466105ebf3c67504
+    PASS 行数 383
+    PASS :194 含「**判据**：链从 K_lo 出发，若某次迭代 > U(92) 就算「越过」。」
+
+========================================================================
+歧义对照断言（同名 route-4.md 在 cycle-1 与 cycle-2 下内容不同）
+========================================================================
+    PASS 70-research/tracks/kcross-proof/cycle-1/route-4.md:192 不含「该根 = 越界阈值」（cycle-1 的 route-4.md:192 不是「根 = 阈值」的自登记行）
+    PASS 70-research/cycle-2/route-4.md:192 不含「v < 3」（cycle-2 的 route-4.md:192 不是机制段表格行）
+
+========================================================================
+自检：故意错的断言必须被判 FAIL（learnings.md:53 的「判据能取 False」）
+========================================================================
+    PASS 错的断言被判 FAIL（70-research/tracks/kcross-proof/cycle-1/route-2.md:23 不含该串）
+
+========================================================================
+共 179 条机器断言；FAIL 0 条
+退出码 0（全部引用成立：文件、md5、行数、行号含串逐条对上）
+证据边界：本闸门不核对被引内容的数学真假，也不核对作者是否读过该行。
