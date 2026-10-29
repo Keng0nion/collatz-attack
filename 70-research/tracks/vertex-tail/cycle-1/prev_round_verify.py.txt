@@ -1,0 +1,1013 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""vertex-tail 第 1 轮 (b) 精确算术复算闸门（路线二）。
+
+本文件按 `vertex-tail/plan.md` 第八节「verify.py 判据明细（路线二的施工图）」实现：
+点名四项 P1 至 P4 与支撑三项 S1 至 S3，逐项打印 PASS／FAIL，退出码 0 当且仅当全 PASS。
+
+独立性
+    不 import 项目内任何既有实现（不 import r2_common、r2_j_independent_vertices、
+    不 import route3_defs、route3_impl1_mpqscan、route3_impl2_struct、route3_xcheck、
+    r5_vm12_enum、route2_ref_enum），也不调用任何 C 产物。约束表、Bareiss 整数行列式、
+    精确分数消元、秩、活跃证书、解析旋转集、组合字典序编号全部在本文件内自写。
+    检查点本身不存秩：P3 的（活跃秩, 活跃条数）一律由本文件独立重算。
+
+范围（不写成全量以外的事）
+    P2 的独立重算覆盖 m₂ = 10 的全部 C(21,10) = 352716 个子集；P3 另对 m₂ = 2（10 个）、
+    m₂ = 5（462 个）做全量独立重算。m₂ = 12、13、14 档不重跑枚举，只读检查点与判串
+    （本轨道硬约束，plan.md 第六节第 1 条）。m₂ ≥ 15 未跑；m₂ = 20、47、91 的
+    全活跃子集穷举不可达，不在本闸门范围内。
+
+运行
+    python verify.py                 正常模式（全 PASS → 退出码 0，任一 FAIL → 1）
+    python verify.py --perturb-all   附加扰动检验：八个扰动各须让被点名的项目出现 FAIL
+"""
+
+import copy
+import glob
+import hashlib
+import json
+import os
+import sys
+import time
+from fractions import Fraction
+from itertools import combinations
+from math import gcd
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+# 本闸门按 plan.md 第七节第 4 条落在 cycle-1/verify.py；若被复制到 cycle-1/scripts/ 下也能跑
+CYCLE = os.path.dirname(HERE) if os.path.basename(HERE) == "scripts" else HERE
+REPO = os.path.abspath(os.path.join(CYCLE, "..", "..", "..", ".."))
+TIME_LIMIT_S = 1800.0          # m₂ = 10 全量重算的时限；超时按「未完成」报 FAIL
+
+# ---------------------------------------------------------------------------
+# S1 登记表：底本身份（期望 md5 来自 plan.md 第八节第 1 条与 materials.md）
+# ---------------------------------------------------------------------------
+REGISTRY = [
+    ("70-research/cycle-1/scripts/results/verify-round2/r2_j_A.txt", "8f8d0112668a88d0811f30cefa396bd1", "plan.md 第八节第 1 条 / frozen-spec.md 第六节"),
+    ("70-research/cycle-1/scripts/results/r2_b_out.txt", "f3882451e5a45fc3cb5cce781f279e32", "frozen-spec.md 第六节"),
+    ("70-research/tracks/vertex-m12/cycle-1/route-1.md", "939cc627c887fd4064214b14accfa651", "materials.md:405"),
+    ("70-research/tracks/vertex-m12/cycle-1/route-2.md", "9db46ca0d456a7c463f63adf776aa40e", "materials.md:406"),
+    ("70-research/tracks/vertex-m12/cycle-1/route-3.md", "8b8fe031050f630565a1c58a5e53a560", "materials.md:407"),
+    ("70-research/tracks/vertex-m12/cycle-1/route-4.md", "e5ff27b061020b6aa81e326bd54c0b70", "materials.md:408"),
+    ("70-research/tracks/vertex-m12/cycle-1/route-5.md", "3e833e440ceb5cc74d3470b24ac8355e", "materials.md:409"),
+    ("70-research/tracks/vertex-m12/cycle-1/results/frozen-spec.md", "f117144c2ea51ecb4a09387318369cfd", "materials.md:410"),
+    ("70-research/tracks/vertex-tail/cycle-1/materials.md", "ea5fb6d81088a5ac674c3f915e232728", "materials.md:546"),
+    ("70-research/tracks/vertex-tail/plan.md", "06a5490fe0d4b58dad0e5e051fea1487", "materials.md:412"),
+    ("70-research/ledger.md", "8e0b44e3ebbf795dc393e4fa559cbee3", "materials.md:414"),
+    ("70-research/learnings.md", "96f3d946b0fbae97e31b873090503fb9", "materials.md:415"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route3_xcheck.py", "c63dd6db26951411d06a2649a9d1404b", "materials.md:416"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route3_vs_other_compare.py", "43d70b1cc4e7382eff5833882b1cb6e7", "materials.md:417"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route3_impl1_mpqscan.py", "3f0035b17c0b601b37ec1c2e8502298a", "materials.md:418"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route3_impl2_struct.py", "b641f2805dcf90379d954cb2dc9a1b9d", "materials.md:419"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route3_verify.py", "dd73d5b742b5a40df439e35281651999", "materials.md:420"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/r5_vm12_enum.py", "4fd20e6737c51dda3e88e2f6c0ca2345", "materials.md:421"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route2_vm_main.c", "25edc679aa8ca9ce0650e6eb666e8ec0", "materials.md:422"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route2_vm_core.c", "eb4b9978cd187c229788317660229cf3", "materials.md:423"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route2_ref_enum.py", "7cfa5b6c326476bf5cb0fc6ed8bdcf0d", "materials.md:424"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/route3_defs.py", "088d08bff5065cb58a2b9decd48b2437", "materials.md:425"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/three_way_baseline.py", "ce5f86768282708d8feace976272659d", "materials.md:426"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/diff_norm.py", "9f8602bd0c4e8a6ceec79dafd97038de", "materials.md:427"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/frozen/r2_common.py", "cfee819667c0883e73732f03d2dc8bef", "materials.md:428"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/frozen/r2_j_independent_vertices.py", "4b8ce2a500d8ca9021fd0178deca637e", "frozen-spec.md 第六节"),
+    ("70-research/tracks/vertex-m12/cycle-1/results/md5-manifest.txt", "571fb2bb0a84d57418808108cdda4ce3", "materials.md:429"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m10_t8_decisions.txt", "b269256bfff877a81fa5a81047a4c958", "materials.md:486"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m10_t1_decisions.txt", "b269256bfff877a81fa5a81047a4c958", "materials.md:487"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/py_m10_decisions.txt", "b269256bfff877a81fa5a81047a4c958", "materials.md:488（plan.md 第八节第 1 条点名）"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m12_t8_decisions.txt", "8fb4ba1aef28fdc293b52270985ec35e", "materials.md:489"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m13_t8_decisions.txt", "152514f874a144554d1dff2ec0570da9", "materials.md:490"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m14_t8_decisions.txt", "37921d19726088fb8be115707a749356", "materials.md:491"),
+    ("70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/m5_e10_decisions.txt", "18e23746174db60150198149b00cd869", "materials.md:492"),
+]
+
+DELTA_LO = Fraction(126797, 80000)                      # δ 的严格下界（通分 15849625/10^7）
+DELTA_HI = Fraction(7924813, 5000000)                   # δ 的严格上界（通分 15849626/10^7）
+W_E10 = Fraction(630347359154513105681, 40960000000000000000)   # m₂ = 5 阈值等号（v = 1）
+PARAM = {
+    "m2_10_fraction": (10, DELTA_LO, Fraction(2000)),
+    "m2_10_mpq": (10, DELTA_LO, Fraction(2000)),
+    "m2_12_fraction": (12, DELTA_LO, Fraction(2000)),
+    "m2_12_mpq": (12, DELTA_LO, Fraction(2000)),
+    "m2_13_fraction": (13, DELTA_LO, Fraction(2000)),
+    "m2_13_mpq": (13, DELTA_LO, Fraction(2000)),
+    "m2_14_mpq": (14, DELTA_LO, Fraction(2000)),
+    "smoke_m2_2": (2, Fraction(3, 2), Fraction(3, 2)),
+    "smoke_m2_2_mpq": (2, Fraction(3, 2), Fraction(3, 2)),
+    "smoke_m2_5": (5, DELTA_LO, W_E10),
+    "smoke_m2_5_mpq": (5, DELTA_LO, W_E10),
+    "det_run1": (5, DELTA_LO, W_E10),
+    "det_run2": (5, DELTA_LO, W_E10),
+}
+CKPT_NAMES = sorted(PARAM)
+FULL_DIRS = ["m2_10_fraction", "m2_10_mpq", "m2_12_fraction", "m2_12_mpq",
+             "m2_13_fraction", "m2_13_mpq", "m2_14_mpq"]
+DIR_TO_DEC = {
+    "m2_10_mpq": "c_m10_t8", "m2_10_fraction": "c_m10_t8",
+    "m2_12_mpq": "c_m12_t8", "m2_12_fraction": "c_m12_t8",
+    "m2_13_mpq": "c_m13_t8", "m2_13_fraction": "c_m13_t8",
+    "m2_14_mpq": "c_m14_t8",
+    "smoke_m2_5": "m5_e10", "smoke_m2_5_mpq": "m5_e10",
+    "det_run1": "m5_e10", "det_run2": "m5_e10",
+}
+DEC_FILES = {
+    "c_m10_t8": "70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m10_t8_decisions.txt",
+    "c_m12_t8": "70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m12_t8_decisions.txt",
+    "c_m13_t8": "70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m13_t8_decisions.txt",
+    "c_m14_t8": "70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/c_m14_t8_decisions.txt",
+    "m5_e10": "70-research/tracks/vertex-m12/cycle-1/scripts/results/route2/m5_e10_decisions.txt",
+}
+# 判串登记（字节数、(S, I, F) 直方图；materials.md 9.4 行 484 至 492）
+DEC_EXPECT = {
+    "c_m10_t8": (352716, 295780, 56926, 10),
+    "c_m12_t8": (5200300, 4752735, 447553, 12),
+    "c_m13_t8": (20058300, 18811533, 1246754, 13),
+    "c_m14_t8": (77558760, 74098262, 3460484, 14),
+    "m5_e10": (462, 170, 262, 30),
+}
+IMPL_FILES = {
+    "impl1_m10": "70-research/tracks/vertex-m12/cycle-1/results/route3_impl1_m10.json",
+    "impl2_m10": "70-research/tracks/vertex-m12/cycle-1/results/route3_impl2_m10.json",
+    "impl1_m12": "70-research/tracks/vertex-m12/cycle-1/results/route3_impl1_m12.json",
+    "impl2_m12": "70-research/tracks/vertex-m12/cycle-1/results/route3_impl2_m12.json",
+    "impl2_m13": "70-research/tracks/vertex-m12/cycle-1/results/route3_impl2_m13.json",
+    "impl2_m14": "70-research/tracks/vertex-m12/cycle-1/results/route3_impl2_m14.json",
+}
+XCHECK_FILES = {
+    "m10": "70-research/tracks/vertex-m12/cycle-1/results/route3_xcheck_m10_allsubsets.json",
+    "m12": "70-research/tracks/vertex-m12/cycle-1/results/route3_xcheck_m12_allsubsets.json",
+}
+VS_OTHER = {
+    "m12": "70-research/tracks/vertex-m12/cycle-1/results/route3_vs_other_m12.json",
+    "m12_impl1": "70-research/tracks/vertex-m12/cycle-1/results/route3_vs_other_m12_impl1.json",
+    "m13": "70-research/tracks/vertex-m12/cycle-1/results/route3_vs_other_m13.json",
+    "m14": "70-research/tracks/vertex-m12/cycle-1/results/route3_vs_other_m14.json",
+}
+R5_LOGS = {
+    "m2_10_mpq": "70-research/tracks/vertex-m12/cycle-1/results/logs/r5_full_m2_10_mpq.log",
+    "m2_12_mpq": "70-research/tracks/vertex-m12/cycle-1/results/logs/r5_full_m2_12_mpq.log",
+    "m2_13_mpq": "70-research/tracks/vertex-m12/cycle-1/results/logs/r5_full_m2_13_mpq.log",
+    "m2_14_mpq": "70-research/tracks/vertex-m12/cycle-1/results/logs/r5_full_m2_14_mpq.log",
+    "smoke_m2_5": "70-research/tracks/vertex-m12/cycle-1/results/r5_smoke/smoke_m2_5_fraction.log",
+    "smoke_m2_2": "70-research/tracks/vertex-m12/cycle-1/results/r5_smoke/smoke_m2_2_fraction.log",
+}
+# 证书期望表（活跃秩, 活跃条数）；边界档 m₂ = 5 按 (5, 6) 分档（materials.md 9.9 第 2 条）
+CERT_EXPECT = {
+    "m2_10_fraction": (10, 10), "m2_10_mpq": (10, 10),
+    "m2_12_fraction": (12, 12), "m2_12_mpq": (12, 12),
+    "m2_13_fraction": (13, 13), "m2_13_mpq": (13, 13),
+    "m2_14_mpq": (14, 14),
+    "smoke_m2_2": (2, 2), "smoke_m2_2_mpq": (2, 2),
+    "smoke_m2_5": (5, 6), "smoke_m2_5_mpq": (5, 6),
+    "det_run1": (5, 6), "det_run2": (5, 6),
+}
+# r2_j_A.txt 的逐字对照项（plan.md 第八节第 4 条）
+R2J_A_LITERALS = [
+    "子集总数 C(21,10) = 352716",
+    "可行顶点数 = 10；与解析的 m2 = 10 个循环旋转相同 = True（解析集大小 10）",
+    "每个顶点的（活跃约束法向量秩，活跃约束条数）= [(10, 10)]",
+    "独立性：本段只用 constraint_list / solve_exact / feasible，未使用 (L1) 或 v 的任何信息",
+]
+
+
+def pth(rel):
+    return os.path.join(REPO, rel)
+
+
+def md5_file(path):
+    h = hashlib.md5()
+    with open(path, "rb") as f:
+        for blk in iter(lambda: f.read(1 << 22), b""):
+            h.update(blk)
+    return h.hexdigest()
+
+
+def read_text(path):
+    with open(path, encoding="utf-8") as f:
+        return f.read()
+
+
+# ---------------------------------------------------------------------------
+# 精确算术内核（本文件自写）
+# ---------------------------------------------------------------------------
+def rows_for(m, delta, W):
+    """约束表：前 m 条 C1（y_j ≥ 1），接着 m 条 C2（δ y_j − y_{j+1} ≥ 0，末条回绕），
+    末条 C3（Σy ≥ W）。行系数放大成整数，右端项为 Fraction。"""
+    p_num, q_den = delta.numerator, delta.denominator
+    rows, rhs, sense = [], [], []
+    for j in range(m):
+        e = [0] * m
+        e[j] = 1
+        rows.append(e)
+        rhs.append(Fraction(1))
+        sense.append("ge")
+    for j in range(m):
+        e = [0] * m
+        e[j] -= p_num
+        e[(j + 1) % m] += q_den
+        rows.append(e)
+        rhs.append(Fraction(0))
+        sense.append("le")
+    rows.append([W.denominator] * m)
+    rhs.append(Fraction(W.numerator))
+    sense.append("ge")
+    return rows, rhs, sense
+
+
+def det_int(A):
+    """Bareiss 分数无关整数消元；返回行列式（整数）。"""
+    n = len(A)
+    if n == 0:
+        return 1
+    M = [row[:] for row in A]
+    sign, prev = 1, 1
+    for k in range(n - 1):
+        if M[k][k] == 0:
+            piv = None
+            for i in range(k + 1, n):
+                if M[i][k] != 0:
+                    piv = i
+                    break
+            if piv is None:
+                return 0
+            M[k], M[piv] = M[piv], M[k]
+            sign = -sign
+        for i in range(k + 1, n):
+            mi, mk = M[i], M[k]
+            for j in range(k + 1, n):
+                mi[j] = (mi[j] * mk[k] - mi[k] * mk[j]) // prev
+            mi[k] = 0
+        prev = M[k][k]
+    return sign * M[n - 1][n - 1]
+
+
+def solve_frac(A, b):
+    """精确分数高斯消元；系数矩阵奇异返回 None。"""
+    n = len(A)
+    M = [[Fraction(A[i][j]) for j in range(n)] + [Fraction(b[i])] for i in range(n)]
+    for c in range(n):
+        piv = None
+        for r in range(c, n):
+            if M[r][c] != 0:
+                piv = r
+                break
+        if piv is None:
+            return None
+        M[c], M[piv] = M[piv], M[c]
+        pv = M[c][c]
+        for r in range(c + 1, n):
+            f = M[r][c] / pv
+            if f:
+                for j in range(c, n + 1):
+                    M[r][j] -= f * M[c][j]
+    y = [None] * n
+    for i in range(n - 1, -1, -1):
+        s = M[i][n]
+        for j in range(i + 1, n):
+            s -= M[i][j] * y[j]
+        y[i] = s / M[i][i]
+    return y
+
+
+def rank_int(rows, ncols=None):
+    """整数行矩阵的秩（Q 上）；消元按 gcd 归一化控制规模。"""
+    M = [row[:] for row in rows]
+    nr = len(M)
+    nc = ncols if ncols is not None else (len(M[0]) if nr else 0)
+    r = 0
+    for c in range(nc):
+        piv = None
+        for i in range(r, nr):
+            if M[i][c] != 0:
+                piv = i
+                break
+        if piv is None:
+            continue
+        M[r], M[piv] = M[piv], M[r]
+        pr = M[r]
+        for i in range(r + 1, nr):
+            if M[i][c] != 0:
+                a, b = M[i][c], pr[c]
+                g = gcd(abs(a), abs(b))
+                f1, f2 = b // g, a // g
+                M[i] = [f1 * M[i][j] - f2 * pr[j] for j in range(nc)]
+        r += 1
+        if r == nr:
+            break
+    return r
+
+
+def dot(row, y):
+    s = Fraction(0)
+    for k, a in enumerate(row):
+        if a:
+            s += a * y[k]
+    return s
+
+
+def in_P(y, m, delta, W):
+    for j in range(m):
+        if y[j] < 1:
+            return False
+    for j in range(m):
+        if y[(j + 1) % m] > delta * y[j]:
+            return False
+    return sum(y) >= W
+
+
+def certificate(y, rows, rhs):
+    """返回（活跃约束法向量秩, 活跃条数, 活跃下标表）；独立重算，不用检查点里任何秩。"""
+    act = [k for k in range(len(rows)) if dot(rows[k], y) == rhs[k]]
+    return rank_int([rows[k] for k in act]), len(act), act
+
+
+def analytic_vertices(m, delta, W):
+    v = W * (delta - 1) / (delta ** m - 1)
+    return [tuple(v * delta ** ((r + i) % m) for i in range(m)) for r in range(m)]
+
+
+_JUDGE_CACHE = {}
+
+
+def judge_full(m, delta, W):
+    """对 C(2m+1, m) 个活跃子集做全量独立判定（组合字典序编号）。"""
+    key = (m, delta, W)
+    if key in _JUDGE_CACHE:
+        return _JUDGE_CACHE[key]
+    rows, rhs, _ = rows_for(m, delta, W)
+    nS = nI = 0
+    f_idx, f_pts, conflicts = [], [], 0
+    total = 0
+    t0 = time.time()
+    aborted = False
+    for idx, c in enumerate(combinations(range(2 * m + 1), m)):
+        total += 1
+        if total % 4096 == 0 and time.time() - t0 > TIME_LIMIT_S:
+            aborted = True
+            break
+        A = [[rows[k][j] for j in range(m)] for k in c]
+        if det_int(A) == 0:
+            nS += 1
+            continue
+        y = solve_frac(A, [rhs[k] for k in c])
+        if y is None:
+            nS += 1
+            conflicts += 1
+            continue
+        if in_P(y, m, delta, W):
+            f_idx.append(idx)
+            f_pts.append(tuple(y))
+        else:
+            nI += 1
+    res = {"m": m, "delta": delta, "W": W, "total": total, "S": nS, "I": nI, "F": len(f_idx),
+           "F_idx": f_idx, "F_pts": f_pts, "conflict": conflicts, "aborted": aborted,
+           "sec": time.time() - t0}
+    _JUDGE_CACHE[key] = res
+    return res
+
+
+# ---------------------------------------------------------------------------
+# 装载
+# ---------------------------------------------------------------------------
+def load_ckpt(name):
+    files = sorted(glob.glob(pth(os.path.join("70-research/tracks/vertex-m12/cycle-1/results/ckpt", name, "chunk_*.json"))))
+    chunks = []
+    for f in files:
+        chunks.append(json.load(open(f)))
+    return {"name": name, "files": files, "chunks": chunks}
+
+
+def summarize_ckpt(d):
+    """从检查点原始片复算全部计数关系与键结构（纯函数，可对扰动后的片重跑）。"""
+    m_spec, delta, W = PARAM[d["name"]]
+    chunks = d["chunks"]
+    mx = 0
+    for ch in chunks:
+        for v in list(ch.get("first", [])) + list(ch.get("last", [])):
+            mx = max(mx, v)
+    m_infer = mx // 2 if mx and mx % 2 == 0 else None
+    tot = sum(ch["count"] for ch in chunks)
+    s_rd = sum(ch["n_rank_def"] for ch in chunks)
+    s_inf = sum(ch["n_infeasible"] for ch in chunks)
+    keys, ex_ok, ex_bad = {}, True, []
+    for ch in chunks:
+        for k, v in ch["feasible"].items():
+            if len(k.split(",")) != m_spec:
+                ex_ok = False
+                ex_bad.append("键位数 %d" % len(k.split(",")))
+            keys.setdefault(k, {"count": 0, "examples": []})
+            keys[k]["count"] += v["count"]
+            for ex in v["examples"]:
+                if len(ex) != m_spec or len(set(ex)) != m_spec or list(ex) != sorted(ex) \
+                        or min(ex) < 0 or max(ex) > 2 * m_spec:
+                    ex_ok = False
+                    ex_bad.append("examples %r" % (ex,))
+                keys[k]["examples"].append(ex)
+            if len(v["examples"]) > 3:
+                ex_ok = False
+                ex_bad.append("examples 数 > 3")
+    conn = True
+    for i, ch in enumerate(chunks):
+        if ch.get("chunk") != i:
+            conn = False
+    for i in range(len(chunks) - 1):
+        if chunks[i]["end"] != chunks[i + 1]["start"]:
+            conn = False
+    if chunks and chunks[0]["start"] != 0:
+        conn = False
+    per_chunk = all(ch["count"] == ch["end"] - ch["start"] for ch in chunks)
+    per_bal = all(ch["n_rank_def"] + ch["n_infeasible"]
+                  + sum(v["count"] for v in ch["feasible"].values()) == ch["count"]
+                  for ch in chunks)
+    key_tuples = {tuple(Fraction(s) for s in k.split(",")): v for k, v in keys.items()}
+    return {"name": d["name"], "m_spec": m_spec, "m_infer": m_infer, "delta": delta, "W": W,
+            "n_chunks": len(chunks), "total": tot, "S_sum": s_rd, "I_sum": s_inf,
+            "keys": keys, "key_tuples": key_tuples, "n_keys": len(keys),
+            "ex_ok": ex_ok, "ex_bad": ex_bad[:3], "conn": conn,
+            "per_chunk": per_chunk, "per_bal": per_bal,
+            "last_end": chunks[-1]["end"] if chunks else None,
+            "ex_counts": sorted(v["count"] for v in keys.values()),
+            "ex_union": sorted({i for v in keys.values() for ex in v["examples"] for i in ex})}
+
+
+def scan_decisions(path):
+    """流式复算判串：字节数、字母表直方图、'F' 位置、md5。"""
+    h = hashlib.md5()
+    n = cS = cI = cF = other = 0
+    fpos = []
+    off = 0
+    with open(path, "rb") as f:
+        while True:
+            b = f.read(1 << 22)
+            if not b:
+                break
+            h.update(b)
+            n += len(b)
+            s_, i_, f_ = b.count(83), b.count(73), b.count(70)
+            cS += s_
+            cI += i_
+            cF += f_
+            other += len(b) - s_ - i_ - f_
+            start = 0
+            while True:
+                i = b.find(70, start)
+                if i < 0:
+                    break
+                fpos.append(off + i)
+                start = i + 1
+            off += len(b)
+    return {"path": path, "bytes": n, "S": cS, "I": cI, "F": cF,
+            "other": other, "F_pos": fpos, "md5": h.hexdigest()}
+
+
+def load_impl(rel):
+    d = json.load(open(pth(rel)))
+    d["_pts"] = [tuple(Fraction(s) for s in s_.split(","))
+                 for s_ in d.get("candidate_points_sorted", [])]
+    d["_ranks"] = sorted(c["rank"] for c in d.get("candidates", []))
+    d["_subset_pts"] = [tuple(Fraction(s) for s in c["point"].split(","))
+                        for c in d.get("candidates", [])]
+    return d
+
+
+def load_all():
+    ctx = {"delta": DELTA_LO, "delta_lo": DELTA_LO, "delta_hi": DELTA_HI, "W_e10": W_E10,
+           "registry": [{"rel": r, "md5": m, "src": s} for r, m, s in REGISTRY],
+           "ckpt": {n: load_ckpt(n) for n in CKPT_NAMES},
+           "dec": {k: scan_decisions(pth(v)) for k, v in DEC_FILES.items()},
+           "impls": {k: load_impl(v) for k, v in IMPL_FILES.items()},
+           "xcheck": {k: json.load(open(pth(v))) for k, v in XCHECK_FILES.items()},
+           "vs_other": {k: json.load(open(pth(v))) for k, v in VS_OTHER.items()},
+           "r5log": {k: read_text(pth(v)) for k, v in R5_LOGS.items()},
+           "r2j_a": read_text(pth("70-research/cycle-1/scripts/results/verify-round2/r2_j_A.txt")),
+           "r2b": read_text(pth("70-research/cycle-1/scripts/results/r2_b_out.txt")),
+           "recomp": {}}
+    for m, delta, W in [(2, Fraction(3, 2), Fraction(3, 2)), (5, DELTA_LO, W_E10),
+                        (10, DELTA_LO, Fraction(2000))]:
+        t0 = time.time()
+        print("  [独立重算] m₂ = %d：全量 %d 个子集 …" % (m, comb(2 * m + 1, m)),
+              file=sys.stderr, end="", flush=True)
+        r = judge_full(m, delta, W)
+        print(" 完成 S=%d I=%d F=%d（%.1f s%s）" % (r["S"], r["I"], r["F"], time.time() - t0,
+                                              "；中途超时未完成" if r["aborted"] else ""),
+              file=sys.stderr, flush=True)
+        ctx["recomp"][m] = {"S": r["S"], "I": r["I"], "F": r["F"],
+                            "F_idx": list(r["F_idx"]), "F_pts": list(r["F_pts"]),
+                            "conflict": r["conflict"], "aborted": r["aborted"],
+                            "total": r["total"], "sec": r["sec"]}
+    return ctx
+
+
+def comb(n, r):
+    if r < 0 or r > n:
+        return 0
+    num = 1
+    for i in range(r):
+        num = num * (n - i) // (i + 1)
+    return num
+
+
+def rank_of_subset(c, n, r):
+    """把严格递增的 r 元子集映射为该 n 元集合上字典序枚举的 0 基编号。
+    （检查点 examples 存的是约束下标子集，判串位置与候选编号是字典序编号，两者须换算。）"""
+    rk = 0
+    prev = -1
+    for i, x in enumerate(c):
+        for j in range(prev + 1, x):
+            rk += comb(n - 1 - j, r - 1 - i)
+        prev = x
+    return rk
+
+
+def rank_selfcheck():
+    """编号函数自检：与 itertools.combinations 的枚举位置逐一位比对。"""
+    bad = 0
+    for idx, c in enumerate(combinations(range(11), 5)):
+        if rank_of_subset(list(c), 11, 5) != idx:
+            bad += 1
+    return bad, comb(11, 5)
+
+
+# ---------------------------------------------------------------------------
+# S1 底本身份
+# ---------------------------------------------------------------------------
+def check_S1(ctx):
+    bad, miss, sizes = [], 0, []
+    for e in ctx["registry"]:
+        p = pth(e["rel"])
+        if not os.path.exists(p):
+            miss += 1
+            bad.append("%s 缺失" % e["rel"])
+            continue
+        got = md5_file(p)
+        sizes.append(os.path.getsize(p))
+        if got != e["md5"]:
+            bad.append("%s md5=%s 期望=%s（%s）" % (os.path.basename(e["rel"]), got[:12], e["md5"][:12], e["src"]))
+    return [("S1.1", not bad,
+             "底本身份 md5：%d 项逐项相等判定（出处 plan.md 第八节第 1 条、materials.md 9.1 行 403 至 430 与 9.4 行 484 至 492）；缺失 %d，不符 %d%s"
+             % (len(ctx["registry"]), miss, len(bad) - miss,
+                ("；" + "；".join(bad[:3])) if bad else "")),
+            ("S1.2", total_dec_ok(ctx),
+             "判串字节数 == C(2m+1, m) 且 == 登记字节数（%s）"
+             % "、".join("%s=%d" % (k, v["bytes"]) for k, v in ctx["dec"].items()))]
+
+
+def total_dec_ok(ctx):
+    return all(v["bytes"] == DEC_EXPECT[k][0] for k, v in ctx["dec"].items())
+
+
+# ---------------------------------------------------------------------------
+# S2 参数锚点
+# ---------------------------------------------------------------------------
+def check_S2(ctx):
+    out = []
+    lo, hi = ctx["delta_lo"], ctx["delta_hi"]
+    out.append(("S2.1", Fraction(lo) == Fraction(15849625, 10 ** 7),
+                "D_LO7 = %s 通分 == 15849625/10^7" % lo))
+    x = 3 ** (10 ** 7)
+    out.append(("S2.2", x.bit_length() == 15849626,
+                "整数幂复核：3^10^7 位长 = %d ⇒ 2^15849625 < 3^10^7 < 2^15849626（3 的幂为奇数，两处都严格）" % x.bit_length()))
+    out.append(("S2.3", Fraction(hi) == Fraction(15849626, 10 ** 7) and lo < hi,
+                "D_HI7 = %s 通分 == 15849626/10^7 且 严格下界 < 严格上界（方向：严格性只用下界，不用放大替代）" % hi))
+    out.append(("S2.4", ctx["delta"] == ctx["delta_lo"],
+                "本闸门全部精确比较的工作 δ == 严格下界，未使用任何放大替代"))
+    w5 = (lo ** 5 - 1) / (lo - 1)
+    out.append(("S2.5", w5 == W_E10 and W_E10 == Fraction(630347359154513105681, 40960000000000000000),
+                "m₂ = 5 边界档 W == (δ^5−1)/(δ−1) == 630347359154513105681/40960000000000000000（等号情形 v = 1）"))
+    bad = []
+    for k, d in ctx["impls"].items():
+        if (d.get("delta"), d.get("W")) != ("126797/80000", "2000/1"):
+            bad.append("%s delta=%s W=%s" % (k, d.get("delta"), d.get("W")))
+    for k in ("m2_10_mpq", "m2_12_mpq", "m2_13_mpq", "m2_14_mpq"):
+        if "δ = 126797/80000" not in ctx["r5log"][k] or "W = 2000" not in ctx["r5log"][k]:
+            bad.append("%s r5 头部 δ/W 行" % k)
+    if '"delta": "3/2", "W": "3/2"' not in ctx["r5log"]["smoke_m2_2"]:
+        bad.append("smoke_m2_2 SUMMARY_JSON 参数")
+    if "630347359154513105681/40960000000000000000" not in ctx["r5log"]["smoke_m2_5"]:
+        bad.append("smoke_m2_5 W 分数")
+    fs = read_text(pth("70-research/tracks/vertex-m12/cycle-1/results/frozen-spec.md"))
+    for lit in ("126797/80000", "7924813/5000000", "W = 2000"):
+        if lit not in fs:
+            bad.append("frozen-spec 缺 %s" % lit)
+    out.append(("S2.6", not bad,
+                "各产物自带参数字段 == 锚点（六份 route3 结果 JSON 的 delta/W、四份 r5 全量日志头部 δ/W 行、两份 smoke 日志的 SUMMARY_JSON 参数、frozen-spec.md 三处锚点）%s"
+                % ("" if not bad else "；不符 " + "、".join(bad[:3]))))
+    ok_v, det = True, []
+    for m in (10, 12, 13, 14):
+        v = Fraction(2000) * (lo - 1) / (lo ** m - 1)
+        det.append("m=%d v%s1" % (m, ">" if v > 1 else "≤"))
+        ok_v = ok_v and v > 1
+    v5 = W_E10 * (lo - 1) / (lo ** 5 - 1)
+    out.append(("S2.7", ok_v and v5 == 1,
+                "主四档 W = 2000 且 v > 1（%s）；边界档 m₂ = 5 的 v == 1；阴性档 m₂ = 2 的 v = 3/5 < 1 且阈值 5/2 > 3/2"
+                % "、".join(det)))
+    return out
+
+
+# ---------------------------------------------------------------------------
+# P1 顶点集计数关系（点名项；只读检查点）
+# ---------------------------------------------------------------------------
+def check_P1(ctx):
+    out = []
+    sums = {n: summarize_ckpt(ctx["ckpt"][n]) for n in CKPT_NAMES}
+    nchunk = sum(s["n_chunks"] for s in sums.values())
+    bad = [n for n, s in sums.items() if not s["per_chunk"]]
+    out.append(("P1.1", not bad, "每片 count = end − start：%d 档 %d 片逐片复算%s"
+                % (len(sums), nchunk, "" if not bad else "；不符档 " + "、".join(bad))))
+    bad = [n for n, s in sums.items() if not s["conn"]]
+    out.append(("P1.2", not bad, "分片连续无重叠：首片 start = 0、片号 0 至 n−1、相邻 end_i = start_{i+1}%s"
+                % ("" if not bad else "；不符档 " + "、".join(bad))))
+    bad = [n for n, s in sums.items() if not s["per_bal"]]
+    out.append(("P1.3", not bad, "每片 n_rank_def + n_infeasible + Σfeasible.count = count（%d 片）%s"
+                % (nchunk, "" if not bad else "；不符档 " + "、".join(bad))))
+    bad, det = [], []
+    for n, s in sums.items():
+        m = s["m_infer"]
+        if not (m is not None and m == s["m_spec"] and s["total"] == comb(2 * m + 1, m)
+                and s["last_end"] == s["total"]):
+            bad.append(n)
+        det.append("%s:%d" % (n.replace("m2_", "").replace("smoke_", ""), s["total"]))
+    out.append(("P1.4", not bad,
+                "末片 end == Σcount == C(2m₂+1, m₂)，m₂ 由片内最大子集编号/2 独立推定并与档位参数一致（%s）%s"
+                % ("、".join(det), "" if not bad else "；不符档 " + "、".join(bad))))
+    bad, det2 = [], []
+    for n, s in sums.items():
+        exp = {10: 10, 12: 12, 13: 13, 14: 14, 5: 5, 2: 3}[s["m_spec"]]
+        if s["n_keys"] != exp:
+            bad.append(n)
+        det2.append("%s=%d" % (n, s["n_keys"]))
+    out.append(("P1.5", not bad, "可行点去重数按档正确（主四档 = m₂；m₂ = 5 四档 = 5；m₂ = 2 两档 = 3）：%s%s"
+                % ("、".join(det2[:6]) + " …", "" if not bad else "；不符档 " + "、".join(bad))))
+    bad = []
+    for n in FULL_DIRS:
+        s = sums[n]
+        if set(s["key_tuples"]) != set(analytic_vertices(s["m_spec"], s["delta"], s["W"])):
+            bad.append(n)
+    out.append(("P1.6", not bad,
+                "七套全量目录的可行点集与解析族 v·δ^((r+i) mod m) 逐坐标精确相等（%s）%s"
+                % ("、".join(FULL_DIRS), "" if not bad else "；不符档 " + "、".join(bad))))
+    bad = [n for n, s in sums.items() if not s["ex_ok"]]
+    out.append(("P1.7", not bad,
+                "捕捉子集结构：每条 examples 长度 = m₂、严格递增、编号 ∈ [0, 2m₂]，每键至多 3 条%s"
+                % ("" if not bad else "；不符档 " + "、".join(bad) + " " + str(sums[bad[0]]["ex_bad"]))))
+    bad_rank_fn, n_checked = rank_selfcheck()
+    out.append(("P1.9", bad_rank_fn == 0,
+                "编号函数自检：n = 11、r = 5 全部 %d 个子集上，本文件组合字典序编号函数与 itertools.combinations 的枚举位置逐一位比对；不符 %d"
+                % (n_checked, bad_rank_fn)))
+    d1, d2 = ctx["ckpt"]["det_run1"]["files"], ctx["ckpt"]["det_run2"]["files"]
+    same = len(d1) == 1 and len(d2) == 1 and md5_file(d1[0]) == md5_file(d2[0])
+    sdet = ctx["ckpt"]["det_run1"]["chunks"][0]
+    out.append(("P1.8", same,
+                "确定性两连跑：det_run1 与 det_run2 的 chunk_0000.json 逐字节相同（md5 %s）；内容 m₂ = 5、count = %d、n_rank_def = %d、n_infeasible = %d"
+                % (md5_file(d1[0])[:12] if d1 else "缺失", sdet["count"], sdet["n_rank_def"], sdet["n_infeasible"])))
+    return out
+
+
+# ---------------------------------------------------------------------------
+# P2 m₂ = 10 阳性对照（点名项；本文件全量独立重算 352716 个子集）
+# ---------------------------------------------------------------------------
+def check_P2(ctx):
+    out = []
+    r = ctx["recomp"][10]
+    dec = ctx["dec"]["c_m10_t8"]
+    s_mpq = summarize_ckpt(ctx["ckpt"]["m2_10_mpq"])
+    s_fr = summarize_ckpt(ctx["ckpt"]["m2_10_fraction"])
+    n10 = comb(21, 10)
+    out.append(("P2.1", n10 == 352716 and not r["aborted"] and r["total"] == 352716,
+                "全量重算覆盖：C(21,10) = %d，本文件实际扫描 %d 个子集，未触发超时（时限 %.0f s；本档用时见 results/verify.stderr.txt，不入本行以保 stdout 可确定性比对）%s"
+                % (n10, r["total"], TIME_LIMIT_S, "；中途超时未完成" if r["aborted"] else "")))
+    ok = (r["S"], r["I"], r["F"]) == (dec["S"], dec["I"], dec["F"]) \
+        == DEC_EXPECT["c_m10_t8"][1:] == (s_mpq["S_sum"], s_mpq["I_sum"], sum(s_mpq["ex_counts"])) \
+        == (s_fr["S_sum"], s_fr["I_sum"], sum(s_fr["ex_counts"]))
+    out.append(("P2.2", ok,
+                "分检计数四路一致：本文件 (%d,%d,%d) == 判串直方图 (%d,%d,%d) == 登记 (%d,%d,%d) == 检查点 m2_10_mpq (%d,%d,%d) == m2_10_fraction (%d,%d,%d)"
+                % ((r["S"], r["I"], r["F"]) + (dec["S"], dec["I"], dec["F"]) + DEC_EXPECT["c_m10_t8"][1:]
+                   + (s_mpq["S_sum"], s_mpq["I_sum"], sum(s_mpq["ex_counts"]))
+                   + (s_fr["S_sum"], s_fr["I_sum"], sum(s_fr["ex_counts"])))))
+    out.append(("P2.3", r["conflict"] == 0,
+                "内部一致性：det ≠ 0 却解不出的子集数 = %d（必须为 0），F 计数 = %d" % (r["conflict"], r["F"])))
+    ex_rk = sorted(rank_of_subset(ex, 21, 10) for key, v in s_mpq["keys"].items() for ex in v["examples"])
+    same = sorted(r["F_idx"]) == sorted(dec["F_pos"]) == ex_rk == list(range(352706, 352716))
+    out.append(("P2.4", same,
+                "编号层：独立重算可行编号 %d 至 %d == 判串 'F' 位置 == 检查点 examples 子集的字典序编号（每键 count = 1，样例即全体捕捉子集）"
+                % (r["F_idx"][0], r["F_idx"][-1]) if r["F_idx"] else "编号层：可行集为空"))
+    out.append(("P2.5", set(r["F_pts"]) == set(s_mpq["key_tuples"]) == set(s_fr["key_tuples"])
+                == set(analytic_vertices(10, ctx["delta"], Fraction(2000))),
+                "顶点集三向加解析四重相等：本文件重算解 == 两个检查点键集 == 解析 10 旋转（逐坐标 Fraction 比较，大小 %d）"
+                % len(r["F_pts"])))
+    missing = [lit for lit in R2J_A_LITERALS if lit not in ctx["r2j_a"]]
+    out.append(("P2.6", not missing,
+                "与 r2_j_A.txt（md5 8f8d0112668a88d0811f30cefa396bd1）四项逐字对照：%s"
+                % ("四项逐字命中" if not missing else "缺 " + "；".join(missing))))
+    return out
+
+
+# ---------------------------------------------------------------------------
+# P3 检查点证书（点名项；检查点不存秩，由本文件独立重算）
+# ---------------------------------------------------------------------------
+def check_P3(ctx):
+    out = []
+    bad_feas, bad_rank, bad_ex, cert_tab, det = [], [], [], {}, []
+    n_keys = 0
+    for n in CKPT_NAMES:
+        s = summarize_ckpt(ctx["ckpt"][n])
+        m, delta, W = PARAM[n]
+        rows, rhs, _ = rows_for(m, delta, W)
+        tab = set()
+        for key, v in s["key_tuples"].items():
+            n_keys += 1
+            y = list(key)
+            if not in_P(y, m, delta, W):
+                bad_feas.append("%s:%s…" % (n, str(y[0])[:12]))
+            rk, nact, _ = certificate(y, rows, rhs)
+            if rk != m:
+                bad_rank.append("%s:秩%d" % (n, rk))
+            tab.add((rk, nact))
+            for ex in v["examples"]:
+                A = [[rows[k][j] for j in range(m)] for k in ex]
+                yy = solve_frac(A, [rhs[k] for k in ex])
+                if yy is None or tuple(yy) != key:
+                    bad_ex.append("%s:examples%r" % (n, ex))
+        cert_tab[n] = sorted(tab)
+        det.append("%s=%s" % (n, sorted(tab)))
+    out.append(("P3.1", not bad_feas,
+                "逐键可行性：%d 个可行条目在各自档参数（该档自身 δ、W）下全部 2m₂+1 条约束精确满足；违例 %d"
+                % (n_keys, len(bad_feas))))
+    out.append(("P3.2", not bad_rank,
+                "逐键活跃约束法向量组满秩：秩 = m₂（⇒ 该点是 P 的顶点）；不满秩 %d 条" % len(bad_rank)))
+    out.append(("P3.3", not bad_ex,
+                "捕捉子集还原：每键的 examples 逐条独立解方程（本文件消元），其唯一解 == 该键坐标；不符 %d 条%s"
+                % (len(bad_ex), ("；例 " + "、".join(bad_ex[:2])) if bad_ex else "")))
+    bad_tab = [n for n in CKPT_NAMES if cert_tab[n] != [CERT_EXPECT[n]]]
+    out.append(("P3.4", not bad_tab,
+                "证书（活跃秩, 活跃条数）按档复算并与底本对照：主档 m₂ = 10/12/13/14 为 (m₂, m₂)（%s）；边界档 m₂ = 5 为 (5, 6)，即活跃秩 5 对活跃条数 6（%s）；阴性档 m₂ = 2 为 (2, 2)（%s）%s"
+                % ("、".join("%s=%s" % (n, cert_tab[n]) for n in FULL_DIRS[:3]) + " …",
+                   "、".join("%s=%s" % (n, cert_tab[n]) for n in ("smoke_m2_5", "smoke_m2_5_mpq", "det_run1", "det_run2")),
+                   "、".join("%s=%s" % (n, cert_tab[n]) for n in ("smoke_m2_2", "smoke_m2_2_mpq")),
+                   "" if not bad_tab else "；不符档 " + "、".join(bad_tab))))
+    r5_want = {n: "每个顶点的（活跃约束法向量秩，活跃约束条数）= [(%d, %d)]" % CERT_EXPECT[n]
+               for n in ("m2_10_mpq", "m2_12_mpq", "m2_13_mpq", "m2_14_mpq", "smoke_m2_5", "smoke_m2_2")}
+    missing = [k for k, w in r5_want.items() if w not in ctx["r5log"][k]]
+    r2b_ok = "[(5, 6)]" in ctx["r2b"] and "每个顶点的活跃约束法向量秩（应为 m2 = 5）" in ctx["r2b"]
+    out.append(("P3.5", not missing and r2b_ok,
+                "与底本自述行对照：r5 六份日志的证书行逐字命中 = %s；r2_b_out.txt:97（md5 f3882451e5a45fc3cb5cce781f279e32）的 [(5, 6)] 行命中 = %s"
+                % (not missing, r2b_ok)))
+    r5a = ctx["recomp"][5]
+    s5 = summarize_ckpt(ctx["ckpt"]["smoke_m2_5"])
+    dec5 = ctx["dec"]["m5_e10"]
+    out.append(("P3.6", (r5a["S"], r5a["I"], r5a["F"]) == (170, 262, 30) == (dec5["S"], dec5["I"], dec5["F"])
+                and set(r5a["F_pts"]) == set(s5["key_tuples"]) and s5["ex_counts"] == [6] * 5,
+                "m₂ = 5 边界档全量独立重算 462 子集：(S,I,F) = (%d,%d,%d) == 判串直方图 == 检查点分检和；顶点集 == 检查点键集；每键捕捉数 = 6（Σ = 30）"
+                % (r5a["S"], r5a["I"], r5a["F"])))
+    r2a = ctx["recomp"][2]
+    s2 = summarize_ckpt(ctx["ckpt"]["smoke_m2_2"])
+    exp2 = {(Fraction(1), Fraction(1)), (Fraction(1), Fraction(3, 2)), (Fraction(3, 2), Fraction(1))}
+    ana2 = {(Fraction(3, 5), Fraction(9, 10)), (Fraction(9, 10), Fraction(3, 5))}
+    got2 = set(r2a["F_pts"])
+    out.append(("P3.7", (r2a["S"], r2a["I"], r2a["F"]) == (0, 7, 3) and got2 == exp2 == set(s2["key_tuples"])
+                and set(analytic_vertices(2, Fraction(3, 2), Fraction(3, 2))) == ana2 and got2 != ana2,
+                "m₂ = 2 阴性档全量独立重算 10 子集：(S,I,F) = (%d,%d,%d)；顶点集 = {(1,1)、(1,3/2)、(3/2,1)} == 检查点键集；且 ≠ 解析预测族（该档 equal = false 的判别力特征保留）"
+                % (r2a["S"], r2a["I"], r2a["F"])))
+    return out
+
+
+# ---------------------------------------------------------------------------
+# P4 双实现（多侧）顶点坐标相等（点名项）
+# ---------------------------------------------------------------------------
+def check_P4(ctx):
+    out = []
+    sides = {
+        10: {"route3-impl1": set(ctx["impls"]["impl1_m10"]["_pts"]),
+             "route3-impl2": set(ctx["impls"]["impl2_m10"]["_pts"]),
+             "route5-mpq": set(summarize_ckpt(ctx["ckpt"]["m2_10_mpq"])["key_tuples"]),
+             "route5-fraction": set(summarize_ckpt(ctx["ckpt"]["m2_10_fraction"])["key_tuples"])},
+        12: {"route3-impl1": set(ctx["impls"]["impl1_m12"]["_pts"]),
+             "route3-impl2": set(ctx["impls"]["impl2_m12"]["_pts"]),
+             "route5-mpq": set(summarize_ckpt(ctx["ckpt"]["m2_12_mpq"])["key_tuples"]),
+             "route5-fraction": set(summarize_ckpt(ctx["ckpt"]["m2_12_fraction"])["key_tuples"])},
+        13: {"route3-impl2": set(ctx["impls"]["impl2_m13"]["_pts"]),
+             "route5-mpq": set(summarize_ckpt(ctx["ckpt"]["m2_13_mpq"])["key_tuples"]),
+             "route5-fraction": set(summarize_ckpt(ctx["ckpt"]["m2_13_fraction"])["key_tuples"])},
+        14: {"route3-impl2": set(ctx["impls"]["impl2_m14"]["_pts"]),
+             "route5-mpq": set(summarize_ckpt(ctx["ckpt"]["m2_14_mpq"])["key_tuples"])},
+    }
+    bad = []
+    for m, sd in sides.items():
+        vals = list(sd.values())
+        if not (all(v == vals[0] for v in vals) and all(v == set(analytic_vertices(m, ctx["delta"], Fraction(2000))) for v in vals)
+                and len(vals[0]) == m):
+            bad.append("m=%d" % m)
+    out.append(("P4.1", not bad,
+                "m₂ ∈ {10,12,13,14} 的顶点集在可用各侧间两两相等且各等于解析集（10 四侧、12 四侧、13 三侧、14 两侧，按可用产物取交）%s"
+                % ("" if not bad else "；不符 " + "、".join(bad))))
+    # 编号层三方一致：判串 'F' 位置、route-3 候选编号、route-5 检查点捕捉子集编号
+    idmap = {10: ("m2_10_mpq", ["impl1_m10", "impl2_m10"], "c_m10_t8"),
+             12: ("m2_12_mpq", ["impl1_m12", "impl2_m12"], "c_m12_t8"),
+             13: ("m2_13_mpq", ["impl2_m13"], "c_m13_t8"),
+             14: ("m2_14_mpq", ["impl2_m14"], "c_m14_t8")}
+    bad2, det = [], []
+    for m, (dirn, implks, deck) in idmap.items():
+        fset = sorted(ctx["dec"][deck]["F_pos"])
+        rk3 = sorted({rk for k in implks for rk in ctx["impls"][k]["_ranks"]})
+        s = summarize_ckpt(ctx["ckpt"][dirn])
+        rk5 = sorted(rank_of_subset(ex, 2 * m + 1, m)
+                     for v in s["keys"].values() for ex in v["examples"])
+        det.append("m=%d:%d 至 %d" % (m, fset[0], fset[-1]) if fset else "m=%d:空" % m)
+        if not (fset == rk3 == rk5 and len(fset) == m):
+            bad2.append("m=%d" % m)
+    out.append(("P4.2", not bad2,
+                "编号层三方一致（判串 'F' 位置 == route-3 候选编号并集 == route-5 检查点捕捉子集编号并集，%s）%s"
+                % ("、".join(det), "" if not bad2 else "；不符 " + "、".join(bad2))))
+    x10, x12 = ctx["xcheck"]["m10"], ctx["xcheck"]["m12"]
+    ok3 = (x10["n_compare"] == 352716 and x10["n_mismatch"] == 0 and x10["n_candidates_impl1"] == 10
+           and x12["n_compare"] == 5200300 and x12["n_mismatch"] == 0 and x12["n_candidates_impl2"] == 12
+           and not x10["first_mismatches"] and not x12["first_mismatches"])
+    out.append(("P4.3", ok3,
+                "落盘对拍声明字段：m10 n_compare = %d、n_mismatch = %d；m12 n_compare = %d、n_mismatch = %d（此为落盘声明，非本文件重算；盲区照登：该对拍只比候选点串与判定码，非候选判定码恒 0，singular 与 infeasible 的类别差异不可见）"
+                % (x10["n_compare"], x10["n_mismatch"], x12["n_compare"], x12["n_mismatch"])))
+    vso = ctx["vs_other"]
+    out.append(("P4.4", all(vso[k]["point_sets_equal"] and vso[k]["n_only_in_mine"] == 0
+                            and vso[k]["n_only_in_other"] == 0 for k in ("m12", "m12_impl1", "m13", "m14")),
+                "第二对拍器落点字段（顶点坐标串集合 + 捕捉条数）：m12、m12_impl1、m13、m14 四份 point_sets_equal = True 且两面差集为 0"))
+    i1m, i1m12 = ctx["impls"]["impl1_m10"], ctx["impls"]["impl1_m12"]
+    out.append(("P4.5", (i1m["n_singular"], i1m["n_infeasible_unique"]) == (295780, 56926)
+                and (i1m12["n_singular"], i1m12["n_infeasible_unique"]) == (4752735, 447553),
+                "实现一分检计数与判串直方图一致：m10 (%d,%d)、m12 (%d,%d)（实现二无 n_singular／n_infeasible_unique 字段，故该字段无实现间直接对拍）"
+                % (i1m["n_singular"], i1m["n_infeasible_unique"],
+                   i1m12["n_singular"], i1m12["n_infeasible_unique"])))
+    return out
+
+
+# ---------------------------------------------------------------------------
+# S3 判串统计关系
+# ---------------------------------------------------------------------------
+def check_S3(ctx):
+    out = []
+    out.append(("S3.1", all((v["S"], v["I"], v["F"]) == DEC_EXPECT[k][1:] for k, v in ctx["dec"].items()),
+                "直方图 == 登记值（materials.md 9.4 行 486 至 492）：%s"
+                % "、".join("%s=%d/%d/%d" % (k, v["S"], v["I"], v["F"]) for k, v in ctx["dec"].items())))
+    out.append(("S3.2", all(v["other"] == 0 for v in ctx["dec"].values()),
+                "字母表 ⊆ {S, I, F}：五份判串（含 m₂ = 10 三副本，即三份互同文件）非 S/I/F 字节数全为 0"))
+    bad = []
+    for n, deck in DIR_TO_DEC.items():
+        s = summarize_ckpt(ctx["ckpt"][n])
+        if (ctx["dec"][deck]["S"], ctx["dec"][deck]["I"], ctx["dec"][deck]["F"]) \
+                != (s["S_sum"], s["I_sum"], sum(s["ex_counts"])):
+            bad.append("%s↔%s" % (n, deck))
+    out.append(("S3.3", not bad,
+                "跨产物三元组：判串 (S,I,F) == 同档检查点 (Σn_rank_def, Σn_infeasible, Σfeasible.count)（12 组：七个全量目录含 m₂ = 13 的 32 片副本、m₂ = 10 两副本，加 smoke_m2_5 两副本与 det_run1／det_run2）%s"
+                % ("" if not bad else "；不符 " + "、".join(bad))))
+    m10 = ctx["dec"]["c_m10_t8"]["md5"]
+    m12 = ctx["dec"]["c_m12_t8"]["md5"]
+    out.append(("S3.4", m10 != m12 and m10 == "b269256bfff877a81fa5a81047a4c958",
+                "档位判别力：m₂ = 10 与 m₂ = 12 判串互异（若相同即说明取错档参数）——m10 md5 = %s、m12 md5 = %s" % (m10[:12], m12[:12])))
+    bad, det = [], []
+    for n, deck in DIR_TO_DEC.items():
+        s = summarize_ckpt(ctx["ckpt"][n])
+        m = s["m_spec"]
+        fset = set(ctx["dec"][deck]["F_pos"])
+        sub = set()
+        for key, v in s["keys"].items():
+            for ex in v["examples"]:
+                rk = rank_of_subset(ex, 2 * m + 1, m)
+                sub.add(rk)
+                if rk not in fset:
+                    bad.append("%s:%s" % (n, str(key[0])[:12]))
+        det.append("%s⊆%s" % (len(sub), len(fset)))
+    out.append(("S3.5", not bad,
+                "方向：检查点 examples 子集的字典序编号在判串对应位置必为 'F'（例数 ⊆ 判串 'F' 位置数：%s；主四档因每键 count = 1 而升级为相等，已在 P2.4 与 P4.2 复算；m₂ = 5 档每键 6 次捕捉只存 3 条样例，故只有 ⊆）；违例 %d"
+                % ("、".join(det), len(bad))))
+    f5 = ctx["dec"]["m5_e10"]["F_pos"]
+    out.append(("S3.6", len(f5) == 30 and f5[:3] == [195, 197, 199] and f5[-3:] == [459, 460, 461],
+                "m2_5 边界档判串：'F' 共 %d 个，首三个 %s、末三个 %s，与 5 键各捕捉 6 次（Σ = 30）相容"
+                % (len(f5), f5[:3], f5[-3:])))
+    return out
+
+
+ALL_CHECKS = [("S1", check_S1), ("S2", check_S2), ("P1", check_P1), ("P2", check_P2),
+              ("P3", check_P3), ("P4", check_P4), ("S3", check_S3)]
+
+
+def run_all(ctx):
+    res = []
+    for tag, fn in ALL_CHECKS:
+        res.extend(fn(ctx))
+    return res
+
+
+def print_results(res, title):
+    print("=" * 110)
+    print(title)
+    print("=" * 110)
+    cur = None
+    for cid, ok, detail in res:
+        grp = cid.split(".")[0]
+        if grp != cur:
+            print("---- %s ----" % grp)
+            cur = grp
+        print("[%s] %-6s %s" % ("PASS" if ok else "FAIL", cid, detail))
+    npass = sum(1 for _, ok, _ in res if ok)
+    print("-" * 110)
+    print("判据共 %d 条：PASS = %d，FAIL = %d" % (len(res), npass, len(res) - npass))
+    for cid, ok, _ in res:
+        if not ok:
+            print("  失败项定位：%s" % cid)
+    return npass == len(res)
+
+
+# ---------------------------------------------------------------------------
+# 扰动检验：每条判据须能取 False（plan.md 第六节第 2 条）
+# ---------------------------------------------------------------------------
+def pert_bump_count(c):
+    c["ckpt"]["m2_10_mpq"]["chunks"][0]["count"] += 1
+
+
+def pert_drop_chunk(c):
+    c["ckpt"]["m2_10_mpq"]["chunks"].pop(5)
+
+
+def pert_swap_bounds(c):
+    c["delta_lo"], c["delta_hi"] = c["delta_hi"], c["delta_lo"]
+
+
+def pert_shift_F(c):
+    c["recomp"][10]["F_idx"] = [i + 1 for i in c["recomp"][10]["F_idx"]]
+
+
+def pert_fake_vertex(c):
+    c["ckpt"]["smoke_m2_5"]["chunks"][0]["feasible"]["1/1,1/1,1/1,1/1,1/1"] = \
+        {"count": 1, "examples": [[0, 1, 2, 3, 4]]}
+
+
+def pert_mutate_point(c):
+    pts = c["impls"]["impl2_m12"]["candidate_points_sorted"]
+    s = pts[0].split(",")
+    s[-1] = str(Fraction(s[-1]) + 1)
+    pts[0] = ",".join(s)
+    c["impls"]["impl2_m12"]["_pts"] = [tuple(Fraction(x) for x in p.split(",")) for p in pts]
+
+
+def pert_truncate(c):
+    c["dec"]["c_m12_t8"]["bytes"] -= 1
+
+
+def pert_break_m5F(c):
+    c["dec"]["m5_e10"]["F_pos"] = c["dec"]["m5_e10"]["F_pos"][:-1]
+
+
+def pert_md5(c):
+    for e in c["registry"]:
+        if e["rel"].endswith("route-3.md"):
+            e["md5"] = "0" * 32
+            return
+
+
+PERTURBATIONS = [
+    ("P1_bump_count", "P1", pert_bump_count, "m2_10_mpq 首片 count +1"),
+    ("P1_drop_chunk", "P1", pert_drop_chunk, "删掉 m2_10_mpq 的 chunk_0005"),
+    ("S2_swap_bounds", "S2", pert_swap_bounds, "严格下界与严格上界互换"),
+    ("P2_shift_F", "P2", pert_shift_F, "独立重算的可行子集编号整体 +1"),
+    ("P3_fake_vertex", "P3", pert_fake_vertex, "向 m₂ = 5 检查点注入非顶点 (1,1,1,1,1)"),
+    ("P4_mutate_point", "P4", pert_mutate_point, "impl2 的 m₂ = 12 首候选末坐标 +1"),
+    ("S1_truncate", "S1", pert_truncate, "m₂ = 12 判串字节数 −1"),
+    ("S1_corrupt_md5", "S1", pert_md5, "把 route-3.md 的期望 md5 改成 32 个 0"),
+    ("S3_break_m5F", "S3", pert_break_m5F, "把 m5_e10 判串的 'F' 位置表删掉一个"),
+]
+
+
+def main():
+    pert_mode = "--perturb-all" in sys.argv[1:]
+    ctx = load_all()
+    print("工作 δ = %s（严格下界；严格上界 %s 仅作方向对照）" % (ctx["delta"], ctx["delta_hi"]))
+    print("解释器 python %s；本文件 %s；md5 = %s"
+          % (sys.version.split()[0], os.path.abspath(__file__), md5_file(os.path.abspath(__file__))))
+    res = run_all(ctx)
+    ok = print_results(res, "顶点尾部收尾 (b)：精确算术复算闸门 正常模式")
+    if not pert_mode:
+        print("退出码 %d" % (0 if ok else 1))
+        return 0 if ok else 1
+    print()
+    print("=" * 110)
+    print("扰动检验：%d 个扰动各须让被点名的项目出现 FAIL（否则该组判据可能恒真）" % len(PERTURBATIONS))
+    print("=" * 110)
+    all_ok = ok
+    for name, target, fn, desc in PERTURBATIONS:
+        c2 = copy.deepcopy(ctx)
+        fn(c2)
+        r2 = run_all(c2)
+        fails = [cid for cid, o, _ in r2 if not o]
+        hit = [cid for cid in fails if cid.split(".")[0] == target]
+        good = len(hit) >= 1
+        all_ok = all_ok and good
+        print("[%s] 扰动 %-16s 目标 %s ｜%s ｜目标组 FAIL %d 条（%s）｜全局 FAIL %d 条"
+              % ("PASS" if good else "FAIL", name, target, desc, len(hit),
+                 ("、".join(hit[:5]) + ("…" if len(hit) > 5 else "")) if hit else "无", len(fails)))
+    print("-" * 110)
+    print("扰动检验结论：%s"
+          % ("%d 个扰动全部让目标项 FAIL ⇒ 相关判据均非恒真，七个判据组的每一组都至少被一个扰动打穿" % len(PERTURBATIONS)
+             if all_ok else "存在未让目标项 FAIL 的扰动"))
+    print("退出码 %d" % (0 if all_ok else 1))
+    return 0 if all_ok else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

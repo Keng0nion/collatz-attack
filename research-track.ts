@@ -203,6 +203,19 @@ const materials = await Promise.all([
 log(`轨道 ${TAG} 材料与方法就绪`);
 
 phase("多路独立攻击");
+// 报告一律在并发区之外按计划顺序发出：并发回调里的 report 顺序不确定，
+// 会让日志重放撞上 inputHash 不一致（实测：report#2@1 重放必败）。
+for (const r of plan.attackRoutes) {
+  report(
+    {
+      route: r.name,
+      status: "论证中",
+      claim: `攻击进行中，脚本与报告写在 ${BASE}/cycle-${plan.cycleNumber}/`,
+      evidence: r.mission.slice(0, 160),
+    },
+    "tracks",
+  );
+}
 const attackOutcomes = await Promise.all(
   plan.attackRoutes.map(async (r, i) => {
     try {
@@ -213,15 +226,6 @@ const attackOutcomes = await Promise.all(
           "你的价值在于把失败点定到具体的不等式或具体的步骤，而不是宣布成功。" +
           STYLE,
       });
-      report(
-        {
-          route: r.name,
-          status: "论证中",
-          claim: `攻击进行中，脚本与报告写在 ${BASE}/cycle-${plan.cycleNumber}/`,
-          evidence: r.mission.slice(0, 160),
-        },
-        "tracks",
-      );
       const result = await attacker.ask<AttemptResult>(
         `疑点：${FOCUS}\n本轮要避开的已失败方向：${plan.avoidList.join("、")}\n\n` +
           `你负责的路线是「${r.name}」：${r.mission}\n\n` +
@@ -234,10 +238,6 @@ const attackOutcomes = await Promise.all(
           `4. keyNumbers 里每个数字都要写明实际达到的范围。\n\n` +
           `按 schema 返回。中文正文不要出现半角连字符。`,
       );
-      report(
-        { route: result.route, status: result.status, claim: result.claim, evidence: result.evidenceKind },
-        "tracks",
-      );
       return result;
     } catch (e) {
       log(`轨道 ${TAG} 路线 ${r.name} 未完成：${String(e).slice(0, 150)}`);
@@ -249,11 +249,13 @@ const attackOutcomes = await Promise.all(
         status: "未决",
         keyNumbers: [],
       };
-      report({ route: r.name, status: "未完成", claim: "路线未完成", evidence: "无" }, "tracks");
       return fallback;
     }
   }),
 );
+for (const o of attackOutcomes) {
+  report({ route: o.route, status: o.status, claim: o.claim, evidence: o.evidenceKind }, "tracks");
+}
 
 phase("交叉反驳与裁决");
 const critiques = await Promise.all(

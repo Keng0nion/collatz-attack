@@ -1,0 +1,113 @@
+[PASS] D1 C(21,10) = 352716 —— math.comb(21,10) = 352716
+[PASS] D2 C(25,12) = 5200300 —— math.comb(25,12) = 5200300
+[PASS] D3 C(27,13) = 20058300 —— math.comb(27,13) = 20058300
+[PASS] D4 C(29,14) = 77558760 —— math.comb(29,14) = 77558760
+[PASS] D5 C(11,5) = 462 —— math.comb(11,5) = 462
+[PASS] D6 不可达档 C(41,20) = 269128937220 —— math.comb(41,20) = 269128937220
+[PASS] D7 不可达档 C(95,47) 精确值 —— math.comb(95,47) = 3217533506933149454210801550
+[PASS] D8 不可达档 C(183,91) 精确值 —— math.comb(183,91) = 720162138745872857431467203815692960288647797444355400
+[PASS] E1 判串 py_m10_decisions.txt 的字节数、md5、S/I/F 直方图 —— bytes=352716 md5=b269256bfff877a81fa5a81047a4c958 S/I/F=(295780, 56926, 10)（期望 352716、b269256bfff877a81fa5a81047a4c958、(295780, 56926, 10)）
+[PASS] E2 判串 c_m10_t8_decisions.txt 的字节数、md5、S/I/F 直方图 —— bytes=352716 md5=b269256bfff877a81fa5a81047a4c958 S/I/F=(295780, 56926, 10)（期望 352716、b269256bfff877a81fa5a81047a4c958、(295780, 56926, 10)）
+[PASS] E3 判串 c_m10_t1_decisions.txt 的字节数、md5、S/I/F 直方图 —— bytes=352716 md5=b269256bfff877a81fa5a81047a4c958 S/I/F=(295780, 56926, 10)（期望 352716、b269256bfff877a81fa5a81047a4c958、(295780, 56926, 10)）
+[PASS] E4 判串 c_m12_t8_decisions.txt 的字节数、md5、S/I/F 直方图 —— bytes=5200300 md5=8fb4ba1aef28fdc293b52270985ec35e S/I/F=(4752735, 447553, 12)（期望 5200300、8fb4ba1aef28fdc293b52270985ec35e、(4752735, 447553, 12)）
+[PASS] E5 判串 c_m13_t8_decisions.txt 的字节数、md5、S/I/F 直方图 —— bytes=20058300 md5=152514f874a144554d1dff2ec0570da9 S/I/F=(18811533, 1246754, 13)（期望 20058300、152514f874a144554d1dff2ec0570da9、(18811533, 1246754, 13)）
+[PASS] E6 判串 c_m14_t8_decisions.txt 的字节数、md5、S/I/F 直方图 —— bytes=77558760 md5=37921d19726088fb8be115707a749356 S/I/F=(74098262, 3460484, 14)（期望 77558760、37921d19726088fb8be115707a749356、(74098262, 3460484, 14)）
+[PASS] E7 判串 m5_e10_decisions.txt 的字节数、md5、S/I/F 直方图 —— bytes=462 md5=18e23746174db60150198149b00cd869 S/I/F=(170, 262, 30)（期望 462、18e23746174db60150198149b00cd869、(170, 262, 30)）
+[PASS] E8 三份 m10 判串 md5 相同（C 双线程、C 单线程、Python 参考） —— m10 判串 md5 集合 = ['b269256bfff877a81fa5a81047a4c958']
+[PASS] F1 检查点 m2_10_fraction：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=16 Σcount=352716 去重点=10（期望 10） 捕捉次数集=[1]（C(2m+1,m)=352716）
+[PASS] F2 检查点 m2_10_mpq：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=16 Σcount=352716 去重点=10（期望 10） 捕捉次数集=[1]（C(2m+1,m)=352716）
+[PASS] F3 检查点 m2_12_fraction：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=16 Σcount=5200300 去重点=12（期望 12） 捕捉次数集=[1]（C(2m+1,m)=5200300）
+[PASS] F4 检查点 m2_12_mpq：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=16 Σcount=5200300 去重点=12（期望 12） 捕捉次数集=[1]（C(2m+1,m)=5200300）
+[PASS] F5 检查点 m2_13_fraction：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=32 Σcount=20058300 去重点=13（期望 13） 捕捉次数集=[1]（C(2m+1,m)=20058300）
+[PASS] F6 检查点 m2_13_mpq：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=16 Σcount=20058300 去重点=13（期望 13） 捕捉次数集=[1]（C(2m+1,m)=20058300）
+[PASS] F7 检查点 m2_14_mpq：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=32 Σcount=77558760 去重点=14（期望 14） 捕捉次数集=[1]（C(2m+1,m)=77558760）
+[PASS] F8 检查点 smoke_m2_2：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=1 Σcount=10 去重点=3（期望 3） 捕捉次数集=[1]（C(2m+1,m)=10）
+[PASS] F9 检查点 smoke_m2_2_mpq：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=1 Σcount=10 去重点=3（期望 3） 捕捉次数集=[1]（C(2m+1,m)=10）
+[PASS] F10 检查点 smoke_m2_5：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=1 Σcount=462 去重点=5（期望 5） 捕捉次数集=[6]（C(2m+1,m)=462）
+[PASS] F11 检查点 smoke_m2_5_mpq：Σcount、去重可行点、捕捉次数、分片关系 —— chunks=1 Σcount=462 去重点=5（期望 5） 捕捉次数集=[6]（C(2m+1,m)=462）
+[PASS] F12 det_run1 与 det_run2 的 chunk_0000.json 逐字节相同 —— bytes=1160/1160 相同=True
+[PASS] G1 route3_xcheck_m12_allsubsets.json 字段 —— n_compare=5200300 n_mismatch=0 cand=12/12
+[PASS] G2 route3_xcheck_m10_allsubsets.json 字段 —— n_compare=352716 n_mismatch=0
+[PASS] G3 route3_vs_other_m12.json 顶点坐标集合相等 —— point_sets_equal=True only_mine=0 only_other=0
+[PASS] G4 m2=14 判定件 SUMMARY_JSON 关键字段 —— total=77558760 equal=True certs=[[14, 14]] wall_s=2912.24 impl=mpq chunks=32
+[PASS] G5 m2=14 复核件 r5_m2_14_verdict_check.txt 判定行与 SUMMARY 同 —— equal=True n_distinct=14
+[PASS] H1 身份 route-1.md：行数与 md5 —— lines=293 md5=939cc627c887fd4064214b14accfa651（期望 293、939cc627c887fd4064214b14accfa651）
+[PASS] H2 身份 route-2.md：行数与 md5 —— lines=380 md5=9db46ca0d456a7c463f63adf776aa40e（期望 380、9db46ca0d456a7c463f63adf776aa40e）
+[PASS] H3 身份 route-3.md：行数与 md5 —— lines=351 md5=8b8fe031050f630565a1c58a5e53a560（期望 351、8b8fe031050f630565a1c58a5e53a560）
+[PASS] H4 身份 route-4.md：行数与 md5 —— lines=399 md5=e5ff27b061020b6aa81e326bd54c0b70（期望 399、e5ff27b061020b6aa81e326bd54c0b70）
+[PASS] H5 身份 route-5.md：行数与 md5 —— lines=343 md5=3e833e440ceb5cc74d3470b24ac8355e（期望 343、3e833e440ceb5cc74d3470b24ac8355e）
+[PASS] H6 身份 ledger.md：行数与 md5 —— lines=197 md5=8e0b44e3ebbf795dc393e4fa559cbee3（期望 197、8e0b44e3ebbf795dc393e4fa559cbee3）
+[PASS] H7 身份 learnings.md：行数与 md5 —— lines=62 md5=96f3d946b0fbae97e31b873090503fb9（期望 62、96f3d946b0fbae97e31b873090503fb9）
+[PASS] H8 身份 frozen-spec.md：行数与 md5 —— lines=94 md5=f117144c2ea51ecb4a09387318369cfd（期望 94、f117144c2ea51ecb4a09387318369cfd）
+[PASS] I1 行号定点 route-5.md:100（md5 3e833e44） —— 含全部 2 个子串
+[PASS] I2 行号定点 route-2.md:371（md5 9db46ca0） —— 含全部 2 个子串
+[PASS] I3 行号定点 route-3.md:227（md5 8b8fe031） —— 含全部 2 个子串
+[PASS] I4 行号定点 route-5.md:330（md5 3e833e44） —— 含全部 1 个子串
+[PASS] I5 行号定点 route-3.md:207（md5 8b8fe031） —— 含全部 1 个子串
+[PASS] I6 行号定点 route-5.md:98（md5 3e833e44） —— 含全部 1 个子串
+[PASS] I7 行号定点 route-5.md:96（md5 3e833e44） —— 含全部 1 个子串
+[PASS] I8 行号定点 route-2.md:255（md5 9db46ca0） —— 含全部 3 个子串
+[PASS] I9 行号定点 route-2.md:69（md5 9db46ca0） —— 含全部 1 个子串
+[PASS] I10 行号定点 route-5.md:126（md5 3e833e44） —— 含全部 1 个子串
+[PASS] I11 行号定点 route-1.md:13（md5 939cc627） —— 含全部 1 个子串
+[PASS] I12 行号定点 route-4.md:322（md5 e5ff27b0） —— 含全部 1 个子串
+[PASS] I13 行号定点 route-4.md:345（md5 e5ff27b0） —— 含全部 1 个子串
+[PASS] I14 行号定点 route-4.md:334（md5 e5ff27b0） —— 含全部 1 个子串
+[PASS] I15 ledger.md 中「顶点识别的机器核对升一档」只出现在 123 行 —— 命中行号 = [123]
+[PASS] I16 ledger.md:112 含「m₂ = 12 的全穷举未跑」 —— 逐字命中
+[PASS] J1 δ 严格下界锚点 2^15849625 < 3^10000000 < 2^15849626 —— 引擎 gmpy2 2.3.2；b1 < a = True；a < b2 = True
+---- 条目耦合（每个复算项的值串必须原样出现在条目正文）----
+[PASS] C-D1 条目含 '352716'
+[PASS] C-D2 条目含 '5200300'
+[PASS] C-D3 条目含 '20058300'
+[PASS] C-D4 条目含 '77558760'
+[PASS] C-D5 条目含 '462'
+[PASS] C-D6 条目含 '269128937220'
+[PASS] C-D7 条目含 '3217533506933149454210801550'
+[PASS] C-D8 条目含 '720162138745872857431467203815692960288647797444355400'
+[PASS] C-E1 条目含 'b269256bfff877a81fa5a81047a4c958'
+[PASS] C-E1 条目含 '295780'
+[PASS] C-E1 条目含 '56926'
+[PASS] C-E4 条目含 '8fb4ba1aef28fdc293b52270985ec35e'
+[PASS] C-E4 条目含 '4752735'
+[PASS] C-E4 条目含 '447553'
+[PASS] C-E5 条目含 '152514f874a144554d1dff2ec0570da9'
+[PASS] C-E5 条目含 '18811533'
+[PASS] C-E5 条目含 '1246754'
+[PASS] C-E6 条目含 '37921d19726088fb8be115707a749356'
+[PASS] C-E6 条目含 '74098262'
+[PASS] C-E6 条目含 '3460484'
+[PASS] C-E7 条目含 '18e23746174db60150198149b00cd869'
+[PASS] C-E7 条目含 '170'
+[PASS] C-E7 条目含 '262'
+[PASS] C-F7 条目含 '32 分片'
+[PASS] C-G1 条目含 '"n_compare": 5200300'
+[PASS] C-G1 条目含 '"n_mismatch": 0'
+[PASS] C-G1 条目含 '"n_candidates_impl1": 12'
+[PASS] C-G3 条目含 '"point_sets_equal": true'
+[PASS] C-G4 条目含 '2912.24'
+[PASS] C-G4 条目含 '13477.7'
+[PASS] C-H1 条目含 '939cc627c887fd4064214b14accfa651'
+[PASS] C-H2 条目含 '9db46ca0d456a7c463f63adf776aa40e'
+[PASS] C-H3 条目含 '8b8fe031050f630565a1c58a5e53a560'
+[PASS] C-H4 条目含 'e5ff27b061020b6aa81e326bd54c0b70'
+[PASS] C-H5 条目含 '3e833e440ceb5cc74d3470b24ac8355e'
+[PASS] C-H6 条目含 '8e0b44e3ebbf795dc393e4fa559cbee3'
+[PASS] C-H7 条目含 '96f3d946b0fbae97e31b873090503fb9'
+[PASS] C-H8 条目含 'f117144c2ea51ecb4a09387318369cfd'
+[PASS] C-I1 条目含 'route-5.md:100'
+[PASS] C-I2 条目含 'route-2.md:371'
+[PASS] C-I3 条目含 'route-3.md:227'
+[PASS] C-I4 条目含 'route-5.md:330'
+[PASS] C-I5 条目含 '214.63'
+[PASS] C-I6 条目含 'route-5.md:98'
+[PASS] C-I7 条目含 'route-5.md:96'
+[PASS] C-I12 条目含 'route-4.md:322'
+[PASS] C-I13 条目含 'route-4.md:345'
+[PASS] C-I15 条目含 'ledger.md:123'
+[PASS] C-I16 条目含 'ledger.md:112'
+[PASS] C-J1 条目含 '2^15849625 < 3^10000000'
+---- 边界段标签（未证／未跑／不可达 三态；口径更正恰一条）----
+[PASS] K1 边界段标签结构 —— 条目数=11 未证=4 未跑=5 不可达=1 口径更正=1
+---- 汇总：58 项复算 + 耦合与结构；FAIL = 0 ----
+退出码 0（全部通过）

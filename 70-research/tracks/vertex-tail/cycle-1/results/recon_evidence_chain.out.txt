@@ -1,0 +1,151 @@
+=== R1 五份报告身份（登记值来源：vertex-tail/cycle-1/materials.md 9.1 表） ===
+PASS | R1 route-1.md | md5=939cc627c887fd4064214b14accfa651(登记 939cc627c887fd4064214b14accfa651) 行数=293(登记 293) 字节=34874
+PASS | R1 route-2.md | md5=9db46ca0d456a7c463f63adf776aa40e(登记 9db46ca0d456a7c463f63adf776aa40e) 行数=380(登记 380) 字节=32436
+PASS | R1 route-3.md | md5=8b8fe031050f630565a1c58a5e53a560(登记 8b8fe031050f630565a1c58a5e53a560) 行数=351(登记 351) 字节=40472
+PASS | R1 route-4.md | md5=e5ff27b061020b6aa81e326bd54c0b70(登记 e5ff27b061020b6aa81e326bd54c0b70) 行数=399(登记 399) 字节=49045
+PASS | R1 route-5.md | md5=3e833e440ceb5cc74d3470b24ac8355e(登记 3e833e440ceb5cc74d3470b24ac8355e) 行数=343(登记 343) 字节=39222
+PASS | R1 md5-manifest.txt 自身 md5 | 实测 571fb2bb0a84d57418808108cdda4ce3
+PASS | R1 md5-manifest 含 route-1.md 登记行恰两行（本轨+上游） | ['939cc627c887fd4064214b14accfa651 |    34874 |   293 | 70-research/tracks/vertex-m12/cycle-1/route-1.md', '7be71b78cd4c582c67fa1b80c88d27e2 |    55905 |   457 | 70-research/cycle-1/route-1.md']
+PASS | R1 manifest 本轨行与实测一致 | manifest=939cc627c887fd4064214b14accfa651 |    34874 |   293 | 70-res vs 实测 939cc627.../34874/293
+PASS | R1 manifest 上游行与实测一致 | manifest=7be71b78cd4c582c67fa1b80c88d27e2 |    55905 |   457 | 70-res vs 实测 7be71b78cd4c582c67fa1b80c88d27e2/55905/457
+=== R2 r2_j_A.txt 三项基线与伴随件 ===
+PASS | R2 r2_j_A.txt 身份 | md5=8f8d0112668a88d0811f30cefa396bd1 行=16 字节=1112（登记 8f8d0112.../16/1112）
+PASS | R2 基线一：C(21,10)=352716 | 
+PASS | R2 基线二：10 个循环旋转 True 句在文本 | 
+PASS | R2 基线三：证书 [(10, 10)] 句在文本 | 
+PASS | R2 r2_j_A.time 身份与内容 | md5=440e8a872de8d71cacee663fab6536f3 内容=real 62.49; user 61.78; sys 0.34; 
+PASS | R2 对照乙基线：cycle-1/route-1.md 457 行版 | md5=7be71b78cd4c582c67fa1b80c88d27e2 行=457
+PASS | R2 对照丙基线：r2_b_out.txt | md5=f3882451e5a45fc3cb5cce781f279e32 行=136
+PASS | R2 r5_anchor_r2j_A_original.txt | md5=001c387eeaa62a2ebb5cd5f4d4517213（登记 001c387eeaa62a2ebb5cd5f4d4517213）
+PASS | R2 repro-r2_j_A-m2-10.txt | md5=5d603d03a34ace5ad9107383d87fd0c1（登记 5d603d03a34ace5ad9107383d87fd0c1）
+PASS | R2 r5_full_m2_14_mpq_verdict.txt | md5=1a1fbae0749f0f99584856b741ad3aea（登记 1a1fbae0749f0f99584856b741ad3aea）
+PASS | R2 route3_bareiss_probe_out.txt | md5=a9e90407f02fff8052e51b3cd5071251（登记 a9e90407f02fff8052e51b3cd5071251）
+PASS | R2 r5_full_m2_14_mpq.time 内容（route-5:301 登记） | real 2912.61; user 13328.89; sys 148.99; 
+=== R3 检查点分片计数与顶点集计数关系 ===
+PASS | R3 m2_10_fraction 计数关系 | 片=16 总=352716(组合 352716) nrd+ninf+Σ捕捉=295780+56926+10=352716 铺满=True 顶点=10
+PASS | R3 m2_10_mpq 计数关系 | 片=16 总=352716(组合 352716) nrd+ninf+Σ捕捉=295780+56926+10=352716 铺满=True 顶点=10
+PASS | R3 m2_12_fraction 计数关系 | 片=16 总=5200300(组合 5200300) nrd+ninf+Σ捕捉=4752735+447553+12=5200300 铺满=True 顶点=12
+PASS | R3 m2_12_mpq 计数关系 | 片=16 总=5200300(组合 5200300) nrd+ninf+Σ捕捉=4752735+447553+12=5200300 铺满=True 顶点=12
+PASS | R3 m2_13_fraction 计数关系 | 片=32 总=20058300(组合 20058300) nrd+ninf+Σ捕捉=18811533+1246754+13=20058300 铺满=True 顶点=13
+PASS | R3 m2_13_mpq 计数关系 | 片=16 总=20058300(组合 20058300) nrd+ninf+Σ捕捉=18811533+1246754+13=20058300 铺满=True 顶点=13
+PASS | R3 m2_14_mpq 计数关系 | 片=32 总=77558760(组合 77558760) nrd+ninf+Σ捕捉=74098262+3460484+14=77558760 铺满=True 顶点=14
+PASS | R3 smoke_m2_2 计数关系 | 片=1 总=10(组合 10) nrd+ninf+Σ捕捉=0+7+3=10 铺满=True 顶点=3
+PASS | R3 smoke_m2_2_mpq 计数关系 | 片=1 总=10(组合 10) nrd+ninf+Σ捕捉=0+7+3=10 铺满=True 顶点=3
+PASS | R3 smoke_m2_5 计数关系 | 片=1 总=462(组合 462) nrd+ninf+Σ捕捉=170+262+30=462 铺满=True 顶点=5
+PASS | R3 smoke_m2_5_mpq 计数关系 | 片=1 总=462(组合 462) nrd+ninf+Σ捕捉=170+262+30=462 铺满=True 顶点=5
+PASS | R3 m2_10 两引擎顶点集相等 | fraction=10 mpq=10
+PASS | R3 m2_12_fraction 与 m2_12_mpq 顶点集相等 | 
+PASS | R3 m2_13_fraction 与 m2_13_mpq 顶点集相等 | 
+PASS | R3 smoke_m2_2 与 smoke_m2_2_mpq 顶点集相等 | 
+PASS | R3 smoke_m2_5 与 smoke_m2_5_mpq 顶点集相等 | 
+PASS | R2/R3 基线二机器复核：m2_10 顶点集 == 解析 10 旋转 | |交集|=10
+PASS | R2/R3 基线三机器复核：m2_10 每顶点证书 == (10,10) | 实测 [(10, 10)]
+PASS | R3 m2_12_mpq 顶点集==解析族 且 证书=(m2,m2) | 顶点=12 交集=12 证书=[(12, 12)]
+PASS | R3 m2_13_mpq 顶点集==解析族 且 证书=(m2,m2) | 顶点=13 交集=13 证书=[(13, 13)]
+PASS | R3 m2_14_mpq 顶点集==解析族 且 证书=(m2,m2) | 顶点=14 交集=14 证书=[(14, 14)]
+PASS | R3 阴性对照 smoke_m2_2：顶集≠解析族（且解析族两点皆不在） | 顶点=['(Fraction(1, 1), Fraction(1, 1))', '(Fraction(1, 1), Fraction(3, 2))', '(Fraction(3, 2), Fraction(1, 1))'] 解析=['(Fraction(3, 5), Fraction(9, 10))', '(Fraction(9, 10), Fraction(3, 5))']
+PASS | R3 边界档 smoke_m2_5：v=1、顶集==解析族、证书=(5,6) | v=1 证书=[(5, 6)]
+PASS | R3 det_run1 与 det_run2 逐字节相同 | md5=79590ba98061e848843251889b9c5ee8/79590ba98061e848843251889b9c5ee8
+PASS | R3 route-5:92 声明：m2_12 fraction 16 片、各 325019 | 首片=325018 分布=[325018, 325019] 和=5200300（严格读法：首片 325018、其余 15 片 325019）
+PASS | R3 route-5:126 声明：m2_14 32 片 count 之和 = 77558760 | 片=32 和=77558760
+=== R4 判串七份：md5、字节、直方图、F 位置 ===
+PASS | R4 m5_e10_decisions.txt | md5=18e23746174db60150198149b00cd869 字节=462 直方图=(170, 262, 30)(登记 (170, 262, 30)) F 位置=195..461 连续=False
+PASS | R4 m5 F 首末 | 首=195 末=461 连续=False
+PASS | R4 c_m10_t8_decisions.txt | md5=b269256bfff877a81fa5a81047a4c958 字节=352716 直方图=(295780, 56926, 10)(登记 (295780, 56926, 10)) F 位置=352706..352715 连续=True
+PASS | R4 c_m10_t8_decisions.txt F 位置=末 m2 个连续 | 
+PASS | R4 c_m10_t1_decisions.txt | md5=b269256bfff877a81fa5a81047a4c958 字节=352716 直方图=(295780, 56926, 10)(登记 (295780, 56926, 10)) F 位置=352706..352715 连续=True
+PASS | R4 py_m10_decisions.txt | md5=b269256bfff877a81fa5a81047a4c958 字节=352716 直方图=(295780, 56926, 10)(登记 (295780, 56926, 10)) F 位置=352706..352715 连续=True
+PASS | R4 c_m12_t8_decisions.txt | md5=8fb4ba1aef28fdc293b52270985ec35e 字节=5200300 直方图=(4752735, 447553, 12)(登记 (4752735, 447553, 12)) F 位置=5200288..5200299 连续=True
+PASS | R4 c_m12_t8_decisions.txt F 位置=末 m2 个连续 | 
+PASS | R4 c_m13_t8_decisions.txt | md5=152514f874a144554d1dff2ec0570da9 字节=20058300 直方图=(18811533, 1246754, 13)(登记 (18811533, 1246754, 13)) F 位置=20058287..20058299 连续=True
+PASS | R4 c_m13_t8_decisions.txt F 位置=末 m2 个连续 | 
+PASS | R4 c_m14_t8_decisions.txt | md5=37921d19726088fb8be115707a749356 字节=77558760 直方图=(74098262, 3460484, 14)(登记 (74098262, 3460484, 14)) F 位置=77558746..77558759 连续=True
+PASS | R4 c_m14_t8_decisions.txt F 位置=末 m2 个连续 | 
+=== R4b 七段 Python 切片与 C 判串逐字节相等 ===
+PASS | R4b py_m12_slice_a.txt | md5=3fc7cb4298234a9a35157a67468cdabb 长=60000 区间[0,60000)相等=True
+PASS | R4b py_m12_slice_b.txt | md5=01d48b64c306fcda9abf601a1cee60da 长=60000 区间[2570000,2630000)相等=True
+PASS | R4b py_m12_slice_c.txt | md5=6ed10684ab1144eed0718d983ebbac7b 长=60300 区间[5140000,5200300)相等=True
+PASS | R4b py_m13_slice_a.txt | md5=b3a1a41dab9edab79470d174440fdded 长=60000 区间[0,60000)相等=True
+PASS | R4b py_m13_slice_b.txt | md5=0df416d6afade99f69e439cae879c482 长=58300 区间[20000000,20058300)相等=True
+PASS | R4b py_m14_slice_a.txt | md5=aed2dfe579abcd7927c87672ecdf53fb 长=40000 区间[0,40000)相等=True
+PASS | R4b py_m14_slice_b.txt | md5=032e82bc5fca23d1804ff270e4e4b963 长=158760 区间[77400000,77558760)相等=True
+=== R5 SUMMARY_JSON 七份与判定六行对称 diff ===
+PASS | R5 r5_full_m2_10_fraction.log md5 与字段 | md5=f91223df69d325438fa00751f7d0a61b(登记 f91223df69d325438fa00751f7d0a61b) total=352716 wall=16.05(报告 None) cpu=91.57(报告 None)
+PASS | R5 r5_full_m2_10_mpq.log md5 与字段 | md5=ed4807b53a6834dc2143ccc8335e01d4(登记 ed4807b53a6834dc2143ccc8335e01d4) total=352716 wall=3.34(报告 None) cpu=18.18(报告 None)
+PASS | R5 r5_full_m2_12_fraction.log md5 与字段 | md5=0b286172e8385be71c5573c5f7d1a2b9(登记 0b286172e8385be71c5573c5f7d1a2b9) total=5200300 wall=547.93(报告 None) cpu=2985.29(报告 None)
+PASS | R5 r5_full_m2_12_mpq.log md5 与字段 | md5=eb16f9e78762849af99b195bd219db8d(登记 eb16f9e78762849af99b195bd219db8d) total=5200300 wall=122.89(报告 122.89) cpu=690.07(报告 690.07)
+PASS | R5 r5_full_m2_13_mpq.log md5 与字段 | md5=b29117e845961ba98c54563a33221b8c(登记 b29117e845961ba98c54563a33221b8c) total=20058300 wall=516.40(报告 516.4) cpu=2923.41(报告 2923.4)
+PASS | R5 r5_full_m2_13_fraction.log md5 与字段 | md5=a0c5f7fbf687adc232d9c1e5885a7d89(登记 a0c5f7fbf687adc232d9c1e5885a7d89) total=20058300 wall=3513.53(报告 3513.5) cpu=14040.65(报告 14040.7)
+PASS | R5 r5_full_m2_14_mpq.log md5 与字段 | md5=5b13b01b441209cc4a7f6f664f96779a(登记 5b13b01b441209cc4a7f6f664f96779a) total=77558760 wall=2912.24(报告 2912.2) cpu=13477.70(报告 13477.7)
+PASS | R5 m2_10_mpq 检查点分检计数与 SUMMARY 一致 | 检查点 295780/56926/10 vs 日志 295780/56926/10
+PASS | R5 m2_12_mpq 检查点分检计数与 SUMMARY 一致 | 检查点 4752735/447553/12 vs 日志 4752735/447553/12
+PASS | R5 m2_13_mpq 检查点分检计数与 SUMMARY 一致 | 检查点 18811533/1246754/13 vs 日志 18811533/1246754/13
+PASS | R5 m2_14_mpq 检查点分检计数与 SUMMARY 一致 | 检查点 74098262/3460484/14 vs 日志 74098262/3460484/14
+PASS | R5 m2_12 fraction/mpq 判定六行对称 diff 零差异 | fraction 6 行 vs mpq 6 行；相同=True
+PASS | R5 m2_13 fraction/mpq 判定六行对称 diff 零差异 | fraction 6 行 vs mpq 6 行；相同=True
+=== R6 两实现 JSON 键差、agg 相等、顶点坐标相等 ===
+PASS | R6 m2_12 顶层键差 | impl1 独有 ['n_infeasible_unique', 'n_singular']；impl2 独有 ['candidates_with_wrong_rank']
+PASS | R6 m2_10 顶层键差同行 | impl1 独有 ['n_infeasible_unique', 'n_singular']；impl2 独有 ['candidates_with_wrong_rank']
+PASS | R6 route3_impl1_m10.json md5 | md5=c9c77768e5eda8006db969299187ad02（route-3 9.2 登记 c9c77768e5eda8006db969299187ad02）
+PASS | R6 route3_impl2_m10.json md5 | md5=c711aeac30d711c90e11b085992f2146（route-3 9.2 登记 c711aeac30d711c90e11b085992f2146）
+PASS | R6 route3_impl1_m12.json md5 | md5=ae707bd3ff64907a29873421f6dc423b（route-3 9.2 登记 ae707bd3ff64907a29873421f6dc423b）
+PASS | R6 route3_impl2_m12.json md5 | md5=658a5bcaae56eafd4ffd30f451aa857f（route-3 9.2 登记 658a5bcaae56eafd4ffd30f451aa857f）
+PASS | R6 route3_impl2_m10_deltahi.json md5 | md5=2ecc539057d68efc9647f19693688da7（route-3 9.2 登记 2ecc539057d68efc9647f19693688da7）
+PASS | R6 route3_impl2_m12_deltahi.json md5 | md5=eebc3d9b17f5c5739b8d7b1d47e83189（route-3 9.2 登记 eebc3d9b17f5c5739b8d7b1d47e83189）
+PASS | R6 route3_impl2_m13.json md5 | md5=edf1593c32b08cadea1dcdb449179a9e（route-3 9.2 登记 edf1593c32b08cadea1dcdb449179a9e）
+PASS | R6 route3_impl2_m14.json md5 | md5=91fb541d8769f905dfac63f70048886d（route-3 9.2 登记 91fb541d8769f905dfac63f70048886d）
+PASS | R6 m2_10 agg 相等与顶点坐标集合相等 | agg=2bde15694dbbcfa9/2bde15694dbbcfa9 点数=10/10 集合相等=True
+PASS | R6 m2_10 计数三项与总数 | impl1 295780+56926+10=352716
+PASS | R6 m2_12 agg 相等与顶点坐标集合相等 | agg=a5eb2b93d333ca02/a5eb2b93d333ca02 点数=12/12 集合相等=True
+PASS | R6 m2_12 计数三项与总数 | impl1 4752735+447553+12=5200300
+PASS | R6 route3_xcheck_m10_compare.json md5 | md5=c3a46ab09d5cb00552709bf9b6c52853（route-3 9.2 登记 c3a46ab09d5cb00552709bf9b6c52853）
+PASS | R6 route3_xcheck_m12_compare.json md5 | md5=7cd74fe6650fc13d43a7e7f7a0ebe266（route-3 9.2 登记 7cd74fe6650fc13d43a7e7f7a0ebe266）
+PASS | R6 route3_xcheck_m10_allsubsets.json md5 | md5=2b6211cf5ad8195f7e8831470c56fa76（route-3 9.2 登记 2b6211cf5ad8195f7e8831470c56fa76）
+PASS | R6 route3_xcheck_m12_allsubsets.json md5 | md5=19f78a95f64a3b06a6444647acbb86e8（route-3 9.2 登记 19f78a95f64a3b06a6444647acbb86e8）
+PASS | R6 route3_vs_other_m12.json md5 | md5=47d3defdc75af9587f8e7f9604d1b022（route-3 9.2 登记 47d3defdc75af9587f8e7f9604d1b022）
+PASS | R6 route3_vs_other_m12_impl1.json md5 | md5=a807588f45abd109a646c98c073c01f2（route-3 9.2 登记 a807588f45abd109a646c98c073c01f2）
+PASS | R6 route3_vs_other_m13.json md5 | md5=4e851bc7a40c873bf3e1ca6e14317bf9（route-3 9.2 登记 4e851bc7a40c873bf3e1ca6e14317bf9）
+PASS | R6 route3_vs_other_m14.json md5 | md5=adb1d0a97a4542ea80d55db1666a2a88（route-3 9.2 登记 adb1d0a97a4542ea80d55db1666a2a88）
+PASS | R6 xcheck_m12_compare 字段 | agg_equal=True pts=True ranks=True act=True blocks=21/21 mismatch=0
+PASS | R6 m2_12 候选编号=末 12 个 | [5200288, 5200289, 5200290, 5200291, 5200292, 5200293, 5200294, 5200295, 5200296, 5200297, 5200298, 5200299]
+PASS | R6 m2_12 impl1 vs ckpt 顶点坐标集合相等 | 点数 12 vs 12
+PASS | R6 m2_12 impl2 vs ckpt 顶点坐标集合相等 | 点数 12 vs 12
+PASS | R6 m2_10 impl1 vs ckpt 顶点坐标集合相等 | 点数 10 vs 10
+PASS | R6 m2_10 impl2 vs ckpt 顶点坐标集合相等 | 点数 10 vs 10
+PASS | R6 m2_13 impl2 vs ckpt 顶点坐标集合相等 | 点数 13 vs 13
+PASS | R6 m2_14 impl2 vs ckpt 顶点坐标集合相等 | 点数 14 vs 14
+=== R7 0 字节伴随日志 ===
+PASS | R7 0 字节文件恰为登记的三个 | 实测 ['results/alive-probe-1.txt', 'results/route3_xcheck_m10_allsubsets.log', 'results/route3_xcheck_m12_allsubsets.log']
+=== R8 脚本身份（route-3 9.1 与 route-5 5.3 登记） ===
+PASS | R8 scripts/route3_defs.py | md5=088d08bff5065cb58a2b9decd48b2437(登记 088d08bff5065cb58a2b9decd48b2437) 行=274(登记 274)
+PASS | R8 scripts/route3_impl1_mpqscan.py | md5=3f0035b17c0b601b37ec1c2e8502298a(登记 3f0035b17c0b601b37ec1c2e8502298a) 行=275(登记 275)
+PASS | R8 scripts/route3_impl2_struct.py | md5=b641f2805dcf90379d954cb2dc9a1b9d(登记 b641f2805dcf90379d954cb2dc9a1b9d) 行=318(登记 318)
+PASS | R8 scripts/route3_xcheck.py | md5=c63dd6db26951411d06a2649a9d1404b(登记 c63dd6db26951411d06a2649a9d1404b) 行=142(登记 142)
+PASS | R8 scripts/route3_verify.py | md5=dd73d5b742b5a40df439e35281651999(登记 dd73d5b742b5a40df439e35281651999) 行=150(登记 150)
+PASS | R8 scripts/route3_vs_other_compare.py | md5=43d70b1cc4e7382eff5833882b1cb6e7(登记 43d70b1cc4e7382eff5833882b1cb6e7) 行=84(登记 84)
+PASS | R8 scripts/route3_bareiss_probe.py | md5=fc73afa8d6a1967bfeb95a9c369bda73(登记 fc73afa8d6a1967bfeb95a9c369bda73) 行=114(登记 114)
+PASS | R8 scripts/route3_impl1_intscan.py | md5=f7e5603bd634267ff22b9db0395c339e(登记 f7e5603bd634267ff22b9db0395c339e) 行=316(登记 316)
+PASS | R8 scripts/r5_vm12_enum.py | md5=4fd20e6737c51dda3e88e2f6c0ca2345(登记 4fd20e6737c51dda3e88e2f6c0ca2345) 行=484(登记 None)
+PASS | R8 scripts/frozen/r2_common.py | md5=cfee819667c0883e73732f03d2dc8bef(登记 cfee819667c0883e73732f03d2dc8bef) 行=244(登记 244)
+PASS | R8 scripts/frozen/r2_j_independent_vertices.py | md5=4b8ce2a500d8ca9021fd0178deca637e(登记 4b8ce2a500d8ca9021fd0178deca637e) 行=272(登记 272)
+=== R9 行号引用抽查（登记行号 -> 现行内容是否命中） ===
+PASS | R9 route-1.md:13 含 31 项检查全部 PASS | 
+PASS | R9 route-1.md:46 含 8f8d0112668a88d0811f30cefa396bd1 | 
+PASS | R9 route-2.md:130 含 b269256bfff877a81fa5a81047a4c958 | 
+PASS | R9 route-2.md:192 含 8fb4ba1aef28fdc293b52270985ec35e | 
+PASS | R9 route-2.md:362 含 152514f874a144554d1dff2ec0570da9 | 
+PASS | R9 route-2.md:363 含 37921d19726088fb8be115707a749356 | 
+PASS | R9 route-3.md:191 含 "n_mismatch": 0 | 
+PASS | R9 route-3.md:195 含 不是抽样断言，而是逐项核对过的 | 
+PASS | R9 route-3.md:227 含 m₂ ≥ 15 未跑 | 
+PASS | R9 route-3.md:333 含 19f78a95f64a3b06a6444647acbb86e8 | 
+PASS | R9 route-4.md:6 含 不执行 | 
+PASS | R9 route-5.md:100 含 已读到 m₂ = 14 的全量判定为真 | 
+PASS | R9 route-5.md:100 含 的表述作废 | 
+PASS | R9 route-5.md:108 含 判定为真 | 
+PASS | R9 route-5.md:115 含 判定为真 | 
+PASS | R9 route-5.md:121 含 判定为真 | 
+PASS | R9 route-5.md:301 含 5b13b01b441209cc4a7f6f664f96779a | 
+PASS | R9 route-5.md:343 含 2912.2 | 
+
+FAIL 总数 = 0

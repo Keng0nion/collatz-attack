@@ -1,0 +1,13 @@
+# vertex-tail 路线四 产物冻结清单（2026 年 10 月 28 日）
+# 格式：md5  行数  路径（相对 70-research/tracks/vertex-tail/）
+# 实测方式：md5 -q 与 wc -l 逐件实测（本会话命令见 cycle-1/route-4.md 第五节第 5 条）
+49b3e73ddbaf31e6fed8634efd97a6a0  71  ledger-note.md
+8b2a558cdf6246404713f5eb400a3b40  91  cycle-1/route-4.md
+612849dd9239497f14a541a0d59f99ac  454  cycle-1/scripts/check_ledger_note.py
+4050a3fb3e31977a0a6c168ff1d3de21  113  cycle-1/results/check_ledger_note.out
+f2d9c7bebaeedc22920032b60cad9674  113  cycle-1/results/check_ledger_note.perturb-b-value.out
+75cd144ebede06693522920d7ad05a09  113  cycle-1/results/check_ledger_note.perturb-c-label.out
+d88175e3f5ee30dabd7930986b296fe6  114  cycle-1/results/check_ledger_note.perturb-d-mutant.out
+# 说明：`check_ledger_note.out` 为基线运行（退出码 0）；b／c／d 三份为扰动输出（均退出码 1）。
+# 说明：扰动 D 的变异包装脚本只在 /tmp/vt_check_d.py，未落盘仓库（安全钩子拒绝 .py 复制入仓）；仓库侧只留其输出。
+# 说明：`route-4.md` 之上无进一步编辑；若本清单某行与文件不符，先按本清单复核再引用。

@@ -1,0 +1,34 @@
+PASS | P0 自写 unrank 与 itertools 全空间一致（n=7,r=3） | 35 个组合
+=== P1 抽块重算（自写 unrank、自写精确消元、逐字节对 C 判串） ===
+PASS | P1 m2=10 [352416,352716) 逐字节零不一致 | 子集=300 分布={'S': 120, 'I': 170, 'F': 10} 不一致=0 []
+PASS | P1 m2=10 块内 F 解在解析族且在各检查点顶点集 | F 个数=10 解析族内=True 检查点内=True
+PASS | P1 m2=12 [2570000,2570300) 逐字节零不一致 | 子集=300 分布={'S': 252, 'I': 48, 'F': 0} 不一致=0 []
+INFO | P1 m2=12 块内无 F（纯 S/I 块） | 分布={'S': 252, 'I': 48, 'F': 0}
+PASS | P1 m2=12 [5200000,5200300) 逐字节零不一致 | 子集=300 分布={'S': 109, 'I': 179, 'F': 12} 不一致=0 []
+PASS | P1 m2=12 块内 F 解在解析族且在各检查点顶点集 | F 个数=12 解析族内=True 检查点内=True
+PASS | P1 m2=13 [20058000,20058300) 逐字节零不一致 | 子集=300 分布={'S': 90, 'I': 197, 'F': 13} 不一致=0 []
+PASS | P1 m2=13 块内 F 解在解析族且在各检查点顶点集 | F 个数=13 解析族内=True 检查点内=True
+PASS | P1 m2=14 [77558460,77558760) 逐字节零不一致 | 子集=300 分布={'S': 67, 'I': 219, 'F': 14} 不一致=0 []
+PASS | P1 m2=14 块内 F 解在解析族且在各检查点顶点集 | F 个数=14 解析族内=True 检查点内=True
+PASS | P1 m2=12 末 12 个下标全为 F 且顶点两两不同、覆盖 12 顶点集 | F 数=12 去重=12
+=== P2 抽点还原（每个检查点目录取 2 个顶点的头一条捕捉子集重解） ===
+PASS | P2 m2_10_mpq 两顶点捕捉子集还原为真 | 已核 2 例
+PASS | P2 m2_12_mpq 两顶点捕捉子集还原为真 | 已核 2 例
+PASS | P2 m2_13_mpq 两顶点捕捉子集还原为真 | 已核 2 例
+PASS | P2 m2_14_mpq 两顶点捕捉子集还原为真 | 已核 2 例
+PASS | P2 smoke_m2_2 两顶点捕捉子集还原为真 | 已核 2 例
+PASS | P2 smoke_m2_5 两顶点捕捉子集还原为真 | 已核 2 例
+INFO | P2 合计 | 已核 12 个（顶点, 捕捉子集）配对
+=== P3 类别盲区实证（按 route3_xcheck.py:54 的实战判据抽块） ===
+PASS | P3 m2=10 [352696,352716) 实战判据全通过 | 通过=20/20 kind 不同但判据通过=10
+INFO | P3 m2=10 类别分布 | impl1={'infeasible': 10, 'feasible': 10} impl2={'nocand': 10, 'feasible': 10}
+INFO | P3 例 | rank=352696 判串字节=I k1=infeasible k2=nocand 判据通过=True
+INFO | P3 例 | rank=352697 判串字节=I k1=infeasible k2=nocand 判据通过=True
+INFO | P3 例 | rank=352698 判串字节=I k1=infeasible k2=nocand 判据通过=True
+PASS | P3 m2=12 [2570000,2570020) 实战判据全通过 | 通过=20/20 kind 不同但判据通过=20
+INFO | P3 m2=12 类别分布 | impl1={'singular': 20} impl2={'nocand': 20}
+INFO | P3 例 | rank=2570000 判串字节=S k1=singular k2=nocand 判据通过=True
+INFO | P3 例 | rank=2570001 判串字节=S k1=singular k2=nocand 判据通过=True
+INFO | P3 例 | rank=2570002 判串字节=S k1=singular k2=nocand 判据通过=True
+
+P1/P2 FAIL 总数 = 0
