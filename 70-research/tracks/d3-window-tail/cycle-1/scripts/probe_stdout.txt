@@ -1,0 +1,2 @@
+zsh:3: command not found: timeout
+exit=127

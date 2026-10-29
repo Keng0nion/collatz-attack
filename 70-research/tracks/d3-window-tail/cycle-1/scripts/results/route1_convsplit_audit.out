@@ -1,0 +1,74 @@
+########################################################################
+# route1_convsplit_audit.py：c2r5_convsplit 的只读复核
+# python 3.12.7
+########################################################################
+
+[0] 冻结件
+    脚本 70-research/cycle-2/scripts/c2r5_convsplit.py
+      md5 = e5e319b884442f6b7ff25d545258b53a ；行数 = 61
+    产物 70-research/cycle-2/scripts/results/c2r5_convsplit.out
+      md5 = 39f60fa65a6859f1bd084b5b8beaf38e ；行数 = 36
+
+[1] 计数（脚本自打印的三值）
+    「分离？ False」行数 = 15
+    「分离？ True」 行数 = 0
+    含 m2_max 的行数 = 15 ；其中带「：」的判据行 = 15
+
+[2] 逐行抽取：cell、采样因子、m2_max、argmin，核对 argmin 与 m2_max 的关系
+    解析出判据行 15 条
+    格(m2)  采样因子         m2_max   argmin   分离?      argmin==m2_max?
+    88     1            87       87       False    True
+    88     10001/10000  88       88       False    True
+    88     2001/2000    88       88       False    True
+    88     101/100      88       88       False    True
+    88     21/20        88       88       False    True
+    89     1            88       88       False    True
+    89     10001/10000  89       89       False    True
+    89     2001/2000    89       89       False    True
+    89     101/100      89       89       False    True
+    89     21/20        89       89       False    True
+    90     1            89       89       False    True
+    90     10001/10000  90       90       False    True
+    90     2001/2000    90       90       False    True
+    90     101/100      90       90       False    True
+    90     21/20        90       90       False    True
+    Q1 判据：任一行 argmin != m2_max ？ False（相异行数 = 0）
+
+[3] 采样分辨率
+    脚本第 43 行的因子表（去重后的相对偏移）= ['0', '1/10000', '1/2000', '1/100', '1/20']
+    Q2 判据：最小非零相对偏移 = 1/10000
+    脚本自报的理论窗口（docstring 第 6 行）= 相对宽度约 0.11%
+    对照：r4b2_window_probe.out:51、:52、:56、:57 的实测窗口相对宽度 ≈ 7.8e-13
+    分辨率缺口 = 55000000000/39 倍（0.11% 与 7.8e-13 之比 = 55000000000/39）
+    注：脚本自己的两档采样 1e-4、5e-4 都落在它自报的 0.11%% 窗口之内，
+        当处仍打「分离？ False」——即该自报窗口被它自己的本次运行反驳（见 [6]）。
+
+[4] 「三格逐格核算」句的落点检索
+    全 70-research 下 grep -rn 逐格核算 命中 44 处：
+      70-research/tracks/vertex-tail/cycle-1/materials.md:316:3. `:52` 至 `:56`（第 2 轮新增第 2 至 6 条）要点：`:52` 网格与「逐格核算」；`:53` 硬编码恒真判据（`ck(..., True, ...)`）；`:54` 改后脚本不重跑就沿用旧输出；`:55` 报告正文不经判据复核；`:56` **「等级声明按最弱一步计，不按最强一步计」（逐字）**。
+      70-research/tracks/vertex-tail/plan.md:35:2. 本轮要避开的反面清单（详见第六节）：四之 3 硬编码恒真判据、四之 4 改后脚本不重跑就沿用旧输出、四之 5 报告正文不经判据复核、四之 6 等级声明按最强一步计、四之 2 把粗采样当「逐格核算」、三之 4 用放大 δ 的有理替代当严格性检验、三之 5 行号不带版本、三之 10 网格当证明。
+      70-research/tracks/vertex-tail/plan.md:145:5. **不把粗采样写成「逐格核算」或「全量」**（`learnings.md:52`）：抽样必须写分辨率与规模；对拍必须写比较字段与覆盖编号范围。
+      70-research/tracks/undefined/cycle-1/route-4.md:16:3. **(T3) 三格核算声明。** `route-5.md:348` 写「门槛处 argmin = m₂_max − 1 这条只在本轮针对 m₂ ∈ {88, 89, 90} 三个门槛逐格核算过（`c2r5_convsplit.out`）」。判据：该文件里是否存在至少一行「分离？ True」（取值：存在 / 不存在）。
+      70-research/tracks/undefined/cycle-1/route-4.md:58:第 348 行逐字：「7. **两个约定分岔的窗口宽度是「数值 + 初等」混合结论**：2^C = (162/97)X₀ 是定义式的直接推论（已证），窗口宽度 log₂(1 + 2^{−C})/C ≈ 2×10⁻²⁴ 由此推出（已证）；但「门槛处 argmin = m₂_max − 1」这条只在本轮针对 m₂ ∈ {88, 89, 90} 三个门槛逐格核算过（`c2r5_convsplit.out`），未对所有 m₂ 一般地证明。」
+      70-research/tracks/undefined/cycle-1/route-4.md:144:- 原文：见 2.5。错误：`c2r5_convsplit.out` 36 行中判据行 15 行全为「分离？ False」、0 行 True；最细相对步长 10⁻⁴，比真窗口 7.8×10⁻¹³ 粗 1.3×10⁸ 倍；文件不含任何「argmin = m₂_max − 1」实例，不能用作该命题的「逐格核算」。
+      70-research/tracks/undefined/cycle-1/route-4.md:145:- 更正（两种可选）：(甲)「本轮未对该命题做逐格核算；`c2r5_convsplit.out` 的 15 个采样点（最细相对步长 10⁻⁴）全部为『分离？ False』，且该分辨率不足以探测相对宽约 7.6×10⁻¹³ 的窗口」；(乙) 引本轨道交点复算（门槛处新减旧 = +8.5×10⁻³² > 0，三格窗口宽见表）。
+      70-research/tracks/undefined/cycle-1/route-4.md:158:3. **第 348 行**：删「逐格核算」或按 E3 的甲/乙改写。标志：该句不再把 `c2r5_convsplit.out` 用作「门槛处 argmin = m₂_max − 1」的证据（该文件对窗口无分辨力，只能作「网格未发现分离」的记录）。
+      70-research/tracks/undefined/cycle-1/route-4.md:192:`route-5.md:101` 的 C 是双精度伪值（偏差 2.752×10⁻¹⁵，恰为 float64 结果的 30 位打印），真值为 `c2r5_cert.log:9` 的 70.1808063283083668248487894995（30 位截断，与真值差 1.988×10⁻²⁹，本会话严格区间宽 9.9×10⁻⁷⁸）；`route-5.md:230` 的窗口 2×10⁻²⁴ 应为 ≈7.6×10⁻¹³（三格 7.622、7.715、7.807×10⁻¹³，本会话独立复算），其机制漏掉主导第三项 3(m₂−1)/((2^v−1)^δ)（门槛处 8.7449×10⁻³²，为被比之差的 5.22×10¹⁰ 倍）；`route-5.md:348` 的「三格逐格核算」在 `c2r5_convsplit.out` 中不存在（15 行全「分离？ False」、最细步长 10⁻⁴），`c2r5_convsplit.py` docstring 的 70.26 与 0.11% 无出处；K* 与 K_cross 经复核仍在一切窗口之外（最近门槛距 6.5% 与 3.5%）。
+      70-research/tracks/undefined/cycle-1/route-1.md:126:**E3（convsplit 声称，`route-5.md:348` 与 `c2r5_convsplit.py:3` 至 `:7`）**：①「门槛处 argmin = m₂_max − 1 已对 m₂ ∈ {88,89,90} 三格逐格核算过（`c2r5_convsplit.out`）」不成立：本脚本 [8] 段只读复核该产物——正文 36 行、15 行判据为「分离？ False」、0 行为 True，最细采样相对步长 10⁻⁴（K_thresh×10001/10000），对 7.8×10⁻¹³ 的窗口必然 0 命中；②docstring 的 0.11%（与 70.26 自洽：70.26/C − 1 = 0.0011284235）既非两项口径、也非真值（第六节），与 route-5 自己的 2×10⁻²⁴ 互斥。**修正**：撤下 0.11% 与 70.26；「三格逐格核算」改标「未做；该产物不含门槛右侧任意窗口内的采样」，并把「用二分或解析判据代替网格」写进结论。
+      70-research/tracks/undefined/cycle-1/scripts/c1u2_window_cert.py:628:    p("      结论：该文件不含「门槛处 argmin = m2_max - 1」的逐格核算；其网格（≥1e-4）")
+      70-research/tracks/undefined/cycle-1/scripts/results/c1u2_window_cert.out:121:      结论：该文件不含「门槛处 argmin = m2_max - 1」的逐格核算；其网格（≥1e-4）
+      70-research/tracks/undefined/cycle-1/route-2.md:23:**陈述 (X)**（route-5 三处错误的修正）：(a) 门槛处比较必须写全三项，第三项 3(M−1)(2^C − 1)^{−δ} 是主导（比第二项之差大 5.22×10¹⁰ 倍）；(b) `route-5.md:101` 的 (D1) 行 C 值 70.1808063283083640726545127109 被排除（差 2.752×10⁻¹⁵）；(c) `route-5.md:348` 的「门槛处 argmin = m₂_max − 1 已逐格核算」在 `c2r5_convsplit.out` 36 行中查无实据（分离？ False 15 次、True 0 次），且其网格分辨率比窗口粗约 10⁹ 倍。
+      70-research/tracks/undefined/cycle-1/route-2.md:88:3. **convsplit 声称（`route-5.md:348`）**：只读复读 `c2r5_convsplit.out`：36 行、md5 `39f60fa65a6859f1bd084b5b8beaf38e`、「分离？ False」15 次、「分离？ True」0 次、采样倍率 1、10001/10000、10005/10000、101/100、105/100（最小相对步长 1×10⁻⁴）。判据「ρ_90 上界 7.80677×10⁻¹³ < 10⁻⁴」= True（扰动用 10⁻¹³ 翻 False）。故该文件不构成「门槛处 argmin = m₂_max − 1」的逐格核算；分辨率 ≥ 10⁻⁴ 的任何网格都看不见窗口。
+      70-research/tracks/undefined/cycle-1/materials.md:41:2. 节 0.3 第 5 条（第 33 行）：「**route-5 的 (D1) 行与「两约定分岔」表述在修正前不得被下游引用**：C 真值 `70.1808063283083668248487894995`（`c2r5_cert.log` [1] 与 `route-5.md:427`；本会话复算 `log₂((162/97)·695·2⁶⁰) = 70.1808063283083668248487894995198…` 一致）；窗口真实相对宽度约 7.6×10⁻¹³（本会话独立复算：m₂ = 88、89、90 处分别为 7.622×10⁻¹³、7.715×10⁻¹³、7.807×10⁻¹³）；`c2r5_convsplit.out` 不含「门槛处 argmin = m₂_max − 1」的逐格核算（本会话实读：36 行、15 行「分离？ False」，采样相对步长 ≥ 10⁻⁴）。」
+      70-research/tracks/undefined/cycle-1/materials.md:44:5. 节 2.3 第 3 项（第 165 行）：「**route-5.md:348 的「门槛处 argmin = m₂_max − 1 已对 m₂ ∈ {88, 89, 90} 三格逐格核算过（c2r5_convsplit.out）」不成立**：本会话实读该文件 36 行，其中 15 行判据全为「分离？ False」，采样相对步长 ≥ 10⁻⁴，远粗于 7.6×10⁻¹³ 的窗口，文件不含该核算；且 `c2r5_convsplit.py` 的 docstring 自写「相对宽度约 0.11%」，与报告的 2×10⁻²⁴ 互斥。」
+      70-research/tracks/undefined/cycle-1/materials.md:59:3. 节四.2（第 52 行）：「**把「样本网格上看不到」当成「窗口不存在」或「已逐格核算」**：401 点对数等距网格（相对步长 8%）与 `c2r5_convsplit.out` 的采样（相对步长 ≥ 10⁻⁴）都远粗于 7.6×10⁻¹³ 的窗口；声称的「三格逐格核算」在该产物 36 行里查无实据（15 行判据全为「分离？ False」），且脚本 docstring 自写「相对宽度约 0.11%」与报告互斥。教训：网格判据的分辨率要写进结论；要判定一个窄窗口是否存在，用二分或解析判据，不用网格。出处：`c2r5_convsplit.out`、`c2r5_convsplit.py`、`route-5.md:348`。」
+      70-research/tracks/undefined/cycle-1/materials.md:111:**节 6.2 第 7 条（第 348 行，全文逐字）**：「7. **两个约定分岔的窗口宽度是「数值 + 初等」混合结论**：2^C = (162/97)X₀ 是定义式的直接推论（已证），窗口宽度 log₂(1 + 2^{−C})/C ≈ 2×10⁻²⁴ 由此推出（已证）；但「门槛处 argmin = m₂_max − 1」这条只在本轮针对 m₂ ∈ {88, 89, 90} 三个门槛逐格核算过（`c2r5_convsplit.out`），未对所有 m₂ 一般地证明。」
+      70-research/tracks/undefined/plan.md:98:必须解释的一条本会话实读事实：`c2r5_convsplit.out` 第 2 行在 `K = K_thresh(m₂ = 88) × 1` 处给出 `m2_max = 87`（该档此刻还不可行），这正是账本判「门槛处 argmin = m₂_max − 1 未逐格核算」的直接机制——请把这一点写成精确陈述并给出独立的核验方式。
+      70-research/tracks/undefined/plan.md:108:3. `route-5.md:348` 的「已对 m₂ ∈ {88, 89, 90} 三格逐格核算（`c2r5_convsplit.out`）」，对照该文件的 36 行、15 行「分离？ False」、0 行「分离？ True」；
+    Q3 判据：c2r5_convsplit.out 里有无「逐格核算」字样 ？ False
+    Q3 判据：c2r5_convsplit.out 里有无 argmin != m2_max 的三格记录 ？ False
+
+[5] 扰动实例（Q1 判据必须能翻 True）
+    扰动副本 /tmp/route1_convsplit_perturbed.out（仅改一行 argmin 89 -> 88）
+    扰动后 Q1 = 任一行 argmin != m2_max ？ True（相异行数 = 1）
+    => 同一段解析代码在原产物上给 False、在扰动副本上给 True，判据非恒真。

@@ -1,0 +1,15 @@
+audit_cert_mpmath3.out：R 处残差的局部斜率与穿越点（mpmath dps=80）
+gamma = 1.58496250072115618145373894395
+gamma - delta = 6.24468066969e-43
+R 区间宽 = 2.10195e-27
+  K = Rlo : eps(92,K)-(gamma-delta) = -6.631603411e-82
+  K = Rhi : eps(92,K)-(gamma-delta) = -6.631605563e-82
+  K = Rlo+1 : eps(92,K)-(gamma-delta) = -1.023898818e-61
+  K = Rlo+5 : eps(92,K)-(gamma-delta) = -5.119494088e-61
+  K = Rlo-5 : eps(92,K)-(gamma-delta) = 5.119494088e-61
+  局部斜率（每单位 K）= -1.0239e-61
+  线性插值穿越点 = Rlo + -6.4768152e-21
+  相对偏移 = -2.06798e-41
+  outer: K = 3.12e+20 : 残差 = 1.3523089e-43
+  outer: K = 3.15e+20 : 残差 = -1.5993098e-43
+DONE
